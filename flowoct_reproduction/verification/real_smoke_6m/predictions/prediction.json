@@ -1,0 +1,129 @@
+{
+  "checkpoint": "/docsystem/niuke/lvyuehang/flowoct_reproduction/verification/real_smoke_6m/train/best.pt",
+  "checkpoint_sha256": "f9c7ccc8f04987605aa8e62130da798668e74632d515562f45d4abc49c2f770f",
+  "checkpoint_epoch": 1,
+  "manifest_sha256": "93e16f45d0c3e66fff90d9ae5a98369beed97d941878688aa305a6d30dec3a8e",
+  "split": "validation",
+  "limited_diagnostic": true,
+  "config": {
+    "manifest": "/docsystem/niuke/lvyuehang/OCTA500_common_v1/split_6M_z256.csv",
+    "fov": "6M",
+    "axis_order": "ZYX",
+    "load_size": 32,
+    "crop_size": 32,
+    "batch_size": 1,
+    "train_slices": 0,
+    "network_chunk": 4,
+    "inference_chunk": 4,
+    "epochs": 1,
+    "lr": 0.0002,
+    "beta": 0.5,
+    "seed": 2026,
+    "workers": 0,
+    "device": "cuda:1",
+    "threads": 4,
+    "val_every": 1,
+    "save_every": 1,
+    "log_every": 20
+  },
+  "environment": {
+    "python": "3.10.22 (main, Oct  1 2026, 20:14:04) [GCC 14.3.0]",
+    "platform": "Linux-5.15.0-198-generic-x86_64-with-glibc2.35",
+    "packages": {
+      "torch": "2.5.1+cu121",
+      "numpy": "1.26.4",
+      "monai": "1.4.0",
+      "torchio": "0.20.4",
+      "scikit-image": "0.25.2",
+      "PyWavelets": "1.8.0",
+      "SimpleITK": "2.5.6",
+      "einops": "0.8.1"
+    },
+    "source_sha256": {
+      "flowoct/__init__.py": "c5d9125502b98e89d98e94b99a0675b085dd010e9ae7e194d5199651125b8741",
+      "flowoct/data.py": "cf503eeac9ae0ac2441b72a07ab7b1c7de4a6382f833ca59354a1b4d93d75415",
+      "flowoct/metrics.py": "926e86aec2f33c283ac7f667ed7b9b1ff5ef710490a86f5f53f69c4214048efe",
+      "flowoct/model.py": "9c4e1350dd2926120f7f00e2b569313c08369e6d893a45ae1d1a4f8a860dae1e",
+      "flowoct/roi.py": "1c729065c592c28d1a86d328dbae7ebd883d2f7153c910d0db13f5a149dd30e0",
+      "flowoct/runner.py": "2a47eb11d331031f790a470d309e11d8447efd5ec62c606a7aad0d3541d234c7",
+      "flowoct/wavelet_functions.py": "33623b3e9b8d59df0227a840f88db4789095d3449e820e6454a31499ed3d156f",
+      "flowoct/wavelets.py": "02625d63ff997de3af1633f0fa511021d74212dabbc984162218e0bf8f594768"
+    },
+    "device": "cuda:1",
+    "cuda_runtime": "12.1",
+    "gpu": "NVIDIA GeForce RTX 3090"
+  },
+  "coverage": "center crop after resize; not restored full FOV or native axial resolution",
+  "records": [
+    {
+      "case_id": "10005",
+      "patient_id": "10005",
+      "disease": "DR",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          400,
+          400
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          32,
+          32,
+          32
+        ],
+        "crop_start_yxz": [
+          0,
+          0,
+          0
+        ],
+        "crop_size": 32,
+        "flipped_z": false,
+        "oct_minmax": [
+          57.4765625,
+          185.640625
+        ],
+        "octa_minmax": [
+          0.0,
+          48.3515625
+        ]
+      },
+      "volume_mae": 0.15718958230409985,
+      "volume_psnr": 13.968680400302265,
+      "volume_ssim": 0.10416343006131118,
+      "axial_mip_mae": 0.3622855425674061,
+      "axial_mip_psnr": 8.019762069109706,
+      "axial_mip_ssim": 0.028916485398903093
+    }
+  ],
+  "summary": {
+    "cases": 1,
+    "aggregation": "equal weight per scan; population standard deviation",
+    "metrics": {
+      "volume_mae": {
+        "mean": 0.15718958230409985,
+        "std": 0.0
+      },
+      "volume_psnr": {
+        "mean": 13.968680400302265,
+        "std": 0.0
+      },
+      "volume_ssim": {
+        "mean": 0.10416343006131118,
+        "std": 0.0
+      },
+      "axial_mip_mae": {
+        "mean": 0.3622855425674061,
+        "std": 0.0
+      },
+      "axial_mip_psnr": {
+        "mean": 8.019762069109706,
+        "std": 0.0
+      },
+      "axial_mip_ssim": {
+        "mean": 0.028916485398903093,
+        "std": 0.0
+      }
+    }
+  }
+}

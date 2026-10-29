@@ -1,0 +1,2484 @@
+{
+  "source_old": "D:\\data\\FSdata\\results\\flowoct_3m_best_preview",
+  "source_new": "D:\\data\\FSdata\\results\\flowoct_3m_best_after200",
+  "cases": 50,
+  "checkpoint_epochs": [
+    98,
+    193
+  ],
+  "checkpoint_sha256": [
+    "012d442874b2d513d23b7e41edbebcc5bad187bfa54e8f2fcbba42cf198c6aba",
+    "42676f6219106bfcf4b25dc275172d827ddeeec96c97721d2b91db0c70693832"
+  ],
+  "same_case_set": true,
+  "same_manifest": true,
+  "same_config": true,
+  "same_source_hashes": true,
+  "same_package_versions": true,
+  "all_50_gt_voxel_arrays_identical": true,
+  "input_oct_check": "All 50 serialized OCT NPY members have matching embedded ZIP CRC32 and uncompressed length; input OCT voxel arrays not reread.",
+  "recalculation": {
+    "volume_mae_psnr_cases": 50,
+    "mip_metrics_cases": 50,
+    "full_metrics_cases": 50,
+    "volume_ssim_cases": [
+      "10305",
+      "10325",
+      "10330"
+    ],
+    "max_abs_error_vs_logged": 2.4868995751603507e-14
+  },
+  "comparison": {
+    "volume_mae": {
+      "old_mean": 0.013565071175935748,
+      "old_std": 0.0028423518585231487,
+      "new_mean": 0.01395677161173182,
+      "new_std": 0.0022168745117028235,
+      "delta_mean": 0.0003917004357960738,
+      "delta_median": 0.0007021042864617253,
+      "improved_cases": 18,
+      "paired_case_bootstrap_95ci_delta_mean": [
+        -0.00018733537226405745,
+        0.0008752876797308634
+      ]
+    },
+    "volume_psnr": {
+      "old_mean": 28.889417481877345,
+      "old_std": 0.9367896958414028,
+      "new_mean": 29.350086081049398,
+      "new_std": 0.9044774136019226,
+      "delta_mean": 0.4606685991720551,
+      "delta_median": 0.4549875764610327,
+      "improved_cases": 47,
+      "paired_case_bootstrap_95ci_delta_mean": [
+        0.362509724876167,
+        0.5609943823484794
+      ]
+    },
+    "volume_ssim": {
+      "old_mean": 0.8403702567577014,
+      "old_std": 0.07964277124646107,
+      "new_mean": 0.8021237051919654,
+      "new_std": 0.07738617736451646,
+      "delta_mean": -0.03824655156573582,
+      "delta_median": -0.03644105905811601,
+      "improved_cases": 9,
+      "paired_case_bootstrap_95ci_delta_mean": [
+        -0.05798585472705437,
+        -0.016320565964719945
+      ]
+    },
+    "axial_mip_mae": {
+      "old_mean": 0.08061807172280452,
+      "old_std": 0.015576603014781592,
+      "new_mean": 0.08311595305526281,
+      "new_std": 0.016421058548824783,
+      "delta_mean": 0.0024978813324582918,
+      "delta_median": 0.0029124413115368952,
+      "improved_cases": 19,
+      "paired_case_bootstrap_95ci_delta_mean": [
+        0.0003126130307302901,
+        0.004665470126072307
+      ]
+    },
+    "axial_mip_psnr": {
+      "old_mean": 19.930040833886313,
+      "old_std": 1.489535184721702,
+      "new_mean": 19.70646516223193,
+      "new_std": 1.5492729924950936,
+      "delta_mean": -0.22357567165438033,
+      "delta_median": -0.2928771349324837,
+      "improved_cases": 19,
+      "paired_case_bootstrap_95ci_delta_mean": [
+        -0.4192644061464707,
+        -0.02636171352844734
+      ]
+    },
+    "axial_mip_ssim": {
+      "old_mean": 0.3251893717267737,
+      "old_std": 0.043025528602678914,
+      "new_mean": 0.32500520910200315,
+      "new_std": 0.04404303433008204,
+      "delta_mean": -0.00018416262477052693,
+      "delta_median": -9.344608665978749e-05,
+      "improved_cases": 25,
+      "paired_case_bootstrap_95ci_delta_mean": [
+        -0.00179682389200757,
+        0.001343025560995367
+      ]
+    },
+    "full_mae": {
+      "old_mean": 0.007506613614179614,
+      "old_std": 0.0026841886965010223,
+      "new_mean": 0.0067799638506823,
+      "new_std": 0.0016975175432060586,
+      "delta_mean": -0.0007266497634973134,
+      "delta_median": -0.00022637335484532173,
+      "improved_cases": 33,
+      "paired_case_bootstrap_95ci_delta_mean": [
+        -0.0012864351108357148,
+        -0.00026283737625464667
+      ]
+    },
+    "full_psnr": {
+      "old_mean": 40.91049531603659,
+      "old_std": 2.2486501313219676,
+      "new_mean": 41.53962325598889,
+      "new_std": 1.776153223892385,
+      "delta_mean": 0.6291279399522988,
+      "delta_median": 0.38640784314061705,
+      "improved_cases": 33,
+      "paired_case_bootstrap_95ci_delta_mean": [
+        0.23492974981149906,
+        1.056535060789487
+      ]
+    },
+    "full_ssim": {
+      "old_mean": 0.9279052428189659,
+      "old_std": 0.03480516974367637,
+      "new_mean": 0.9394543221639634,
+      "new_std": 0.02027783300430834,
+      "delta_mean": 0.011549079344997402,
+      "delta_median": 0.003210280985355418,
+      "improved_cases": 36,
+      "paired_case_bootstrap_95ci_delta_mean": [
+        0.005736680324642412,
+        0.018102382235101928
+      ]
+    }
+  },
+  "by_disease": {
+    "NORMAL": {
+      "cases": 40,
+      "metrics": {
+        "volume_mae": {
+          "old_mean": 0.013392684198700032,
+          "new_mean": 0.014181353541302422,
+          "delta_mean": 0.0007886693426023901
+        },
+        "volume_psnr": {
+          "old_mean": 28.985156176777334,
+          "new_mean": 29.38738697493478,
+          "delta_mean": 0.4022307981574471
+        },
+        "volume_ssim": {
+          "old_mean": 0.8477103497288981,
+          "new_mean": 0.794480094953762,
+          "delta_mean": -0.05323025477513614
+        },
+        "axial_mip_mae": {
+          "old_mean": 0.07810703202498388,
+          "new_mean": 0.0809992869574117,
+          "delta_mean": 0.002892254932427818
+        },
+        "axial_mip_psnr": {
+          "old_mean": 20.22991095241533,
+          "new_mean": 19.963265938325566,
+          "delta_mean": -0.26664501408976593
+        },
+        "axial_mip_ssim": {
+          "old_mean": 0.3335385241905659,
+          "new_mean": 0.3339920632691615,
+          "delta_mean": 0.0004535390785955412
+        },
+        "full_mae": {
+          "old_mean": 0.007304924646381794,
+          "new_mean": 0.0068239855530281,
+          "delta_mean": -0.0004809390933536939
+        },
+        "full_psnr": {
+          "old_mean": 41.13999018439235,
+          "new_mean": 41.56140092048626,
+          "delta_mean": 0.4214107360938998
+        },
+        "full_ssim": {
+          "old_mean": 0.9320465058729291,
+          "new_mean": 0.9410385309003592,
+          "delta_mean": 0.008992025027430054
+        }
+      }
+    },
+    "DR": {
+      "cases": 8,
+      "metrics": {
+        "volume_mae": {
+          "old_mean": 0.012898428425308368,
+          "new_mean": 0.012475240722581162,
+          "delta_mean": -0.00042318770272720694
+        },
+        "volume_psnr": {
+          "old_mean": 28.919001070022627,
+          "new_mean": 29.546229811015024,
+          "delta_mean": 0.6272287409923987
+        },
+        "volume_ssim": {
+          "old_mean": 0.8439543567187431,
+          "new_mean": 0.8402290693957444,
+          "delta_mean": -0.003725287322998691
+        },
+        "axial_mip_mae": {
+          "old_mean": 0.0870696549612795,
+          "new_mean": 0.08708450054882277,
+          "delta_mean": 1.4845587543277361e-05
+        },
+        "axial_mip_psnr": {
+          "old_mean": 19.074812119024028,
+          "new_mean": 19.07585863938855,
+          "delta_mean": 0.001046520364522241
+        },
+        "axial_mip_ssim": {
+          "old_mean": 0.3048819876237786,
+          "new_mean": 0.30253670520514064,
+          "delta_mean": -0.002345282418637934
+        },
+        "full_mae": {
+          "old_mean": 0.007158279715866467,
+          "new_mean": 0.00623470424574224,
+          "delta_mean": -0.0009235754701242271
+        },
+        "full_psnr": {
+          "old_mean": 40.77686962169655,
+          "new_mean": 41.90839771201216,
+          "delta_mean": 1.1315280903156157
+        },
+        "full_ssim": {
+          "old_mean": 0.9236285938684344,
+          "new_mean": 0.9387138383239507,
+          "delta_mean": 0.015085244455516345
+        }
+      }
+    },
+    "AMD": {
+      "cases": 1,
+      "metrics": {
+        "volume_mae": {
+          "old_mean": 0.02668515621158695,
+          "new_mean": 0.018487340459164746,
+          "delta_mean": -0.008197815752422205
+        },
+        "volume_psnr": {
+          "old_mean": 25.586622697866517,
+          "new_mean": 26.982201328516048,
+          "delta_mean": 1.3955786306495312
+        },
+        "volume_ssim": {
+          "old_mean": 0.49069347104112093,
+          "new_mean": 0.7374840564707921,
+          "delta_mean": 0.24679058542967114
+        },
+        "axial_mip_mae": {
+          "old_mean": 0.10642969689973825,
+          "new_mean": 0.11222417662230555,
+          "delta_mean": 0.005794479722567303
+        },
+        "axial_mip_psnr": {
+          "old_mean": 17.205863749136864,
+          "new_mean": 16.815166712508944,
+          "delta_mean": -0.39069703662791966
+        },
+        "axial_mip_ssim": {
+          "old_mean": 0.2127907146719501,
+          "new_mean": 0.20849904032607294,
+          "delta_mean": -0.004291674345877156
+        },
+        "full_mae": {
+          "old_mean": 0.018200267718516017,
+          "new_mean": 0.009163497150627364,
+          "delta_mean": -0.009036770567888652
+        },
+        "full_psnr": {
+          "old_mean": 33.42788533411652,
+          "new_mean": 38.31084330426786,
+          "delta_mean": 4.882957970151345
+        },
+        "full_ssim": {
+          "old_mean": 0.8195720672836304,
+          "new_mean": 0.9004016386079788,
+          "delta_mean": 0.08082957132434843
+        }
+      }
+    },
+    "CNV": {
+      "cases": 1,
+      "metrics": {
+        "volume_mae": {
+          "old_mean": 0.012673607234732159,
+          "new_mean": 0.012295172694680103,
+          "delta_mean": -0.00037843454005205557
+        },
+        "volume_psnr": {
+          "old_mean": 28.125995764726422,
+          "new_mean": 28.656785238442573,
+          "delta_mean": 0.5307894737161512
+        },
+        "volume_ssim": {
+          "old_mean": 0.8677705239380782,
+          "new_mean": 0.8676648498110511,
+          "delta_mean": -0.0001056741270271111
+        },
+        "axial_mip_mae": {
+          "old_mean": 0.10363536855089706,
+          "new_mean": 0.1069259934537854,
+          "delta_mean": 0.0032906249028883394
+        },
+        "axial_mip_psnr": {
+          "old_mean": 17.50124289637325,
+          "new_mean": 17.37058475095661,
+          "delta_mean": -0.13065814541663912
+        },
+        "axial_mip_ssim": {
+          "old_mean": 0.26608100305386806,
+          "new_mean": 0.2617852423665007,
+          "delta_mean": -0.004295760687367367
+        },
+        "full_mae": {
+          "old_mean": 0.007667189408261166,
+          "new_mean": 0.006997639296425717,
+          "delta_mean": -0.0006695501118354485
+        },
+        "full_psnr": {
+          "old_mean": 40.282316118446424,
+          "new_mean": 40.9471009796291,
+          "delta_mean": 0.6647848611826745
+        },
+        "full_ssim": {
+          "old_mean": 0.904801087800026,
+          "new_mean": 0.9210625269842148,
+          "delta_mean": 0.016261439184188764
+        }
+      }
+    }
+  },
+  "records": [
+    {
+      "case_id": "10305",
+      "patient_id": "10305",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.01227023136337877,
+        "volume_psnr": 29.54140380737684,
+        "volume_ssim": 0.8904453461959986,
+        "axial_mip_mae": 0.07699797205896175,
+        "axial_mip_psnr": 20.026181843083833,
+        "axial_mip_ssim": 0.3770679478561622,
+        "full_mae": 0.005033019078410916,
+        "full_psnr": 43.77923301359502,
+        "full_ssim": 0.9628644275932312
+      },
+      "new": {
+        "volume_mae": 0.01296685384544994,
+        "volume_psnr": 29.516087166717398,
+        "volume_ssim": 0.8652949282341273,
+        "axial_mip_mae": 0.09387071730861862,
+        "axial_mip_psnr": 18.64861450510394,
+        "axial_mip_ssim": 0.37729259403868426,
+        "full_mae": 0.005192394144032164,
+        "full_psnr": 43.52372160205271,
+        "full_ssim": 0.962061817744255
+      },
+      "delta": {
+        "volume_mae": 0.0006966224820711703,
+        "volume_psnr": -0.025316640659443834,
+        "volume_ssim": -0.02515041796187123,
+        "axial_mip_mae": 0.016872745249656873,
+        "axial_mip_psnr": -1.3775673379798938,
+        "axial_mip_ssim": 0.00022464618252204804,
+        "full_mae": 0.0001593750656212478,
+        "full_psnr": -0.25551141154230805,
+        "full_ssim": -0.0008026098489761768
+      },
+      "gt_sha256": "bfd8888643f2b733e204a5cd20678530e52ac975c0fa10997e97b97de16b9505",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10307",
+      "patient_id": "10307",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.014708251857292323,
+        "volume_psnr": 28.076266055924307,
+        "volume_ssim": 0.856654458255925,
+        "axial_mip_mae": 0.09072664581026402,
+        "axial_mip_psnr": 18.8497695330633,
+        "axial_mip_ssim": 0.2789426113801072,
+        "full_mae": 0.00774750885398845,
+        "full_psnr": 40.05547711391414,
+        "full_ssim": 0.9319430005311966
+      },
+      "new": {
+        "volume_mae": 0.014855334006935509,
+        "volume_psnr": 28.241915796415157,
+        "volume_ssim": 0.8547282086855282,
+        "axial_mip_mae": 0.10063697353268708,
+        "axial_mip_psnr": 18.08279281598168,
+        "axial_mip_ssim": 0.2780666681291357,
+        "full_mae": 0.007191895162051765,
+        "full_psnr": 40.54812990283354,
+        "full_ssim": 0.9386407796697617
+      },
+      "delta": {
+        "volume_mae": 0.0001470821496431865,
+        "volume_psnr": 0.16564974049084924,
+        "volume_ssim": -0.0019262495703967764,
+        "axial_mip_mae": 0.009910327722423062,
+        "axial_mip_psnr": -0.7669767170816186,
+        "axial_mip_ssim": -0.000875943250971456,
+        "full_mae": -0.000555613691936685,
+        "full_psnr": 0.49265278891940056,
+        "full_ssim": 0.006697779138565063
+      },
+      "gt_sha256": "f311a80b573f0e399e444253ddbbef76bb483aaf256cf3d7271182dc4fcb76e0",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10317",
+      "patient_id": "10317",
+      "disease": "DR",
+      "old": {
+        "volume_mae": 0.013580007797471708,
+        "volume_psnr": 30.20896449900206,
+        "volume_ssim": 0.7169458484635803,
+        "axial_mip_mae": 0.09591015969212435,
+        "axial_mip_psnr": 18.357991728596833,
+        "axial_mip_ssim": 0.3455104756167218,
+        "full_mae": 0.008674903218544472,
+        "full_psnr": 39.64592336275093,
+        "full_ssim": 0.8788421359562874
+      },
+      "new": {
+        "volume_mae": 0.00924098483311116,
+        "volume_psnr": 31.58023114289548,
+        "volume_ssim": 0.8702391993864838,
+        "axial_mip_mae": 0.07929313127417004,
+        "axial_mip_psnr": 19.69355951859692,
+        "axial_mip_ssim": 0.34649698101115506,
+        "full_mae": 0.0044215705128998195,
+        "full_psnr": 44.698121956042,
+        "full_ssim": 0.9535604237003327
+      },
+      "delta": {
+        "volume_mae": -0.004339022964360548,
+        "volume_psnr": 1.3712666438934207,
+        "volume_ssim": 0.15329335092290342,
+        "axial_mip_mae": -0.016617028417954316,
+        "axial_mip_psnr": 1.3355677900000877,
+        "axial_mip_ssim": 0.0009865053944332347,
+        "full_mae": -0.004253332705644652,
+        "full_psnr": 5.052198593291074,
+        "full_ssim": 0.07471828774404532
+      },
+      "gt_sha256": "2ad9bba23941477a14a92fafa01963e6cef2f5f4f36fa1b1f28a568b8351d9a5",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10318",
+      "patient_id": "10318",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.011458047736709382,
+        "volume_psnr": 29.763319733249716,
+        "volume_ssim": 0.8791910292750194,
+        "axial_mip_mae": 0.06883808472525743,
+        "axial_mip_psnr": 21.02906219292621,
+        "axial_mip_ssim": 0.37807613148854946,
+        "full_mae": 0.005540535065101437,
+        "full_psnr": 42.81987874724932,
+        "full_ssim": 0.9528112457532882
+      },
+      "new": {
+        "volume_mae": 0.013487025285472307,
+        "volume_psnr": 29.956425616087436,
+        "volume_ssim": 0.791303187169488,
+        "axial_mip_mae": 0.07535806877262985,
+        "axial_mip_psnr": 20.359279935125038,
+        "axial_mip_ssim": 0.37610130259151636,
+        "full_mae": 0.005868651522405344,
+        "full_psnr": 42.58013559757021,
+        "full_ssim": 0.9499639263439178
+      },
+      "delta": {
+        "volume_mae": 0.0020289775487629252,
+        "volume_psnr": 0.19310588283772034,
+        "volume_ssim": -0.08788784210553136,
+        "axial_mip_mae": 0.006519984047372418,
+        "axial_mip_psnr": -0.6697822578011738,
+        "axial_mip_ssim": -0.0019748288970330985,
+        "full_mae": 0.00032811645730390637,
+        "full_psnr": -0.23974314967910715,
+        "full_ssim": -0.0028473194093704413
+      },
+      "gt_sha256": "40fbb477920555855b4fb9a0944b5ca838f6085085f618eca2e4134ddb51f677",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10321",
+      "patient_id": "10321",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.01762038581978803,
+        "volume_psnr": 29.20485115238654,
+        "volume_ssim": 0.6440770005941013,
+        "axial_mip_mae": 0.06382974147754794,
+        "axial_mip_psnr": 21.76663705017972,
+        "axial_mip_ssim": 0.29859502387261594,
+        "full_mae": 0.010574808056290408,
+        "full_psnr": 38.0368974517321,
+        "full_ssim": 0.9131778786125183
+      },
+      "new": {
+        "volume_mae": 0.014593695338296197,
+        "volume_psnr": 29.817406191771674,
+        "volume_ssim": 0.7567943327308007,
+        "axial_mip_mae": 0.07628906290028681,
+        "axial_mip_psnr": 20.350878799199638,
+        "axial_mip_ssim": 0.2921892996938179,
+        "full_mae": 0.005905127760115647,
+        "full_psnr": 42.39370102345168,
+        "full_ssim": 0.9529472137022018
+      },
+      "delta": {
+        "volume_mae": -0.0030266904814918345,
+        "volume_psnr": 0.6125550393851356,
+        "volume_ssim": 0.11271733213669932,
+        "axial_mip_mae": 0.012459321422738867,
+        "axial_mip_psnr": -1.4157582509800832,
+        "axial_mip_ssim": -0.0064057241787980335,
+        "full_mae": -0.004669680296174761,
+        "full_psnr": 4.356803571719581,
+        "full_ssim": 0.0397693350896835
+      },
+      "gt_sha256": "dcfab25092ed1ac681b9ad4dbb5dd077aa2b607698bf081a385feee37af73957",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10322",
+      "patient_id": "10322",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.013635386180069566,
+        "volume_psnr": 29.084959494883833,
+        "volume_ssim": 0.8185808591705904,
+        "axial_mip_mae": 0.07975472197296085,
+        "axial_mip_psnr": 19.83261633727324,
+        "axial_mip_ssim": 0.25407786489750495,
+        "full_mae": 0.006911491370843237,
+        "full_psnr": 41.30788153940319,
+        "full_ssim": 0.939991548625946
+      },
+      "new": {
+        "volume_mae": 0.013329630941380469,
+        "volume_psnr": 29.650421510348618,
+        "volume_ssim": 0.7997213882173297,
+        "axial_mip_mae": 0.07647117380457757,
+        "axial_mip_psnr": 20.120311648049984,
+        "axial_mip_ssim": 0.2519629825163819,
+        "full_mae": 0.005637625054129458,
+        "full_psnr": 42.87551966183809,
+        "full_ssim": 0.9524369998912812
+      },
+      "delta": {
+        "volume_mae": -0.00030575523868909757,
+        "volume_psnr": 0.5654620154647851,
+        "volume_ssim": -0.018859470953260682,
+        "axial_mip_mae": -0.003283548168383277,
+        "axial_mip_psnr": 0.28769531077674415,
+        "axial_mip_ssim": -0.002114882381123062,
+        "full_mae": -0.0012738663167137787,
+        "full_psnr": 1.5676381224349,
+        "full_ssim": 0.012445451265335139
+      },
+      "gt_sha256": "8cca32e65dca89693e11234c4d1ca4c9aff0bf8e46c9a829ef94a4c5166d96b3",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10325",
+      "patient_id": "10325",
+      "disease": "AMD",
+      "old": {
+        "volume_mae": 0.02668515621158695,
+        "volume_psnr": 25.586622697866517,
+        "volume_ssim": 0.49069347104112093,
+        "axial_mip_mae": 0.10642969689973825,
+        "axial_mip_psnr": 17.205863749136864,
+        "axial_mip_ssim": 0.2127907146719501,
+        "full_mae": 0.018200267718516017,
+        "full_psnr": 33.42788533411652,
+        "full_ssim": 0.8195720672836304
+      },
+      "new": {
+        "volume_mae": 0.018487340459164746,
+        "volume_psnr": 26.982201328516048,
+        "volume_ssim": 0.7374840564707921,
+        "axial_mip_mae": 0.11222417662230555,
+        "axial_mip_psnr": 16.815166712508944,
+        "axial_mip_ssim": 0.20849904032607294,
+        "full_mae": 0.009163497150627364,
+        "full_psnr": 38.31084330426786,
+        "full_ssim": 0.9004016386079788
+      },
+      "delta": {
+        "volume_mae": -0.008197815752422205,
+        "volume_psnr": 1.3955786306495312,
+        "volume_ssim": 0.24679058542967114,
+        "axial_mip_mae": 0.005794479722567303,
+        "axial_mip_psnr": -0.39069703662791966,
+        "axial_mip_ssim": -0.004291674345877156,
+        "full_mae": -0.009036770567888652,
+        "full_psnr": 4.882957970151345,
+        "full_ssim": 0.08082957132434843
+      },
+      "gt_sha256": "64046719822401b1f411495f9d006526ced8f85c24d7718cf38b2186324d4cb1",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10326",
+      "patient_id": "10326",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.011618168002225563,
+        "volume_psnr": 29.458950355517537,
+        "volume_ssim": 0.8822861314530637,
+        "axial_mip_mae": 0.08317869194945615,
+        "axial_mip_psnr": 19.55775168493513,
+        "axial_mip_ssim": 0.3356142379048806,
+        "full_mae": 0.006157482789545199,
+        "full_psnr": 42.31564809985074,
+        "full_ssim": 0.9405239748916626
+      },
+      "new": {
+        "volume_mae": 0.012739298367806363,
+        "volume_psnr": 30.050332728449934,
+        "volume_ssim": 0.831398262480998,
+        "axial_mip_mae": 0.07501944698435636,
+        "axial_mip_psnr": 20.38212323840767,
+        "axial_mip_ssim": 0.33682557001179586,
+        "full_mae": 0.005046136030145476,
+        "full_psnr": 43.50691167116117,
+        "full_ssim": 0.9594604734125137
+      },
+      "delta": {
+        "volume_mae": 0.0011211303655807997,
+        "volume_psnr": 0.5913823729323973,
+        "volume_ssim": -0.05088786897206565,
+        "axial_mip_mae": -0.008159244965099788,
+        "axial_mip_psnr": 0.8243715534725382,
+        "axial_mip_ssim": 0.0012113321069152638,
+        "full_mae": -0.0011113467593997228,
+        "full_psnr": 1.1912635713104294,
+        "full_ssim": 0.01893649852085111
+      },
+      "gt_sha256": "5a0428732e4d3d77f2ad5aad95c90f30889af20f29c009978edd3262962f1317",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10327",
+      "patient_id": "10327",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.0183625171287993,
+        "volume_psnr": 26.55927162242356,
+        "volume_ssim": 0.8388537438056367,
+        "axial_mip_mae": 0.10957375118073287,
+        "axial_mip_psnr": 17.654193890626043,
+        "axial_mip_ssim": 0.26074144488903567,
+        "full_mae": 0.014233699952271195,
+        "full_psnr": 35.817136211699186,
+        "full_ssim": 0.8855936463251114
+      },
+      "new": {
+        "volume_mae": 0.017209994432754117,
+        "volume_psnr": 26.87619435245313,
+        "volume_ssim": 0.8587764973897742,
+        "axial_mip_mae": 0.11725906730544011,
+        "axial_mip_psnr": 17.20264149620925,
+        "axial_mip_ssim": 0.2653127839189504,
+        "full_mae": 0.012591908924889594,
+        "full_psnr": 36.71046446908547,
+        "full_ssim": 0.9040194632959366
+      },
+      "delta": {
+        "volume_mae": -0.0011525226960451829,
+        "volume_psnr": 0.31692273002957094,
+        "volume_ssim": 0.01992275358413753,
+        "axial_mip_mae": 0.007685316124707242,
+        "axial_mip_psnr": -0.45155239441679385,
+        "axial_mip_ssim": 0.004571339029914745,
+        "full_mae": -0.0016417910273816005,
+        "full_psnr": 0.8933282573862869,
+        "full_ssim": 0.018425816970825237
+      },
+      "gt_sha256": "2d1a8cf9f52eacb2a6a75a28708f33da398689615c9b0b8902a27b16422e56f7",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10328",
+      "patient_id": "10328",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.01300729298368382,
+        "volume_psnr": 28.74222914396778,
+        "volume_ssim": 0.8580446095085487,
+        "axial_mip_mae": 0.09722967893276291,
+        "axial_mip_psnr": 18.487559410824378,
+        "axial_mip_ssim": 0.31812524958698835,
+        "full_mae": 0.007783105493377462,
+        "full_psnr": 40.37231003650719,
+        "full_ssim": 0.9119772689151764
+      },
+      "new": {
+        "volume_mae": 0.012137470762246515,
+        "volume_psnr": 29.26458314805125,
+        "volume_ssim": 0.8767233509065313,
+        "axial_mip_mae": 0.0988719471481545,
+        "axial_mip_psnr": 18.364763782147598,
+        "axial_mip_ssim": 0.3231238148050697,
+        "full_mae": 0.006331598898711377,
+        "full_psnr": 41.782187654644495,
+        "full_ssim": 0.9415191693563462
+      },
+      "delta": {
+        "volume_mae": -0.0008698222214373053,
+        "volume_psnr": 0.5223540040834713,
+        "volume_ssim": 0.018678741397982646,
+        "axial_mip_mae": 0.0016422682153915957,
+        "axial_mip_psnr": -0.12279562867677996,
+        "axial_mip_ssim": 0.004998565218081341,
+        "full_mae": -0.0014515065946660854,
+        "full_psnr": 1.4098776181373083,
+        "full_ssim": 0.029541900441169777
+      },
+      "gt_sha256": "3d4af78d274f4ba5cd7df22b49f05777f376127b78e6ba093d7a40bc825f62aa",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10330",
+      "patient_id": "10330",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.014509231269534774,
+        "volume_psnr": 29.26440193038517,
+        "volume_ssim": 0.7933652728813418,
+        "axial_mip_mae": 0.07877421743899049,
+        "axial_mip_psnr": 19.992439714725144,
+        "axial_mip_ssim": 0.31632757073458434,
+        "full_mae": 0.006566951507352314,
+        "full_psnr": 41.64538285680788,
+        "full_ssim": 0.9462152535018921
+      },
+      "new": {
+        "volume_mae": 0.017415491877959075,
+        "volume_psnr": 29.28851501593003,
+        "volume_ssim": 0.619766964660641,
+        "axial_mip_mae": 0.08796125645937991,
+        "axial_mip_psnr": 19.165631282329215,
+        "axial_mip_ssim": 0.3144385024728872,
+        "full_mae": 0.007448501666104335,
+        "full_psnr": 40.68499252738946,
+        "full_ssim": 0.9411873959312439
+      },
+      "delta": {
+        "volume_mae": 0.0029062606084243013,
+        "volume_psnr": 0.02411308554486169,
+        "volume_ssim": -0.17359830822070088,
+        "axial_mip_mae": 0.00918703902038942,
+        "axial_mip_psnr": -0.8268084323959286,
+        "axial_mip_ssim": -0.0018890682616971577,
+        "full_mae": 0.0008815501587520203,
+        "full_psnr": -0.9603903294184164,
+        "full_ssim": -0.005027857570648164
+      },
+      "gt_sha256": "f54263164812d29b4ae1bf57328527c7976364f4cecbc83a2cddf91eaf18dda7",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10331",
+      "patient_id": "10331",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.011603102132178342,
+        "volume_psnr": 29.23503516102372,
+        "volume_ssim": 0.8854287082646992,
+        "axial_mip_mae": 0.07004522074987563,
+        "axial_mip_psnr": 21.06756588483989,
+        "axial_mip_ssim": 0.34044922519154724,
+        "full_mae": 0.006641110990106114,
+        "full_psnr": 41.435934287566674,
+        "full_ssim": 0.934206552274704
+      },
+      "new": {
+        "volume_mae": 0.01441372251643393,
+        "volume_psnr": 29.666997035276665,
+        "volume_ssim": 0.7432843223887584,
+        "axial_mip_mae": 0.06608085397385821,
+        "axial_mip_psnr": 21.483291960159306,
+        "axial_mip_ssim": 0.34463037108172534,
+        "full_mae": 0.008552806585111483,
+        "full_psnr": 39.511079024458226,
+        "full_ssim": 0.9112854015541076
+      },
+      "delta": {
+        "volume_mae": 0.002810620384255589,
+        "volume_psnr": 0.43196187425294497,
+        "volume_ssim": -0.1421443858759408,
+        "axial_mip_mae": -0.003964366776017414,
+        "axial_mip_psnr": 0.41572607531941586,
+        "axial_mip_ssim": 0.004181145890178095,
+        "full_mae": 0.0019116955950053693,
+        "full_psnr": -1.924855263108448,
+        "full_ssim": -0.022921150720596306
+      },
+      "gt_sha256": "b8e5802578e7c39614db8c7686649d81dac3d8544a11518cba929855494c87e9",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10332",
+      "patient_id": "10332",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.01056207233989649,
+        "volume_psnr": 29.61297125592028,
+        "volume_ssim": 0.8861058530082505,
+        "axial_mip_mae": 0.08769983030236972,
+        "axial_mip_psnr": 19.043531717474316,
+        "axial_mip_ssim": 0.324866580269877,
+        "full_mae": 0.006103911879158375,
+        "full_psnr": 42.347605105122156,
+        "full_ssim": 0.9311528892631531
+      },
+      "new": {
+        "volume_mae": 0.01119650854399612,
+        "volume_psnr": 29.94382888086742,
+        "volume_ssim": 0.8649159498696467,
+        "axial_mip_mae": 0.09602548688707202,
+        "axial_mip_psnr": 18.423893800570674,
+        "axial_mip_ssim": 0.3244516291027879,
+        "full_mae": 0.005472878090511557,
+        "full_psnr": 43.18530289467177,
+        "full_ssim": 0.9456389141902923
+      },
+      "delta": {
+        "volume_mae": 0.0006344362040996299,
+        "volume_psnr": 0.3308576249471429,
+        "volume_ssim": -0.021189903138603805,
+        "axial_mip_mae": 0.008325656584702301,
+        "axial_mip_psnr": -0.6196379169036419,
+        "axial_mip_ssim": -0.00041495116708911706,
+        "full_mae": -0.0006310337886468176,
+        "full_psnr": 0.8376977895496154,
+        "full_ssim": 0.01448602492713924
+      },
+      "gt_sha256": "747fa69496ca5b0e2ff5ae7b30ca919f3b8a160fc1e4c77e43530cecb0c86578",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10341",
+      "patient_id": "10341",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.014678409606394162,
+        "volume_psnr": 28.528449850564037,
+        "volume_ssim": 0.8392625080852636,
+        "axial_mip_mae": 0.0798820861290892,
+        "axial_mip_psnr": 19.676119814497696,
+        "axial_mip_ssim": 0.3335541816778292,
+        "full_mae": 0.007268909785377531,
+        "full_psnr": 40.8754045368736,
+        "full_ssim": 0.9349665428609848
+      },
+      "new": {
+        "volume_mae": 0.016961899269026123,
+        "volume_psnr": 28.775630875133153,
+        "volume_ssim": 0.6906310526263263,
+        "axial_mip_mae": 0.08295968826081435,
+        "axial_mip_psnr": 19.42673508400752,
+        "axial_mip_ssim": 0.33281223633013685,
+        "full_mae": 0.007476300600156804,
+        "full_psnr": 40.681365265374296,
+        "full_ssim": 0.934104905166626
+      },
+      "delta": {
+        "volume_mae": 0.002283489662631961,
+        "volume_psnr": 0.24718102456911595,
+        "volume_ssim": -0.1486314554589373,
+        "axial_mip_mae": 0.0030776021317251434,
+        "axial_mip_psnr": -0.24938473049017418,
+        "axial_mip_ssim": -0.000741945347692341,
+        "full_mae": 0.00020739081477927357,
+        "full_psnr": -0.19403927149930666,
+        "full_ssim": -0.0008616376943587634
+      },
+      "gt_sha256": "b0fb30dd0c6a5e822378806942b37f3e9242870c5300adf3eda241fcd5e03d5a",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10342",
+      "patient_id": "10342",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.011802239415848768,
+        "volume_psnr": 29.102229548386465,
+        "volume_ssim": 0.8870131777734815,
+        "axial_mip_mae": 0.08401642845313972,
+        "axial_mip_psnr": 19.382568416716744,
+        "axial_mip_ssim": 0.28142625926460596,
+        "full_mae": 0.005660987480148094,
+        "full_psnr": 42.5705343190902,
+        "full_ssim": 0.9502225979909897
+      },
+      "new": {
+        "volume_mae": 0.013385967870182352,
+        "volume_psnr": 29.102394215442988,
+        "volume_ssim": 0.8344174725976434,
+        "axial_mip_mae": 0.10061743966178938,
+        "axial_mip_psnr": 18.023027685641484,
+        "axial_mip_ssim": 0.2752504927476748,
+        "full_mae": 0.005576524782931358,
+        "full_psnr": 42.68423480096281,
+        "full_ssim": 0.9521769040250778
+      },
+      "delta": {
+        "volume_mae": 0.0015837284543335842,
+        "volume_psnr": 0.00016466705652362634,
+        "volume_ssim": -0.052595705175838114,
+        "axial_mip_mae": 0.016601011208649652,
+        "axial_mip_psnr": -1.3595407310752599,
+        "axial_mip_ssim": -0.006175766516931136,
+        "full_mae": -8.446269721673616e-05,
+        "full_psnr": 0.11370048187261261,
+        "full_ssim": 0.0019543060340880825
+      },
+      "gt_sha256": "b7b956c08c5ea263acedd0658ce562bb113b9709d68640590800af5dee641cba",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10347",
+      "patient_id": "10347",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.012117210874625747,
+        "volume_psnr": 29.070835414368005,
+        "volume_ssim": 0.8702449488699115,
+        "axial_mip_mae": 0.06185010223214249,
+        "axial_mip_psnr": 22.031710056714502,
+        "axial_mip_ssim": 0.34125028041092614,
+        "full_mae": 0.005433080562113446,
+        "full_psnr": 42.98514733389396,
+        "full_ssim": 0.9539056539611817
+      },
+      "new": {
+        "volume_mae": 0.01203436512960615,
+        "volume_psnr": 29.27787119348573,
+        "volume_ssim": 0.8753236584418638,
+        "axial_mip_mae": 0.062108946603643744,
+        "axial_mip_psnr": 21.982207656321307,
+        "axial_mip_ssim": 0.32398193621425625,
+        "full_mae": 0.0056957971033142485,
+        "full_psnr": 42.822689346969256,
+        "full_ssim": 0.9523565847148895
+      },
+      "delta": {
+        "volume_mae": -8.284574501959616e-05,
+        "volume_psnr": 0.20703577911772442,
+        "volume_ssim": 0.005078709571952222,
+        "axial_mip_mae": 0.0002588443715012545,
+        "axial_mip_psnr": -0.049502400393194534,
+        "axial_mip_ssim": -0.017268344196669894,
+        "full_mae": 0.00026271654120080257,
+        "full_psnr": -0.16245798692470714,
+        "full_ssim": -0.0015490692462921674
+      },
+      "gt_sha256": "e7b07d28019dff21c3d187db4469e227907149a30668d3082b42dda91b146869",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10351",
+      "patient_id": "10351",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.013665186898090613,
+        "volume_psnr": 27.9080543977987,
+        "volume_ssim": 0.8661579984677932,
+        "axial_mip_mae": 0.10129375785220418,
+        "axial_mip_psnr": 18.007506241540277,
+        "axial_mip_ssim": 0.3355042515709967,
+        "full_mae": 0.009067659118066729,
+        "full_psnr": 38.92358828711251,
+        "full_ssim": 0.8903816328144073
+      },
+      "new": {
+        "volume_mae": 0.013441844250934242,
+        "volume_psnr": 28.51723113206639,
+        "volume_ssim": 0.8625926363922317,
+        "axial_mip_mae": 0.09962364144121238,
+        "axial_mip_psnr": 18.131813962420416,
+        "axial_mip_ssim": 0.3381090716358022,
+        "full_mae": 0.006801448933060783,
+        "full_psnr": 40.983717348999626,
+        "full_ssim": 0.9336510443925857
+      },
+      "delta": {
+        "volume_mae": -0.00022334264715637153,
+        "volume_psnr": 0.6091767342676881,
+        "volume_ssim": -0.0035653620755614623,
+        "axial_mip_mae": -0.0016701164109917954,
+        "axial_mip_psnr": 0.12430772088013953,
+        "axial_mip_ssim": 0.002604820064805502,
+        "full_mae": -0.0022662101850059457,
+        "full_psnr": 2.0601290618871175,
+        "full_ssim": 0.04326941157817843
+      },
+      "gt_sha256": "651dfb36c2024904211713f1ef62c346c23c52b16bf87ff5001925e11ca86b14",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10355",
+      "patient_id": "10355",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.013673774864557075,
+        "volume_psnr": 29.431777044461352,
+        "volume_ssim": 0.8195642018093777,
+        "axial_mip_mae": 0.06319690088628249,
+        "axial_mip_psnr": 21.864111633028823,
+        "axial_mip_ssim": 0.3667077095842834,
+        "full_mae": 0.007945399276486853,
+        "full_psnr": 40.15299679363335,
+        "full_ssim": 0.925201973906517
+      },
+      "new": {
+        "volume_mae": 0.014381360955409355,
+        "volume_psnr": 30.08135087900222,
+        "volume_ssim": 0.7280811646156524,
+        "axial_mip_mae": 0.06450721464852904,
+        "axial_mip_psnr": 21.604989776530612,
+        "axial_mip_ssim": 0.3679950372255587,
+        "full_mae": 0.007323461007253229,
+        "full_psnr": 40.735357979318195,
+        "full_ssim": 0.9333028465824127
+      },
+      "delta": {
+        "volume_mae": 0.0007075860908522802,
+        "volume_psnr": 0.6495738345408668,
+        "volume_ssim": -0.0914830371937253,
+        "axial_mip_mae": 0.001310313762246551,
+        "axial_mip_psnr": -0.2591218564982114,
+        "axial_mip_ssim": 0.0012873276412753154,
+        "full_mae": -0.0006219382692336239,
+        "full_psnr": 0.5823611856848459,
+        "full_ssim": 0.008100872675895654
+      },
+      "gt_sha256": "48f4df105dd020ff78dc363254c70a10c6131bed32b0e54b05e704aeaffcdfb1",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10356",
+      "patient_id": "10356",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.011773422079540831,
+        "volume_psnr": 29.30003090451242,
+        "volume_ssim": 0.8870788204005136,
+        "axial_mip_mae": 0.07177706916422721,
+        "axial_mip_psnr": 20.99967266586647,
+        "axial_mip_ssim": 0.39400794370887027,
+        "full_mae": 0.007298428269407964,
+        "full_psnr": 40.82406776733532,
+        "full_ssim": 0.9301495516824723
+      },
+      "new": {
+        "volume_mae": 0.012890158032998427,
+        "volume_psnr": 30.19675324546082,
+        "volume_ssim": 0.8190723959378614,
+        "axial_mip_mae": 0.059893131712669856,
+        "axial_mip_psnr": 22.383588455887086,
+        "axial_mip_ssim": 0.4096625339672229,
+        "full_mae": 0.007851874449393392,
+        "full_psnr": 40.482956556104625,
+        "full_ssim": 0.9252129873313903
+      },
+      "delta": {
+        "volume_mae": 0.0011167359534575965,
+        "volume_psnr": 0.8967223409484006,
+        "volume_ssim": -0.06800642446265215,
+        "axial_mip_mae": -0.011883937451557358,
+        "axial_mip_psnr": 1.383915790020616,
+        "axial_mip_ssim": 0.01565459025835264,
+        "full_mae": 0.0005534461799854284,
+        "full_psnr": -0.34111121123069665,
+        "full_ssim": -0.004936564351081918
+      },
+      "gt_sha256": "d3a87261ee78fd11353f814b7dd1383079fee8f9946e05ccce802315efb37c95",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10358",
+      "patient_id": "10358",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.012897512774406483,
+        "volume_psnr": 28.705139128927406,
+        "volume_ssim": 0.8756852610593214,
+        "axial_mip_mae": 0.06971145569241344,
+        "axial_mip_psnr": 20.989533458383434,
+        "axial_mip_ssim": 0.34788562957028174,
+        "full_mae": 0.006551667183025245,
+        "full_psnr": 41.40667659450675,
+        "full_ssim": 0.9404989250383378
+      },
+      "new": {
+        "volume_mae": 0.014531537194596086,
+        "volume_psnr": 29.10634424316956,
+        "volume_ssim": 0.7877594764220196,
+        "axial_mip_mae": 0.0788562285883927,
+        "axial_mip_psnr": 20.00967823060593,
+        "axial_mip_ssim": 0.35226045194705563,
+        "full_mae": 0.00648587937558176,
+        "full_psnr": 41.47765728427538,
+        "full_ssim": 0.9435521965007782
+      },
+      "delta": {
+        "volume_mae": 0.0016340244201896031,
+        "volume_psnr": 0.40120511424215266,
+        "volume_ssim": -0.08792578463730183,
+        "axial_mip_mae": 0.009144772895979258,
+        "axial_mip_psnr": -0.9798552277775023,
+        "axial_mip_ssim": 0.00437482237677389,
+        "full_mae": -6.578780744348478e-05,
+        "full_psnr": 0.07098068976863203,
+        "full_ssim": 0.003053271462440388
+      },
+      "gt_sha256": "c9f1f44acda205dece652a9c18a5db27b033c1f35bbac674a3a88047148bf4ef",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10359",
+      "patient_id": "10359",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.013100809977541365,
+        "volume_psnr": 28.7823963462846,
+        "volume_ssim": 0.8766428686886785,
+        "axial_mip_mae": 0.06363858268332478,
+        "axial_mip_psnr": 21.68848852777909,
+        "axial_mip_ssim": 0.3036349261889049,
+        "full_mae": 0.005947775771119268,
+        "full_psnr": 42.490334698787336,
+        "full_ssim": 0.9531777361879349
+      },
+      "new": {
+        "volume_mae": 0.013245121086641894,
+        "volume_psnr": 29.26673287900455,
+        "volume_ssim": 0.8692003522442946,
+        "axial_mip_mae": 0.06891312537959493,
+        "axial_mip_psnr": 21.065800840461293,
+        "axial_mip_ssim": 0.3062222967232678,
+        "full_mae": 0.005311762810762843,
+        "full_psnr": 43.371741388032596,
+        "full_ssim": 0.9603035858287812
+      },
+      "delta": {
+        "volume_mae": 0.00014431110910052836,
+        "volume_psnr": 0.4843365327199507,
+        "volume_ssim": -0.007442516444383873,
+        "axial_mip_mae": 0.005274542696270146,
+        "axial_mip_psnr": -0.6226876873177964,
+        "axial_mip_ssim": 0.002587370534362865,
+        "full_mae": -0.0006360129603564246,
+        "full_psnr": 0.8814066892452601,
+        "full_ssim": 0.007125849640846282
+      },
+      "gt_sha256": "35ba59a36b927c11e5d342d4ad16884abbb097d64dc85896b5e288e1f5efbd4a",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10362",
+      "patient_id": "10362",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.010554819732807932,
+        "volume_psnr": 30.113216686329515,
+        "volume_ssim": 0.8879543529904788,
+        "axial_mip_mae": 0.061022798838621384,
+        "axial_mip_psnr": 22.111360483641995,
+        "axial_mip_ssim": 0.367484903838315,
+        "full_mae": 0.005065049239615149,
+        "full_psnr": 43.45447588924394,
+        "full_ssim": 0.9558983837289811
+      },
+      "new": {
+        "volume_mae": 0.010766225672294861,
+        "volume_psnr": 30.509966043332643,
+        "volume_ssim": 0.882625526945686,
+        "axial_mip_mae": 0.060572344270099165,
+        "axial_mip_psnr": 22.143679947748044,
+        "axial_mip_ssim": 0.3702877306742492,
+        "full_mae": 0.005053962993144978,
+        "full_psnr": 43.572601867536285,
+        "full_ssim": 0.9582919326705933
+      },
+      "delta": {
+        "volume_mae": 0.0002114059394869288,
+        "volume_psnr": 0.3967493570031273,
+        "volume_ssim": -0.005328826044792789,
+        "axial_mip_mae": -0.0004504545685222183,
+        "axial_mip_psnr": 0.03231946410604891,
+        "axial_mip_ssim": 0.0028028268359341912,
+        "full_mae": -1.108624647017109e-05,
+        "full_psnr": 0.11812597829234761,
+        "full_ssim": 0.0023935489416122557
+      },
+      "gt_sha256": "ce15d080edc584a82a5647edfe03dbd458a6f64f1cb40b2ef9088412b6cc974e",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10363",
+      "patient_id": "10363",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.011099074812884384,
+        "volume_psnr": 29.886681452418312,
+        "volume_ssim": 0.8672118153710634,
+        "axial_mip_mae": 0.06279421799820284,
+        "axial_mip_psnr": 21.709945194185323,
+        "axial_mip_ssim": 0.31795435519245885,
+        "full_mae": 0.005811813902973029,
+        "full_psnr": 42.840010337682756,
+        "full_ssim": 0.9394631493406296
+      },
+      "new": {
+        "volume_mae": 0.010888445286453639,
+        "volume_psnr": 30.428873021692194,
+        "volume_ssim": 0.8742813481255033,
+        "axial_mip_mae": 0.06625687188829943,
+        "axial_mip_psnr": 21.276817138704093,
+        "axial_mip_ssim": 0.31652295365255967,
+        "full_mae": 0.004895769921517967,
+        "full_psnr": 44.07025374539026,
+        "full_ssim": 0.9581303701314926
+      },
+      "delta": {
+        "volume_mae": -0.00021062952643074485,
+        "volume_psnr": 0.5421915692738821,
+        "volume_ssim": 0.007069532754439889,
+        "axial_mip_mae": 0.0034626538900965897,
+        "axial_mip_psnr": -0.43312805548123023,
+        "axial_mip_ssim": -0.0014314015398991797,
+        "full_mae": -0.0009160439814550614,
+        "full_psnr": 1.2302434077075048,
+        "full_ssim": 0.018667220790863026
+      },
+      "gt_sha256": "9bcec78360abfd61ebc66e0b757ac53c388975920a45530a545118f24181104b",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10365",
+      "patient_id": "10365",
+      "disease": "DR",
+      "old": {
+        "volume_mae": 0.01166664467733435,
+        "volume_psnr": 29.417279564954505,
+        "volume_ssim": 0.887012890255646,
+        "axial_mip_mae": 0.07442273828917223,
+        "axial_mip_psnr": 20.30647854391745,
+        "axial_mip_ssim": 0.32073541827256524,
+        "full_mae": 0.005603419014427402,
+        "full_psnr": 42.66225490033768,
+        "full_ssim": 0.9534972633390426
+      },
+      "new": {
+        "volume_mae": 0.012507068102735308,
+        "volume_psnr": 29.83390839318199,
+        "volume_ssim": 0.859105617708198,
+        "axial_mip_mae": 0.07022315948745472,
+        "axial_mip_psnr": 20.7068396470275,
+        "axial_mip_ssim": 0.3241089278741679,
+        "full_mae": 0.006272993508929403,
+        "full_psnr": 41.95121032961326,
+        "full_ssim": 0.9476156706657409
+      },
+      "delta": {
+        "volume_mae": 0.0008404234254009574,
+        "volume_psnr": 0.41662882822748415,
+        "volume_ssim": -0.02790727254744796,
+        "axial_mip_mae": -0.004199578801717507,
+        "axial_mip_psnr": 0.40036110311005046,
+        "axial_mip_ssim": 0.0033735096016026533,
+        "full_mae": 0.000669574494502001,
+        "full_psnr": -0.7110445707244182,
+        "full_ssim": -0.005881592673301683
+      },
+      "gt_sha256": "fad1278b6fab156a8404b82d195ca5b6ebdec881ce222392833dc7a2d3441394",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10367",
+      "patient_id": "10367",
+      "disease": "CNV",
+      "old": {
+        "volume_mae": 0.012673607234732159,
+        "volume_psnr": 28.125995764726422,
+        "volume_ssim": 0.8677705239380782,
+        "axial_mip_mae": 0.10363536855089706,
+        "axial_mip_psnr": 17.50124289637325,
+        "axial_mip_ssim": 0.26608100305386806,
+        "full_mae": 0.007667189408261166,
+        "full_psnr": 40.282316118446424,
+        "full_ssim": 0.904801087800026
+      },
+      "new": {
+        "volume_mae": 0.012295172694680103,
+        "volume_psnr": 28.656785238442573,
+        "volume_ssim": 0.8676648498110511,
+        "axial_mip_mae": 0.1069259934537854,
+        "axial_mip_psnr": 17.37058475095661,
+        "axial_mip_ssim": 0.2617852423665007,
+        "full_mae": 0.006997639296425717,
+        "full_psnr": 40.9471009796291,
+        "full_ssim": 0.9210625269842148
+      },
+      "delta": {
+        "volume_mae": -0.00037843454005205557,
+        "volume_psnr": 0.5307894737161512,
+        "volume_ssim": -0.0001056741270271111,
+        "axial_mip_mae": 0.0032906249028883394,
+        "axial_mip_psnr": -0.13065814541663912,
+        "axial_mip_ssim": -0.004295760687367367,
+        "full_mae": -0.0006695501118354485,
+        "full_psnr": 0.6647848611826745,
+        "full_ssim": 0.016261439184188764
+      },
+      "gt_sha256": "d6802968bf5ac9c85d3eb0881459fa5e95106ca8af2fa944732b97568b554c97",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10379",
+      "patient_id": "10379",
+      "disease": "DR",
+      "old": {
+        "volume_mae": 0.01037552402785666,
+        "volume_psnr": 30.046627198026773,
+        "volume_ssim": 0.8893119894217735,
+        "axial_mip_mae": 0.07401493192952557,
+        "axial_mip_psnr": 20.38465494391526,
+        "axial_mip_ssim": 0.3472749094177037,
+        "full_mae": 0.004948871184133452,
+        "full_psnr": 43.42684995686681,
+        "full_ssim": 0.9557379893970489
+      },
+      "new": {
+        "volume_mae": 0.011441227207100816,
+        "volume_psnr": 30.12788623342587,
+        "volume_ssim": 0.8549585051058154,
+        "axial_mip_mae": 0.08711232101524047,
+        "axial_mip_psnr": 19.063204918180908,
+        "axial_mip_ssim": 0.3424958946720827,
+        "full_mae": 0.004889672874746509,
+        "full_psnr": 43.52485631998019,
+        "full_ssim": 0.9566380692720413
+      },
+      "delta": {
+        "volume_mae": 0.0010657031792441554,
+        "volume_psnr": 0.08125903539909629,
+        "volume_ssim": -0.03435348431595808,
+        "axial_mip_mae": 0.013097389085714894,
+        "axial_mip_psnr": -1.3214500257343502,
+        "axial_mip_ssim": -0.004779014745621035,
+        "full_mae": -5.919830938694304e-05,
+        "full_psnr": 0.0980063631133774,
+        "full_ssim": 0.0009000798749924099
+      },
+      "gt_sha256": "cb53816c4065438a35ca56449e418cb66619e149b4f9a66c5e0f295d82afe7a5",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10394",
+      "patient_id": "10394",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.01318179135765039,
+        "volume_psnr": 28.827861698320632,
+        "volume_ssim": 0.8733077968943934,
+        "axial_mip_mae": 0.08680062198959604,
+        "axial_mip_psnr": 19.223980849585658,
+        "axial_mip_ssim": 0.3288497721142504,
+        "full_mae": 0.0057821114028087095,
+        "full_psnr": 42.78019836917629,
+        "full_ssim": 0.9537577580595017
+      },
+      "new": {
+        "volume_mae": 0.015210778401532114,
+        "volume_psnr": 29.028415586658358,
+        "volume_ssim": 0.8004696160766601,
+        "axial_mip_mae": 0.09071352856778958,
+        "axial_mip_psnr": 18.919086476732705,
+        "axial_mip_ssim": 0.3343125932000972,
+        "full_mae": 0.005955464756411288,
+        "full_psnr": 42.422992690609306,
+        "full_ssim": 0.955755357140541
+      },
+      "delta": {
+        "volume_mae": 0.002028987043881724,
+        "volume_psnr": 0.20055388833772625,
+        "volume_ssim": -0.0728381808177333,
+        "axial_mip_mae": 0.003912906578193542,
+        "axial_mip_psnr": -0.30489437285295296,
+        "axial_mip_ssim": 0.005462821085846781,
+        "full_mae": 0.00017335335360257886,
+        "full_psnr": -0.3572056785669844,
+        "full_ssim": 0.0019975990810393585
+      },
+      "gt_sha256": "0b0844e6c0031305e973bc78adb98220d0c70d182e59ac147414c95f3bcbde7b",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10395",
+      "patient_id": "10395",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.014234642266382812,
+        "volume_psnr": 28.476921874280904,
+        "volume_ssim": 0.8498805539051469,
+        "axial_mip_mae": 0.09229681098850051,
+        "axial_mip_psnr": 18.959923772266215,
+        "axial_mip_ssim": 0.33026282541563573,
+        "full_mae": 0.009730558682477408,
+        "full_psnr": 38.826065066802705,
+        "full_ssim": 0.8951446223917008
+      },
+      "new": {
+        "volume_mae": 0.012866845811385901,
+        "volume_psnr": 29.013215995371052,
+        "volume_ssim": 0.8726539476939726,
+        "axial_mip_mae": 0.09687620334921121,
+        "axial_mip_psnr": 18.627977831895087,
+        "axial_mip_ssim": 0.32711234817019325,
+        "full_mae": 0.007967700908714903,
+        "full_psnr": 40.158364249090795,
+        "full_ssim": 0.9257449715194702
+      },
+      "delta": {
+        "volume_mae": -0.001367796454996911,
+        "volume_psnr": 0.5362941210901475,
+        "volume_ssim": 0.022773393788825702,
+        "axial_mip_mae": 0.004579392360710699,
+        "axial_mip_psnr": -0.3319459403711278,
+        "axial_mip_ssim": -0.0031504772454424845,
+        "full_mae": -0.001762857773762505,
+        "full_psnr": 1.3322991822880894,
+        "full_ssim": 0.030600349127769433
+      },
+      "gt_sha256": "bd242ec5694db1a3720f916c879309c8a87c51135ccafb8e698e98e50b0ea07d",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10404",
+      "patient_id": "10404",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.018469385889768382,
+        "volume_psnr": 28.862929114432298,
+        "volume_ssim": 0.6193024159567261,
+        "axial_mip_mae": 0.06968307465456292,
+        "axial_mip_psnr": 20.992553423006456,
+        "axial_mip_ssim": 0.39041042361843237,
+        "full_mae": 0.013679988832649315,
+        "full_psnr": 36.30267830358139,
+        "full_ssim": 0.8630346353378295
+      },
+      "new": {
+        "volume_mae": 0.01729853081815686,
+        "volume_psnr": 29.834759497011362,
+        "volume_ssim": 0.5819157481784224,
+        "axial_mip_mae": 0.06655267136818566,
+        "axial_mip_psnr": 21.327809571317182,
+        "axial_mip_ssim": 0.39322938442620553,
+        "full_mae": 0.010198923421128825,
+        "full_psnr": 38.53886817518653,
+        "full_ssim": 0.901403092385292
+      },
+      "delta": {
+        "volume_mae": -0.0011708550716115207,
+        "volume_psnr": 0.9718303825790642,
+        "volume_ssim": -0.037386667778303684,
+        "axial_mip_mae": -0.003130403286377259,
+        "axial_mip_psnr": 0.3352561483107266,
+        "axial_mip_ssim": 0.002818960807773163,
+        "full_mae": -0.0034810654115204898,
+        "full_psnr": 2.2361898716051414,
+        "full_ssim": 0.0383684570474625
+      },
+      "gt_sha256": "fc3ca6faab1f8cf3c44362c8b3889357b3bd1489e150112b5680d518d005ee2e",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10410",
+      "patient_id": "10410",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.012458057792823041,
+        "volume_psnr": 29.959073860714657,
+        "volume_ssim": 0.8568921136274252,
+        "axial_mip_mae": 0.06481060218823131,
+        "axial_mip_psnr": 21.813031858519324,
+        "axial_mip_ssim": 0.3719149360116618,
+        "full_mae": 0.007468919622127146,
+        "full_psnr": 40.663192431461525,
+        "full_ssim": 0.9331433472299576
+      },
+      "new": {
+        "volume_mae": 0.014741874232419263,
+        "volume_psnr": 30.640452934592087,
+        "volume_ssim": 0.6921515761757099,
+        "axial_mip_mae": 0.058139767689908695,
+        "axial_mip_psnr": 22.59434683916068,
+        "axial_mip_ssim": 0.37232705201219746,
+        "full_mae": 0.008643365053742968,
+        "full_psnr": 39.82597099591371,
+        "full_ssim": 0.9205377611751556
+      },
+      "delta": {
+        "volume_mae": 0.0022838164395962215,
+        "volume_psnr": 0.6813790738774301,
+        "volume_ssim": -0.16474053745171535,
+        "axial_mip_mae": -0.00667083449832262,
+        "axial_mip_psnr": 0.7813149806413549,
+        "axial_mip_ssim": 0.000412116000535645,
+        "full_mae": 0.0011744454316158226,
+        "full_psnr": -0.8372214355478178,
+        "full_ssim": -0.012605586054801998
+      },
+      "gt_sha256": "46c44c8dfdd3000f083d720d02a1d1fbf33ae33cd2526e56f3ba72fdfc25eba8",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10415",
+      "patient_id": "10415",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.011680964737379423,
+        "volume_psnr": 29.31781230674552,
+        "volume_ssim": 0.8857291201511741,
+        "axial_mip_mae": 0.0741146425871193,
+        "axial_mip_psnr": 20.445588428341814,
+        "axial_mip_ssim": 0.3298815654257446,
+        "full_mae": 0.005600624823138389,
+        "full_psnr": 42.71153640422995,
+        "full_ssim": 0.9515744340047836
+      },
+      "new": {
+        "volume_mae": 0.013046504390895157,
+        "volume_psnr": 29.73150233063969,
+        "volume_ssim": 0.8179215270985095,
+        "axial_mip_mae": 0.07919977519463828,
+        "axial_mip_psnr": 19.88049621505565,
+        "axial_mip_ssim": 0.3271767652923077,
+        "full_mae": 0.005670446617173752,
+        "full_psnr": 42.61350417299162,
+        "full_ssim": 0.9524502514333725
+      },
+      "delta": {
+        "volume_mae": 0.0013655396535157335,
+        "volume_psnr": 0.4136900238941692,
+        "volume_ssim": -0.0678075930526646,
+        "axial_mip_mae": 0.005085132607518972,
+        "axial_mip_psnr": -0.5650922132861638,
+        "axial_mip_ssim": -0.00270480013343688,
+        "full_mae": 6.982179403536293e-05,
+        "full_psnr": -0.09803223123833504,
+        "full_ssim": 0.0008758174285888876
+      },
+      "gt_sha256": "6d866ba2f9dce66454ce5876ae2bc2a58427df09c10e86f6e35dbd3180a096a1",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10420",
+      "patient_id": "10420",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.011966252872556085,
+        "volume_psnr": 29.072243491589806,
+        "volume_ssim": 0.8891568801232388,
+        "axial_mip_mae": 0.08834789943284704,
+        "axial_mip_psnr": 19.064988181823384,
+        "axial_mip_ssim": 0.34811235754612335,
+        "full_mae": 0.006350175847366302,
+        "full_psnr": 41.841427057911524,
+        "full_ssim": 0.9435133263301849
+      },
+      "new": {
+        "volume_mae": 0.012287634342948467,
+        "volume_psnr": 29.661635965184374,
+        "volume_ssim": 0.8657957803383631,
+        "axial_mip_mae": 0.07724709630281268,
+        "axial_mip_psnr": 19.960846941456918,
+        "axial_mip_ssim": 0.34861460389795734,
+        "full_mae": 0.00650191531656219,
+        "full_psnr": 41.56710313263457,
+        "full_ssim": 0.9437181635789871
+      },
+      "delta": {
+        "volume_mae": 0.0003213814703923821,
+        "volume_psnr": 0.5893924735945681,
+        "volume_ssim": -0.02336109978487566,
+        "axial_mip_mae": -0.011100803130034365,
+        "axial_mip_psnr": 0.8958587596335335,
+        "axial_mip_ssim": 0.0005022463518339904,
+        "full_mae": 0.00015173946919588843,
+        "full_psnr": -0.2743239252769527,
+        "full_ssim": 0.0002048372488021588
+      },
+      "gt_sha256": "b2d0098b4dfbebe07de2ed8ce3bd42e9ed550d5ccf08c4824015176812862402",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10421",
+      "patient_id": "10421",
+      "disease": "DR",
+      "old": {
+        "volume_mae": 0.012661081480252558,
+        "volume_psnr": 28.80367366619657,
+        "volume_ssim": 0.8783934054339383,
+        "axial_mip_mae": 0.08004814353387246,
+        "axial_mip_psnr": 19.696282713769836,
+        "axial_mip_ssim": 0.3333480759443245,
+        "full_mae": 0.006835887626884585,
+        "full_psnr": 41.085045518374244,
+        "full_ssim": 0.9387392729883194
+      },
+      "new": {
+        "volume_mae": 0.012634625690227254,
+        "volume_psnr": 29.41941424574623,
+        "volume_ssim": 0.8609594364491675,
+        "axial_mip_mae": 0.07976986595747348,
+        "axial_mip_psnr": 19.81715701179082,
+        "axial_mip_ssim": 0.33293653758848285,
+        "full_mae": 0.005925963382097166,
+        "full_psnr": 42.161112167511334,
+        "full_ssim": 0.9485464974451066
+      },
+      "delta": {
+        "volume_mae": -2.6455790025303738e-05,
+        "volume_psnr": 0.6157405795496587,
+        "volume_ssim": -0.017433968984770787,
+        "axial_mip_mae": -0.00027827757639897754,
+        "axial_mip_psnr": 0.1208742980209827,
+        "axial_mip_ssim": -0.000411538355841623,
+        "full_mae": -0.000909924244787419,
+        "full_psnr": 1.0760666491370898,
+        "full_ssim": 0.009807224456787167
+      },
+      "gt_sha256": "cf881f58051c3fcf65d6d4670ff7c0d21b2924ae7f72a8a8697b8b4e332e8d3f",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10423",
+      "patient_id": "10423",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.016789013874903155,
+        "volume_psnr": 27.97146378107424,
+        "volume_ssim": 0.800721488176336,
+        "axial_mip_mae": 0.08884598652207387,
+        "axial_mip_psnr": 19.00738351563569,
+        "axial_mip_ssim": 0.352556569189047,
+        "full_mae": 0.007188680915447776,
+        "full_psnr": 40.80203002318939,
+        "full_ssim": 0.9347652281198502
+      },
+      "new": {
+        "volume_mae": 0.019587054485848486,
+        "volume_psnr": 27.884627937072068,
+        "volume_ssim": 0.6447016674469374,
+        "axial_mip_mae": 0.10217779568233709,
+        "axial_mip_psnr": 17.99917854319039,
+        "axial_mip_ssim": 0.35071158410360026,
+        "full_mae": 0.0075579433541577146,
+        "full_psnr": 40.59405384717109,
+        "full_ssim": 0.9329997339630127
+      },
+      "delta": {
+        "volume_mae": 0.0027980406109453307,
+        "volume_psnr": -0.0868358440021737,
+        "volume_ssim": -0.15601982072939868,
+        "axial_mip_mae": 0.01333180916026322,
+        "axial_mip_psnr": -1.0082049724453022,
+        "axial_mip_ssim": -0.0018449850854467265,
+        "full_mae": 0.0003692624387099386,
+        "full_psnr": -0.20797617601829899,
+        "full_ssim": -0.001765494156837466
+      },
+      "gt_sha256": "ca3b60df7e52e8314fb5065c3e089967a35d45de2a3bcca61bb66e5899541c0a",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10425",
+      "patient_id": "10425",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.012464901977646907,
+        "volume_psnr": 29.097408050307997,
+        "volume_ssim": 0.879084808439816,
+        "axial_mip_mae": 0.07564178996170767,
+        "axial_mip_psnr": 20.325740311522186,
+        "axial_mip_ssim": 0.3252149676182779,
+        "full_mae": 0.006943063328336052,
+        "full_psnr": 41.077850793819124,
+        "full_ssim": 0.9362562194843292
+      },
+      "new": {
+        "volume_mae": 0.014065219838174416,
+        "volume_psnr": 29.67163012533135,
+        "volume_ssim": 0.7882759848496764,
+        "axial_mip_mae": 0.06957340349100605,
+        "axial_mip_psnr": 20.948908923634537,
+        "axial_mip_ssim": 0.3223649060679628,
+        "full_mae": 0.007476010878903594,
+        "full_psnr": 40.4680861516055,
+        "full_ssim": 0.9332768042793274
+      },
+      "delta": {
+        "volume_mae": 0.001600317860527509,
+        "volume_psnr": 0.5742220750233535,
+        "volume_ssim": -0.09080882359013953,
+        "axial_mip_mae": -0.0060683864707016255,
+        "axial_mip_psnr": 0.6231686121123516,
+        "axial_mip_ssim": -0.002850061550315086,
+        "full_mae": 0.0005329475505675418,
+        "full_psnr": -0.6097646422136265,
+        "full_ssim": -0.0029794152050018896
+      },
+      "gt_sha256": "eb5fb33f06a0b6e630d678902a4e52a442315ab3c40b2ab8861cb6c5d287e86b",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10430",
+      "patient_id": "10430",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.020801225081647907,
+        "volume_psnr": 27.82111170422692,
+        "volume_ssim": 0.6481502956880375,
+        "axial_mip_mae": 0.07337518583869951,
+        "axial_mip_psnr": 20.481340302435854,
+        "axial_mip_ssim": 0.28434215938368534,
+        "full_mae": 0.012494474012910928,
+        "full_psnr": 36.68796821518284,
+        "full_ssim": 0.9177184781799317
+      },
+      "new": {
+        "volume_mae": 0.020574023582718936,
+        "volume_psnr": 28.30582669111803,
+        "volume_ssim": 0.5794567085568018,
+        "axial_mip_mae": 0.07933014291882046,
+        "axial_mip_psnr": 19.86994053098767,
+        "axial_mip_ssim": 0.28645191588069757,
+        "full_mae": 0.010528590151650974,
+        "full_psnr": 38.135477965386855,
+        "full_ssim": 0.9294672501392365
+      },
+      "delta": {
+        "volume_mae": -0.00022720149892897085,
+        "volume_psnr": 0.4847149868911096,
+        "volume_ssim": -0.06869358713123574,
+        "axial_mip_mae": 0.005954957080120948,
+        "axial_mip_psnr": -0.611399771448184,
+        "axial_mip_ssim": 0.0021097564970122273,
+        "full_mae": -0.001965883861259954,
+        "full_psnr": 1.4475097502040128,
+        "full_ssim": 0.011748771959304793
+      },
+      "gt_sha256": "d2c4aa3e615f3293a497f43a3126a419d56033a313643faa88e3dc9dfcef42e0",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10433",
+      "patient_id": "10433",
+      "disease": "DR",
+      "old": {
+        "volume_mae": 0.012314775623633045,
+        "volume_psnr": 28.743697987554224,
+        "volume_ssim": 0.8761939967680328,
+        "axial_mip_mae": 0.08806600453368674,
+        "axial_mip_psnr": 18.970712409898557,
+        "axial_mip_ssim": 0.28975538334344036,
+        "full_mae": 0.007345657058380084,
+        "full_psnr": 40.58476767727127,
+        "full_ssim": 0.9267625843248367
+      },
+      "new": {
+        "volume_mae": 0.013023562207330825,
+        "volume_psnr": 28.38626962493126,
+        "volume_ssim": 0.8709080394905825,
+        "axial_mip_mae": 0.10769556271549163,
+        "axial_mip_psnr": 17.489545004869047,
+        "axial_mip_ssim": 0.2807643396487145,
+        "full_mae": 0.00855837721718089,
+        "full_psnr": 39.415110963279034,
+        "full_ssim": 0.9059235503320694
+      },
+      "delta": {
+        "volume_mae": 0.0007087865836977805,
+        "volume_psnr": -0.35742836262296507,
+        "volume_ssim": -0.005285957277450293,
+        "axial_mip_mae": 0.019629558181804896,
+        "axial_mip_psnr": -1.4811674050295096,
+        "axial_mip_ssim": -0.008991043694725864,
+        "full_mae": 0.0012127201588008063,
+        "full_psnr": -1.1696567139922394,
+        "full_ssim": -0.02083903399276732
+      },
+      "gt_sha256": "40c07506bf2207ad48d8ca4587e9368013bc1ce4c2f36647e8ee055e006b4731",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10446",
+      "patient_id": "10446",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.012335252268135545,
+        "volume_psnr": 29.378417507479373,
+        "volume_ssim": 0.8837095278364319,
+        "axial_mip_mae": 0.06009177095791074,
+        "axial_mip_psnr": 22.291640410890228,
+        "axial_mip_ssim": 0.325724420407192,
+        "full_mae": 0.0058275526636677455,
+        "full_psnr": 42.47820020014796,
+        "full_ssim": 0.9509942934131622
+      },
+      "new": {
+        "volume_mae": 0.01316859785413955,
+        "volume_psnr": 29.817016077323657,
+        "volume_ssim": 0.8482140774985035,
+        "axial_mip_mae": 0.06272479916026441,
+        "axial_mip_psnr": 21.936574211801236,
+        "axial_mip_ssim": 0.32382979867875206,
+        "full_mae": 0.005578156507624499,
+        "full_psnr": 43.00949663779832,
+        "full_ssim": 0.9542390641222
+      },
+      "delta": {
+        "volume_mae": 0.000833345586004005,
+        "volume_psnr": 0.43859856984428447,
+        "volume_ssim": -0.035495450337928336,
+        "axial_mip_mae": 0.002633028202353671,
+        "axial_mip_psnr": -0.3550661990889914,
+        "axial_mip_ssim": -0.0018946217284399602,
+        "full_mae": -0.0002493961560432467,
+        "full_psnr": 0.5312964376503615,
+        "full_ssim": 0.0032447707090378364
+      },
+      "gt_sha256": "ee1c2b472cb044cf8c2316370d772ee0978e72ad8c968bfb441c21fc476bd22d",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10448",
+      "patient_id": "10448",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.015235609978101002,
+        "volume_psnr": 26.83665355246253,
+        "volume_ssim": 0.847672963797463,
+        "axial_mip_mae": 0.13507875327570673,
+        "axial_mip_psnr": 16.050537421244947,
+        "axial_mip_ssim": 0.2929290560933875,
+        "full_mae": 0.013377453246615545,
+        "full_psnr": 36.33016351341722,
+        "full_ssim": 0.7806468406186103
+      },
+      "new": {
+        "volume_mae": 0.013421892587902067,
+        "volume_psnr": 27.602313371666078,
+        "volume_ssim": 0.8729584515329664,
+        "axial_mip_mae": 0.12651166194018515,
+        "axial_mip_psnr": 16.501404612927516,
+        "axial_mip_ssim": 0.2946949180900305,
+        "full_mae": 0.010767159162945461,
+        "full_psnr": 37.78821404862722,
+        "full_ssim": 0.8579551466169357
+      },
+      "delta": {
+        "volume_mae": -0.001813717390198935,
+        "volume_psnr": 0.7656598192035489,
+        "volume_ssim": 0.02528548773550332,
+        "axial_mip_mae": -0.008567091335521582,
+        "axial_mip_psnr": 0.45086719168256906,
+        "axial_mip_ssim": 0.0017658619966430256,
+        "full_mae": -0.002610294083670084,
+        "full_psnr": 1.458050535209999,
+        "full_ssim": 0.07730830599832539
+      },
+      "gt_sha256": "338ecf06f545211c1a4dbdc7e2e92f1d45731c43a25f1ee628d007ff084ad0c3",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10454",
+      "patient_id": "10454",
+      "disease": "DR",
+      "old": {
+        "volume_mae": 0.015388365577209316,
+        "volume_psnr": 27.496476676618542,
+        "volume_ssim": 0.8286019236522812,
+        "axial_mip_mae": 0.11412719056249898,
+        "axial_mip_psnr": 16.59624028998313,
+        "axial_mip_ssim": 0.19165140053297489,
+        "full_mae": 0.008215098431231027,
+        "full_psnr": 39.19067775371576,
+        "full_ssim": 0.9118517909164429
+      },
+      "new": {
+        "volume_mae": 0.014795618429185052,
+        "volume_psnr": 28.546844012046904,
+        "volume_ssim": 0.7851535948840082,
+        "axial_mip_mae": 0.10845970652735559,
+        "axial_mip_psnr": 17.058184930061977,
+        "axial_mip_ssim": 0.20613883467045682,
+        "full_mae": 0.006630805113342575,
+        "full_psnr": 41.17889557364936,
+        "full_ssim": 0.9347317167387008
+      },
+      "delta": {
+        "volume_mae": -0.0005927471480242641,
+        "volume_psnr": 1.050367335428362,
+        "volume_ssim": -0.04344832876827309,
+        "axial_mip_mae": -0.005667484035143389,
+        "axial_mip_psnr": 0.4619446400788476,
+        "axial_mip_ssim": 0.014487434137481936,
+        "full_mae": -0.0015842933178884522,
+        "full_psnr": 1.9882178199336025,
+        "full_ssim": 0.02287992582225795
+      },
+      "gt_sha256": "6c88e3d64c67429591a3c39e8ea5625ad44c1ce3f84825a420018809d4a1fef5",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10460",
+      "patient_id": "10460",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.012522369970948497,
+        "volume_psnr": 29.41751144182833,
+        "volume_ssim": 0.8869493363371567,
+        "axial_mip_mae": 0.0671209597716711,
+        "axial_mip_psnr": 21.356681175830296,
+        "axial_mip_ssim": 0.319591050861659,
+        "full_mae": 0.005548246279186486,
+        "full_psnr": 42.90141596090617,
+        "full_ssim": 0.9594006541986465
+      },
+      "new": {
+        "volume_mae": 0.01516954282101073,
+        "volume_psnr": 29.686257636211145,
+        "volume_ssim": 0.7659498195252457,
+        "axial_mip_mae": 0.06182211646199676,
+        "axial_mip_psnr": 21.896169129479492,
+        "axial_mip_ssim": 0.3166977666126158,
+        "full_mae": 0.007540208299968043,
+        "full_psnr": 40.69950111500556,
+        "full_ssim": 0.9453858119707108
+      },
+      "delta": {
+        "volume_mae": 0.002647172850062232,
+        "volume_psnr": 0.268746194382814,
+        "volume_ssim": -0.12099951681191101,
+        "axial_mip_mae": -0.005298843309674339,
+        "axial_mip_psnr": 0.5394879536491963,
+        "axial_mip_ssim": -0.0028932842490432265,
+        "full_mae": 0.001991962020781557,
+        "full_psnr": -2.2019148459006104,
+        "full_ssim": -0.014014842227935698
+      },
+      "gt_sha256": "623c08a0f9528c37eac7f574100a4b6b82f3d08393124cb140ae6678077f6076",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10467",
+      "patient_id": "10467",
+      "disease": "DR",
+      "old": {
+        "volume_mae": 0.012287636398409713,
+        "volume_psnr": 28.593324012979956,
+        "volume_ssim": 0.8567953178598401,
+        "axial_mip_mae": 0.08383490644791891,
+        "axial_mip_psnr": 19.19314876717015,
+        "axial_mip_ssim": 0.2961287668469806,
+        "full_mae": 0.006794638349658655,
+        "full_psnr": 40.64434999758522,
+        "full_ssim": 0.9203997605686188
+      },
+      "new": {
+        "volume_mae": 0.012140005355296933,
+        "volume_psnr": 29.091450985827034,
+        "volume_ssim": 0.8515922106446205,
+        "axial_mip_mae": 0.08366103734931585,
+        "axial_mip_psnr": 19.20678448621029,
+        "axial_mip_ssim": 0.28790549116393854,
+        "full_mae": 0.0064113712310422954,
+        "full_psnr": 41.063222368804986,
+        "full_ssim": 0.9315068470945358
+      },
+      "delta": {
+        "volume_mae": -0.00014763104311277947,
+        "volume_psnr": 0.4981269728470785,
+        "volume_ssim": -0.005203107215219549,
+        "axial_mip_mae": -0.00017386909860306332,
+        "axial_mip_psnr": 0.013635719040138383,
+        "axial_mip_ssim": -0.008223275683042042,
+        "full_mae": -0.0003832671186163594,
+        "full_psnr": 0.41887237121976284,
+        "full_ssim": 0.011107086525916965
+      },
+      "gt_sha256": "63eb4f06ddc598eb0d70d6f91bced45e3209faa53a2787eb0e65910257c933d8",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10472",
+      "patient_id": "10472",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.011487714446428432,
+        "volume_psnr": 29.141492118169914,
+        "volume_ssim": 0.8905244930329127,
+        "axial_mip_mae": 0.07268870711067166,
+        "axial_mip_psnr": 20.6540596228201,
+        "axial_mip_ssim": 0.31798010998739584,
+        "full_mae": 0.006064565656213716,
+        "full_psnr": 42.10221020348777,
+        "full_ssim": 0.9416469706993102
+      },
+      "new": {
+        "volume_mae": 0.012989715863935325,
+        "volume_psnr": 29.563316172198398,
+        "volume_ssim": 0.8225154662325825,
+        "axial_mip_mae": 0.07492358242558339,
+        "axial_mip_psnr": 20.310660623795776,
+        "axial_mip_ssim": 0.3200714620636152,
+        "full_mae": 0.006052271173121682,
+        "full_psnr": 42.245615731621044,
+        "full_ssim": 0.9426306061992645
+      },
+      "delta": {
+        "volume_mae": 0.001502001417506893,
+        "volume_psnr": 0.4218240540284839,
+        "volume_ssim": -0.06800902680033016,
+        "axial_mip_mae": 0.002234875314911733,
+        "axial_mip_psnr": -0.34339899902432336,
+        "axial_mip_ssim": 0.002091352076219355,
+        "full_mae": -1.2294483092034625e-05,
+        "full_psnr": 0.1434055281332718,
+        "full_ssim": 0.000983635499954283
+      },
+      "gt_sha256": "9ead696accf10fc7d100f88b71ad0c6b422823d9d804d9482243745de0578a09",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10475",
+      "patient_id": "10475",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.01075869471859037,
+        "volume_psnr": 30.082796691855872,
+        "volume_ssim": 0.8930585162200582,
+        "axial_mip_mae": 0.07147269407823842,
+        "axial_mip_psnr": 20.75677634284161,
+        "axial_mip_ssim": 0.3690495600807039,
+        "full_mae": 0.005145813679817479,
+        "full_psnr": 43.75364922165744,
+        "full_ssim": 0.958140327460289
+      },
+      "new": {
+        "volume_mae": 0.012923999237044306,
+        "volume_psnr": 30.34893286322569,
+        "volume_ssim": 0.7979368580462285,
+        "axial_mip_mae": 0.07421997456958707,
+        "axial_mip_psnr": 20.475916445829597,
+        "axial_mip_ssim": 0.3734488920593935,
+        "full_mae": 0.004897394482618722,
+        "full_psnr": 43.969998577736355,
+        "full_ssim": 0.9656730491876602
+      },
+      "delta": {
+        "volume_mae": 0.002165304518453936,
+        "volume_psnr": 0.26613617136981915,
+        "volume_ssim": -0.09512165817382967,
+        "axial_mip_mae": 0.002747280491348647,
+        "axial_mip_psnr": -0.2808598970120144,
+        "axial_mip_ssim": 0.004399331978689636,
+        "full_mae": -0.00024841919719875705,
+        "full_psnr": 0.21634935607891492,
+        "full_ssim": 0.007532721727371183
+      },
+      "gt_sha256": "87cb31c9f32c7d62fe71a7c6de17d65db35c4d8954103f771a622a694dd64324",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10476",
+      "patient_id": "10476",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.011637801761570142,
+        "volume_psnr": 30.60351317996225,
+        "volume_ssim": 0.8448745660239909,
+        "axial_mip_mae": 0.06023009410944269,
+        "axial_mip_psnr": 22.149807417745183,
+        "axial_mip_ssim": 0.3718254174046527,
+        "full_mae": 0.00486324789953585,
+        "full_psnr": 43.99189756278864,
+        "full_ssim": 0.9635109812526703
+      },
+      "new": {
+        "volume_mae": 0.012417082646597539,
+        "volume_psnr": 30.66840351264773,
+        "volume_ssim": 0.7978962485928477,
+        "axial_mip_mae": 0.07192805101681188,
+        "axial_mip_psnr": 20.80018411328908,
+        "axial_mip_ssim": 0.3699198357495844,
+        "full_mae": 0.00475796580173693,
+        "full_psnr": 44.18794366509733,
+        "full_ssim": 0.9641233588104248
+      },
+      "delta": {
+        "volume_mae": 0.0007792808850273971,
+        "volume_psnr": 0.06489033268547928,
+        "volume_ssim": -0.046978317431143224,
+        "axial_mip_mae": 0.01169795690736919,
+        "axial_mip_psnr": -1.3496233044561023,
+        "axial_mip_ssim": -0.001905581655068267,
+        "full_mae": -0.00010528209779891995,
+        "full_psnr": 0.19604610230869213,
+        "full_ssim": 0.000612377557754451
+      },
+      "gt_sha256": "719dc2c67eec394f9ad3d5e7c29ab35a8fbfa3acc5c6493dcc4638efc223c9d3",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10484",
+      "patient_id": "10484",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.013549470734885135,
+        "volume_psnr": 29.512791166628332,
+        "volume_ssim": 0.8361651213372979,
+        "axial_mip_mae": 0.07024566242932906,
+        "axial_mip_psnr": 20.81642438013487,
+        "axial_mip_ssim": 0.4101120939913569,
+        "full_mae": 0.005804533377748555,
+        "full_psnr": 42.54185378506966,
+        "full_ssim": 0.9560275879669189
+      },
+      "new": {
+        "volume_mae": 0.014496154530852732,
+        "volume_psnr": 30.05995934480053,
+        "volume_ssim": 0.7232225183828654,
+        "axial_mip_mae": 0.07639101573079188,
+        "axial_mip_psnr": 20.143903657561367,
+        "axial_mip_ssim": 0.4164001458311656,
+        "full_mae": 0.005600205865256669,
+        "full_psnr": 42.936551761164395,
+        "full_ssim": 0.9582965070543289
+      },
+      "delta": {
+        "volume_mae": 0.0009466837959675976,
+        "volume_psnr": 0.5471681781721962,
+        "volume_ssim": -0.11294260295443248,
+        "axial_mip_mae": 0.006145353301462819,
+        "axial_mip_psnr": -0.6725207225735019,
+        "axial_mip_ssim": 0.006288051839808684,
+        "full_mae": -0.0002043275124918864,
+        "full_psnr": 0.3946979760947329,
+        "full_ssim": 0.002268919087410004
+      },
+      "gt_sha256": "e284019dc4e60e12c392b9eb6744722e78babd2b863a1b59a44054dd205faee6",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10494",
+      "patient_id": "10494",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.013267052848659646,
+        "volume_psnr": 28.534179982315024,
+        "volume_ssim": 0.864444654637883,
+        "axial_mip_mae": 0.09367371453470241,
+        "axial_mip_psnr": 18.581773570744424,
+        "axial_mip_ssim": 0.3519479054764786,
+        "full_mae": 0.008182156101952387,
+        "full_psnr": 40.08863133268585,
+        "full_ssim": 0.9219655387649536
+      },
+      "new": {
+        "volume_mae": 0.013484046652539805,
+        "volume_psnr": 29.005556565392805,
+        "volume_ssim": 0.8584033629447662,
+        "axial_mip_mae": 0.09165718206077145,
+        "axial_mip_psnr": 18.75470832064835,
+        "axial_mip_ssim": 0.35559817994742293,
+        "full_mae": 0.005682398246193543,
+        "full_psnr": 42.67751433951861,
+        "full_ssim": 0.9548063763694763
+      },
+      "delta": {
+        "volume_mae": 0.00021699380388015901,
+        "volume_psnr": 0.47137658307778096,
+        "volume_ssim": -0.006041291693116846,
+        "axial_mip_mae": -0.0020165324739309654,
+        "axial_mip_psnr": 0.1729347499039271,
+        "axial_mip_ssim": 0.003650274470944348,
+        "full_mae": -0.002499757855758844,
+        "full_psnr": 2.5888830068327593,
+        "full_ssim": 0.03284083760452272
+      },
+      "gt_sha256": "02785c072b599d361fcd66f02defc51babc8797695a2ae5fa0d9c02ddbc3a0af",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10497",
+      "patient_id": "10497",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.014020124564345832,
+        "volume_psnr": 28.76252064451902,
+        "volume_ssim": 0.873653216548145,
+        "axial_mip_mae": 0.07115489106581663,
+        "axial_mip_psnr": 20.815977772772097,
+        "axial_mip_ssim": 0.2845021828934321,
+        "full_mae": 0.006494546141823321,
+        "full_psnr": 41.60691458665524,
+        "full_ssim": 0.9515166718883514
+      },
+      "new": {
+        "volume_mae": 0.016467908956046717,
+        "volume_psnr": 28.985763851798346,
+        "volume_ssim": 0.7614503006120714,
+        "axial_mip_mae": 0.07493160061812887,
+        "axial_mip_psnr": 20.414892049584815,
+        "axial_mip_ssim": 0.28589732357181963,
+        "full_mae": 0.007734834732360696,
+        "full_psnr": 40.39883691806853,
+        "full_ssim": 0.9448787406549454
+      },
+      "delta": {
+        "volume_mae": 0.002447784391700885,
+        "volume_psnr": 0.22324320727932445,
+        "volume_ssim": -0.11220291593607357,
+        "axial_mip_mae": 0.0037767095523122407,
+        "axial_mip_psnr": -0.40108572318728264,
+        "axial_mip_ssim": 0.0013951406783875298,
+        "full_mae": 0.001240288590537375,
+        "full_psnr": -1.2080776685867107,
+        "full_ssim": -0.006637931233406058
+      },
+      "gt_sha256": "37935be1960a836506ec5104cab57ce5ff8a67236d16f32703c39e18fe0f2f92",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10498",
+      "patient_id": "10498",
+      "disease": "NORMAL",
+      "old": {
+        "volume_mae": 0.014129892955324842,
+        "volume_psnr": 28.357074417069583,
+        "volume_ssim": 0.8752871544932347,
+        "axial_mip_mae": 0.08277546297370009,
+        "axial_mip_psnr": 19.639903586147362,
+        "axial_mip_ssim": 0.3640392650241945,
+        "full_mae": 0.0063058777166702384,
+        "full_psnr": 41.65510332191622,
+        "full_ssim": 0.9447784857158661
+      },
+      "new": {
+        "volume_mae": 0.016164783931074827,
+        "volume_psnr": 28.450037368989474,
+        "volume_ssim": 0.8006216612846442,
+        "axial_mip_mae": 0.09689842221553135,
+        "axial_mip_psnr": 18.535070453062794,
+        "axial_mip_ssim": 0.36332279563030295,
+        "full_mae": 0.006136161575525989,
+        "full_psnr": 42.03322103210272,
+        "full_ssim": 0.9479542769775391
+      },
+      "delta": {
+        "volume_mae": 0.0020348909757499853,
+        "volume_psnr": 0.09296295191989046,
+        "volume_ssim": -0.0746654932085905,
+        "axial_mip_mae": 0.014122959241831268,
+        "axial_mip_psnr": -1.1048331330845684,
+        "axial_mip_ssim": -0.0007164693938915279,
+        "full_mae": -0.00016971614114424938,
+        "full_psnr": 0.3781177101865012,
+        "full_ssim": 0.003175791261673
+      },
+      "gt_sha256": "05ed263381dcf9dadec9cfc8f7b73838fcf130d4c5a4b561ff1232a05d951808",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    },
+    {
+      "case_id": "10499",
+      "patient_id": "10499",
+      "disease": "DR",
+      "old": {
+        "volume_mae": 0.014913391820299604,
+        "volume_psnr": 28.04196495484839,
+        "volume_ssim": 0.8183794818948525,
+        "axial_mip_mae": 0.08613316470143673,
+        "axial_mip_psnr": 19.092987554941008,
+        "axial_mip_ssim": 0.31465147101551766,
+        "full_mae": 0.008847762843672058,
+        "full_psnr": 38.975087806670444,
+        "full_ssim": 0.9031979534568787
+      },
+      "new": {
+        "volume_mae": 0.01401883395566195,
+        "volume_psnr": 29.383833850065443,
+        "volume_ssim": 0.7689159514970794,
+        "axial_mip_mae": 0.08046122006408041,
+        "axial_mip_psnr": 19.57159359837094,
+        "axial_mip_ssim": 0.2994466350121269,
+        "full_mae": 0.0067668801256992595,
+        "full_psnr": 41.27465201721712,
+        "full_ssim": 0.9311879313430786
+      },
+      "delta": {
+        "volume_mae": -0.0008945578646376538,
+        "volume_psnr": 1.341868895217054,
+        "volume_ssim": -0.04946353039777318,
+        "axial_mip_mae": -0.005671944637356319,
+        "axial_mip_psnr": 0.47860604342993085,
+        "axial_mip_ssim": -0.015204836003390731,
+        "full_mae": -0.0020808827179727984,
+        "full_psnr": 2.299564210546677,
+        "full_ssim": 0.027989977886199946
+      },
+      "gt_sha256": "faf64d6431a8fe4faa448e65a486c70cd55e74cafa625ffaed36c37da52c731b",
+      "gt_voxels_identical": true,
+      "input_oct_zip_crc_and_size_identical": true
+    }
+  ],
+  "intensity_bin_diagnostic": {
+    "definition": "GT-normalized intensity bins; diagnostic only, not the paper foreground mask; pooled voxel weighting.",
+    "bins": {
+      "GT<=0.01": {
+        "count": 649046180,
+        "98": {
+          "abs": 1309226.250658184,
+          "sq": 37035.84449246659,
+          "signed": 1193210.1354222954,
+          "abs_mean": 0.002017154234939314,
+          "sq_mean": 5.706195588804881e-05,
+          "signed_mean": 0.0018384056053180923
+        },
+        "193": {
+          "abs": 2331738.0433040084,
+          "sq": 40793.614823437085,
+          "signed": 2261237.87318191,
+          "abs_mean": 0.003592561076785027,
+          "sq_mean": 6.285163687957779e-05,
+          "signed_mean": 0.003483939884188071
+        },
+        "voxel_fraction": 0.7737233400344848
+      },
+      "0.01<GT<0.1": {
+        "count": 111781577,
+        "98": {
+          "abs": 4346005.296054805,
+          "sq": 372518.77336012013,
+          "signed": 1827271.9078371618,
+          "abs_mean": 0.03887944161008575,
+          "sq_mean": 0.0033325596521161993,
+          "signed_mean": 0.016346807379870494
+        },
+        "193": {
+          "abs": 3814187.862011643,
+          "sq": 288175.1342701051,
+          "signed": 1809406.0530184563,
+          "abs_mean": 0.034121793271995465,
+          "sq_mean": 0.002578019938563804,
+          "signed_mean": 0.016186979121062643
+        },
+        "voxel_fraction": 0.1332540237903595
+      },
+      "GT>=0.1": {
+        "count": 78033043,
+        "98": {
+          "abs": 5723974.911989413,
+          "sq": 701607.2558216102,
+          "signed": -2069498.7367527261,
+          "abs_mean": 0.0733532192508424,
+          "sq_mean": 0.008991155910985173,
+          "signed_mean": -0.026520800127616786
+        },
+        "193": {
+          "abs": 5561862.694318991,
+          "sq": 667539.0322287551,
+          "signed": -2957278.695160087,
+          "abs_mean": 0.07127573756567447,
+          "sq_mean": 0.008554568764270222,
+          "signed_mean": -0.03789777485878754
+        },
+        "voxel_fraction": 0.09302263617515565
+      }
+    }
+  },
+  "example_cases": [
+    "10331",
+    "10325",
+    "10330",
+    "10367",
+    "10305",
+    "10433"
+  ],
+  "uncertainty": "Paired bootstrap over 50 case IDs, seed 20261024, 5000 draws. Case/patient labels follow the provided public-ID manifest; rare disease groups have 1 case.",
+  "protocol": {
+    "full_projection": "Mean over all prepared axial samples, ZYX axis=0, transposed to XY.",
+    "display": "Same GT min-to-P99 window for GT, epoch98 and epoch193; metrics before display scaling.",
+    "coverage": "Same prepared center 256^3 crop after 400x400 resize, not original complete 3mm FOV.",
+    "model_or_training_changed": false
+  }
+}

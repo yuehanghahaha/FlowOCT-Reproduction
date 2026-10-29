@@ -1,0 +1,73 @@
+{
+  "scope": "Local Bash workflow checks using a fake CLI and fake checkpoints; no GPU inference or training.",
+  "environment_regression": "Ambient python intentionally fails; every successful invocation must use the explicitly selected interpreter.",
+  "cases": [
+    {
+      "case": "success",
+      "passed": true,
+      "returncode": 0,
+      "original_baseline_unchanged": true,
+      "commands": [
+        "predict",
+        "evaluate",
+        "train"
+      ]
+    },
+    {
+      "case": "predict_failure",
+      "passed": true,
+      "returncode": 7,
+      "original_baseline_unchanged": true,
+      "commands": [
+        "predict"
+      ]
+    },
+    {
+      "case": "existing_output",
+      "passed": true,
+      "returncode": 1,
+      "original_baseline_unchanged": true,
+      "commands": []
+    },
+    {
+      "case": "incomplete_200",
+      "passed": true,
+      "returncode": 1,
+      "original_baseline_unchanged": true,
+      "commands": []
+    },
+    {
+      "case": "retry_failed_log",
+      "passed": true,
+      "returncode": 0,
+      "original_baseline_unchanged": true,
+      "commands": [
+        "predict",
+        "evaluate",
+        "train"
+      ]
+    },
+    {
+      "case": "missing_dependency",
+      "passed": true,
+      "returncode": 1,
+      "original_baseline_unchanged": true,
+      "commands": []
+    },
+    {
+      "case": "missing_interpreter",
+      "passed": true,
+      "returncode": 1,
+      "original_baseline_unchanged": true,
+      "commands": []
+    }
+  ],
+  "core_sha256": {
+    "flowoct_reproduction\\flowoct\\model.py": "9c4e1350dd2926120f7f00e2b569313c08369e6d893a45ae1d1a4f8a860dae1e",
+    "flowoct_reproduction\\flowoct\\runner.py": "11c55c27261c48e7cd37dfca8531ad5f3394fe1cd34c9102537d2cc23ec39ee6",
+    "flowoct_reproduction\\flowoct\\data.py": "cf503eeac9ae0ac2441b72a07ab7b1c7de4a6382f833ca59354a1b4d93d75415",
+    "flowoct_reproduction\\flowoct\\metrics.py": "926e86aec2f33c283ac7f667ed7b9b1ff5ef710490a86f5f53f69c4214048efe",
+    "flowoct_reproduction\\configs\\3m.json": "92391ed2db33b329132ddf8a1b0a0c61a4abca94de31722ee541165d90b15938"
+  },
+  "script_sha256": "301a8b22f292fc5cb3f34ba7384066aa0ffbd5ae3d4815c279fe0d893d16c6db"
+}

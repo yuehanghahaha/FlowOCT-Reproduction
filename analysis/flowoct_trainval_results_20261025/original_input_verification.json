@@ -1,0 +1,188 @@
+{
+  "cases": 20,
+  "records": [
+    {
+      "split": "train",
+      "case_id": "10308",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "train",
+      "case_id": "10310",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "train",
+      "case_id": "10354",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "train",
+      "case_id": "10373",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "train",
+      "case_id": "10386",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "train",
+      "case_id": "10413",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "train",
+      "case_id": "10426",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "train",
+      "case_id": "10463",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "train",
+      "case_id": "10474",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "train",
+      "case_id": "10481",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "validation",
+      "case_id": "10302",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "validation",
+      "case_id": "10319",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "validation",
+      "case_id": "10338",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "validation",
+      "case_id": "10357",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "validation",
+      "case_id": "10396",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "validation",
+      "case_id": "10422",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "validation",
+      "case_id": "10447",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "validation",
+      "case_id": "10456",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "validation",
+      "case_id": "10495",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    },
+    {
+      "split": "validation",
+      "case_id": "10500",
+      "input_oct_voxel_hash_matches": true,
+      "gt_octa_voxel_hash_matches": true,
+      "geometry_matches": true,
+      "gt_full_exactly_matches": true,
+      "gt_mip_exactly_matches": true
+    }
+  ],
+  "scope": "All20 original common z256 cases reloaded and center-preprocessed on CPU; full input OCT and OCTA voxel hashes, metadata and both GT projections match downloaded records",
+  "limits": "Only GT and input can be regenerated without epoch70/140/313 weights; the current package cannot independently re-evaluate 3D predictions",
+  "source_modified": false
+}

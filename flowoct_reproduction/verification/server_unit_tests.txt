@@ -1,0 +1,27 @@
+test_constant_volume_fails_before_normalization (test_core.DataTests) ... ok
+test_manifest_rejects_patient_and_content_leakage (test_core.DataTests) ... ok
+test_orientation_and_paired_minmax (test_core.DataTests) ... ok
+test_chunk_recomputation_keeps_objective_and_gradients (test_core.NumericalTests) ... /docsystem/niuke/lvyuehang/conda_envs/lyh_flowoct/lib/python3.10/site-packages/matplotlib/_fontconfig_pattern.py:64: PyparsingDeprecationWarning: 'oneOf' deprecated - use 'one_of'
+  prop = Group((name + Suppress("=") + comma_separated(value)) | oneOf(_CONSTANTS))
+/docsystem/niuke/lvyuehang/conda_envs/lyh_flowoct/lib/python3.10/site-packages/matplotlib/_fontconfig_pattern.py:85: PyparsingDeprecationWarning: 'parseString' deprecated - use 'parse_string'
+  parse = parser.parseString(pattern)
+/docsystem/niuke/lvyuehang/conda_envs/lyh_flowoct/lib/python3.10/site-packages/matplotlib/_fontconfig_pattern.py:89: PyparsingDeprecationWarning: 'resetCache' deprecated - use 'reset_cache'
+  parser.resetCache()
+/docsystem/niuke/lvyuehang/conda_envs/lyh_flowoct/lib/python3.10/site-packages/matplotlib/_mathtext.py:45: PyparsingDeprecationWarning: 'enablePackrat' deprecated - use 'enable_packrat'
+  ParserElement.enablePackrat()
+In /docsystem/niuke/lvyuehang/conda_envs/lyh_flowoct/lib/python3.10/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+In /docsystem/niuke/lvyuehang/conda_envs/lyh_flowoct/lib/python3.10/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+/docsystem/niuke/lvyuehang/flowoct_reproduction/flowoct/wavelet_functions.py:108: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  matrix_Low_0, matrix_Low_1, matrix_High_0, matrix_High_1 = ctx.saved_variables
+ok
+test_complete_checkpoint_replays_next_update (test_core.NumericalTests) ... ok
+test_haar_reconstruction_gradients_and_subband_signs (test_core.NumericalTests) ... /docsystem/niuke/lvyuehang/flowoct_reproduction/flowoct/wavelet_functions.py:65: DeprecationWarning: 'saved_variables' is deprecated; use 'saved_tensors'
+  matrix_Low_0, matrix_Low_1, matrix_High_0, matrix_High_1 = ctx.saved_variables
+ok
+test_metrics_are_finite_and_projection_uses_z (test_core.NumericalTests) ... ok
+test_projection_roi_with_nonzero_y_is_finite (test_core.NumericalTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 28.663s
+
+OK

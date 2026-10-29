@@ -1,0 +1,21 @@
+{
+  "manifest": "/docsystem/niuke/lvyuehang/OCTA500_common_v1/split_6M_z256.csv",
+  "fov": "6M",
+  "axis_order": "ZYX",
+  "load_size": 400,
+  "crop_size": 256,
+  "batch_size": 1,
+  "train_slices": 0,
+  "network_chunk": 0,
+  "inference_chunk": 32,
+  "epochs": 200,
+  "lr": 0.0002,
+  "beta": 0.5,
+  "seed": 2026,
+  "workers": 0,
+  "device": "cuda:1",
+  "threads": 4,
+  "val_every": 1,
+  "save_every": 10,
+  "log_every": 20
+}

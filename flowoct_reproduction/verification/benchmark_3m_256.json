@@ -1,0 +1,41 @@
+{
+  "config": {
+    "manifest": "/docsystem/niuke/lvyuehang/OCTA500_common_v1/split_3M_z256.csv",
+    "fov": "3M",
+    "axis_order": "ZYX",
+    "load_size": 400,
+    "crop_size": 256,
+    "batch_size": 1,
+    "train_slices": 0,
+    "network_chunk": 4,
+    "inference_chunk": 4,
+    "epochs": 200,
+    "lr": 0.0002,
+    "beta": 0.5,
+    "seed": 2026,
+    "workers": 0,
+    "device": "cuda:1",
+    "threads": 4,
+    "val_every": 1,
+    "save_every": 10,
+    "log_every": 20
+  },
+  "case_id": "10301",
+  "input_shape": [
+    1,
+    1,
+    256,
+    256,
+    256
+  ],
+  "sampled_slices": 64,
+  "network_chunk": 4,
+  "seconds": 7.0736052399734035,
+  "loss": 0.5756317377090454,
+  "vloss": 0.048079513013362885,
+  "L1loss": 0.10533670336008072,
+  "contrastloss": 4.934316158294678,
+  "proj_loss": 0.174966961145401,
+  "peak_allocated_gib": 4.383449077606201,
+  "generator_parameters": 2330180
+}

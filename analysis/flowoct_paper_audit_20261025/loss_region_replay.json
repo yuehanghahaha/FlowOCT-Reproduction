@@ -1,0 +1,4711 @@
+{
+  "checkpoint_epoch": 193,
+  "checkpoint_global_step": 27020,
+  "optimizer_parameter_states": 382,
+  "optimizer_step_min_max": [
+    27020.0,
+    27020.0
+  ],
+  "scope": "Three training cases, first manifest occurrence in NORMAL/DR/AMD; one seeded random crop/flip each and 64 sampled Y B-scans, evaluated with checkpoint193",
+  "limits": "Diagnostic states are not recorded historical training batches. No optimizer update, no new mask used in training, no result-based case selection.",
+  "diagnostic_execution": "GPU FP32 eval/no_grad; velocity network processed in groups of4 for local GPU memory; official training config remains network_chunk0",
+  "low_signal_definition": "OCTA GT<=0.01 is for descriptive accounting only, not the paper's unknown foreground mask",
+  "records": [
+    {
+      "case_id": "10301",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          30,
+          81,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": true,
+        "oct_minmax": [
+          30.280000686645508,
+          243.82640075683594
+        ],
+        "octa_minmax": [
+          0.0,
+          205.4364013671875
+        ]
+      },
+      "sampled_y_indices": [
+        12,
+        204,
+        174,
+        34,
+        220,
+        39,
+        87,
+        212,
+        170,
+        119,
+        196,
+        191,
+        40,
+        23,
+        15,
+        46,
+        94,
+        165,
+        157,
+        88,
+        179,
+        187,
+        98,
+        55,
+        197,
+        216,
+        9,
+        164,
+        142,
+        13,
+        127,
+        200,
+        203,
+        236,
+        202,
+        36,
+        163,
+        84,
+        74,
+        252,
+        70,
+        86,
+        43,
+        63,
+        102,
+        7,
+        185,
+        221,
+        85,
+        6,
+        173,
+        141,
+        77,
+        150,
+        47,
+        75,
+        250,
+        104,
+        4,
+        134,
+        65,
+        52,
+        162,
+        92
+      ],
+      "time_min_max": [
+        0.021855797618627548,
+        0.9994622468948364
+      ],
+      "velocity_roi": {
+        "cases_or_slices": 64,
+        "loss_equal_weight_per_slice": 0.0008117009046821248,
+        "mean_roi_area_fraction": 1.0,
+        "full_image_roi_count": 64,
+        "target_no_row_above_threshold_count": 64,
+        "low_gt_fraction_inside_roi_mean": 0.7544045448303223,
+        "low_gt_share_of_loss": 0.18391963442381767,
+        "records": [
+          {
+            "slice_in_sampled_batch": 0,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 1,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 2,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 3,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 4,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 5,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 6,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 7,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 8,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 9,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 10,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 11,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 12,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 13,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 14,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 15,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 16,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 17,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 18,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 19,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 20,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 21,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 22,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 23,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 24,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 25,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 26,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 27,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 28,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 29,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 30,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 31,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 32,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 33,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 34,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 35,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 36,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 37,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 38,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 39,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 40,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 41,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 42,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 43,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 44,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 45,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 46,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 47,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 48,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 49,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 50,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 51,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 52,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 53,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 54,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 55,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 56,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 57,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 58,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 59,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 60,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 61,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 62,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 63,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          }
+        ]
+      },
+      "l1_roi": {
+        "cases_or_slices": 64,
+        "loss_equal_weight_per_slice": 0.020324515497178446,
+        "mean_roi_area_fraction": 0.23583245277404785,
+        "full_image_roi_count": 0,
+        "target_no_row_above_threshold_count": 0,
+        "low_gt_fraction_inside_roi_mean": 0.09543349441213893,
+        "low_gt_share_of_loss": 0.02588744919623061,
+        "records": [
+          {
+            "slice_in_sampled_batch": 0,
+            "bbox_xm_ym_xM_yM": [
+              94,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.24609375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 1,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              0,
+              147,
+              255
+            ],
+            "area_fraction": 0.22265625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 2,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.2265625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 3,
+            "bbox_xm_ym_xM_yM": [
+              96,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.23828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 4,
+            "bbox_xm_ym_xM_yM": [
+              88,
+              0,
+              149,
+              255
+            ],
+            "area_fraction": 0.2421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 5,
+            "bbox_xm_ym_xM_yM": [
+              95,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.2421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 6,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              0,
+              152,
+              255
+            ],
+            "area_fraction": 0.234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 7,
+            "bbox_xm_ym_xM_yM": [
+              87,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.2421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 8,
+            "bbox_xm_ym_xM_yM": [
+              84,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.25390625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 9,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              0,
+              147,
+              255
+            ],
+            "area_fraction": 0.21484375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 10,
+            "bbox_xm_ym_xM_yM": [
+              87,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.2421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 11,
+            "bbox_xm_ym_xM_yM": [
+              92,
+              0,
+              147,
+              255
+            ],
+            "area_fraction": 0.21875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 12,
+            "bbox_xm_ym_xM_yM": [
+              96,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.23828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 13,
+            "bbox_xm_ym_xM_yM": [
+              96,
+              0,
+              158,
+              255
+            ],
+            "area_fraction": 0.24609375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 14,
+            "bbox_xm_ym_xM_yM": [
+              94,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.24609375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 15,
+            "bbox_xm_ym_xM_yM": [
+              96,
+              0,
+              154,
+              255
+            ],
+            "area_fraction": 0.23046875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 16,
+            "bbox_xm_ym_xM_yM": [
+              92,
+              0,
+              150,
+              255
+            ],
+            "area_fraction": 0.23046875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 17,
+            "bbox_xm_ym_xM_yM": [
+              92,
+              0,
+              146,
+              226
+            ],
+            "area_fraction": 0.1905059814453125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 18,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              0,
+              146,
+              255
+            ],
+            "area_fraction": 0.21875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 19,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              0,
+              151,
+              255
+            ],
+            "area_fraction": 0.23046875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 20,
+            "bbox_xm_ym_xM_yM": [
+              95,
+              0,
+              149,
+              255
+            ],
+            "area_fraction": 0.21484375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 21,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.21875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 22,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              0,
+              150,
+              255
+            ],
+            "area_fraction": 0.234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 23,
+            "bbox_xm_ym_xM_yM": [
+              94,
+              0,
+              154,
+              255
+            ],
+            "area_fraction": 0.23828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 24,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.2265625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 25,
+            "bbox_xm_ym_xM_yM": [
+              90,
+              0,
+              149,
+              255
+            ],
+            "area_fraction": 0.234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 26,
+            "bbox_xm_ym_xM_yM": [
+              94,
+              0,
+              157,
+              246
+            ],
+            "area_fraction": 0.2412109375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 27,
+            "bbox_xm_ym_xM_yM": [
+              83,
+              0,
+              147,
+              255
+            ],
+            "area_fraction": 0.25390625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 28,
+            "bbox_xm_ym_xM_yM": [
+              88,
+              0,
+              146,
+              255
+            ],
+            "area_fraction": 0.23046875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 29,
+            "bbox_xm_ym_xM_yM": [
+              94,
+              0,
+              157,
+              255
+            ],
+            "area_fraction": 0.25,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 30,
+            "bbox_xm_ym_xM_yM": [
+              92,
+              0,
+              146,
+              255
+            ],
+            "area_fraction": 0.21484375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 31,
+            "bbox_xm_ym_xM_yM": [
+              88,
+              0,
+              147,
+              255
+            ],
+            "area_fraction": 0.234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 32,
+            "bbox_xm_ym_xM_yM": [
+              90,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.23046875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 33,
+            "bbox_xm_ym_xM_yM": [
+              87,
+              0,
+              150,
+              255
+            ],
+            "area_fraction": 0.25,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 34,
+            "bbox_xm_ym_xM_yM": [
+              89,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 35,
+            "bbox_xm_ym_xM_yM": [
+              96,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.23828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 36,
+            "bbox_xm_ym_xM_yM": [
+              83,
+              0,
+              147,
+              255
+            ],
+            "area_fraction": 0.25390625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 37,
+            "bbox_xm_ym_xM_yM": [
+              92,
+              0,
+              152,
+              255
+            ],
+            "area_fraction": 0.23828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 38,
+            "bbox_xm_ym_xM_yM": [
+              92,
+              0,
+              152,
+              255
+            ],
+            "area_fraction": 0.23828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 39,
+            "bbox_xm_ym_xM_yM": [
+              87,
+              0,
+              152,
+              255
+            ],
+            "area_fraction": 0.2578125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 40,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              0,
+              153,
+              255
+            ],
+            "area_fraction": 0.24609375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 41,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              0,
+              152,
+              255
+            ],
+            "area_fraction": 0.234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 42,
+            "bbox_xm_ym_xM_yM": [
+              94,
+              0,
+              155,
+              255
+            ],
+            "area_fraction": 0.2421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 43,
+            "bbox_xm_ym_xM_yM": [
+              95,
+              0,
+              153,
+              255
+            ],
+            "area_fraction": 0.23046875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 44,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              0,
+              150,
+              255
+            ],
+            "area_fraction": 0.234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 45,
+            "bbox_xm_ym_xM_yM": [
+              94,
+              0,
+              156,
+              239
+            ],
+            "area_fraction": 0.230712890625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 46,
+            "bbox_xm_ym_xM_yM": [
+              92,
+              0,
+              149,
+              255
+            ],
+            "area_fraction": 0.2265625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 47,
+            "bbox_xm_ym_xM_yM": [
+              88,
+              0,
+              149,
+              255
+            ],
+            "area_fraction": 0.2421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 48,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              4,
+              153,
+              255
+            ],
+            "area_fraction": 0.23455810546875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 49,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              0,
+              158,
+              255
+            ],
+            "area_fraction": 0.2578125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 50,
+            "bbox_xm_ym_xM_yM": [
+              83,
+              0,
+              146,
+              248
+            ],
+            "area_fraction": 0.2431640625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 51,
+            "bbox_xm_ym_xM_yM": [
+              89,
+              0,
+              147,
+              255
+            ],
+            "area_fraction": 0.23046875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 52,
+            "bbox_xm_ym_xM_yM": [
+              92,
+              0,
+              152,
+              255
+            ],
+            "area_fraction": 0.23828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 53,
+            "bbox_xm_ym_xM_yM": [
+              85,
+              0,
+              146,
+              255
+            ],
+            "area_fraction": 0.2421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 54,
+            "bbox_xm_ym_xM_yM": [
+              96,
+              0,
+              155,
+              255
+            ],
+            "area_fraction": 0.234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 55,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              0,
+              152,
+              255
+            ],
+            "area_fraction": 0.2421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 56,
+            "bbox_xm_ym_xM_yM": [
+              88,
+              0,
+              151,
+              255
+            ],
+            "area_fraction": 0.25,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 57,
+            "bbox_xm_ym_xM_yM": [
+              90,
+              0,
+              150,
+              255
+            ],
+            "area_fraction": 0.23828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 58,
+            "bbox_xm_ym_xM_yM": [
+              95,
+              0,
+              158,
+              255
+            ],
+            "area_fraction": 0.25,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 59,
+            "bbox_xm_ym_xM_yM": [
+              92,
+              0,
+              149,
+              255
+            ],
+            "area_fraction": 0.2265625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 60,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              0,
+              153,
+              255
+            ],
+            "area_fraction": 0.23828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 61,
+            "bbox_xm_ym_xM_yM": [
+              97,
+              0,
+              154,
+              255
+            ],
+            "area_fraction": 0.2265625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 62,
+            "bbox_xm_ym_xM_yM": [
+              87,
+              0,
+              146,
+              255
+            ],
+            "area_fraction": 0.234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 63,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              0,
+              151,
+              255
+            ],
+            "area_fraction": 0.23046875,
+            "target_row_threshold_fallback": false
+          }
+        ]
+      },
+      "actual_helper_losses": {
+        "velocity_mse": 0.0008117008837871253,
+        "l1": 0.02032451145350933
+      },
+      "unmasked_haar_energy_check": {
+        "pixel_mse": 0.0008117009419947863,
+        "wavelet_mse": 0.0008117011748254299
+      },
+      "projection_index_fix": {
+        "bbox_xm_ym_xM_yM": [
+          72,
+          0,
+          159,
+          255
+        ],
+        "original_indexed_shape": [
+          1,
+          88,
+          256
+        ],
+        "fixed_indexed_shape": [
+          1,
+          256,
+          88
+        ],
+        "original_indexed_l1": 0.01068859826773405,
+        "fixed_indexed_l1": 0.025157395750284195
+      },
+      "sampled_plane_axis_order": "XZ",
+      "batch_max_projection_axis_order": "XZ"
+    },
+    {
+      "case_id": "10304",
+      "disease": "DR",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          142,
+          107,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": true,
+        "oct_minmax": [
+          36.66999816894531,
+          245.0800018310547
+        ],
+        "octa_minmax": [
+          0.0,
+          219.3000030517578
+        ]
+      },
+      "sampled_y_indices": [
+        69,
+        181,
+        161,
+        162,
+        169,
+        29,
+        10,
+        12,
+        30,
+        190,
+        79,
+        137,
+        61,
+        184,
+        133,
+        170,
+        22,
+        99,
+        241,
+        110,
+        165,
+        221,
+        182,
+        191,
+        228,
+        109,
+        193,
+        156,
+        143,
+        13,
+        154,
+        112,
+        244,
+        225,
+        7,
+        222,
+        206,
+        243,
+        205,
+        56,
+        172,
+        108,
+        63,
+        54,
+        102,
+        75,
+        76,
+        123,
+        136,
+        255,
+        145,
+        215,
+        183,
+        73,
+        152,
+        238,
+        82,
+        134,
+        106,
+        55,
+        113,
+        18,
+        202,
+        24
+      ],
+      "time_min_max": [
+        0.02870030701160431,
+        0.9516399502754211
+      ],
+      "velocity_roi": {
+        "cases_or_slices": 64,
+        "loss_equal_weight_per_slice": 0.0006755132006441393,
+        "mean_roi_area_fraction": 1.0,
+        "full_image_roi_count": 64,
+        "target_no_row_above_threshold_count": 64,
+        "low_gt_fraction_inside_roi_mean": 0.7613942623138428,
+        "low_gt_share_of_loss": 0.10589248393761556,
+        "records": [
+          {
+            "slice_in_sampled_batch": 0,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 1,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 2,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 3,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 4,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 5,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 6,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 7,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 8,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 9,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 10,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 11,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 12,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 13,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 14,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 15,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 16,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 17,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 18,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 19,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 20,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 21,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 22,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 23,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 24,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 25,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 26,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 27,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 28,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 29,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 30,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 31,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 32,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 33,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 34,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 35,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 36,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 37,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 38,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 39,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 40,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 41,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 42,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 43,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 44,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 45,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 46,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 47,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 48,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 49,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 50,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 51,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 52,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 53,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 54,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 55,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 56,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 57,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 58,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 59,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 60,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 61,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 62,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 63,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          }
+        ]
+      },
+      "l1_roi": {
+        "cases_or_slices": 64,
+        "loss_equal_weight_per_slice": 0.018757984766757354,
+        "mean_roi_area_fraction": 0.24317502975463867,
+        "full_image_roi_count": 0,
+        "target_no_row_above_threshold_count": 0,
+        "low_gt_fraction_inside_roi_mean": 0.09292312899981084,
+        "low_gt_share_of_loss": 0.0511286635895784,
+        "records": [
+          {
+            "slice_in_sampled_batch": 0,
+            "bbox_xm_ym_xM_yM": [
+              89,
+              0,
+              147,
+              255
+            ],
+            "area_fraction": 0.23046875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 1,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              0,
+              155,
+              255
+            ],
+            "area_fraction": 0.25390625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 2,
+            "bbox_xm_ym_xM_yM": [
+              89,
+              0,
+              154,
+              255
+            ],
+            "area_fraction": 0.2578125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 3,
+            "bbox_xm_ym_xM_yM": [
+              90,
+              0,
+              154,
+              255
+            ],
+            "area_fraction": 0.25390625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 4,
+            "bbox_xm_ym_xM_yM": [
+              90,
+              0,
+              155,
+              255
+            ],
+            "area_fraction": 0.2578125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 5,
+            "bbox_xm_ym_xM_yM": [
+              88,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.23828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 6,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              0,
+              149,
+              255
+            ],
+            "area_fraction": 0.23046875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 7,
+            "bbox_xm_ym_xM_yM": [
+              90,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.23046875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 8,
+            "bbox_xm_ym_xM_yM": [
+              87,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.2421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 9,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.2578125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 10,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              0,
+              147,
+              255
+            ],
+            "area_fraction": 0.22265625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 11,
+            "bbox_xm_ym_xM_yM": [
+              90,
+              0,
+              154,
+              255
+            ],
+            "area_fraction": 0.25390625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 12,
+            "bbox_xm_ym_xM_yM": [
+              89,
+              0,
+              147,
+              255
+            ],
+            "area_fraction": 0.23046875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 13,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              0,
+              157,
+              255
+            ],
+            "area_fraction": 0.26171875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 14,
+            "bbox_xm_ym_xM_yM": [
+              87,
+              0,
+              153,
+              255
+            ],
+            "area_fraction": 0.26171875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 15,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              10,
+              152,
+              255
+            ],
+            "area_fraction": 0.23272705078125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 16,
+            "bbox_xm_ym_xM_yM": [
+              87,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.2421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 17,
+            "bbox_xm_ym_xM_yM": [
+              90,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.23046875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 18,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.25,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 19,
+            "bbox_xm_ym_xM_yM": [
+              90,
+              0,
+              150,
+              255
+            ],
+            "area_fraction": 0.23828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 20,
+            "bbox_xm_ym_xM_yM": [
+              90,
+              5,
+              155,
+              255
+            ],
+            "area_fraction": 0.252777099609375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 21,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.25,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 22,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              0,
+              155,
+              255
+            ],
+            "area_fraction": 0.25390625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 23,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              3,
+              155,
+              255
+            ],
+            "area_fraction": 0.2509307861328125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 24,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.25,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 25,
+            "bbox_xm_ym_xM_yM": [
+              88,
+              0,
+              150,
+              255
+            ],
+            "area_fraction": 0.24609375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 26,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              3,
+              153,
+              255
+            ],
+            "area_fraction": 0.2432098388671875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 27,
+            "bbox_xm_ym_xM_yM": [
+              89,
+              0,
+              155,
+              255
+            ],
+            "area_fraction": 0.26171875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 28,
+            "bbox_xm_ym_xM_yM": [
+              89,
+              0,
+              154,
+              255
+            ],
+            "area_fraction": 0.2578125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 29,
+            "bbox_xm_ym_xM_yM": [
+              90,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.23046875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 30,
+            "bbox_xm_ym_xM_yM": [
+              89,
+              0,
+              154,
+              255
+            ],
+            "area_fraction": 0.2578125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 31,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              0,
+              149,
+              255
+            ],
+            "area_fraction": 0.22265625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 32,
+            "bbox_xm_ym_xM_yM": [
+              94,
+              0,
+              155,
+              255
+            ],
+            "area_fraction": 0.2421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 33,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.25,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 34,
+            "bbox_xm_ym_xM_yM": [
+              90,
+              0,
+              150,
+              255
+            ],
+            "area_fraction": 0.23828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 35,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              0,
+              155,
+              255
+            ],
+            "area_fraction": 0.24609375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 36,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              1,
+              155,
+              255
+            ],
+            "area_fraction": 0.2451324462890625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 37,
+            "bbox_xm_ym_xM_yM": [
+              94,
+              0,
+              155,
+              255
+            ],
+            "area_fraction": 0.2421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 38,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              1,
+              156,
+              255
+            ],
+            "area_fraction": 0.2490234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 39,
+            "bbox_xm_ym_xM_yM": [
+              88,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.23828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 40,
+            "bbox_xm_ym_xM_yM": [
+              90,
+              0,
+              154,
+              255
+            ],
+            "area_fraction": 0.25390625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 41,
+            "bbox_xm_ym_xM_yM": [
+              89,
+              0,
+              150,
+              255
+            ],
+            "area_fraction": 0.2421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 42,
+            "bbox_xm_ym_xM_yM": [
+              89,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 43,
+            "bbox_xm_ym_xM_yM": [
+              88,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.23828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 44,
+            "bbox_xm_ym_xM_yM": [
+              89,
+              0,
+              150,
+              255
+            ],
+            "area_fraction": 0.2421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 45,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.2265625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 46,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.2265625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 47,
+            "bbox_xm_ym_xM_yM": [
+              89,
+              0,
+              152,
+              255
+            ],
+            "area_fraction": 0.25,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 48,
+            "bbox_xm_ym_xM_yM": [
+              88,
+              0,
+              153,
+              255
+            ],
+            "area_fraction": 0.2578125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 49,
+            "bbox_xm_ym_xM_yM": [
+              96,
+              0,
+              155,
+              255
+            ],
+            "area_fraction": 0.234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 50,
+            "bbox_xm_ym_xM_yM": [
+              92,
+              0,
+              152,
+              255
+            ],
+            "area_fraction": 0.23828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 51,
+            "bbox_xm_ym_xM_yM": [
+              94,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.24609375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 52,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              0,
+              155,
+              254
+            ],
+            "area_fraction": 0.2529144287109375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 53,
+            "bbox_xm_ym_xM_yM": [
+              92,
+              4,
+              146,
+              255
+            ],
+            "area_fraction": 0.21148681640625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 54,
+            "bbox_xm_ym_xM_yM": [
+              87,
+              0,
+              154,
+              255
+            ],
+            "area_fraction": 0.265625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 55,
+            "bbox_xm_ym_xM_yM": [
+              94,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.24609375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 56,
+            "bbox_xm_ym_xM_yM": [
+              89,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 57,
+            "bbox_xm_ym_xM_yM": [
+              89,
+              0,
+              153,
+              255
+            ],
+            "area_fraction": 0.25390625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 58,
+            "bbox_xm_ym_xM_yM": [
+              90,
+              0,
+              147,
+              255
+            ],
+            "area_fraction": 0.2265625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 59,
+            "bbox_xm_ym_xM_yM": [
+              88,
+              0,
+              148,
+              255
+            ],
+            "area_fraction": 0.23828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 60,
+            "bbox_xm_ym_xM_yM": [
+              92,
+              0,
+              149,
+              255
+            ],
+            "area_fraction": 0.2265625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 61,
+            "bbox_xm_ym_xM_yM": [
+              89,
+              0,
+              146,
+              255
+            ],
+            "area_fraction": 0.2265625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 62,
+            "bbox_xm_ym_xM_yM": [
+              92,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.25390625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 63,
+            "bbox_xm_ym_xM_yM": [
+              89,
+              0,
+              147,
+              255
+            ],
+            "area_fraction": 0.23046875,
+            "target_row_threshold_fallback": false
+          }
+        ]
+      },
+      "actual_helper_losses": {
+        "velocity_mse": 0.0006755131762474775,
+        "l1": 0.01875798963010311
+      },
+      "unmasked_haar_energy_check": {
+        "pixel_mse": 0.0006755131762474775,
+        "wavelet_mse": 0.0006755129434168339
+      },
+      "projection_index_fix": {
+        "bbox_xm_ym_xM_yM": [
+          83,
+          0,
+          158,
+          255
+        ],
+        "original_indexed_shape": [
+          1,
+          76,
+          256
+        ],
+        "fixed_indexed_shape": [
+          1,
+          256,
+          76
+        ],
+        "original_indexed_l1": 0.01383904553949833,
+        "fixed_indexed_l1": 0.022700900211930275
+      },
+      "sampled_plane_axis_order": "XZ",
+      "batch_max_projection_axis_order": "XZ"
+    },
+    {
+      "case_id": "10310",
+      "disease": "AMD",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          112,
+          61,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": true,
+        "oct_minmax": [
+          32.189998626708984,
+          237.47999572753906
+        ],
+        "octa_minmax": [
+          0.0,
+          204.47999572753906
+        ]
+      },
+      "sampled_y_indices": [
+        199,
+        126,
+        61,
+        231,
+        127,
+        33,
+        77,
+        63,
+        38,
+        130,
+        204,
+        34,
+        211,
+        234,
+        35,
+        56,
+        248,
+        201,
+        160,
+        175,
+        40,
+        153,
+        121,
+        30,
+        62,
+        31,
+        226,
+        111,
+        103,
+        216,
+        107,
+        118,
+        65,
+        108,
+        48,
+        135,
+        101,
+        7,
+        5,
+        233,
+        174,
+        244,
+        219,
+        46,
+        6,
+        93,
+        72,
+        241,
+        49,
+        252,
+        133,
+        74,
+        84,
+        168,
+        123,
+        109,
+        116,
+        71,
+        254,
+        155,
+        239,
+        179,
+        19,
+        152
+      ],
+      "time_min_max": [
+        0.017219215631484985,
+        0.993965744972229
+      ],
+      "velocity_roi": {
+        "cases_or_slices": 64,
+        "loss_equal_weight_per_slice": 0.0017469404618244604,
+        "mean_roi_area_fraction": 1.0,
+        "full_image_roi_count": 64,
+        "target_no_row_above_threshold_count": 64,
+        "low_gt_fraction_inside_roi_mean": 0.7305021286010742,
+        "low_gt_share_of_loss": 0.07816767950067205,
+        "records": [
+          {
+            "slice_in_sampled_batch": 0,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 1,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 2,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 3,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 4,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 5,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 6,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 7,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 8,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 9,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 10,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 11,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 12,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 13,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 14,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 15,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 16,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 17,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 18,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 19,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 20,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 21,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 22,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 23,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 24,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 25,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 26,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 27,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 28,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 29,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 30,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 31,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 32,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 33,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 34,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 35,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 36,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 37,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 38,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 39,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 40,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 41,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 42,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 43,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 44,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 45,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 46,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 47,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 48,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 49,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 50,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 51,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 52,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 53,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 54,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 55,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 56,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 57,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 58,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 59,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 60,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 61,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 62,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          },
+          {
+            "slice_in_sampled_batch": 63,
+            "bbox_xm_ym_xM_yM": [
+              0,
+              0,
+              255,
+              255
+            ],
+            "area_fraction": 1.0,
+            "target_row_threshold_fallback": true
+          }
+        ]
+      },
+      "l1_roi": {
+        "cases_or_slices": 64,
+        "loss_equal_weight_per_slice": 0.021998696483448783,
+        "mean_roi_area_fraction": 0.3564765453338623,
+        "full_image_roi_count": 0,
+        "target_no_row_above_threshold_count": 0,
+        "low_gt_fraction_inside_roi_mean": 0.2770225421408563,
+        "low_gt_share_of_loss": 0.042061987853111146,
+        "records": [
+          {
+            "slice_in_sampled_batch": 0,
+            "bbox_xm_ym_xM_yM": [
+              85,
+              0,
+              160,
+              255
+            ],
+            "area_fraction": 0.296875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 1,
+            "bbox_xm_ym_xM_yM": [
+              74,
+              0,
+              173,
+              253
+            ],
+            "area_fraction": 0.3875732421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 2,
+            "bbox_xm_ym_xM_yM": [
+              70,
+              0,
+              170,
+              255
+            ],
+            "area_fraction": 0.39453125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 3,
+            "bbox_xm_ym_xM_yM": [
+              92,
+              0,
+              153,
+              255
+            ],
+            "area_fraction": 0.2421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 4,
+            "bbox_xm_ym_xM_yM": [
+              74,
+              0,
+              176,
+              255
+            ],
+            "area_fraction": 0.40234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 5,
+            "bbox_xm_ym_xM_yM": [
+              68,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.34765625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 6,
+            "bbox_xm_ym_xM_yM": [
+              69,
+              0,
+              176,
+              255
+            ],
+            "area_fraction": 0.421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 7,
+            "bbox_xm_ym_xM_yM": [
+              69,
+              0,
+              176,
+              255
+            ],
+            "area_fraction": 0.421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 8,
+            "bbox_xm_ym_xM_yM": [
+              69,
+              0,
+              158,
+              255
+            ],
+            "area_fraction": 0.3515625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 9,
+            "bbox_xm_ym_xM_yM": [
+              74,
+              0,
+              178,
+              255
+            ],
+            "area_fraction": 0.41015625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 10,
+            "bbox_xm_ym_xM_yM": [
+              85,
+              0,
+              162,
+              255
+            ],
+            "area_fraction": 0.3046875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 11,
+            "bbox_xm_ym_xM_yM": [
+              67,
+              0,
+              166,
+              255
+            ],
+            "area_fraction": 0.390625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 12,
+            "bbox_xm_ym_xM_yM": [
+              88,
+              0,
+              160,
+              255
+            ],
+            "area_fraction": 0.28515625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 13,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              0,
+              154,
+              255
+            ],
+            "area_fraction": 0.2421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 14,
+            "bbox_xm_ym_xM_yM": [
+              66,
+              0,
+              166,
+              255
+            ],
+            "area_fraction": 0.39453125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 15,
+            "bbox_xm_ym_xM_yM": [
+              70,
+              0,
+              171,
+              255
+            ],
+            "area_fraction": 0.3984375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 16,
+            "bbox_xm_ym_xM_yM": [
+              97,
+              0,
+              161,
+              255
+            ],
+            "area_fraction": 0.25390625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 17,
+            "bbox_xm_ym_xM_yM": [
+              85,
+              0,
+              164,
+              255
+            ],
+            "area_fraction": 0.3125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 18,
+            "bbox_xm_ym_xM_yM": [
+              80,
+              0,
+              167,
+              255
+            ],
+            "area_fraction": 0.34375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 19,
+            "bbox_xm_ym_xM_yM": [
+              82,
+              0,
+              162,
+              255
+            ],
+            "area_fraction": 0.31640625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 20,
+            "bbox_xm_ym_xM_yM": [
+              70,
+              0,
+              158,
+              255
+            ],
+            "area_fraction": 0.34765625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 21,
+            "bbox_xm_ym_xM_yM": [
+              78,
+              0,
+              169,
+              255
+            ],
+            "area_fraction": 0.359375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 22,
+            "bbox_xm_ym_xM_yM": [
+              74,
+              0,
+              176,
+              255
+            ],
+            "area_fraction": 0.40234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 23,
+            "bbox_xm_ym_xM_yM": [
+              68,
+              0,
+              164,
+              255
+            ],
+            "area_fraction": 0.37890625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 24,
+            "bbox_xm_ym_xM_yM": [
+              70,
+              0,
+              172,
+              255
+            ],
+            "area_fraction": 0.40234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 25,
+            "bbox_xm_ym_xM_yM": [
+              67,
+              0,
+              166,
+              255
+            ],
+            "area_fraction": 0.390625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 26,
+            "bbox_xm_ym_xM_yM": [
+              93,
+              1,
+              169,
+              255
+            ],
+            "area_fraction": 0.2996063232421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 27,
+            "bbox_xm_ym_xM_yM": [
+              72,
+              0,
+              179,
+              255
+            ],
+            "area_fraction": 0.421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 28,
+            "bbox_xm_ym_xM_yM": [
+              72,
+              0,
+              178,
+              255
+            ],
+            "area_fraction": 0.41796875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 29,
+            "bbox_xm_ym_xM_yM": [
+              90,
+              0,
+              155,
+              255
+            ],
+            "area_fraction": 0.2578125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 30,
+            "bbox_xm_ym_xM_yM": [
+              72,
+              0,
+              181,
+              255
+            ],
+            "area_fraction": 0.4296875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 31,
+            "bbox_xm_ym_xM_yM": [
+              72,
+              0,
+              179,
+              255
+            ],
+            "area_fraction": 0.421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 32,
+            "bbox_xm_ym_xM_yM": [
+              71,
+              0,
+              173,
+              255
+            ],
+            "area_fraction": 0.40234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 33,
+            "bbox_xm_ym_xM_yM": [
+              72,
+              0,
+              181,
+              255
+            ],
+            "area_fraction": 0.4296875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 34,
+            "bbox_xm_ym_xM_yM": [
+              70,
+              0,
+              168,
+              255
+            ],
+            "area_fraction": 0.38671875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 35,
+            "bbox_xm_ym_xM_yM": [
+              75,
+              0,
+              172,
+              255
+            ],
+            "area_fraction": 0.3828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 36,
+            "bbox_xm_ym_xM_yM": [
+              71,
+              0,
+              178,
+              255
+            ],
+            "area_fraction": 0.421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 37,
+            "bbox_xm_ym_xM_yM": [
+              66,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.35546875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 38,
+            "bbox_xm_ym_xM_yM": [
+              66,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.35546875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 39,
+            "bbox_xm_ym_xM_yM": [
+              94,
+              0,
+              154,
+              255
+            ],
+            "area_fraction": 0.23828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 40,
+            "bbox_xm_ym_xM_yM": [
+              82,
+              0,
+              163,
+              255
+            ],
+            "area_fraction": 0.3203125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 41,
+            "bbox_xm_ym_xM_yM": [
+              96,
+              0,
+              157,
+              255
+            ],
+            "area_fraction": 0.2421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 42,
+            "bbox_xm_ym_xM_yM": [
+              91,
+              0,
+              155,
+              255
+            ],
+            "area_fraction": 0.25390625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 43,
+            "bbox_xm_ym_xM_yM": [
+              70,
+              0,
+              164,
+              255
+            ],
+            "area_fraction": 0.37109375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 44,
+            "bbox_xm_ym_xM_yM": [
+              66,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.35546875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 45,
+            "bbox_xm_ym_xM_yM": [
+              72,
+              0,
+              179,
+              255
+            ],
+            "area_fraction": 0.421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 46,
+            "bbox_xm_ym_xM_yM": [
+              71,
+              0,
+              176,
+              255
+            ],
+            "area_fraction": 0.4140625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 47,
+            "bbox_xm_ym_xM_yM": [
+              95,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.2421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 48,
+            "bbox_xm_ym_xM_yM": [
+              68,
+              0,
+              172,
+              255
+            ],
+            "area_fraction": 0.41015625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 49,
+            "bbox_xm_ym_xM_yM": [
+              98,
+              0,
+              158,
+              255
+            ],
+            "area_fraction": 0.23828125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 50,
+            "bbox_xm_ym_xM_yM": [
+              74,
+              0,
+              174,
+              255
+            ],
+            "area_fraction": 0.39453125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 51,
+            "bbox_xm_ym_xM_yM": [
+              69,
+              0,
+              178,
+              255
+            ],
+            "area_fraction": 0.4296875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 52,
+            "bbox_xm_ym_xM_yM": [
+              72,
+              0,
+              178,
+              255
+            ],
+            "area_fraction": 0.41796875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 53,
+            "bbox_xm_ym_xM_yM": [
+              81,
+              0,
+              164,
+              255
+            ],
+            "area_fraction": 0.328125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 54,
+            "bbox_xm_ym_xM_yM": [
+              74,
+              0,
+              177,
+              254
+            ],
+            "area_fraction": 0.4046630859375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 55,
+            "bbox_xm_ym_xM_yM": [
+              72,
+              0,
+              180,
+              255
+            ],
+            "area_fraction": 0.42578125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 56,
+            "bbox_xm_ym_xM_yM": [
+              72,
+              0,
+              179,
+              255
+            ],
+            "area_fraction": 0.421875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 57,
+            "bbox_xm_ym_xM_yM": [
+              73,
+              0,
+              175,
+              255
+            ],
+            "area_fraction": 0.40234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 58,
+            "bbox_xm_ym_xM_yM": [
+              99,
+              0,
+              158,
+              255
+            ],
+            "area_fraction": 0.234375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 59,
+            "bbox_xm_ym_xM_yM": [
+              78,
+              0,
+              171,
+              255
+            ],
+            "area_fraction": 0.3671875,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 60,
+            "bbox_xm_ym_xM_yM": [
+              94,
+              0,
+              156,
+              255
+            ],
+            "area_fraction": 0.24609375,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 61,
+            "bbox_xm_ym_xM_yM": [
+              82,
+              0,
+              162,
+              255
+            ],
+            "area_fraction": 0.31640625,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 62,
+            "bbox_xm_ym_xM_yM": [
+              69,
+              0,
+              161,
+              255
+            ],
+            "area_fraction": 0.36328125,
+            "target_row_threshold_fallback": false
+          },
+          {
+            "slice_in_sampled_batch": 63,
+            "bbox_xm_ym_xM_yM": [
+              78,
+              0,
+              172,
+              255
+            ],
+            "area_fraction": 0.37109375,
+            "target_row_threshold_fallback": false
+          }
+        ]
+      },
+      "actual_helper_losses": {
+        "velocity_mse": 0.0017469404265284538,
+        "l1": 0.021998699754476547
+      },
+      "unmasked_haar_energy_check": {
+        "pixel_mse": 0.0017469404265284538,
+        "wavelet_mse": 0.0017469405429437757
+      },
+      "projection_index_fix": {
+        "bbox_xm_ym_xM_yM": [
+          66,
+          0,
+          181,
+          255
+        ],
+        "original_indexed_shape": [
+          1,
+          116,
+          256
+        ],
+        "fixed_indexed_shape": [
+          1,
+          256,
+          116
+        ],
+        "original_indexed_l1": 0.01619325578212738,
+        "fixed_indexed_l1": 0.024661878123879433
+      },
+      "sampled_plane_axis_order": "XZ",
+      "batch_max_projection_axis_order": "XZ"
+    }
+  ],
+  "model_state_unchanged": true,
+  "model_state_sha256": "a16e949d4ef8edb96cb6a27ba846d14b693ec4f6df62b2743424ff5571031d3d",
+  "projection_counterexample": {
+    "current_y_batch_max_l1": 0.0,
+    "physical_z_max_l1": 1.0,
+    "scope": "Synthetic demonstration of the projection term only; the other training losses can detect this difference"
+  }
+}

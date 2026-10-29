@@ -1,0 +1,17 @@
+{
+  "cases": 20,
+  "checkpoints": [
+    70,
+    140,
+    313
+  ],
+  "projection_metric_records": 120,
+  "original_input_hash_checks": 20,
+  "source_model_or_prediction_files_modified": false,
+  "all20_full_gt_span_ssim_monotonic_improvement": true,
+  "visual_review": "All20 FULL and all20 Z-max cases, each across70/140/313; fixed original-pixel ROI examples",
+  "image_files_checked": 12,
+  "archive_matches_server_log": true,
+  "maximum_recomputed_metric_error": 7.105427357601002e-15,
+  "report": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\analysis\\flowoct_trainval_results_20261025\\FlowOCT_训练验证三阶段分析.md"
+}

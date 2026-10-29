@@ -1,0 +1,9 @@
+{
+  "limited_diagnostic": true,
+  "train_cases": [
+    "10301"
+  ],
+  "validation_cases": [
+    "10302"
+  ]
+}

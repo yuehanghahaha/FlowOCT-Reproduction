@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "epoch": 70,
+      "projection_metric_abs_difference_as_XY": {
+        "mae": 0.0,
+        "psnr_range1": 0.0,
+        "ssim_range1": 2.104652840895227e-09
+      },
+      "ssim_back_to_YX_orientation_abs_difference": 0.0,
+      "original_logged_volume_psnr": 28.257089156215592,
+      "original_logged_volume_ssim": 0.7353648363516793
+    },
+    {
+      "epoch": 140,
+      "projection_metric_abs_difference_as_XY": {
+        "mae": 0.0,
+        "psnr_range1": 0.0,
+        "ssim_range1": 3.5956382316015834e-10
+      },
+      "ssim_back_to_YX_orientation_abs_difference": 0.0,
+      "original_logged_volume_psnr": 29.27722984755892,
+      "original_logged_volume_ssim": 0.8197942869686422
+    },
+    {
+      "epoch": 313,
+      "projection_metric_abs_difference_as_XY": {
+        "mae": 0.0,
+        "psnr_range1": 0.0,
+        "ssim_range1": 5.452836682184881e-09
+      },
+      "ssim_back_to_YX_orientation_abs_difference": 0.0,
+      "original_logged_volume_psnr": 29.89449357033311,
+      "original_logged_volume_ssim": 0.8806809254091691
+    }
+  ],
+  "all20_input_oct_hashes_unique": true,
+  "all20_gt_octa_hashes_unique": true,
+  "scope": "Agreement with prior recorded validation MIP metrics; tiny XY/YX SSIM floating rounding checked by transposing arrays back to original log orientation. Weight files not in the review package."
+}

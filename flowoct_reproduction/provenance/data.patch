@@ -1,0 +1,280 @@
+--- a/upstream/datasets/OCTA500_dataset.py
++++ b/flowoct/data.py
+@@ -1,127 +1,165 @@
+-"""Dataset class for FlowOCT: loading paired OCT and OCTA 3D volumes."""
++"""Adapt the existing fixed OCTA500_common_v1 manifests to the author loader."""
+ 
++import csv
++import hashlib
++import random
++import re
++import zipfile
++from collections import Counter
++from pathlib import Path
+ 
+-import os
+-import random
+ import numpy as np
+ import torch
+ import torchio as tio
+-
+-def _make_dataset(directory, max_size=float("inf")):
+-    """Collect file paths from directory and subdirectories."""
+-    paths = []
+-    for root, _, fnames in sorted(os.walk(directory)):
+-        for fname in fnames:
+-            if fname.endswith('.npz'):
+-                paths.append(os.path.join(root, fname))
+-    return paths[:min(max_size, len(paths))]
++from torch.utils.data import Dataset
+ 
+ 
+-class OCTA500Dataset(torch.utils.data.Dataset):
+-    """Paired OCT-to-OCTA 3D dataset.
++COUNTS = {"3M": {"train": 140, "validation": 10, "test": 50},
++          "6M": {"train": 180, "validation": 20, "test": 100}}
+ 
+-    Each .npz file contains 'oct' and 'octa' arrays.
++
++def sha256(path):
++    digest = hashlib.sha256()
++    with Path(path).open("rb") as stream:
++        for block in iter(lambda: stream.read(1024 * 1024), b""):
++            digest.update(block)
++    return digest.hexdigest()
++
++
++def read_manifest(path, fov, check_counts=True):
++    path = Path(path).resolve()
++    with path.open(encoding="utf-8-sig", newline="") as stream:
++        rows = list(csv.DictReader(stream))
++    if not rows:
++        raise ValueError("Empty manifest")
++    cases, files, patients, groups = set(), set(), {}, {}
++    for row in rows:
++        if any(not row.get(k, "").strip() for k in ("case_id", "patient_id", "path", "split")):
++            raise ValueError("Manifest requires case_id, patient_id, path and split")
++        cid, pid, split = row["case_id"], row["patient_id"], row["split"]
++        if not re.fullmatch(r"[A-Za-z0-9_-]+", cid) or split not in COUNTS[fov]:
++            raise ValueError(f"Invalid case or split: {cid}, {split}")
++        if row.get("fov", fov) != fov:
++            raise ValueError(f"Mixed FOV manifest: {cid}")
++        source = (path.parent / row["path"]).resolve()
++        if cid in cases or source in files:
++            raise ValueError(f"Duplicate case/file: {cid}")
++        if not source.is_file() or source.suffix.lower() != ".npz":
++            raise FileNotFoundError(source)
++        if pid in patients and patients[pid] != split:
++            raise ValueError(f"Patient crosses splits: {pid}")
++        group = row.get("leakage_group", "").strip()
++        if group and group in groups and groups[group] != split:
++            raise ValueError(f"Duplicate image group crosses splits: {group}")
++        cases.add(cid)
++        files.add(source)
++        patients[pid] = split
++        if group:
++            groups[group] = split
++        row["resolved_path"] = str(source)
++    counts = dict(Counter(row["split"] for row in rows))
++    if check_counts and counts != COUNTS[fov]:
++        raise ValueError(f"{fov}: expected {COUNTS[fov]}, found {counts}")
++    return rows
++
++
++def inspect_header(row, axis_order, fov):
++    """Read NPZ array headers without inflating every large volume into RAM."""
++    shapes = []
++    with zipfile.ZipFile(row["resolved_path"]) as archive:
++        for key in ("oct", "octa"):
++            with archive.open(key + ".npy") as stream:
++                version = np.lib.format.read_magic(stream)
++                if version == (1, 0):
++                    shape, _, dtype = np.lib.format.read_array_header_1_0(stream)
++                elif version == (2, 0):
++                    shape, _, dtype = np.lib.format.read_array_header_2_0(stream)
++                else:
++                    raise ValueError(f"Unsupported NPY header version {version}")
++            if len(shape) != 3 or not np.issubdtype(dtype, np.number):
++                raise ValueError(f"Invalid {key} header for {row['case_id']}")
++            shapes.append(shape)
++    if shapes[0] != shapes[1]:
++        raise ValueError(f"Unaligned shapes: {row['case_id']}")
++    expected = (256, 304, 304) if fov == "3M" else (256, 400, 400)
++    zyx_shape = tuple(shapes[0][axis_order.index(axis)] for axis in "ZYX")
++    if zyx_shape != expected:
++        raise ValueError(f"Expected common z256 data {expected}, found {zyx_shape}")
++    with np.load(row["resolved_path"], allow_pickle=False) as data:
++        for key, value in (("axis_order", axis_order), ("case_id", row["case_id"]),
++                           ("patient_id", row["patient_id"]), ("intensity_scale", 255)):
++            if key in data and data[key].item() != value:
++                raise ValueError(f"NPZ {key} conflicts with manifest/config: {row['case_id']}")
++    return {"case_id": row["case_id"], "split": row["split"],
++            "shape": list(shapes[0]), "zyx_shape": list(zyx_shape)}
++
++
++class PairedVolumeDataset(Dataset):
++    """Original resize/crop/flip/minmax, after an explicit ZYX -> YXZ adapter.
++
++    Y is the B-scan index, X the in-scan lateral coordinate, Z axial depth.
++    YXZ follows the upstream loader's [400,400,640] comment; the upstream
++    packing script was not released, so this is a documented assumption.
+     """
+ 
+-    def __init__(self, opt, phase):
+-        self.opt = opt
+-        self.phase = phase
++    def __init__(self, rows, split, cfg, limit=0):
++        self.rows = [row for row in rows if row["split"] == split]
++        if limit:
++            self.rows = self.rows[:limit]
++        if not self.rows:
++            raise ValueError(f"No {split} cases")
++        self.split, self.cfg = split, cfg
++        self.resize = tio.Resize((cfg["load_size"], cfg["load_size"], cfg["crop_size"]))
+ 
+-        data_dir = os.path.join(opt.dataroot, phase)
+-        self.paths = sorted(_make_dataset(data_dir))
+-        print(f"[Dataset] {phase}: {len(self.paths)} volumes")
++    def __len__(self):
++        return len(self.rows)
+ 
+-        self.input_nc = opt.input_nc
+-        self.output_nc = opt.output_nc
++    def __getitem__(self, index):
++        row = self.rows[index]
++        arrays = []
++        with np.load(row["resolved_path"], allow_pickle=False) as data:
++            if "axis_order" in data and data["axis_order"].item() != self.cfg["axis_order"]:
++                raise ValueError(f"Axis metadata mismatch: {row['case_id']}")
++            for key in ("oct", "octa"):
++                array = np.asarray(data[key], dtype=np.float32)
++                if array.ndim != 3 or not np.isfinite(array).all():
++                    raise ValueError(f"Non-finite or non-3D {key}: {row['case_id']}")
++                if array.min() < 0 or array.max() > 255:
++                    raise ValueError(f"Expected raw [0,255] units for {key}: {row['case_id']}")
++                arrays.append(array)
++        if arrays[0].shape != arrays[1].shape:
++            raise ValueError(f"OCT/OCTA shapes differ: {row['case_id']}")
++        raw_shape = arrays[0].shape
++        permutation = [self.cfg["axis_order"].index(axis) for axis in "YXZ"]
++        volumes = [np.asarray(self.resize(np.transpose(a, permutation).copy()[None]),
++                              dtype=np.float32) for a in arrays]
++        crop = self.cfg["crop_size"]
++        if self.split == "train":
++            starts = [random.randint(0, max(0, n - crop)) for n in volumes[0].shape[1:]]
++            flip = random.random() > 0.5
++        else:
++            starts = [(n - crop) // 2 for n in volumes[0].shape[1:]]
++            flip = False
++        region = (slice(None),) + tuple(slice(s, s + crop) for s in starts)
++        tensors, ranges = [], []
++        for volume in volumes:
++            volume = volume[region]
++            if flip:
++                volume = np.flip(volume, axis=-1)
++            low, high = float(volume.min()), float(volume.max())
++            if high <= low:
++                raise ValueError(f"Constant crop would produce NaN: {row['case_id']}")
++            tensors.append(torch.from_numpy(np.ascontiguousarray((volume - low) / (high - low))))
++            ranges.append([low, high])
++        return {"A": tensors[0], "B": tensors[1], "case_id": row["case_id"],
++                "patient_id": row["patient_id"], "disease": row.get("disease", "unknown"),
++                "geometry": {"stored_axis_order": self.cfg["axis_order"],
++                             "source_shape": list(raw_shape), "model_axis_order": "YXZ",
++                             "resized_shape": [self.cfg["load_size"], self.cfg["load_size"], crop],
++                             "crop_start_yxz": starts, "crop_size": crop, "flipped_z": flip,
++                             "oct_minmax": ranges[0], "octa_minmax": ranges[1]}}
+ 
+ 
+-    def _get_crop_params(self, shape):
+-        """Random crop (train) or center crop (val/test)."""
+-        _, d, h, w = shape  # (C, D, H, W)
+-
+-        if self.phase == 'train':
+-            d_start = random.randint(0, max(0, d - self.opt.crop_size))
+-            h_start = random.randint(0, max(0, h - self.opt.crop_size))
+-            w_start = random.randint(0, max(0, w - self.opt.crop_size))
+-            flip = random.random() > 0.5
+-        else:
+-            d_start = (d - self.opt.crop_size) // 2
+-            h_start = (h - self.opt.crop_size) // 2
+-            w_start = (w - self.opt.crop_size) // 2
+-            flip = False
+-
+-        return {
+-            'crop': (d_start, d_start + self.opt.crop_size,
+-                     h_start, h_start + self.opt.crop_size,
+-                     w_start, w_start + self.opt.crop_size),
+-            'flip': flip,
+-        }
+-        
+-    def __getitem__(self, index):        
+-        path = self.paths[index]
+-
+-        data = np.load(path) 
+-
+-        A = np.expand_dims(data['oct'], axis=0) # [1,400,400,640]
+-        B = np.expand_dims(data['octa'], axis=0)
+-
+-        # Resize
+-        A = self._resize(A)
+-        B = self._resize(B)
+-
+-        # Crop & flip
+-        params = self._get_crop_params(A.shape)
+-        c = params['crop']
+-        A = A[:, c[0]:c[1], c[2]:c[3], c[4]:c[5]]
+-        B = B[:, c[0]:c[1], c[2]:c[3], c[4]:c[5]]
+-
+-        if params['flip']:
+-            A = np.flip(A, axis=-1).copy()
+-            B = np.flip(B, axis=-1).copy()
+-        
+-        # min-max normalize to [0, 1]
+-        A = (A - A.min()) / (A.max() - A.min())
+-        B = (B - B.min()) / (B.max() - B.min())
+-
+-        return {
+-            'A': torch.from_numpy(A),
+-            'B': torch.from_numpy(B),
+-            'A_paths': path,
+-            'B_paths': path,
+-        }
+-
+-    def _resize(self, x):
+-        """Resize volume to (load_size, load_size, crop_size)."""
+-        transform = tio.Resize(
+-            (self.opt.load_size, self.opt.load_size, self.opt.crop_size)
+-        )
+-        return transform(x)
+-
+-    def __len__(self):
+-        return len(self.paths)
+-
+-
+-
+-
+-if __name__ == '__main__':
+-    import argparse
+-
+-    parser = argparse.ArgumentParser()
+-    parser.add_argument('--dataroot', type=str, required=True)
+-    parser.add_argument('--phase', type=str, default='train')
+-    parser.add_argument('--input_nc', type=int, default=1)
+-    parser.add_argument('--output_nc', type=int, default=1)
+-    parser.add_argument('--load_size', type=int, default=400)
+-    parser.add_argument('--crop_size', type=int, default=256)
+-    opt = parser.parse_args()
+-
+-    dataset = OCTA500Dataset(opt, opt.phase)
+-    print(f"Dataset size: {len(dataset)}")
+-
+-    sample = dataset[0]
+-    print(f"A shape: {sample['A'].shape}, dtype: {sample['A'].dtype}")
+-    print(f"B shape: {sample['B'].shape}, dtype: {sample['B'].dtype}")
+-    print(f"A min/max: {sample['A'].min():.4f} / {sample['A'].max():.4f}")
+-    print(f"B min/max: {sample['B'].min():.4f} / {sample['B'].max():.4f}")
+-
+-#python OCTA500_dataset.py --dataroot /root/autodl-tmp/cwdm-main-oct/datasets/OCT_volume_6mm_denoise --phase train+def collate_volumes(samples):
++    return {"A": torch.stack([s["A"] for s in samples]),
++            "B": torch.stack([s["B"] for s in samples]), "metadata": samples}

@@ -1,0 +1,50 @@
+{
+  "scope": "10308 fixed center crop, all256 Y B-scans, no model required; compare current loader with original resize/crop/minmax after explicitly arranging same z256 input as YXZ",
+  "geometry": {
+    "stored_axis_order": "ZYX",
+    "source_shape": [
+      256,
+      304,
+      304
+    ],
+    "model_axis_order": "YXZ",
+    "resized_shape": [
+      400,
+      400,
+      256
+    ],
+    "crop_start_yxz": [
+      72,
+      72,
+      0
+    ],
+    "crop_size": 256,
+    "flipped_z": false,
+    "oct_minmax": [
+      34.31999969482422,
+      242.2552032470703
+    ],
+    "octa_minmax": [
+      0.0,
+      210.83999633789062
+    ]
+  },
+  "same_axis_preprocessing_comparison": {
+    "oct": {
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    },
+    "octa": {
+      "max_absolute_difference": 0.0,
+      "mean_absolute_difference": 0.0
+    }
+  },
+  "signed_velocity_target": {
+    "slices": 256,
+    "no_valid_rows_count": 256,
+    "min": -0.9939745664596558,
+    "max": 0.4040527939796448,
+    "meaning": "For each no-valid-row target, upstream bbox falls back to full image; union with any predicted bbox remains full image."
+  },
+  "limits": "Does not confirm author physical input axes, offline preprocessing, or all cases; same common z256 input used in both routes."
+}

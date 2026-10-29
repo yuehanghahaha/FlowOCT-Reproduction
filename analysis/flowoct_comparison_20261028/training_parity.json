@@ -1,0 +1,49 @@
+{
+  "scope": "One disposable FP32 update on synthetic 1x1x16x32x32, four sampled slices; same initial parameters and RNG; then three-step inference. No research checkpoint loaded.",
+  "baseline": "Author code with only the two projection channel indices fixed (working/)",
+  "device": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "versions": {
+    "torch": "2.5.1+cu121"
+  },
+  "losses": {
+    "roi_fixed_author": {
+      "total": 1.712536334991455,
+      "vloss": 0.1621558666229248,
+      "L1loss": 0.13834410905838013,
+      "contrastloss": 1.9492170810699463,
+      "proj_loss": 0.1205957680940628
+    },
+    "current": {
+      "total": 1.712536334991455,
+      "vloss": 0.1621558666229248,
+      "L1loss": 0.13834410905838013,
+      "contrastloss": 1.9492170810699463,
+      "proj_loss": 0.1205957680940628
+    }
+  },
+  "max_loss_difference": 0.0,
+  "max_parameter_difference_after_adam": 0.0,
+  "max_gradient_difference": 0.0,
+  "max_inference_difference_after_adam": 0.0,
+  "dwt_subband_max_differences": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "haar_roundtrip_max_difference": 1.7881393432617188e-07,
+  "raw_index_probe": {
+    "old_shape": [
+      0,
+      6,
+      32
+    ],
+    "fixed_shape": [
+      1,
+      8,
+      6
+    ],
+    "old_is_empty": true
+  },
+  "limitations": "Small synthetic input and one update cannot establish identical full-size A100 training trajectories or validate the author's unavailable data protocol. The raw original model has an intentionally repaired ROI in this comparison."
+}

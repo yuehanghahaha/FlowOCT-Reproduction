@@ -1,0 +1,60 @@
+{
+  "upstream_url": "https://github.com/cnu-medilab/FlowOCT",
+  "upstream_commit": "2309126956d2b80a95f2d307d85a50799cc658a6",
+  "upstream_clean": true,
+  "upstream_files_sha256": {
+    ".gitignore": "71511c2be439e206b4e8eea9c8787036ec0c80fd6268106806763e8c786ffcef",
+    "LICENSE": "0e16d2caa25c8223dd34c6aa5778648c37fee2c08c367b92f551edef6f51347e",
+    "README.md": "ca640578c29c52d414ee2e05f0185fb7fc099b42a7c40341b2a142642ac4bc90",
+    "datasets/OCTA500_dataset.py": "0f114effa7257dea7c2ee859e22958f0ae35ad2a4e36ed288648d973b9b74478",
+    "models/FlowOCT_model.py": "5968dc3512a04f591a5108f978246ee2f6b3b1db658f617e65e4b091a1d7ff44",
+    "options/base_options.py": "a3568cde56dce45812eeec865fc2e1564352db2b52b6782d5482aa16aea61f81",
+    "options/test_options.py": "3a27789eacbb8041d5ae04e74ed999e45c9f757ce686eeb976b5de9ff2bdfaea",
+    "options/train_options.py": "eb0e2590e9dd8f50482e7aa4140b1093ee0b7f60e6b7bde634f413df986467c8",
+    "requirements.txt": "a0947f553c1b3040b0416f552a56fb111079b5efb1b31ae0725fdedf361b9af7",
+    "test.py": "0d9c83ff260f45537c9785e3777dd4f58e088e5a2b4957800f13947f7c8e9859",
+    "train.py": "3344f9f4ed46e0e8436d11cecf7722b6cb26c03ae444b4f19a559c87b38fc683",
+    "util/DWT_IDWT_Functions.py": "33623b3e9b8d59df0227a840f88db4789095d3449e820e6454a31499ed3d156f",
+    "util/DWT_IDWT_layer.py": "e197b28df17be2a630ea8ada1b2966dd736c7c0079936a0a7e6c233eafc15a90",
+    "util/auto_crop.py": "1c729065c592c28d1a86d328dbae7ebd883d2f7153c910d0db13f5a149dd30e0",
+    "util/train_utils.py": "d5b05b1dbfda013e2313fce20d28c0b9f91ef0c7b681ffd3a63b2da19b90a451",
+    "util/util.py": "3cb1f625dc496c1f361f53f1ce46accc999c04c44f38d6dde879ff93d980f42d",
+    "visualize.py": "ccccab14265acae8ff444b1c7b87d81dd4d48790c9fbc5a0e5d9da66087707d1"
+  },
+  "adapted_files_sha256": {
+    "flowoct/__init__.py": "c5d9125502b98e89d98e94b99a0675b085dd010e9ae7e194d5199651125b8741",
+    "flowoct/data.py": "cf503eeac9ae0ac2441b72a07ab7b1c7de4a6382f833ca59354a1b4d93d75415",
+    "flowoct/metrics.py": "926e86aec2f33c283ac7f667ed7b9b1ff5ef710490a86f5f53f69c4214048efe",
+    "flowoct/model.py": "9c4e1350dd2926120f7f00e2b569313c08369e6d893a45ae1d1a4f8a860dae1e",
+    "flowoct/roi.py": "1c729065c592c28d1a86d328dbae7ebd883d2f7153c910d0db13f5a149dd30e0",
+    "flowoct/runner.py": "11c55c27261c48e7cd37dfca8531ad5f3394fe1cd34c9102537d2cc23ec39ee6",
+    "flowoct/wavelet_functions.py": "33623b3e9b8d59df0227a840f88db4789095d3449e820e6454a31499ed3d156f",
+    "flowoct/wavelets.py": "02625d63ff997de3af1633f0fa511021d74212dabbc984162218e0bf8f594768",
+    "configs/3m.json": "92391ed2db33b329132ddf8a1b0a0c61a4abca94de31722ee541165d90b15938",
+    "configs/6m.json": "0cb9ca2c085f441741aaf988ca0e756d9a3108b18e9f39d85b94a6114d1c6bb2",
+    "scripts/benchmark.py": "a479023d9c219e4763e37455276a0584ccfad965ca7be98025fa7dfe781014ef",
+    "scripts/build_provenance.py": "1e6ccd56d64e7f823678839157d5f70c2477c7f4da43b51c471dbd3e1fc5797d",
+    "scripts/run_experiment.sh": "774c4b929bfa0a896d85cede02a59322d6193cd3d63f994e5c5be480bb86f867",
+    "scripts/setup_server.sh": "8c7a0e4e5d2f2c3fdc54471d3a8fda981841c3e358e2a281366df673ea4f60c7",
+    "scripts/verify_resume.py": "d5b9b033b0207db9915a4ea7c6645f3d777f08034247677c3c82e1b74a31b2a5",
+    "scripts/visualize.py": "5a414cde4349bf97fb94c9c69d174e2f928c0e91e8683d00b3fa88118687a7fd",
+    "tests/test_a100.py": "f6023939250f497c5db8257886feb67c098d8cad36ab5dbe29a7b51597d29a93",
+    "tests/test_core.py": "9108ab10416dca7d646a6db3f48a0f9b0678e14a0fcc9967bb3c3dd50e4b27f6",
+    "run.py": "13f63572b7d4c05b8e0d4ba1cfd1134f04ba4b2eb7b0a09bfefb08634ea1fe73",
+    "a100.py": "d5b18627fcf4ead55fd5952c01ec02cdbdb5b0bf3e505c227e7c30445bb541ee",
+    "requirements.txt": "9fc5bd825019a6510f68783d8e85de08f5395cacfcf1aa226dd083920c7ef18d"
+  },
+  "copied_without_changes": [
+    "flowoct/wavelet_functions.py",
+    "flowoct/roi.py"
+  ],
+  "new_workflow": [
+    "flowoct/runner.py",
+    "flowoct/metrics.py",
+    "run.py",
+    "a100.py",
+    "configs/",
+    "scripts/",
+    "tests/"
+  ]
+}

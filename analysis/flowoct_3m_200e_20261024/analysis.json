@@ -1,0 +1,510 @@
+{
+  "source": "D:\\data\\FSdata\\flowoct_3m_train.log",
+  "source_sha256": "336280bb3135b39c9c8242d502919198fd969b3a4d1220492f7808a62201f1a2",
+  "completed_epochs": 200,
+  "final_global_step": 28000,
+  "validation_cases_each_epoch": [
+    10
+  ],
+  "start_records": [
+    {
+      "run": "/workspace/flowoct_work/flowoct_reproduction_a100/runs/flowoct_3m_200e",
+      "device": "cuda:0",
+      "start_epoch": 1,
+      "train_cases": 140,
+      "validation_cases": 10,
+      "sampled_slices": 64,
+      "generator_parameters": 2330180
+    },
+    {
+      "run": "/workspace/flowoct_work/flowoct_reproduction_a100/runs/flowoct_3m_200e",
+      "device": "cuda:0",
+      "start_epoch": 101,
+      "train_cases": 140,
+      "validation_cases": 10,
+      "sampled_slices": 64,
+      "generator_parameters": 2330180
+    }
+  ],
+  "missing_epochs": [],
+  "duplicate_epochs": {},
+  "malformed_json_lines": [],
+  "step_mismatches": [],
+  "nonfinite_records": [],
+  "error_lines": [],
+  "warnings": [
+    {
+      "line": 5,
+      "text": "/workspace/.conda/envs/lyh_flowoct/lib/python3.10/site-packages/torchio/data/image.py:248: UserWarning: Using TorchIO images without a torchio.SubjectsLoader in PyTorch >= 2.3 might have unexpected consequences, e.g., the collated batches will be instances of torchio.Subject with 5D images. Replace your PyTorch DataLoader with a torchio.SubjectsLoader so that the collated batch becomes a dictionary, as expected. See https://github.com/fepegar/torchio/issues/1179 for more context about this issue."
+    },
+    {
+      "line": 910,
+      "text": "/workspace/.conda/envs/lyh_flowoct/lib/python3.10/site-packages/torchio/data/image.py:248: UserWarning: Using TorchIO images without a torchio.SubjectsLoader in PyTorch >= 2.3 might have unexpected consequences, e.g., the collated batches will be instances of torchio.Subject with 5D images. Replace your PyTorch DataLoader with a torchio.SubjectsLoader so that the collated batch becomes a dictionary, as expected. See https://github.com/fepegar/torchio/issues/1179 for more context about this issue."
+    }
+  ],
+  "best_field_mismatches": [],
+  "selection_rule": "maximum mean validation volume_psnr; equal weight over 10 scans",
+  "best_epoch": 193,
+  "best_record": {
+    "epoch": 193,
+    "global_step": 27020,
+    "loss": {
+      "total": 0.04052008182874748,
+      "vloss": 0.0008639968750815439,
+      "L1loss": 0.01914020745482828,
+      "contrastloss": 3.9677636419023785,
+      "proj_loss": 0.02471191461331078
+    },
+    "train_seconds": 465.1083838492632,
+    "validation": {
+      "cases": 10,
+      "aggregation": "equal weight per scan; population standard deviation",
+      "metrics": {
+        "volume_mae": {
+          "mean": 0.012171782159109582,
+          "std": 0.0017298324746115635
+        },
+        "volume_psnr": {
+          "mean": 29.741366907744993,
+          "std": 0.4387943739653676
+        },
+        "volume_ssim": {
+          "mean": 0.8490471556518788,
+          "std": 0.05770202033408571
+        },
+        "axial_mip_mae": {
+          "mean": 0.07550206594878262,
+          "std": 0.006463728703679516
+        },
+        "axial_mip_psnr": {
+          "mean": 20.379350577097306,
+          "std": 0.6626380354796279
+        },
+        "axial_mip_ssim": {
+          "mean": 0.3455804478239604,
+          "std": 0.026272918934111614
+        }
+      }
+    },
+    "validation_seconds": 74.1021126806736,
+    "peak_allocated_gib": 25.17465305328369,
+    "best_validation_psnr": 29.741366907744993
+  },
+  "reference_epoch_98": {
+    "epoch": 98,
+    "global_step": 13720,
+    "loss": {
+      "total": 0.045396055414208346,
+      "vloss": 0.0011736037230418463,
+      "L1loss": 0.020676823066813604,
+      "contrastloss": 4.129452281338828,
+      "proj_loss": 0.026743457932025195
+    },
+    "train_seconds": 462.69492541253567,
+    "validation": {
+      "cases": 10,
+      "aggregation": "equal weight per scan; population standard deviation",
+      "metrics": {
+        "volume_mae": {
+          "mean": 0.014236409889899087,
+          "std": 0.005797155579372886
+        },
+        "volume_psnr": {
+          "mean": 28.95264003554005,
+          "std": 0.6985129842007963
+        },
+        "volume_ssim": {
+          "mean": 0.8017876513308696,
+          "std": 0.1883524430051825
+        },
+        "axial_mip_mae": {
+          "mean": 0.07840998154721035,
+          "std": 0.013768878188306542
+        },
+        "axial_mip_psnr": {
+          "mean": 20.213189213133482,
+          "std": 1.3069560845368782
+        },
+        "axial_mip_ssim": {
+          "mean": 0.3420576162674843,
+          "std": 0.026774002684866217
+        }
+      }
+    },
+    "validation_seconds": 70.81219030916691,
+    "peak_allocated_gib": 25.176011085510254,
+    "best_validation_psnr": 28.95264003554005
+  },
+  "epoch_98_to_best": {
+    "volume_mae": {
+      "before": 0.014236409889899087,
+      "after": 0.012171782159109582,
+      "delta": -0.0020646277307895047
+    },
+    "volume_psnr": {
+      "before": 28.95264003554005,
+      "after": 29.741366907744993,
+      "delta": 0.7887268722049434
+    },
+    "volume_ssim": {
+      "before": 0.8017876513308696,
+      "after": 0.8490471556518788,
+      "delta": 0.04725950432100923
+    },
+    "axial_mip_mae": {
+      "before": 0.07840998154721035,
+      "after": 0.07550206594878262,
+      "delta": -0.002907915598427735
+    },
+    "axial_mip_psnr": {
+      "before": 20.213189213133482,
+      "after": 20.379350577097306,
+      "delta": 0.1661613639638233
+    },
+    "axial_mip_ssim": {
+      "before": 0.3420576162674843,
+      "after": 0.3455804478239604,
+      "delta": 0.0035228315564760915
+    }
+  },
+  "metric_extrema": {
+    "volume_mae": {
+      "epoch": 191,
+      "value": 0.011997464935599441
+    },
+    "volume_psnr": {
+      "epoch": 193,
+      "value": 29.741366907744993
+    },
+    "volume_ssim": {
+      "epoch": 197,
+      "value": 0.867154450366623
+    },
+    "axial_mip_mae": {
+      "epoch": 199,
+      "value": 0.07049624318417216
+    },
+    "axial_mip_psnr": {
+      "epoch": 199,
+      "value": 20.932483800145462
+    },
+    "axial_mip_ssim": {
+      "epoch": 200,
+      "value": 0.35405351692777093
+    }
+  },
+  "windows": [
+    {
+      "epochs": [
+        1,
+        20
+      ],
+      "training_loss": {
+        "total": 0.06393051461316646,
+        "vloss": 0.002369193192820863,
+        "L1loss": 0.02579102184756526,
+        "contrastloss": 4.75171768290656,
+        "proj_loss": 0.03584483889131142
+      },
+      "validation": {
+        "volume_mae": 0.019882517934614884,
+        "volume_psnr": 27.007880126374726,
+        "volume_ssim": 0.6802502039777921,
+        "axial_mip_mae": 0.09105149310964748,
+        "axial_mip_psnr": 19.04743488888598,
+        "axial_mip_ssim": 0.2631886326517569
+      }
+    },
+    {
+      "epochs": [
+        41,
+        60
+      ],
+      "training_loss": {
+        "total": 0.049491163886019165,
+        "vloss": 0.0012963069709491849,
+        "L1loss": 0.021878692522378906,
+        "contrastloss": 4.5535061474357335,
+        "proj_loss": 0.028212177087552845
+      },
+      "validation": {
+        "volume_mae": 0.016907983095113363,
+        "volume_psnr": 28.254877353434132,
+        "volume_ssim": 0.7475953512089658,
+        "axial_mip_mae": 0.08433441633188948,
+        "axial_mip_psnr": 19.7077689058502,
+        "axial_mip_ssim": 0.32720215416787096
+      }
+    },
+    {
+      "epochs": [
+        81,
+        100
+      ],
+      "training_loss": {
+        "total": 0.04549778004842145,
+        "vloss": 0.0011510382605982679,
+        "L1loss": 0.020909454699805274,
+        "contrastloss": 4.166349119118282,
+        "proj_loss": 0.02700924952414685
+      },
+      "validation": {
+        "volume_mae": 0.016144419315044484,
+        "volume_psnr": 28.464380687578206,
+        "volume_ssim": 0.7613806586217711,
+        "axial_mip_mae": 0.08249970399380033,
+        "axial_mip_psnr": 19.87141665365664,
+        "axial_mip_ssim": 0.3337084747297472
+      }
+    },
+    {
+      "epochs": [
+        101,
+        120
+      ],
+      "training_loss": {
+        "total": 0.04425744490032749,
+        "vloss": 0.0010872516603454383,
+        "L1loss": 0.02040441917588136,
+        "contrastloss": 4.106848118901253,
+        "proj_loss": 0.02648478573986462
+      },
+      "validation": {
+        "volume_mae": 0.015110662484747869,
+        "volume_psnr": 28.70263034505183,
+        "volume_ssim": 0.7797263020991001,
+        "axial_mip_mae": 0.08315966152955326,
+        "axial_mip_psnr": 19.80384725091236,
+        "axial_mip_ssim": 0.3373511940328938
+      }
+    },
+    {
+      "epochs": [
+        121,
+        140
+      ],
+      "training_loss": {
+        "total": 0.04298053673069392,
+        "vloss": 0.0010191072607163474,
+        "L1loss": 0.01990638164071632,
+        "contrastloss": 4.051675762363843,
+        "proj_loss": 0.025778949261044286
+      },
+      "validation": {
+        "volume_mae": 0.01422758817096286,
+        "volume_psnr": 28.96524801385622,
+        "volume_ssim": 0.7908829279154974,
+        "axial_mip_mae": 0.08048469415931805,
+        "axial_mip_psnr": 20.009044593464942,
+        "axial_mip_ssim": 0.34143749470769136
+      }
+    },
+    {
+      "epochs": [
+        141,
+        160
+      ],
+      "training_loss": {
+        "total": 0.04194157512193279,
+        "vloss": 0.0009522497703125867,
+        "L1loss": 0.01964770494926987,
+        "contrastloss": 4.008879942127637,
+        "proj_loss": 0.025508256993655647
+      },
+      "validation": {
+        "volume_mae": 0.013610726189232557,
+        "volume_psnr": 29.096493742633267,
+        "volume_ssim": 0.8095126336189613,
+        "axial_mip_mae": 0.07982426789255498,
+        "axial_mip_psnr": 20.049421757105677,
+        "axial_mip_ssim": 0.34250864323921065
+      }
+    },
+    {
+      "epochs": [
+        161,
+        180
+      ],
+      "training_loss": {
+        "total": 0.04104348847110357,
+        "vloss": 0.0008985044419075296,
+        "L1loss": 0.01926585313963837,
+        "contrastloss": 3.984160763110433,
+        "proj_loss": 0.02504714118350031
+      },
+      "validation": {
+        "volume_mae": 0.013499023637148718,
+        "volume_psnr": 29.30562943629514,
+        "volume_ssim": 0.8055854330607166,
+        "axial_mip_mae": 0.07758852151243048,
+        "axial_mip_psnr": 20.22966952414157,
+        "axial_mip_ssim": 0.34389544802837363
+      }
+    },
+    {
+      "epochs": [
+        181,
+        200
+      ],
+      "training_loss": {
+        "total": 0.04038444374821016,
+        "vloss": 0.0008603831874331393,
+        "L1loss": 0.01907399805462254,
+        "contrastloss": 3.950670112201146,
+        "proj_loss": 0.02490262702639614
+      },
+      "validation": {
+        "volume_mae": 0.012859526274011301,
+        "volume_psnr": 29.4898038514057,
+        "volume_ssim": 0.8330712953930813,
+        "axial_mip_mae": 0.07517063249626715,
+        "axial_mip_psnr": 20.455850347485224,
+        "axial_mip_ssim": 0.3464096050822243
+      }
+    }
+  ],
+  "best_updates": [
+    {
+      "epoch": 1,
+      "volume_psnr": 25.77908778195598
+    },
+    {
+      "epoch": 2,
+      "volume_psnr": 26.50467774800441
+    },
+    {
+      "epoch": 5,
+      "volume_psnr": 26.981021966137934
+    },
+    {
+      "epoch": 8,
+      "volume_psnr": 27.153486895198192
+    },
+    {
+      "epoch": 9,
+      "volume_psnr": 27.347119639036226
+    },
+    {
+      "epoch": 10,
+      "volume_psnr": 27.434488099488856
+    },
+    {
+      "epoch": 13,
+      "volume_psnr": 27.611472937957643
+    },
+    {
+      "epoch": 17,
+      "volume_psnr": 27.859406517897234
+    },
+    {
+      "epoch": 21,
+      "volume_psnr": 27.971536391291117
+    },
+    {
+      "epoch": 25,
+      "volume_psnr": 28.293823405957777
+    },
+    {
+      "epoch": 32,
+      "volume_psnr": 28.466457436880244
+    },
+    {
+      "epoch": 40,
+      "volume_psnr": 28.46981667197174
+    },
+    {
+      "epoch": 46,
+      "volume_psnr": 28.5091750583173
+    },
+    {
+      "epoch": 54,
+      "volume_psnr": 28.69408921482463
+    },
+    {
+      "epoch": 64,
+      "volume_psnr": 28.728839936157726
+    },
+    {
+      "epoch": 90,
+      "volume_psnr": 28.807759562007174
+    },
+    {
+      "epoch": 94,
+      "volume_psnr": 28.860955510713683
+    },
+    {
+      "epoch": 98,
+      "volume_psnr": 28.95264003554005
+    },
+    {
+      "epoch": 117,
+      "volume_psnr": 28.955064329341116
+    },
+    {
+      "epoch": 119,
+      "volume_psnr": 28.974750875882798
+    },
+    {
+      "epoch": 120,
+      "volume_psnr": 29.122133658899877
+    },
+    {
+      "epoch": 136,
+      "volume_psnr": 29.16167636156082
+    },
+    {
+      "epoch": 140,
+      "volume_psnr": 29.27722984755892
+    },
+    {
+      "epoch": 146,
+      "volume_psnr": 29.32754615288468
+    },
+    {
+      "epoch": 150,
+      "volume_psnr": 29.380557467330636
+    },
+    {
+      "epoch": 152,
+      "volume_psnr": 29.39400631822385
+    },
+    {
+      "epoch": 165,
+      "volume_psnr": 29.442538001869906
+    },
+    {
+      "epoch": 167,
+      "volume_psnr": 29.48600645212606
+    },
+    {
+      "epoch": 176,
+      "volume_psnr": 29.62187347569185
+    },
+    {
+      "epoch": 193,
+      "volume_psnr": 29.741366907744993
+    }
+  ],
+  "best_epoch_weighted_losses": {
+    "vloss": 0.008639968750815439,
+    "L1loss": 0.00957010372741414,
+    "contrastloss": 0.01983881820951189,
+    "proj_loss": 0.002471191461331078
+  },
+  "runtime": {
+    "training_hours": 26.36332186261399,
+    "validation_hours": 4.02889648322016,
+    "mean_epoch_minutes": 9.117665503750244,
+    "excludes": "checkpoint saving, interruptions, queueing and other unlogged wall time"
+  },
+  "peak_allocated_gib": {
+    "min": 25.17219066619873,
+    "max": 25.240187168121338
+  },
+  "limitations": [
+    "Validation summary only; the newly selected checkpoint has not been evaluated on the test set here.",
+    "Per-case paired statistics and image quality cannot be recovered from this epoch summary log.",
+    "axial_mip is a maximum projection, whereas OCTA-500 FULL uses a mean projection.",
+    "Checkpoint identity is inferred from the saved-model policy and log; the server checkpoint was not loaded."
+  ]
+}

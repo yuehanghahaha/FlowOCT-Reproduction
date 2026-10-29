@@ -1,0 +1,59 @@
+{
+  "scope": "Fixed case 10305, three full 256x256 B-scans at Y=64,128,192, local GPU FP32, checkpoint193",
+  "device": "NVIDIA GeForce RTX 3060 Laptop GPU",
+  "numeric_settings": {
+    "matmul_tf32": false,
+    "cudnn_tf32": false,
+    "cudnn_deterministic": true
+  },
+  "upstream_vs_wrapper": {
+    "max_absolute_difference": 0.0,
+    "mean_absolute_difference": 0.0
+  },
+  "chunk1_vs_chunk3": {
+    "max_absolute_difference": 3.427267074584961e-07,
+    "mean_absolute_difference": 1.4100872173609483e-08
+  },
+  "local_regeneration_vs_saved_a100": {
+    "max_absolute_difference": 0.00020416826009750366,
+    "mean_absolute_difference": 1.06938902699009e-05
+  },
+  "haar_roundtrip": {
+    "max_absolute_difference": 1.7881393432617188e-07,
+    "mean_absolute_difference": 1.8385226970470587e-08
+  },
+  "generation_steps": 3,
+  "limits": "No new training, no whole-test inference rerun, and no proof of exact author offline preprocessing or training parity",
+  "resize_checks": [
+    {
+      "case_id": "10305",
+      "native_direct_vs_common_route_normalized_gt": {
+        "max_absolute_difference": 0.0,
+        "mean_absolute_difference": 0.0
+      },
+      "common_route_vs_saved_gt": {
+        "max_absolute_difference": 0.0,
+        "mean_absolute_difference": 0.0
+      },
+      "full_mean_native_direct_vs_common_route": {
+        "max_absolute_difference": 0.0,
+        "mean_absolute_difference": 0.0
+      }
+    },
+    {
+      "case_id": "10325",
+      "native_direct_vs_common_route_normalized_gt": {
+        "max_absolute_difference": 0.0,
+        "mean_absolute_difference": 0.0
+      },
+      "common_route_vs_saved_gt": {
+        "max_absolute_difference": 0.0,
+        "mean_absolute_difference": 0.0
+      },
+      "full_mean_native_direct_vs_common_route": {
+        "max_absolute_difference": 0.0,
+        "mean_absolute_difference": 0.0
+      }
+    }
+  ]
+}

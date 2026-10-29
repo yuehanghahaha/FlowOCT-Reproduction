@@ -1,0 +1,147 @@
+{
+  "selection_seed": 2026,
+  "manifest_sha256": "24e12fdb4dece29f27c565b4515ba0b31417505b3af893f99e61a416b05ad4da",
+  "method": "Sorted disease pools shuffled with Python random.Random(2026), quotas NORMAL7 DR1 AMD1 CNV1, unique image groups; then fixed IDs. Validation is the complete original set. No predictions used to select cases.",
+  "cases": [
+    {
+      "source_split": "train",
+      "case_id": "10308",
+      "patient_id": "10308",
+      "disease": "NORMAL",
+      "leakage_group": "10308"
+    },
+    {
+      "source_split": "train",
+      "case_id": "10310",
+      "patient_id": "10310",
+      "disease": "AMD",
+      "leakage_group": "10310"
+    },
+    {
+      "source_split": "train",
+      "case_id": "10354",
+      "patient_id": "10354",
+      "disease": "NORMAL",
+      "leakage_group": "10354"
+    },
+    {
+      "source_split": "train",
+      "case_id": "10373",
+      "patient_id": "10373",
+      "disease": "DR",
+      "leakage_group": "10373"
+    },
+    {
+      "source_split": "train",
+      "case_id": "10386",
+      "patient_id": "10386",
+      "disease": "NORMAL",
+      "leakage_group": "10386"
+    },
+    {
+      "source_split": "train",
+      "case_id": "10413",
+      "patient_id": "10413",
+      "disease": "NORMAL",
+      "leakage_group": "10413"
+    },
+    {
+      "source_split": "train",
+      "case_id": "10426",
+      "patient_id": "10426",
+      "disease": "NORMAL",
+      "leakage_group": "10426"
+    },
+    {
+      "source_split": "train",
+      "case_id": "10463",
+      "patient_id": "10463",
+      "disease": "NORMAL",
+      "leakage_group": "10463"
+    },
+    {
+      "source_split": "train",
+      "case_id": "10474",
+      "patient_id": "10474",
+      "disease": "CNV",
+      "leakage_group": "10474"
+    },
+    {
+      "source_split": "train",
+      "case_id": "10481",
+      "patient_id": "10481",
+      "disease": "NORMAL",
+      "leakage_group": "10481"
+    },
+    {
+      "source_split": "validation",
+      "case_id": "10302",
+      "patient_id": "10302",
+      "disease": "CNV",
+      "leakage_group": "10302"
+    },
+    {
+      "source_split": "validation",
+      "case_id": "10319",
+      "patient_id": "10319",
+      "disease": "NORMAL",
+      "leakage_group": "10319"
+    },
+    {
+      "source_split": "validation",
+      "case_id": "10338",
+      "patient_id": "10338",
+      "disease": "NORMAL",
+      "leakage_group": "10338"
+    },
+    {
+      "source_split": "validation",
+      "case_id": "10357",
+      "patient_id": "10357",
+      "disease": "NORMAL",
+      "leakage_group": "10357"
+    },
+    {
+      "source_split": "validation",
+      "case_id": "10396",
+      "patient_id": "10396",
+      "disease": "NORMAL",
+      "leakage_group": "10396"
+    },
+    {
+      "source_split": "validation",
+      "case_id": "10422",
+      "patient_id": "10422",
+      "disease": "NORMAL",
+      "leakage_group": "10422"
+    },
+    {
+      "source_split": "validation",
+      "case_id": "10447",
+      "patient_id": "10447",
+      "disease": "DR",
+      "leakage_group": "10447"
+    },
+    {
+      "source_split": "validation",
+      "case_id": "10456",
+      "patient_id": "10456",
+      "disease": "AMD",
+      "leakage_group": "10456"
+    },
+    {
+      "source_split": "validation",
+      "case_id": "10495",
+      "patient_id": "10495",
+      "disease": "NORMAL",
+      "leakage_group": "10495"
+    },
+    {
+      "source_split": "validation",
+      "case_id": "10500",
+      "patient_id": "10500",
+      "disease": "NORMAL",
+      "leakage_group": "10500"
+    }
+  ]
+}

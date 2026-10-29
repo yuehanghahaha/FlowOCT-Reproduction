@@ -1,0 +1,91 @@
+{
+  "case_id": "10308",
+  "fixed_y": 128,
+  "seed": 2026,
+  "preprocessing_and_input_hashes": {
+    "case_id": "10308",
+    "source_split": "train",
+    "geometry": {
+      "stored_axis_order": "ZYX",
+      "source_shape": [
+        256,
+        304,
+        304
+      ],
+      "model_axis_order": "YXZ",
+      "resized_shape": [
+        400,
+        400,
+        256
+      ],
+      "crop_start_yxz": [
+        72,
+        72,
+        0
+      ],
+      "crop_size": 256,
+      "flipped_z": false,
+      "oct_minmax": [
+        34.31999969482422,
+        242.2552032470703
+      ],
+      "octa_minmax": [
+        0.0,
+        210.83999633789062
+      ]
+    },
+    "oct_sha256": "a301b7c759e39042270d8a3df13c202d482003caa8fff4a667ece6d3e4862935",
+    "octa_sha256": "d8b511778538e4173f7fb20e04de55855b137053fce7c640b7927397f0f8ae4a"
+  },
+  "source_sha256": {
+    "flowoct/__init__.py": "c5d9125502b98e89d98e94b99a0675b085dd010e9ae7e194d5199651125b8741",
+    "flowoct/data.py": "cf503eeac9ae0ac2441b72a07ab7b1c7de4a6382f833ca59354a1b4d93d75415",
+    "flowoct/metrics.py": "926e86aec2f33c283ac7f667ed7b9b1ff5ef710490a86f5f53f69c4214048efe",
+    "flowoct/model.py": "9c4e1350dd2926120f7f00e2b569313c08369e6d893a45ae1d1a4f8a860dae1e",
+    "flowoct/roi.py": "1c729065c592c28d1a86d328dbae7ebd883d2f7153c910d0db13f5a149dd30e0",
+    "flowoct/runner.py": "11c55c27261c48e7cd37dfca8531ad5f3394fe1cd34c9102537d2cc23ec39ee6",
+    "flowoct/wavelet_functions.py": "33623b3e9b8d59df0227a840f88db4789095d3449e820e6454a31499ed3d156f",
+    "flowoct/wavelets.py": "02625d63ff997de3af1633f0fa511021d74212dabbc984162218e0bf8f594768"
+  },
+  "initialization": "fresh random; no pretrained checkpoint",
+  "input": "one fixed OCT B-scan256x256; t=0; no GT in input",
+  "model": "unchanged2D FlowOCT netG plus original Haar/euler_step",
+  "objective": "10*MSE(A+v_hat(A,t0), B); exactly equivalent to10*MSE(v_hat,B-A)",
+  "differences": "No random slices or t, no L1/contrast/projection losses, no ROI, no clamping before training loss; batch1",
+  "optimizer": {
+    "lr": 0.0002,
+    "betas": [
+      0.5,
+      0.999
+    ]
+  },
+  "total_updates": 2000,
+  "limits": "Local6GiB GPU; einops0.8.2 vs formal0.8.1; a memory positive control, not formal baseline or a causal full-pipeline ablation",
+  "environment": {
+    "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Jun 11 2026, 15:13:20) [MSC v.1942 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "packages": {
+      "torch": "2.5.1+cu121",
+      "numpy": "1.26.4",
+      "monai": "1.4.0",
+      "torchio": "0.20.4",
+      "scikit-image": "0.25.2",
+      "PyWavelets": "1.8.0",
+      "SimpleITK": "2.5.6",
+      "einops": "0.8.2"
+    },
+    "source_sha256": {
+      "flowoct\\__init__.py": "c5d9125502b98e89d98e94b99a0675b085dd010e9ae7e194d5199651125b8741",
+      "flowoct\\data.py": "cf503eeac9ae0ac2441b72a07ab7b1c7de4a6382f833ca59354a1b4d93d75415",
+      "flowoct\\metrics.py": "926e86aec2f33c283ac7f667ed7b9b1ff5ef710490a86f5f53f69c4214048efe",
+      "flowoct\\model.py": "9c4e1350dd2926120f7f00e2b569313c08369e6d893a45ae1d1a4f8a860dae1e",
+      "flowoct\\roi.py": "1c729065c592c28d1a86d328dbae7ebd883d2f7153c910d0db13f5a149dd30e0",
+      "flowoct\\runner.py": "11c55c27261c48e7cd37dfca8531ad5f3394fe1cd34c9102537d2cc23ec39ee6",
+      "flowoct\\wavelet_functions.py": "33623b3e9b8d59df0227a840f88db4789095d3449e820e6454a31499ed3d156f",
+      "flowoct\\wavelets.py": "02625d63ff997de3af1633f0fa511021d74212dabbc984162218e0bf8f594768"
+    },
+    "device": "cuda:0",
+    "cuda_runtime": "12.1",
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU"
+  }
+}

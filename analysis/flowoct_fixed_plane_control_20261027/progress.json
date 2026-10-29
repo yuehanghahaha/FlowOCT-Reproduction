@@ -1,0 +1,124 @@
+{
+  "records": [
+    {
+      "step": 0,
+      "raw_mse": 0.06127234770185164,
+      "raw_mae": 0.22542669133687396,
+      "clipped_ssim_range1": 0.017842803240203632,
+      "bright_gt_threshold_diagnostic": 0.05,
+      "bright_gt_fraction": 0.10296630859375,
+      "bright_gt_raw_mae": 0.319380995434906,
+      "gradient_l2_norm": null,
+      "elapsed_seconds": 0.6589357000193559,
+      "peak_allocated_gib": 0.11454916000366211
+    },
+    {
+      "step": 25,
+      "raw_mse": 0.01287221100727894,
+      "raw_mae": 0.10631414024459271,
+      "clipped_ssim_range1": 0.06681149167294848,
+      "bright_gt_threshold_diagnostic": 0.05,
+      "bright_gt_fraction": 0.10296630859375,
+      "bright_gt_raw_mae": 0.07157942341120553,
+      "gradient_l2_norm": 4.604719638824463,
+      "elapsed_seconds": 3.3988753000157885,
+      "peak_allocated_gib": 0.4333505630493164
+    },
+    {
+      "step": 50,
+      "raw_mse": 0.0023902440464364234,
+      "raw_mae": 0.038581363047198815,
+      "clipped_ssim_range1": 0.14578012942698296,
+      "bright_gt_threshold_diagnostic": 0.05,
+      "bright_gt_fraction": 0.10296630859375,
+      "bright_gt_raw_mae": 0.060217828119408824,
+      "gradient_l2_norm": 1.351650357246399,
+      "elapsed_seconds": 5.609355199994752,
+      "peak_allocated_gib": 0.4333505630493164
+    },
+    {
+      "step": 100,
+      "raw_mse": 0.0011223433534466496,
+      "raw_mae": 0.023285214046102447,
+      "clipped_ssim_range1": 0.4796377356521636,
+      "bright_gt_threshold_diagnostic": 0.05,
+      "bright_gt_fraction": 0.10296630859375,
+      "bright_gt_raw_mae": 0.05096541971153738,
+      "gradient_l2_norm": 0.2964615225791931,
+      "elapsed_seconds": 10.215663500013761,
+      "peak_allocated_gib": 0.4333505630493164
+    },
+    {
+      "step": 200,
+      "raw_mse": 0.0006808017085764859,
+      "raw_mae": 0.018203076983245976,
+      "clipped_ssim_range1": 0.5828532273838222,
+      "bright_gt_threshold_diagnostic": 0.05,
+      "bright_gt_fraction": 0.10296630859375,
+      "bright_gt_raw_mae": 0.04243160473766875,
+      "gradient_l2_norm": 0.5493937730789185,
+      "elapsed_seconds": 19.156810799991945,
+      "peak_allocated_gib": 0.4333505630493164
+    },
+    {
+      "step": 400,
+      "raw_mse": 0.0006727880001172489,
+      "raw_mae": 0.017570501773255205,
+      "clipped_ssim_range1": 0.6515886199219226,
+      "bright_gt_threshold_diagnostic": 0.05,
+      "bright_gt_fraction": 0.10296630859375,
+      "bright_gt_raw_mae": 0.04169087588817994,
+      "gradient_l2_norm": 0.0452909991145134,
+      "elapsed_seconds": 35.61780350000481,
+      "peak_allocated_gib": 0.4333505630493164
+    },
+    {
+      "step": 800,
+      "raw_mse": 0.00028837479711668016,
+      "raw_mae": 0.012081057383605591,
+      "clipped_ssim_range1": 0.852383732681036,
+      "bright_gt_threshold_diagnostic": 0.05,
+      "bright_gt_fraction": 0.10296630859375,
+      "bright_gt_raw_mae": 0.02572807044930266,
+      "gradient_l2_norm": 0.6922143697738647,
+      "elapsed_seconds": 68.2936782000179,
+      "peak_allocated_gib": 0.4333505630493164
+    },
+    {
+      "step": 1200,
+      "raw_mse": 0.0001664369821490411,
+      "raw_mae": 0.009625230924450077,
+      "clipped_ssim_range1": 0.8808086650867463,
+      "bright_gt_threshold_diagnostic": 0.05,
+      "bright_gt_fraction": 0.10296630859375,
+      "bright_gt_raw_mae": 0.017655436054455083,
+      "gradient_l2_norm": 0.5766441226005554,
+      "elapsed_seconds": 101.6645960000169,
+      "peak_allocated_gib": 0.4333505630493164
+    },
+    {
+      "step": 1600,
+      "raw_mse": 7.441258897083867e-05,
+      "raw_mae": 0.006477276325817023,
+      "clipped_ssim_range1": 0.9300251224074364,
+      "bright_gt_threshold_diagnostic": 0.05,
+      "bright_gt_fraction": 0.10296630859375,
+      "bright_gt_raw_mae": 0.011147141022686076,
+      "gradient_l2_norm": 0.2511828541755676,
+      "elapsed_seconds": 139.15541090001352,
+      "peak_allocated_gib": 0.4333505630493164
+    },
+    {
+      "step": 2000,
+      "raw_mse": 5.963413157629564e-05,
+      "raw_mae": 0.005882012559806728,
+      "clipped_ssim_range1": 0.9408841460313797,
+      "bright_gt_threshold_diagnostic": 0.05,
+      "bright_gt_fraction": 0.10296630859375,
+      "bright_gt_raw_mae": 0.010003643324593149,
+      "gradient_l2_norm": 0.29828333854675293,
+      "elapsed_seconds": 177.49999750001007,
+      "peak_allocated_gib": 0.4333505630493164
+    }
+  ]
+}

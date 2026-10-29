@@ -1,0 +1,1758 @@
+{
+  "cases": 50,
+  "checkpoint_epoch": 193,
+  "checkpoint_sha256": "42676f6219106bfcf4b25dc275172d827ddeeec96c97721d2b91db0c70693832",
+  "sources_match_prediction": {
+    "flowoct/__init__.py": "c5d9125502b98e89d98e94b99a0675b085dd010e9ae7e194d5199651125b8741",
+    "flowoct/data.py": "cf503eeac9ae0ac2441b72a07ab7b1c7de4a6382f833ca59354a1b4d93d75415",
+    "flowoct/metrics.py": "926e86aec2f33c283ac7f667ed7b9b1ff5ef710490a86f5f53f69c4214048efe",
+    "flowoct/model.py": "9c4e1350dd2926120f7f00e2b569313c08369e6d893a45ae1d1a4f8a860dae1e",
+    "flowoct/roi.py": "1c729065c592c28d1a86d328dbae7ebd883d2f7153c910d0db13f5a149dd30e0",
+    "flowoct/runner.py": "11c55c27261c48e7cd37dfca8531ad5f3394fe1cd34c9102537d2cc23ec39ee6",
+    "flowoct/wavelet_functions.py": "33623b3e9b8d59df0227a840f88db4789095d3449e820e6454a31499ed3d156f",
+    "flowoct/wavelets.py": "02625d63ff997de3af1633f0fa511021d74212dabbc984162218e0bf8f594768"
+  },
+  "gt_range_mean": 0.06810895095113664,
+  "gt_range_min_max": [
+    0.053515416104346514,
+    0.08784628915600479
+  ],
+  "summary": {
+    "98": {
+      "full_ssim_range1": 0.9279052449089553,
+      "full_ssim_gt_observed_range": 0.421327632695642,
+      "full_psnr_range1": 40.91049531603659,
+      "full_psnr_gt_observed_range": 17.519031962849933,
+      "highpass_correlation": 0.24608735520754638,
+      "highpass_std_ratio_pred_over_gt": 0.8817844940141311,
+      "lowpass_correlation": 0.82546286513521,
+      "gt_mean": 0.02576584176192604,
+      "prediction_mean": 0.026899502204801706
+    },
+    "193": {
+      "full_ssim_range1": 0.9394543243120123,
+      "full_ssim_gt_observed_range": 0.4252820135845893,
+      "full_psnr_range1": 41.53962325598889,
+      "full_psnr_gt_observed_range": 18.148159902802234,
+      "highpass_correlation": 0.2564759130451765,
+      "highpass_std_ratio_pred_over_gt": 0.8882523679354296,
+      "lowpass_correlation": 0.8254676775638318,
+      "gt_mean": 0.02576584176192604,
+      "prediction_mean": 0.027093076542902886
+    }
+  },
+  "records": [
+    {
+      "case_id": "10305",
+      "gt_min_max": [
+        0.007152198348194361,
+        0.06965206563472748
+      ],
+      "gt_range": 0.06249986728653312,
+      "gt_p1_p99": [
+        0.013978020660579205,
+        0.053410081192851074
+      ],
+      "98": {
+        "full_ssim_range1": 0.9628644292534227,
+        "full_ssim_gt_observed_range": 0.4875663345719606,
+        "full_psnr_range1": 43.77923301359502,
+        "full_psnr_gt_observed_range": 19.696814916704508,
+        "highpass_correlation": 0.33439371559297054,
+        "highpass_std_ratio_pred_over_gt": 0.8972034842775176,
+        "lowpass_correlation": 0.8315540763021976,
+        "gt_mean": 0.02834837716163463,
+        "prediction_mean": 0.028239410288662725
+      },
+      "193": {
+        "full_ssim_range1": 0.9620618185116977,
+        "full_ssim_gt_observed_range": 0.4897632360333522,
+        "full_psnr_range1": 43.52372160205271,
+        "full_psnr_gt_observed_range": 19.441303505162203,
+        "highpass_correlation": 0.3472598355477479,
+        "highpass_std_ratio_pred_over_gt": 0.9133624392933599,
+        "lowpass_correlation": 0.8277019606536204,
+        "gt_mean": 0.02834837716163463,
+        "prediction_mean": 0.02615923550118282
+      }
+    },
+    {
+      "case_id": "10307",
+      "gt_min_max": [
+        0.00763386394828558,
+        0.0885557308793068
+      ],
+      "gt_range": 0.08092186693102121,
+      "gt_p1_p99": [
+        0.015165040036663413,
+        0.06612869948148728
+      ],
+      "98": {
+        "full_ssim_range1": 0.9319430032914751,
+        "full_ssim_gt_observed_range": 0.42454757553397515,
+        "full_psnr_range1": 40.05547711391414,
+        "full_psnr_gt_observed_range": 18.216794988496414,
+        "highpass_correlation": 0.23591833550146488,
+        "highpass_std_ratio_pred_over_gt": 0.7571814626969123,
+        "lowpass_correlation": 0.8698754991666481,
+        "gt_mean": 0.0334593505980223,
+        "prediction_mean": 0.027751855750473453
+      },
+      "193": {
+        "full_ssim_range1": 0.9386407828260488,
+        "full_ssim_gt_observed_range": 0.4292518617806971,
+        "full_psnr_range1": 40.54812990283354,
+        "full_psnr_gt_observed_range": 18.709447777415818,
+        "highpass_correlation": 0.2534837951416219,
+        "highpass_std_ratio_pred_over_gt": 0.7585500129699241,
+        "lowpass_correlation": 0.8713005630891828,
+        "gt_mean": 0.0334593505980223,
+        "prediction_mean": 0.028619930793269077
+      }
+    },
+    {
+      "case_id": "10317",
+      "gt_min_max": [
+        0.0024833660572767258,
+        0.06295672804117203
+      ],
+      "gt_range": 0.0604733619838953,
+      "gt_p1_p99": [
+        0.004849386657588184,
+        0.03907724320888519
+      ],
+      "98": {
+        "full_ssim_range1": 0.8788421371507353,
+        "full_ssim_gt_observed_range": 0.4344221287936249,
+        "full_psnr_range1": 39.64592336275093,
+        "full_psnr_gt_observed_range": 15.277205635636005,
+        "highpass_correlation": 0.24021226933683157,
+        "highpass_std_ratio_pred_over_gt": 1.0580253958549743,
+        "lowpass_correlation": 0.7860986713675622,
+        "gt_mean": 0.013299286739357541,
+        "prediction_mean": 0.02167478632146924
+      },
+      "193": {
+        "full_ssim_range1": 0.9535604281839761,
+        "full_ssim_gt_observed_range": 0.44726813429551365,
+        "full_psnr_range1": 44.698121956042,
+        "full_psnr_gt_observed_range": 20.329404228927082,
+        "highpass_correlation": 0.2205579958684687,
+        "highpass_std_ratio_pred_over_gt": 1.0865227808162947,
+        "lowpass_correlation": 0.7805339197114706,
+        "gt_mean": 0.013299286739357541,
+        "prediction_mean": 0.015463023643718543
+      }
+    },
+    {
+      "case_id": "10318",
+      "gt_min_max": [
+        0.005398434586822987,
+        0.07427261769771576
+      ],
+      "gt_range": 0.06887418311089277,
+      "gt_p1_p99": [
+        0.009250782756134867,
+        0.05352803040295841
+      ],
+      "98": {
+        "full_ssim_range1": 0.9528112473053715,
+        "full_ssim_gt_observed_range": 0.42724572885130563,
+        "full_psnr_range1": 42.81987874724932,
+        "full_psnr_gt_observed_range": 19.581007965198094,
+        "highpass_correlation": 0.2264215358254743,
+        "highpass_std_ratio_pred_over_gt": 0.8216224272265878,
+        "lowpass_correlation": 0.8942349905005715,
+        "gt_mean": 0.023877504420156015,
+        "prediction_mean": 0.025728815634714408
+      },
+      "193": {
+        "full_ssim_range1": 0.9499639281653828,
+        "full_ssim_gt_observed_range": 0.4205689371068978,
+        "full_psnr_range1": 42.58013559757021,
+        "full_psnr_gt_observed_range": 19.34126481551899,
+        "highpass_correlation": 0.23509223146288002,
+        "highpass_std_ratio_pred_over_gt": 0.8309290574033364,
+        "lowpass_correlation": 0.8796065565870744,
+        "gt_mean": 0.023877504420156015,
+        "prediction_mean": 0.02656825359109405
+      }
+    },
+    {
+      "case_id": "10321",
+      "gt_min_max": [
+        0.006400604732334614,
+        0.07798894494771957
+      ],
+      "gt_range": 0.07158834021538496,
+      "gt_p1_p99": [
+        0.012863378599286079,
+        0.0536814667284489
+      ],
+      "98": {
+        "full_ssim_range1": 0.9131778811598319,
+        "full_ssim_gt_observed_range": 0.40280367561961594,
+        "full_psnr_range1": 38.0368974517321,
+        "full_psnr_gt_observed_range": 15.133743318986475,
+        "highpass_correlation": 0.19891621902174506,
+        "highpass_std_ratio_pred_over_gt": 0.9027052938331086,
+        "lowpass_correlation": 0.8379653353999318,
+        "gt_mean": 0.026886517088243522,
+        "prediction_mean": 0.03690798159999531
+      },
+      "193": {
+        "full_ssim_range1": 0.9529472165212248,
+        "full_ssim_gt_observed_range": 0.4134311576322514,
+        "full_psnr_range1": 42.39370102345168,
+        "full_psnr_gt_observed_range": 19.49054689070605,
+        "highpass_correlation": 0.2117748505877897,
+        "highpass_std_ratio_pred_over_gt": 0.9278537922159994,
+        "lowpass_correlation": 0.8586570294690193,
+        "gt_mean": 0.026886517088243522,
+        "prediction_mean": 0.030079495521462718
+      }
+    },
+    {
+      "case_id": "10322",
+      "gt_min_max": [
+        0.002952523995190859,
+        0.07249227911233902
+      ],
+      "gt_range": 0.06953975511714816,
+      "gt_p1_p99": [
+        0.008903311146423221,
+        0.04670533407479525
+      ],
+      "98": {
+        "full_ssim_range1": 0.9399915505515325,
+        "full_ssim_gt_observed_range": 0.39229833086515004,
+        "full_psnr_range1": 41.30788153940319,
+        "full_psnr_gt_observed_range": 18.152544679215826,
+        "highpass_correlation": 0.19173599573917405,
+        "highpass_std_ratio_pred_over_gt": 0.8022229635506507,
+        "lowpass_correlation": 0.7115643016049631,
+        "gt_mean": 0.022874326134019185,
+        "prediction_mean": 0.02770908600073696
+      },
+      "193": {
+        "full_ssim_range1": 0.9524370004018985,
+        "full_ssim_gt_observed_range": 0.404828286544658,
+        "full_psnr_range1": 42.87551966183809,
+        "full_psnr_gt_observed_range": 19.72018280165072,
+        "highpass_correlation": 0.20911713594422515,
+        "highpass_std_ratio_pred_over_gt": 0.8556623936360814,
+        "lowpass_correlation": 0.692768131516656,
+        "gt_mean": 0.022874326134019185,
+        "prediction_mean": 0.024629814730802835
+      }
+    },
+    {
+      "case_id": "10325",
+      "gt_min_max": [
+        0.0035589635372161865,
+        0.08047964423894882
+      ],
+      "gt_range": 0.07692068070173264,
+      "gt_p1_p99": [
+        0.007384233758784831,
+        0.05772861931473018
+      ],
+      "98": {
+        "full_ssim_range1": 0.8195720675952489,
+        "full_ssim_gt_observed_range": 0.26419251699074137,
+        "full_psnr_range1": 33.42788533411652,
+        "full_psnr_gt_observed_range": 11.148747710681517,
+        "highpass_correlation": 0.11593287702325875,
+        "highpass_std_ratio_pred_over_gt": 1.0327838604467738,
+        "lowpass_correlation": 0.35219163674590315,
+        "gt_mean": 0.028461542614916624,
+        "prediction_mean": 0.04617730943402876
+      },
+      "193": {
+        "full_ssim_range1": 0.900401643660477,
+        "full_ssim_gt_observed_range": 0.292244928532878,
+        "full_psnr_range1": 38.31084330426786,
+        "full_psnr_gt_observed_range": 16.031705680832864,
+        "highpass_correlation": 0.11434694993058138,
+        "highpass_std_ratio_pred_over_gt": 1.00974360009477,
+        "lowpass_correlation": 0.38915961618148015,
+        "gt_mean": 0.028461542614916624,
+        "prediction_mean": 0.03401752262814739
+      }
+    },
+    {
+      "case_id": "10326",
+      "gt_min_max": [
+        0.00819244235754013,
+        0.07296773791313171
+      ],
+      "gt_range": 0.06477529555559158,
+      "gt_p1_p99": [
+        0.01193087357096374,
+        0.052998411655426035
+      ],
+      "98": {
+        "full_ssim_range1": 0.9405239765483764,
+        "full_ssim_gt_observed_range": 0.42245404421040406,
+        "full_psnr_range1": 42.31564809985074,
+        "full_psnr_gt_observed_range": 18.543836164924524,
+        "highpass_correlation": 0.21582032858412328,
+        "highpass_std_ratio_pred_over_gt": 0.7804155582062411,
+        "lowpass_correlation": 0.8928494235288433,
+        "gt_mean": 0.026012653093957283,
+        "prediction_mean": 0.022975177149122672
+      },
+      "193": {
+        "full_ssim_range1": 0.9594604755130353,
+        "full_ssim_gt_observed_range": 0.4178035219854114,
+        "full_psnr_range1": 43.50691167116117,
+        "full_psnr_gt_observed_range": 19.735099736234957,
+        "highpass_correlation": 0.21915657506993805,
+        "highpass_std_ratio_pred_over_gt": 0.7797699907436448,
+        "lowpass_correlation": 0.8991335799948741,
+        "gt_mean": 0.026012653093957283,
+        "prediction_mean": 0.02573442217288857
+      }
+    },
+    {
+      "case_id": "10327",
+      "gt_min_max": [
+        0.01271415688097477,
+        0.0966695249080658
+      ],
+      "gt_range": 0.08395536802709103,
+      "gt_p1_p99": [
+        0.022081890888512135,
+        0.07335972040891647
+      ],
+      "98": {
+        "full_ssim_range1": 0.885593648219293,
+        "full_ssim_gt_observed_range": 0.41497643961706815,
+        "full_psnr_range1": 35.817136211699186,
+        "full_psnr_gt_observed_range": 14.298105606531832,
+        "highpass_correlation": 0.27989357856552216,
+        "highpass_std_ratio_pred_over_gt": 0.6854133432722915,
+        "lowpass_correlation": 0.8663714540172166,
+        "gt_mean": 0.04294945025876018,
+        "prediction_mean": 0.028947664550699415
+      },
+      "193": {
+        "full_ssim_range1": 0.904019464300616,
+        "full_ssim_gt_observed_range": 0.4286122443948217,
+        "full_psnr_range1": 36.71046446908547,
+        "full_psnr_gt_observed_range": 15.191433863918114,
+        "highpass_correlation": 0.2870958878959616,
+        "highpass_std_ratio_pred_over_gt": 0.7210781442679238,
+        "lowpass_correlation": 0.8891185375369157,
+        "gt_mean": 0.04294945025876018,
+        "prediction_mean": 0.03068918653158903
+      }
+    },
+    {
+      "case_id": "10328",
+      "gt_min_max": [
+        0.007089640479534864,
+        0.07345704734325409
+      ],
+      "gt_range": 0.06636740686371922,
+      "gt_p1_p99": [
+        0.010968350432813167,
+        0.056375539116561416
+      ],
+      "98": {
+        "full_ssim_range1": 0.9119772704086879,
+        "full_ssim_gt_observed_range": 0.4134781188058735,
+        "full_psnr_range1": 40.37231003650719,
+        "full_psnr_gt_observed_range": 16.811407017107978,
+        "highpass_correlation": 0.25869013312921296,
+        "highpass_std_ratio_pred_over_gt": 0.8858793330170882,
+        "lowpass_correlation": 0.8930809496943287,
+        "gt_mean": 0.026206196207688492,
+        "prediction_mean": 0.019967613271393958
+      },
+      "193": {
+        "full_ssim_range1": 0.9415191717990224,
+        "full_ssim_gt_observed_range": 0.4290003170523392,
+        "full_psnr_range1": 41.782187654644495,
+        "full_psnr_gt_observed_range": 18.221284635245283,
+        "highpass_correlation": 0.2727550210666941,
+        "highpass_std_ratio_pred_over_gt": 0.8691897589015493,
+        "lowpass_correlation": 0.9002311888333955,
+        "gt_mean": 0.026206196207688492,
+        "prediction_mean": 0.022039738362501282
+      }
+    },
+    {
+      "case_id": "10330",
+      "gt_min_max": [
+        0.007617830298841,
+        0.08507705479860306
+      ],
+      "gt_range": 0.07745922449976206,
+      "gt_p1_p99": [
+        0.013512601843103766,
+        0.057264091633260274
+      ],
+      "98": {
+        "full_ssim_range1": 0.9462152561698114,
+        "full_ssim_gt_observed_range": 0.4487912648161096,
+        "full_psnr_range1": 41.64538285680788,
+        "full_psnr_gt_observed_range": 19.4268457495303,
+        "highpass_correlation": 0.2837133359103003,
+        "highpass_std_ratio_pred_over_gt": 0.8578190286111077,
+        "lowpass_correlation": 0.8380189675092798,
+        "gt_mean": 0.027822010611771475,
+        "prediction_mean": 0.031957536869470005
+      },
+      "193": {
+        "full_ssim_range1": 0.9411873981157932,
+        "full_ssim_gt_observed_range": 0.44757825427796055,
+        "full_psnr_range1": 40.68499252738946,
+        "full_psnr_gt_observed_range": 18.466455420111892,
+        "highpass_correlation": 0.2976506501728038,
+        "highpass_std_ratio_pred_over_gt": 0.8548440868871046,
+        "lowpass_correlation": 0.8382020769556319,
+        "gt_mean": 0.027822010611771475,
+        "prediction_mean": 0.03365027947107535
+      }
+    },
+    {
+      "case_id": "10331",
+      "gt_min_max": [
+        0.0033942931331694126,
+        0.06373412907123566
+      ],
+      "gt_range": 0.060339835938066244,
+      "gt_p1_p99": [
+        0.007163323787972331,
+        0.04743166211992503
+      ],
+      "98": {
+        "full_ssim_range1": 0.9342065539374459,
+        "full_ssim_gt_observed_range": 0.4121536281996481,
+        "full_psnr_range1": 41.435934287566674,
+        "full_psnr_gt_observed_range": 17.048016787743688,
+        "highpass_correlation": 0.2648549582215203,
+        "highpass_std_ratio_pred_over_gt": 0.872086056568405,
+        "lowpass_correlation": 0.7538133490924939,
+        "gt_mean": 0.02162036730185335,
+        "prediction_mean": 0.024489737324323357
+      },
+      "193": {
+        "full_ssim_range1": 0.9112854029999562,
+        "full_ssim_gt_observed_range": 0.4086035077644072,
+        "full_psnr_range1": 39.511079024458226,
+        "full_psnr_gt_observed_range": 15.123161524635233,
+        "highpass_correlation": 0.29027309897099346,
+        "highpass_std_ratio_pred_over_gt": 0.8800078831368074,
+        "lowpass_correlation": 0.6337839856276657,
+        "gt_mean": 0.02162036730185335,
+        "prediction_mean": 0.0278158867638183
+      }
+    },
+    {
+      "case_id": "10332",
+      "gt_min_max": [
+        0.004929691087454557,
+        0.06080370396375656
+      ],
+      "gt_range": 0.055874012876302004,
+      "gt_p1_p99": [
+        0.008439163072034716,
+        0.04415459651499987
+      ],
+      "98": {
+        "full_ssim_range1": 0.9311528902831925,
+        "full_ssim_gt_observed_range": 0.4230980748591324,
+        "full_psnr_range1": 42.347605105122156,
+        "full_psnr_gt_observed_range": 17.291802376051972,
+        "highpass_correlation": 0.27274088207499575,
+        "highpass_std_ratio_pred_over_gt": 0.8472372648598797,
+        "lowpass_correlation": 0.7841457142312765,
+        "gt_mean": 0.020728121094776952,
+        "prediction_mean": 0.016673504486242052
+      },
+      "193": {
+        "full_ssim_range1": 0.9456389155169453,
+        "full_ssim_gt_observed_range": 0.4200386768879265,
+        "full_psnr_range1": 43.18530289467177,
+        "full_psnr_gt_observed_range": 18.129500165601602,
+        "highpass_correlation": 0.2731715019855834,
+        "highpass_std_ratio_pred_over_gt": 0.8574787645487608,
+        "lowpass_correlation": 0.7656900177707802,
+        "gt_mean": 0.020728121094776952,
+        "prediction_mean": 0.0181024296989456
+      }
+    },
+    {
+      "case_id": "10341",
+      "gt_min_max": [
+        0.002608527662232518,
+        0.0904548168182373
+      ],
+      "gt_range": 0.08784628915600479,
+      "gt_p1_p99": [
+        0.011037913849577308,
+        0.05997202917933469
+      ],
+      "98": {
+        "full_ssim_range1": 0.9349665467586755,
+        "full_ssim_gt_observed_range": 0.44808556341453026,
+        "full_psnr_range1": 40.8754045368736,
+        "full_psnr_gt_observed_range": 19.749872947840505,
+        "highpass_correlation": 0.2641702506527255,
+        "highpass_std_ratio_pred_over_gt": 0.7965551190724613,
+        "lowpass_correlation": 0.8856921506803442,
+        "gt_mean": 0.02910824075376084,
+        "prediction_mean": 0.033484179754125876
+      },
+      "193": {
+        "full_ssim_range1": 0.9341049092459947,
+        "full_ssim_gt_observed_range": 0.44646191782414096,
+        "full_psnr_range1": 40.681365265374296,
+        "full_psnr_gt_observed_range": 19.555833676341198,
+        "highpass_correlation": 0.2725384396767471,
+        "highpass_std_ratio_pred_over_gt": 0.8117547383664825,
+        "lowpass_correlation": 0.8889854675084232,
+        "gt_mean": 0.02910824075376084,
+        "prediction_mean": 0.034114465403675354
+      }
+    },
+    {
+      "case_id": "10342",
+      "gt_min_max": [
+        0.0055807302705943584,
+        0.07693454623222351
+      ],
+      "gt_range": 0.07135381596162915,
+      "gt_p1_p99": [
+        0.010369812743738294,
+        0.054521084390580656
+      ],
+      "98": {
+        "full_ssim_range1": 0.9502225994636476,
+        "full_ssim_gt_observed_range": 0.4390608409091607,
+        "full_psnr_range1": 42.5705343190902,
+        "full_psnr_gt_observed_range": 19.63887839697905,
+        "highpass_correlation": 0.24059330101549506,
+        "highpass_std_ratio_pred_over_gt": 0.8103815541615137,
+        "lowpass_correlation": 0.8475900856188694,
+        "gt_mean": 0.024961780440172276,
+        "prediction_mean": 0.02474577156174007
+      },
+      "193": {
+        "full_ssim_range1": 0.952176905506944,
+        "full_ssim_gt_observed_range": 0.43199575861364603,
+        "full_psnr_range1": 42.68423480096281,
+        "full_psnr_gt_observed_range": 19.75257887885167,
+        "highpass_correlation": 0.2471667320189177,
+        "highpass_std_ratio_pred_over_gt": 0.8154689475755377,
+        "lowpass_correlation": 0.8428306828403374,
+        "gt_mean": 0.024961780440172276,
+        "prediction_mean": 0.024544582649326685
+      }
+    },
+    {
+      "case_id": "10347",
+      "gt_min_max": [
+        0.005414487328380346,
+        0.061543677002191544
+      ],
+      "gt_range": 0.0561291896738112,
+      "gt_p1_p99": [
+        0.009647392528131604,
+        0.04818127155303956
+      ],
+      "98": {
+        "full_ssim_range1": 0.9539056567972323,
+        "full_ssim_gt_observed_range": 0.4037925817448047,
+        "full_psnr_range1": 42.98514733389396,
+        "full_psnr_gt_observed_range": 17.9689227826941,
+        "highpass_correlation": 0.2359391961325335,
+        "highpass_std_ratio_pred_over_gt": 1.092734061134054,
+        "lowpass_correlation": 0.884943723479264,
+        "gt_mean": 0.022991035142069904,
+        "prediction_mean": 0.02454558371391613
+      },
+      "193": {
+        "full_ssim_range1": 0.9523565868924782,
+        "full_ssim_gt_observed_range": 0.4015224139042338,
+        "full_psnr_range1": 42.822689346969256,
+        "full_psnr_gt_observed_range": 17.80646479576939,
+        "highpass_correlation": 0.23614533833737145,
+        "highpass_std_ratio_pred_over_gt": 1.0536088853978123,
+        "lowpass_correlation": 0.8784646156617238,
+        "gt_mean": 0.022991035142069904,
+        "prediction_mean": 0.025956105771584248
+      }
+    },
+    {
+      "case_id": "10351",
+      "gt_min_max": [
+        0.005112188868224621,
+        0.08310043066740036
+      ],
+      "gt_range": 0.07798824179917574,
+      "gt_p1_p99": [
+        0.008390617975965142,
+        0.06059734821319581
+      ],
+      "98": {
+        "full_ssim_range1": 0.8903816358792997,
+        "full_ssim_gt_observed_range": 0.42320385247251435,
+        "full_psnr_range1": 38.92358828711251,
+        "full_psnr_gt_observed_range": 16.764170877673898,
+        "highpass_correlation": 0.26690718181141593,
+        "highpass_std_ratio_pred_over_gt": 0.7004412105503444,
+        "lowpass_correlation": 0.8923667958059542,
+        "gt_mean": 0.027685777493509534,
+        "prediction_mean": 0.0199087694813187
+      },
+      "193": {
+        "full_ssim_range1": 0.9336510484768782,
+        "full_ssim_gt_observed_range": 0.44273117721725663,
+        "full_psnr_range1": 40.983717348999626,
+        "full_psnr_gt_observed_range": 18.824299939561012,
+        "highpass_correlation": 0.2856062879505626,
+        "highpass_std_ratio_pred_over_gt": 0.7015353828233282,
+        "lowpass_correlation": 0.8938728424316743,
+        "gt_mean": 0.027685777493509534,
+        "prediction_mean": 0.023904564744263723
+      }
+    },
+    {
+      "case_id": "10355",
+      "gt_min_max": [
+        0.004686637315899134,
+        0.06654065102338791
+      ],
+      "gt_range": 0.061854013707488775,
+      "gt_p1_p99": [
+        0.008077126648277044,
+        0.04847141522914174
+      ],
+      "98": {
+        "full_ssim_range1": 0.9252019768706019,
+        "full_ssim_gt_observed_range": 0.39737288794075437,
+        "full_psnr_range1": 40.15299679363335,
+        "full_psnr_gt_observed_range": 15.980354518678174,
+        "highpass_correlation": 0.21744807381095038,
+        "highpass_std_ratio_pred_over_gt": 0.9057953329831262,
+        "lowpass_correlation": 0.9220177975846804,
+        "gt_mean": 0.022167746668564803,
+        "prediction_mean": 0.029036185328351394
+      },
+      "193": {
+        "full_ssim_range1": 0.9333028495579084,
+        "full_ssim_gt_observed_range": 0.3940714581769607,
+        "full_psnr_range1": 40.735357979318195,
+        "full_psnr_gt_observed_range": 16.562715704363015,
+        "highpass_correlation": 0.22558865769547462,
+        "highpass_std_ratio_pred_over_gt": 0.9057407650443065,
+        "lowpass_correlation": 0.9056759732260231,
+        "gt_mean": 0.022167746668564803,
+        "prediction_mean": 0.028108783787530456
+      }
+    },
+    {
+      "case_id": "10356",
+      "gt_min_max": [
+        0.005035083275288343,
+        0.05855049937963486
+      ],
+      "gt_range": 0.053515416104346514,
+      "gt_p1_p99": [
+        0.009314822359010577,
+        0.04261214938014746
+      ],
+      "98": {
+        "full_ssim_range1": 0.9301495529024155,
+        "full_ssim_gt_observed_range": 0.39707765031735476,
+        "full_psnr_range1": 40.82406776733532,
+        "full_psnr_gt_observed_range": 15.393645899210249,
+        "highpass_correlation": 0.2572508047465423,
+        "highpass_std_ratio_pred_over_gt": 1.1465439801365773,
+        "lowpass_correlation": 0.8021469275327426,
+        "gt_mean": 0.02066228634011935,
+        "prediction_mean": 0.02670714195007662
+      },
+      "193": {
+        "full_ssim_range1": 0.9252129878290128,
+        "full_ssim_gt_observed_range": 0.4021161931627517,
+        "full_psnr_range1": 40.482956556104625,
+        "full_psnr_gt_observed_range": 15.052534687979549,
+        "highpass_correlation": 0.2725761337408069,
+        "highpass_std_ratio_pred_over_gt": 1.1299419420871641,
+        "lowpass_correlation": 0.8459814396766966,
+        "gt_mean": 0.02066228634011935,
+        "prediction_mean": 0.027785872663088185
+      }
+    },
+    {
+      "case_id": "10358",
+      "gt_min_max": [
+        0.005015369039028883,
+        0.07704969495534897
+      ],
+      "gt_range": 0.07203432591632009,
+      "gt_p1_p99": [
+        0.010426590777933597,
+        0.05399525240063668
+      ],
+      "98": {
+        "full_ssim_range1": 0.9404989282303855,
+        "full_ssim_gt_observed_range": 0.40249922890276696,
+        "full_psnr_range1": 41.40667659450675,
+        "full_psnr_gt_observed_range": 18.557466524130206,
+        "highpass_correlation": 0.1784417206850379,
+        "highpass_std_ratio_pred_over_gt": 0.8847123915779489,
+        "lowpass_correlation": 0.8862624890396464,
+        "gt_mean": 0.025706995585501602,
+        "prediction_mean": 0.028847520821443595
+      },
+      "193": {
+        "full_ssim_range1": 0.9435521990170075,
+        "full_ssim_gt_observed_range": 0.40879930155062605,
+        "full_psnr_range1": 41.47765728427538,
+        "full_psnr_gt_observed_range": 18.628447213898845,
+        "highpass_correlation": 0.20091021902070763,
+        "highpass_std_ratio_pred_over_gt": 0.8772153715415858,
+        "lowpass_correlation": 0.881888651613683,
+        "gt_mean": 0.025706995585501602,
+        "prediction_mean": 0.029093942136853457
+      }
+    },
+    {
+      "case_id": "10359",
+      "gt_min_max": [
+        0.00890445802360773,
+        0.0807163268327713
+      ],
+      "gt_range": 0.07181186880916357,
+      "gt_p1_p99": [
+        0.016668066382408142,
+        0.057132746092975153
+      ],
+      "98": {
+        "full_ssim_range1": 0.953177737336713,
+        "full_ssim_gt_observed_range": 0.4480109152496711,
+        "full_psnr_range1": 42.490334698787336,
+        "full_psnr_gt_observed_range": 19.614259275092824,
+        "highpass_correlation": 0.28763740249193176,
+        "highpass_std_ratio_pred_over_gt": 0.8807729954295679,
+        "lowpass_correlation": 0.8770595278932904,
+        "gt_mean": 0.031964891012108865,
+        "prediction_mean": 0.02903303843859817
+      },
+      "193": {
+        "full_ssim_range1": 0.9603035879722638,
+        "full_ssim_gt_observed_range": 0.45759090551981096,
+        "full_psnr_range1": 43.371741388032596,
+        "full_psnr_gt_observed_range": 20.495665964338087,
+        "highpass_correlation": 0.2996440081116656,
+        "highpass_std_ratio_pred_over_gt": 0.8865579694536806,
+        "lowpass_correlation": 0.8738534990931847,
+        "gt_mean": 0.031964891012108865,
+        "prediction_mean": 0.030744584217714532
+      }
+    },
+    {
+      "case_id": "10362",
+      "gt_min_max": [
+        0.004509720951318741,
+        0.06720898300409317
+      ],
+      "gt_range": 0.06269926205277443,
+      "gt_p1_p99": [
+        0.008134751580655575,
+        0.04993298575282099
+      ],
+      "98": {
+        "full_ssim_range1": 0.9558983854746621,
+        "full_ssim_gt_observed_range": 0.4401652944047309,
+        "full_psnr_range1": 43.45447588924394,
+        "full_psnr_gt_observed_range": 19.399724476737372,
+        "highpass_correlation": 0.24484931566307042,
+        "highpass_std_ratio_pred_over_gt": 0.9053044662886129,
+        "lowpass_correlation": 0.9015656398031184,
+        "gt_mean": 0.02230782286518007,
+        "prediction_mean": 0.0217349312060513
+      },
+      "193": {
+        "full_ssim_range1": 0.95829193451159,
+        "full_ssim_gt_observed_range": 0.4429933967835235,
+        "full_psnr_range1": 43.572601867536285,
+        "full_psnr_gt_observed_range": 19.517850455029723,
+        "highpass_correlation": 0.2575480671821336,
+        "highpass_std_ratio_pred_over_gt": 0.9140266010976875,
+        "lowpass_correlation": 0.8964958421237834,
+        "gt_mean": 0.02230782286518007,
+        "prediction_mean": 0.023269736254029283
+      }
+    },
+    {
+      "case_id": "10363",
+      "gt_min_max": [
+        0.004654054995626211,
+        0.06390753388404846
+      ],
+      "gt_range": 0.05925347888842225,
+      "gt_p1_p99": [
+        0.009833818580955268,
+        0.04372411686927084
+      ],
+      "98": {
+        "full_ssim_range1": 0.9394631497181104,
+        "full_ssim_gt_observed_range": 0.41043856034561643,
+        "full_psnr_range1": 42.840010337682756,
+        "full_psnr_gt_observed_range": 18.294287411980854,
+        "highpass_correlation": 0.26808483833314367,
+        "highpass_std_ratio_pred_over_gt": 0.9450445993820727,
+        "lowpass_correlation": 0.8620308811609748,
+        "gt_mean": 0.02132840662812896,
+        "prediction_mean": 0.017858816954436918
+      },
+      "193": {
+        "full_ssim_range1": 0.9581303709552866,
+        "full_ssim_gt_observed_range": 0.42114765041920454,
+        "full_psnr_range1": 44.07025374539026,
+        "full_psnr_gt_observed_range": 19.524530819688366,
+        "highpass_correlation": 0.28205507005510955,
+        "highpass_std_ratio_pred_over_gt": 0.9240063793765384,
+        "lowpass_correlation": 0.8479596851515737,
+        "gt_mean": 0.02132840662812896,
+        "prediction_mean": 0.019855027982998763
+      }
+    },
+    {
+      "case_id": "10365",
+      "gt_min_max": [
+        0.005045425146818161,
+        0.06645913422107697
+      ],
+      "gt_range": 0.061413709074258804,
+      "gt_p1_p99": [
+        0.00977699258364737,
+        0.0494076093658805
+      ],
+      "98": {
+        "full_ssim_range1": 0.9534972660472497,
+        "full_ssim_gt_observed_range": 0.4534256983886728,
+        "full_psnr_range1": 42.66225490033768,
+        "full_psnr_gt_observed_range": 18.42756144717974,
+        "highpass_correlation": 0.2594873514133353,
+        "highpass_std_ratio_pred_over_gt": 0.9374300781044456,
+        "lowpass_correlation": 0.8693801992793199,
+        "gt_mean": 0.02423124800424148,
+        "prediction_mean": 0.026585870973654835
+      },
+      "193": {
+        "full_ssim_range1": 0.9476156735967369,
+        "full_ssim_gt_observed_range": 0.45051834254446643,
+        "full_psnr_range1": 41.95121032961326,
+        "full_psnr_gt_observed_range": 17.71651687645533,
+        "highpass_correlation": 0.27690032428875144,
+        "highpass_std_ratio_pred_over_gt": 0.9500195474952329,
+        "lowpass_correlation": 0.8649733286718981,
+        "gt_mean": 0.02423124800424148,
+        "prediction_mean": 0.02850820516721342
+      }
+    },
+    {
+      "case_id": "10367",
+      "gt_min_max": [
+        0.003227131674066186,
+        0.07210013270378113
+      ],
+      "gt_range": 0.06887300102971494,
+      "gt_p1_p99": [
+        0.006966026313602924,
+        0.05249819569289685
+      ],
+      "98": {
+        "full_ssim_range1": 0.9048010894422664,
+        "full_ssim_gt_observed_range": 0.34057541279213494,
+        "full_psnr_range1": 40.282316118446424,
+        "full_psnr_gt_observed_range": 17.04329626000256,
+        "highpass_correlation": 0.19525127088729646,
+        "highpass_std_ratio_pred_over_gt": 0.8371368516702197,
+        "lowpass_correlation": 0.6304739149359092,
+        "gt_mean": 0.022735446720226093,
+        "prediction_mean": 0.019240330594191946
+      },
+      "193": {
+        "full_ssim_range1": 0.921062528576816,
+        "full_ssim_gt_observed_range": 0.3417333444046022,
+        "full_psnr_range1": 40.9471009796291,
+        "full_psnr_gt_observed_range": 17.708081121185234,
+        "highpass_correlation": 0.20420061108284393,
+        "highpass_std_ratio_pred_over_gt": 0.8066409579880793,
+        "lowpass_correlation": 0.7373084103777419,
+        "gt_mean": 0.022735446720226093,
+        "prediction_mean": 0.018746730647077214
+      }
+    },
+    {
+      "case_id": "10379",
+      "gt_min_max": [
+        0.004379461519420147,
+        0.08282496780157089
+      ],
+      "gt_range": 0.07844550628215075,
+      "gt_p1_p99": [
+        0.008148943213745952,
+        0.04991816468536855
+      ],
+      "98": {
+        "full_ssim_range1": 0.9557379921028654,
+        "full_ssim_gt_observed_range": 0.4780780188955952,
+        "full_psnr_range1": 43.42684995686681,
+        "full_psnr_gt_observed_range": 21.31821136204044,
+        "highpass_correlation": 0.2258773422022482,
+        "highpass_std_ratio_pred_over_gt": 0.783228883724257,
+        "lowpass_correlation": 0.8807753308179775,
+        "gt_mean": 0.020399187135843988,
+        "prediction_mean": 0.020070677551530025
+      },
+      "193": {
+        "full_ssim_range1": 0.9566380721318273,
+        "full_ssim_gt_observed_range": 0.4761174834019778,
+        "full_psnr_range1": 43.52485631998019,
+        "full_psnr_gt_observed_range": 21.41621772515382,
+        "highpass_correlation": 0.24480535555498897,
+        "highpass_std_ratio_pred_over_gt": 0.787041535671622,
+        "lowpass_correlation": 0.8840259969837765,
+        "gt_mean": 0.020399187135843988,
+        "prediction_mean": 0.018964319831582088
+      }
+    },
+    {
+      "case_id": "10394",
+      "gt_min_max": [
+        0.009023817256093025,
+        0.07663450390100479
+      ],
+      "gt_range": 0.06761068664491177,
+      "gt_p1_p99": [
+        0.015909544471651316,
+        0.056522906199097674
+      ],
+      "98": {
+        "full_ssim_range1": 0.9537577605982442,
+        "full_ssim_gt_observed_range": 0.4093158480352192,
+        "full_psnr_range1": 42.78019836917629,
+        "full_psnr_gt_observed_range": 19.38050530105704,
+        "highpass_correlation": 0.2205647729230139,
+        "highpass_std_ratio_pred_over_gt": 0.9084941118345705,
+        "lowpass_correlation": 0.8280293571498802,
+        "gt_mean": 0.030440108658922327,
+        "prediction_mean": 0.029040025755776355
+      },
+      "193": {
+        "full_ssim_range1": 0.9557553609766736,
+        "full_ssim_gt_observed_range": 0.41620033161832654,
+        "full_psnr_range1": 42.422992690609306,
+        "full_psnr_gt_observed_range": 19.023299622490054,
+        "highpass_correlation": 0.23733714725741867,
+        "highpass_std_ratio_pred_over_gt": 0.9133507940166844,
+        "lowpass_correlation": 0.8128067613382659,
+        "gt_mean": 0.030440108658922327,
+        "prediction_mean": 0.03309404054822096
+      }
+    },
+    {
+      "case_id": "10395",
+      "gt_min_max": [
+        0.009806727059185505,
+        0.07756157219409943
+      ],
+      "gt_range": 0.06775484513491392,
+      "gt_p1_p99": [
+        0.014984681457281112,
+        0.05576739739626647
+      ],
+      "98": {
+        "full_ssim_range1": 0.8951446239630597,
+        "full_ssim_gt_observed_range": 0.41688962338543883,
+        "full_psnr_range1": 38.826065066802705,
+        "full_psnr_gt_observed_range": 15.444872206106302,
+        "highpass_correlation": 0.28455567508405155,
+        "highpass_std_ratio_pred_over_gt": 0.837720615012221,
+        "lowpass_correlation": 0.878679428571631,
+        "gt_mean": 0.02990984647891537,
+        "prediction_mean": 0.020732823228698294
+      },
+      "193": {
+        "full_ssim_range1": 0.9257449736487131,
+        "full_ssim_gt_observed_range": 0.42593080715587833,
+        "full_psnr_range1": 40.158364249090795,
+        "full_psnr_gt_observed_range": 16.777171388394393,
+        "highpass_correlation": 0.28733831618838684,
+        "highpass_std_ratio_pred_over_gt": 0.8501334038226908,
+        "lowpass_correlation": 0.8655365339467889,
+        "gt_mean": 0.02990984647891537,
+        "prediction_mean": 0.022816175907799163
+      }
+    },
+    {
+      "case_id": "10404",
+      "gt_min_max": [
+        0.0045205289497971535,
+        0.06828418374061584
+      ],
+      "gt_range": 0.06376365479081869,
+      "gt_p1_p99": [
+        0.008905650535598397,
+        0.05212011039257051
+      ],
+      "98": {
+        "full_ssim_range1": 0.863034641790258,
+        "full_ssim_gt_observed_range": 0.3891586198660165,
+        "full_psnr_range1": 36.30267830358139,
+        "full_psnr_gt_observed_range": 12.394142341479029,
+        "highpass_correlation": 0.2102010843399301,
+        "highpass_std_ratio_pred_over_gt": 0.8685995763371421,
+        "lowpass_correlation": 0.8840354753417584,
+        "gt_mean": 0.02232951203450284,
+        "prediction_mean": 0.03582346403439374
+      },
+      "193": {
+        "full_ssim_range1": 0.9014030958659243,
+        "full_ssim_gt_observed_range": 0.4105695979198975,
+        "full_psnr_range1": 38.53886817518653,
+        "full_psnr_gt_observed_range": 14.63033221308417,
+        "highpass_correlation": 0.23165647150343838,
+        "highpass_std_ratio_pred_over_gt": 0.8819306124373285,
+        "lowpass_correlation": 0.8739939318873957,
+        "gt_mean": 0.02232951203450284,
+        "prediction_mean": 0.03200720693006076
+      }
+    },
+    {
+      "case_id": "10410",
+      "gt_min_max": [
+        0.005408409051597118,
+        0.06211697682738304
+      ],
+      "gt_range": 0.05670856777578592,
+      "gt_p1_p99": [
+        0.009495272673666478,
+        0.04246015362441541
+      ],
+      "98": {
+        "full_ssim_range1": 0.9331433487088744,
+        "full_ssim_gt_observed_range": 0.42056175197167084,
+        "full_psnr_range1": 40.663192431461525,
+        "full_psnr_gt_observed_range": 15.736166010252335,
+        "highpass_correlation": 0.2453417045765803,
+        "highpass_std_ratio_pred_over_gt": 1.0428603488446602,
+        "lowpass_correlation": 0.8410395805247418,
+        "gt_mean": 0.021384766281244083,
+        "prediction_mean": 0.02785747473474487
+      },
+      "193": {
+        "full_ssim_range1": 0.9205377625047231,
+        "full_ssim_gt_observed_range": 0.4101123839499275,
+        "full_psnr_range1": 39.82597099591371,
+        "full_psnr_gt_observed_range": 14.898944574704524,
+        "highpass_correlation": 0.24711269642720837,
+        "highpass_std_ratio_pred_over_gt": 1.0587200361276699,
+        "lowpass_correlation": 0.8493635528973573,
+        "gt_mean": 0.021384766281244083,
+        "prediction_mean": 0.029496949717938037
+      }
+    },
+    {
+      "case_id": "10415",
+      "gt_min_max": [
+        0.005727189593017101,
+        0.0694146379828453
+      ],
+      "gt_range": 0.0636874483898282,
+      "gt_p1_p99": [
+        0.009607518464326859,
+        0.048727436549961575
+      ],
+      "98": {
+        "full_ssim_range1": 0.9515744362923266,
+        "full_ssim_gt_observed_range": 0.4378881884632249,
+        "full_psnr_range1": 42.71153640422995,
+        "full_psnr_gt_observed_range": 18.792613392489244,
+        "highpass_correlation": 0.2568310884652776,
+        "highpass_std_ratio_pred_over_gt": 0.9229438941973345,
+        "lowpass_correlation": 0.873603329617184,
+        "gt_mean": 0.023032958465471154,
+        "prediction_mean": 0.024990547085337766
+      },
+      "193": {
+        "full_ssim_range1": 0.9524502541361014,
+        "full_ssim_gt_observed_range": 0.4363536035914637,
+        "full_psnr_range1": 42.61350417299162,
+        "full_psnr_gt_observed_range": 18.694581161250902,
+        "highpass_correlation": 0.2681515521790371,
+        "highpass_std_ratio_pred_over_gt": 0.9170705339344298,
+        "lowpass_correlation": 0.8707127799629979,
+        "gt_mean": 0.023032958465471154,
+        "prediction_mean": 0.0254380844378872
+      }
+    },
+    {
+      "case_id": "10420",
+      "gt_min_max": [
+        0.0037816427648067474,
+        0.06734097748994827
+      ],
+      "gt_range": 0.06355933472514153,
+      "gt_p1_p99": [
+        0.007829212443903088,
+        0.04812744539231063
+      ],
+      "98": {
+        "full_ssim_range1": 0.9435133282208982,
+        "full_ssim_gt_observed_range": 0.45540325314685876,
+        "full_psnr_range1": 41.841427057911524,
+        "full_psnr_gt_observed_range": 17.905013913982724,
+        "highpass_correlation": 0.26814269509181954,
+        "highpass_std_ratio_pred_over_gt": 0.9560320679498524,
+        "lowpass_correlation": 0.8703701423327844,
+        "gt_mean": 0.02238948735044488,
+        "prediction_mean": 0.02630487386241498
+      },
+      "193": {
+        "full_ssim_range1": 0.9437181653178092,
+        "full_ssim_gt_observed_range": 0.4628193230341174,
+        "full_psnr_range1": 41.56710313263457,
+        "full_psnr_gt_observed_range": 17.630689988705768,
+        "highpass_correlation": 0.28668575479700603,
+        "highpass_std_ratio_pred_over_gt": 0.9614527328075247,
+        "lowpass_correlation": 0.855974117449922,
+        "gt_mean": 0.02238948735044488,
+        "prediction_mean": 0.026652564487498864
+      }
+    },
+    {
+      "case_id": "10421",
+      "gt_min_max": [
+        0.004891504999250174,
+        0.07756209373474121
+      ],
+      "gt_range": 0.07267058873549104,
+      "gt_p1_p99": [
+        0.010098725277930497,
+        0.05561947636306287
+      ],
+      "98": {
+        "full_ssim_range1": 0.938739275034812,
+        "full_ssim_gt_observed_range": 0.44044176114493805,
+        "full_psnr_range1": 41.085045518374244,
+        "full_psnr_gt_observed_range": 18.31221909062787,
+        "highpass_correlation": 0.223706205102453,
+        "highpass_std_ratio_pred_over_gt": 0.8637216374396841,
+        "lowpass_correlation": 0.8290609103941408,
+        "gt_mean": 0.023770264359932014,
+        "prediction_mean": 0.028226784200413135
+      },
+      "193": {
+        "full_ssim_range1": 0.9485464995241494,
+        "full_ssim_gt_observed_range": 0.44248421842695135,
+        "full_psnr_range1": 42.161112167511334,
+        "full_psnr_gt_observed_range": 19.38828573976496,
+        "highpass_correlation": 0.24252745326581598,
+        "highpass_std_ratio_pred_over_gt": 0.9067671781845636,
+        "lowpass_correlation": 0.8086827794236126,
+        "gt_mean": 0.023770264359932014,
+        "prediction_mean": 0.025863335123965214
+      }
+    },
+    {
+      "case_id": "10423",
+      "gt_min_max": [
+        0.008737299591302872,
+        0.09372648596763611
+      ],
+      "gt_range": 0.08498918637633324,
+      "gt_p1_p99": [
+        0.013413232890889049,
+        0.06920927315950395
+      ],
+      "98": {
+        "full_ssim_range1": 0.9347652305755246,
+        "full_ssim_gt_observed_range": 0.441013095336218,
+        "full_psnr_range1": 40.80203002318939,
+        "full_psnr_gt_observed_range": 19.38930345610053,
+        "highpass_correlation": 0.27337835879219685,
+        "highpass_std_ratio_pred_over_gt": 0.738001070154184,
+        "lowpass_correlation": 0.9093634617017239,
+        "gt_mean": 0.0344851126649246,
+        "prediction_mean": 0.037144064631519313
+      },
+      "193": {
+        "full_ssim_range1": 0.9329997350455812,
+        "full_ssim_gt_observed_range": 0.43941396457275134,
+        "full_psnr_range1": 40.59405384717109,
+        "full_psnr_gt_observed_range": 19.18132728008223,
+        "highpass_correlation": 0.29610022119506135,
+        "highpass_std_ratio_pred_over_gt": 0.737555785369558,
+        "lowpass_correlation": 0.8952793237345882,
+        "gt_mean": 0.0344851126649246,
+        "prediction_mean": 0.03788467151878194
+      }
+    },
+    {
+      "case_id": "10425",
+      "gt_min_max": [
+        0.004305566661059856,
+        0.0657200813293457
+      ],
+      "gt_range": 0.06141451466828585,
+      "gt_p1_p99": [
+        0.00821867547929287,
+        0.049591180682182344
+      ],
+      "98": {
+        "full_ssim_range1": 0.936256222219845,
+        "full_ssim_gt_observed_range": 0.40515211295006187,
+        "full_psnr_range1": 41.077850793819124,
+        "full_psnr_gt_observed_range": 16.843271277028567,
+        "highpass_correlation": 0.24653848194804823,
+        "highpass_std_ratio_pred_over_gt": 0.9479868485284135,
+        "lowpass_correlation": 0.8792074212634499,
+        "gt_mean": 0.023686566456348146,
+        "prediction_mean": 0.02854330546747974
+      },
+      "193": {
+        "full_ssim_range1": 0.9332768072448732,
+        "full_ssim_gt_observed_range": 0.40562748066099835,
+        "full_psnr_range1": 40.4680861516055,
+        "full_psnr_gt_observed_range": 16.233506634814937,
+        "highpass_correlation": 0.26184754970144863,
+        "highpass_std_ratio_pred_over_gt": 0.937151968283653,
+        "lowpass_correlation": 0.8611368065646939,
+        "gt_mean": 0.023686566456348146,
+        "prediction_mean": 0.029477113675682176
+      }
+    },
+    {
+      "case_id": "10430",
+      "gt_min_max": [
+        0.010348627343773842,
+        0.08100943267345428
+      ],
+      "gt_range": 0.07066080532968044,
+      "gt_p1_p99": [
+        0.01962369717657566,
+        0.06047904901206495
+      ],
+      "98": {
+        "full_ssim_range1": 0.9177184771453352,
+        "full_ssim_gt_observed_range": 0.4077100353370495,
+        "full_psnr_range1": 36.68796821518284,
+        "full_psnr_gt_observed_range": 13.671539871850364,
+        "highpass_correlation": 0.24382487996561075,
+        "highpass_std_ratio_pred_over_gt": 0.9048143046855036,
+        "lowpass_correlation": 0.6319037993280838,
+        "gt_mean": 0.035842962939668155,
+        "prediction_mean": 0.047828978267432376
+      },
+      "193": {
+        "full_ssim_range1": 0.9294672494572969,
+        "full_ssim_gt_observed_range": 0.41212694747798134,
+        "full_psnr_range1": 38.135477965386855,
+        "full_psnr_gt_observed_range": 15.119049622054373,
+        "highpass_correlation": 0.2585976348743213,
+        "highpass_std_ratio_pred_over_gt": 0.9526142219331581,
+        "lowpass_correlation": 0.6472937140446373,
+        "gt_mean": 0.035842962939668155,
+        "prediction_mean": 0.04557607457797985
+      }
+    },
+    {
+      "case_id": "10433",
+      "gt_min_max": [
+        0.006506707053631544,
+        0.07869449257850647
+      ],
+      "gt_range": 0.07218778552487493,
+      "gt_p1_p99": [
+        0.010723269637674093,
+        0.05943020042032004
+      ],
+      "98": {
+        "full_ssim_range1": 0.9267625856369158,
+        "full_ssim_gt_observed_range": 0.47541742624903927,
+        "full_psnr_range1": 40.58476767727127,
+        "full_psnr_gt_observed_range": 17.754042064146653,
+        "highpass_correlation": 0.28587763435261315,
+        "highpass_std_ratio_pred_over_gt": 0.738218339147047,
+        "lowpass_correlation": 0.8178652002562118,
+        "gt_mean": 0.02662413113351647,
+        "prediction_mean": 0.02110145961394494
+      },
+      "193": {
+        "full_ssim_range1": 0.9059235512658387,
+        "full_ssim_gt_observed_range": 0.4443744513314771,
+        "full_psnr_range1": 39.415110963279034,
+        "full_psnr_gt_observed_range": 16.584385350154424,
+        "highpass_correlation": 0.2809260887348156,
+        "highpass_std_ratio_pred_over_gt": 0.7524000033862056,
+        "lowpass_correlation": 0.8133398751229453,
+        "gt_mean": 0.02662413113351647,
+        "prediction_mean": 0.019046954392582194
+      }
+    },
+    {
+      "case_id": "10446",
+      "gt_min_max": [
+        0.007459260057657957,
+        0.06739850342273712
+      ],
+      "gt_range": 0.059939243365079165,
+      "gt_p1_p99": [
+        0.011114307679235935,
+        0.05230379290878773
+      ],
+      "98": {
+        "full_ssim_range1": 0.9509942968647741,
+        "full_ssim_gt_observed_range": 0.4288068691409756,
+        "full_psnr_range1": 42.47820020014796,
+        "full_psnr_gt_observed_range": 18.032425327881036,
+        "highpass_correlation": 0.2294391357867108,
+        "highpass_std_ratio_pred_over_gt": 0.934565178651629,
+        "lowpass_correlation": 0.8869216661660242,
+        "gt_mean": 0.027733955365590646,
+        "prediction_mean": 0.029429678121580594
+      },
+      "193": {
+        "full_ssim_range1": 0.954239066911679,
+        "full_ssim_gt_observed_range": 0.43656553780903357,
+        "full_psnr_range1": 43.00949663779832,
+        "full_psnr_gt_observed_range": 18.563721765531398,
+        "highpass_correlation": 0.24732490220500966,
+        "highpass_std_ratio_pred_over_gt": 0.9366420546207105,
+        "lowpass_correlation": 0.9132031798514669,
+        "gt_mean": 0.027733955365590646,
+        "prediction_mean": 0.02942753418733446
+      }
+    },
+    {
+      "case_id": "10448",
+      "gt_min_max": [
+        0.00628553656861186,
+        0.07884138077497482
+      ],
+      "gt_range": 0.07255584420636296,
+      "gt_p1_p99": [
+        0.01101182228885591,
+        0.05594523083418609
+      ],
+      "98": {
+        "full_ssim_range1": 0.7806468401884527,
+        "full_ssim_gt_observed_range": 0.3468772156215372,
+        "full_psnr_range1": 36.33016351341722,
+        "full_psnr_gt_observed_range": 13.543611505502229,
+        "highpass_correlation": 0.29996814949427314,
+        "highpass_std_ratio_pred_over_gt": 0.648959389285499,
+        "lowpass_correlation": 0.852001049105774,
+        "gt_mean": 0.026405065553241513,
+        "prediction_mean": 0.013133279897243
+      },
+      "193": {
+        "full_ssim_range1": 0.8579551473163978,
+        "full_ssim_gt_observed_range": 0.3904562734746327,
+        "full_psnr_range1": 37.78821404862722,
+        "full_psnr_gt_observed_range": 15.001662040712226,
+        "highpass_correlation": 0.301807466242428,
+        "highpass_std_ratio_pred_over_gt": 0.6823727244131688,
+        "lowpass_correlation": 0.8713706014636695,
+        "gt_mean": 0.026405065553241513,
+        "prediction_mean": 0.01590395619076901
+      }
+    },
+    {
+      "case_id": "10454",
+      "gt_min_max": [
+        0.003306632163003087,
+        0.07313111424446106
+      ],
+      "gt_range": 0.06982448208145797,
+      "gt_p1_p99": [
+        0.00767208228353411,
+        0.04751100949943066
+      ],
+      "98": {
+        "full_ssim_range1": 0.911851792828374,
+        "full_ssim_gt_observed_range": 0.3289019985865093,
+        "full_psnr_range1": 39.19067775371576,
+        "full_psnr_gt_observed_range": 16.070832214395644,
+        "highpass_correlation": 0.1747498468221787,
+        "highpass_std_ratio_pred_over_gt": 1.1584827012093115,
+        "lowpass_correlation": 0.5047926287946801,
+        "gt_mean": 0.0216067023143367,
+        "prediction_mean": 0.025501297559769043
+      },
+      "193": {
+        "full_ssim_range1": 0.9347317176700701,
+        "full_ssim_gt_observed_range": 0.3472289219554106,
+        "full_psnr_range1": 41.17889557364936,
+        "full_psnr_gt_observed_range": 18.05905003432924,
+        "highpass_correlation": 0.172640111111296,
+        "highpass_std_ratio_pred_over_gt": 1.0659897587251428,
+        "lowpass_correlation": 0.5383755432594569,
+        "gt_mean": 0.0216067023143367,
+        "prediction_mean": 0.02382064439425946
+      }
+    },
+    {
+      "case_id": "10460",
+      "gt_min_max": [
+        0.0037749072071164846,
+        0.07052325457334518
+      ],
+      "gt_range": 0.0667483473662287,
+      "gt_p1_p99": [
+        0.014391820691525937,
+        0.054830190539360044
+      ],
+      "98": {
+        "full_ssim_range1": 0.9594006565014576,
+        "full_ssim_gt_observed_range": 0.45390256366720017,
+        "full_psnr_range1": 42.90141596090617,
+        "full_psnr_gt_observed_range": 19.390226308870606,
+        "highpass_correlation": 0.28578102532126426,
+        "highpass_std_ratio_pred_over_gt": 0.9277385158914688,
+        "lowpass_correlation": 0.8716240436684882,
+        "gt_mean": 0.029129779902707043,
+        "prediction_mean": 0.03208765800434321
+      },
+      "193": {
+        "full_ssim_range1": 0.9453858138522394,
+        "full_ssim_gt_observed_range": 0.4399499642510767,
+        "full_psnr_range1": 40.69950111500556,
+        "full_psnr_gt_observed_range": 17.188311462969992,
+        "highpass_correlation": 0.2899372576136223,
+        "highpass_std_ratio_pred_over_gt": 0.9713404087907608,
+        "lowpass_correlation": 0.8629499726862533,
+        "gt_mean": 0.029129779902707043,
+        "prediction_mean": 0.03559516635968407
+      }
+    },
+    {
+      "case_id": "10467",
+      "gt_min_max": [
+        0.0031531783752143383,
+        0.07657274603843689
+      ],
+      "gt_range": 0.07341956766322255,
+      "gt_p1_p99": [
+        0.0068621898768469695,
+        0.0521500088274479
+      ],
+      "98": {
+        "full_ssim_range1": 0.9203997642272741,
+        "full_ssim_gt_observed_range": 0.3953677801712211,
+        "full_psnr_range1": 40.64434999758522,
+        "full_psnr_gt_observed_range": 17.96058645356523,
+        "highpass_correlation": 0.2196034264585008,
+        "highpass_std_ratio_pred_over_gt": 0.8160338625185798,
+        "lowpass_correlation": 0.6553628759974106,
+        "gt_mean": 0.020320023960369582,
+        "prediction_mean": 0.018536562964554193
+      },
+      "193": {
+        "full_ssim_range1": 0.9315068502291715,
+        "full_ssim_gt_observed_range": 0.39902833677902017,
+        "full_psnr_range1": 41.063222368804986,
+        "full_psnr_gt_observed_range": 18.379458824784997,
+        "highpass_correlation": 0.2266794154764371,
+        "highpass_std_ratio_pred_over_gt": 0.8443080959690201,
+        "lowpass_correlation": 0.6758805107419738,
+        "gt_mean": 0.020320023960369582,
+        "prediction_mean": 0.019490269577822517
+      }
+    },
+    {
+      "case_id": "10472",
+      "gt_min_max": [
+        0.0034878866281360388,
+        0.07398588210344315
+      ],
+      "gt_range": 0.07049799547530711,
+      "gt_p1_p99": [
+        0.007122206687927246,
+        0.053703749179840096
+      ],
+      "98": {
+        "full_ssim_range1": 0.9416469734253192,
+        "full_ssim_gt_observed_range": 0.45359319807359005,
+        "full_psnr_range1": 42.10221020348777,
+        "full_psnr_gt_observed_range": 19.065745574127263,
+        "highpass_correlation": 0.2405694492593039,
+        "highpass_std_ratio_pred_over_gt": 0.7891453971398229,
+        "lowpass_correlation": 0.9001008253699245,
+        "gt_mean": 0.021715743736368864,
+        "prediction_mean": 0.023812226274102954
+      },
+      "193": {
+        "full_ssim_range1": 0.9426306087657135,
+        "full_ssim_gt_observed_range": 0.45905462956596627,
+        "full_psnr_range1": 42.245615731621044,
+        "full_psnr_gt_observed_range": 19.20915110226053,
+        "highpass_correlation": 0.27016653280926295,
+        "highpass_std_ratio_pred_over_gt": 0.8123650220337346,
+        "lowpass_correlation": 0.9024763754007868,
+        "gt_mean": 0.021715743736368864,
+        "prediction_mean": 0.024231008347904037
+      }
+    },
+    {
+      "case_id": "10475",
+      "gt_min_max": [
+        0.006485816556960344,
+        0.06667571514844894
+      ],
+      "gt_range": 0.0601898985914886,
+      "gt_p1_p99": [
+        0.011336426669731735,
+        0.04862202368676663
+      ],
+      "98": {
+        "full_ssim_range1": 0.9581403286067803,
+        "full_ssim_gt_observed_range": 0.4942993881274981,
+        "full_psnr_range1": 43.75364922165744,
+        "full_psnr_gt_observed_range": 19.344121454096413,
+        "highpass_correlation": 0.31572046785815744,
+        "highpass_std_ratio_pred_over_gt": 0.863292486157193,
+        "lowpass_correlation": 0.8709992781005034,
+        "gt_mean": 0.024699423360488026,
+        "prediction_mean": 0.022219290371353395
+      },
+      "193": {
+        "full_ssim_range1": 0.9656730510015912,
+        "full_ssim_gt_observed_range": 0.4941111416595842,
+        "full_psnr_range1": 43.969998577736355,
+        "full_psnr_gt_observed_range": 19.560470810175325,
+        "highpass_correlation": 0.32157510375950704,
+        "highpass_std_ratio_pred_over_gt": 0.8897913854596248,
+        "lowpass_correlation": 0.8569846137945117,
+        "gt_mean": 0.024699423360488026,
+        "prediction_mean": 0.025936472130318577
+      }
+    },
+    {
+      "case_id": "10476",
+      "gt_min_max": [
+        0.0051976763643324375,
+        0.06525535881519318
+      ],
+      "gt_range": 0.06005768245086074,
+      "gt_p1_p99": [
+        0.009728054190054536,
+        0.04594831075519325
+      ],
+      "98": {
+        "full_ssim_range1": 0.9635109825753532,
+        "full_ssim_gt_observed_range": 0.4360157942855517,
+        "full_psnr_range1": 43.99189756278864,
+        "full_psnr_gt_observed_range": 19.563268949144703,
+        "highpass_correlation": 0.24602311076265196,
+        "highpass_std_ratio_pred_over_gt": 0.9564028343453924,
+        "lowpass_correlation": 0.8431965589922673,
+        "gt_mean": 0.022813400453330246,
+        "prediction_mean": 0.02436701639913963
+      },
+      "193": {
+        "full_ssim_range1": 0.9641233596908232,
+        "full_ssim_gt_observed_range": 0.4250744401156567,
+        "full_psnr_range1": 44.18794366509733,
+        "full_psnr_gt_observed_range": 19.759315051453402,
+        "highpass_correlation": 0.24486494263828368,
+        "highpass_std_ratio_pred_over_gt": 0.9893311781073301,
+        "lowpass_correlation": 0.845141766067658,
+        "gt_mean": 0.022813400453330246,
+        "prediction_mean": 0.023381103632125644
+      }
+    },
+    {
+      "case_id": "10484",
+      "gt_min_max": [
+        0.005915084388107061,
+        0.06697752326726913
+      ],
+      "gt_range": 0.06106243887916207,
+      "gt_p1_p99": [
+        0.010925508197396993,
+        0.04804417733103037
+      ],
+      "98": {
+        "full_ssim_range1": 0.956027590041453,
+        "full_ssim_gt_observed_range": 0.4748054997587913,
+        "full_psnr_range1": 42.54185378506966,
+        "full_psnr_gt_observed_range": 18.257336712134308,
+        "highpass_correlation": 0.3098324102652588,
+        "highpass_std_ratio_pred_over_gt": 0.9492662498441108,
+        "lowpass_correlation": 0.8032497075607382,
+        "gt_mean": 0.024045234932579262,
+        "prediction_mean": 0.0277996818845736
+      },
+      "193": {
+        "full_ssim_range1": 0.9582965083909621,
+        "full_ssim_gt_observed_range": 0.4721714156467111,
+        "full_psnr_range1": 42.936551761164395,
+        "full_psnr_gt_observed_range": 18.652034688229044,
+        "highpass_correlation": 0.3037626920930103,
+        "highpass_std_ratio_pred_over_gt": 0.9635849338835151,
+        "lowpass_correlation": 0.7926753542194189,
+        "gt_mean": 0.024045234932579262,
+        "prediction_mean": 0.027602757868422145
+      }
+    },
+    {
+      "case_id": "10494",
+      "gt_min_max": [
+        0.008749231696128845,
+        0.07974458485841751
+      ],
+      "gt_range": 0.07099535316228867,
+      "gt_p1_p99": [
+        0.014753381814807653,
+        0.05700914319604636
+      ],
+      "98": {
+        "full_ssim_range1": 0.921965540635707,
+        "full_ssim_gt_observed_range": 0.42728421420583884,
+        "full_psnr_range1": 40.08863133268585,
+        "full_psnr_gt_observed_range": 17.11322981072375,
+        "highpass_correlation": 0.26319127703602974,
+        "highpass_std_ratio_pred_over_gt": 0.8050447871369332,
+        "lowpass_correlation": 0.8792410537277887,
+        "gt_mean": 0.029873318202177757,
+        "prediction_mean": 0.022658647053518166
+      },
+      "193": {
+        "full_ssim_range1": 0.9548063789112895,
+        "full_ssim_gt_observed_range": 0.43810488727064656,
+        "full_psnr_range1": 42.67751433951861,
+        "full_psnr_gt_observed_range": 19.7021128175565,
+        "highpass_correlation": 0.2652231666686299,
+        "highpass_std_ratio_pred_over_gt": 0.801225956823746,
+        "lowpass_correlation": 0.8765714365096001,
+        "gt_mean": 0.029873318202177757,
+        "prediction_mean": 0.0268496742602764
+      }
+    },
+    {
+      "case_id": "10497",
+      "gt_min_max": [
+        0.009684666059911251,
+        0.0781635269522667
+      ],
+      "gt_range": 0.06847886089235544,
+      "gt_p1_p99": [
+        0.018416504934430124,
+        0.05882320944219828
+      ],
+      "98": {
+        "full_ssim_range1": 0.9515166742658361,
+        "full_ssim_gt_observed_range": 0.4333953084871556,
+        "full_psnr_range1": 41.60691458665524,
+        "full_psnr_gt_observed_range": 18.31804513631086,
+        "highpass_correlation": 0.26037239205999313,
+        "highpass_std_ratio_pred_over_gt": 0.9561527837436842,
+        "lowpass_correlation": 0.7878988420043288,
+        "gt_mean": 0.03350031552790256,
+        "prediction_mean": 0.037543361525678165
+      },
+      "193": {
+        "full_ssim_range1": 0.9448787433934625,
+        "full_ssim_gt_observed_range": 0.43267771089465923,
+        "full_psnr_range1": 40.39883691806853,
+        "full_psnr_gt_observed_range": 17.109967467724157,
+        "highpass_correlation": 0.266772741772983,
+        "highpass_std_ratio_pred_over_gt": 0.9670703360170735,
+        "lowpass_correlation": 0.7492777727517325,
+        "gt_mean": 0.03350031552790256,
+        "prediction_mean": 0.039846586935993855
+      }
+    },
+    {
+      "case_id": "10498",
+      "gt_min_max": [
+        0.008828292600810528,
+        0.08384691923856735
+      ],
+      "gt_range": 0.07501862663775682,
+      "gt_p1_p99": [
+        0.015161608764901757,
+        0.06661613881587983
+      ],
+      "98": {
+        "full_ssim_range1": 0.9447784885631786,
+        "full_ssim_gt_observed_range": 0.4612563433990898,
+        "full_psnr_range1": 41.65510332191622,
+        "full_psnr_gt_observed_range": 19.15848550751892,
+        "highpass_correlation": 0.2588190569092945,
+        "highpass_std_ratio_pred_over_gt": 0.7999624295712836,
+        "lowpass_correlation": 0.9111891781655846,
+        "gt_mean": 0.03385940385952324,
+        "prediction_mean": 0.03232419401250297
+      },
+      "193": {
+        "full_ssim_range1": 0.9479542795527521,
+        "full_ssim_gt_observed_range": 0.4622542588786981,
+        "full_psnr_range1": 42.03322103210272,
+        "full_psnr_gt_observed_range": 19.536603217705423,
+        "highpass_correlation": 0.2836929573995802,
+        "highpass_std_ratio_pred_over_gt": 0.7998285329457088,
+        "lowpass_correlation": 0.9143561235531595,
+        "gt_mean": 0.03385940385952324,
+        "prediction_mean": 0.033921998220165506
+      }
+    },
+    {
+      "case_id": "10499",
+      "gt_min_max": [
+        0.002782423049211502,
+        0.07162689417600632
+      ],
+      "gt_range": 0.06884447112679482,
+      "gt_p1_p99": [
+        0.005674365838058293,
+        0.048107804171741014
+      ],
+      "98": {
+        "full_ssim_range1": 0.9031979576391672,
+        "full_ssim_gt_observed_range": 0.38310937785848975,
+        "full_psnr_range1": 38.975087806670444,
+        "full_psnr_gt_observed_range": 15.732469166055903,
+        "highpass_correlation": 0.18015321732978637,
+        "highpass_std_ratio_pred_over_gt": 0.9281082744443019,
+        "lowpass_correlation": 0.8093376098320907,
+        "gt_mean": 0.019897435989211232,
+        "prediction_mean": 0.026969118278802995
+      },
+      "193": {
+        "full_ssim_range1": 0.9311879341399637,
+        "full_ssim_gt_observed_range": 0.3946176433762839,
+        "full_psnr_range1": 41.27465201721712,
+        "full_psnr_gt_observed_range": 18.032033376602573,
+        "highpass_correlation": 0.19364670198344552,
+        "highpass_std_ratio_pred_over_gt": 0.9110690098438533,
+        "lowpass_correlation": 0.8517968522303978,
+        "gt_mean": 0.019897435989211232,
+        "prediction_mean": 0.024127343054239248
+      }
+    }
+  ],
+  "protocol": {
+    "input": "Unchanged paired FULL arithmetic means, saved as raw float32 arrays",
+    "diagnostic_dtype": "float64",
+    "range_sensitivity": "Same maps and win_size=7; only SSIM data_range changes from 1 to each GT map max-min. No clipping or rescaling of predictions.",
+    "range_sensitivity_limit": "Exploratory diagnostic, not a replacement for the prespecified scores or a paper-comparable metric",
+    "highpass": "image minus Gaussian sigma=1 pixel; Pearson correlation with paired GT",
+    "lowpass": "Gaussian sigma=3 pixels; Pearson correlation with paired GT",
+    "frequency_limit": "Diagnostic texture agreement, not vessel segmentation, accuracy, or a causal test; Gaussian filters only used to compute diagnostics, never to alter reported predictions",
+    "model_changed": false,
+    "training_changed": false,
+    "prediction_changed": false
+  }
+}

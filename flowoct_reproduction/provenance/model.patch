@@ -1,0 +1,80 @@
+--- a/upstream/models/FlowOCT_model.py
++++ b/flowoct/model.py
+@@ -8,11 +8,12 @@
+ import torch
+ import torch.nn as nn
+ import torch.nn.functional as F
++from torch.utils.checkpoint import checkpoint
+ from monai.networks.nets.diffusion_model_unet import DiffusionModelUNet
+ from tqdm import tqdm
+ 
+-from util.DWT_IDWT_layer import DWT_2D, IDWT_2D
+-from util.auto_crop import auto_crop_octa_images
++from .wavelets import DWT_2D, IDWT_2D
++from .roi import auto_crop_octa_images
+ 
+ 
+ class FlowOCT(nn.Module):
+@@ -61,9 +62,8 @@
+             params = list(self.netG.parameters()) + list(self.contrast_projection_head.parameters())
+             self.optimizer_G = torch.optim.Adam(params, lr=opt.lr, betas=(opt.beta, 0.999))
+ 
+-        # Load checkpoint if resuming
+-        if not self.isTrain or opt.continue_train:
+-            self._load_checkpoint(opt.epoch)
++        # The runner restores one complete checkpoint (network, head, optimizer,
++        # RNG and loader state).
+         
+         self.generation_steps = 3
+ 
+@@ -113,7 +113,9 @@
+         B, C, D, H, W = self.real_A.shape
+         
+         # Sample random 2D slices along depth
+-        num_slices = max(1, D // 4)
++        num_slices = getattr(self.opt, 'train_slices', 0) or max(1, D // 4)
++        if not 1 <= num_slices <= D:
++            raise ValueError('train_slices must lie in [1, volume slice count]')
+         indices = torch.randperm(D, device=self.device)[:num_slices]
+         
+         oct_slices = self.real_A[:, :, indices, :, :]   # (B, C, N, H, W)
+@@ -135,7 +137,18 @@
+         LL, LH, HL, HH = self.dwt_2d(x_t)
+         x_t_dwt = torch.cat([LL, LH, HL, HH], dim=1)
+ 
+-        pred_dx_dwt = self.netG(x_t_dwt, t)
++        # Keep the full sampled slice set and both global auxiliary losses.
++        # Recompute small independent network chunks during backward to fit a
++        # 24GB GPU, rather than reducing the InfoNCE negative set or projection.
++        network_chunk = getattr(self.opt, 'network_chunk', 0)
++        if network_chunk:
++            pred_dx_dwt = torch.cat([
++                checkpoint(self.netG, x_t_dwt[start:start + network_chunk],
++                           t[start:start + network_chunk], use_reentrant=False)
++                for start in range(0, x_t_dwt.shape[0], network_chunk)
++            ], dim=0)
++        else:
++            pred_dx_dwt = self.netG(x_t_dwt, t)
+   
+         # DWT inverse
+         pred_dx = self.idwt_2d(
+@@ -171,8 +184,8 @@
+         )
+         xm, ym, xM, yM = bbox['expanded_bbox']
+         self.proj_loss = self.criterionL1(
+-            fake_proj[ym:yM+1, xm:xM+1],
+-            real_proj[ym:yM+1, xm:xM+1],
++            fake_proj[:, ym:yM+1, xm:xM+1],
++            real_proj[:, ym:yM+1, xm:xM+1],
+         )
+ 
+         # Total loss
+@@ -183,6 +196,8 @@
+             self.projweight * self.proj_loss
+         )
+         
++        if not torch.isfinite(self.loss):
++            raise FloatingPointError('Non-finite FlowOCT loss; update was not applied')
+         self.loss.backward()
+         self.optimizer_G.step()
+     

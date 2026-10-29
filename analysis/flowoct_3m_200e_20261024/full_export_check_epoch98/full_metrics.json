@@ -1,0 +1,96 @@
+{
+  "checkpoint_epoch": 98,
+  "checkpoint_sha256": "012d442874b2d513d23b7e41edbebcc5bad187bfa54e8f2fcbba42cf198c6aba",
+  "split": "test",
+  "cases": 1,
+  "metrics": {
+    "mae": {
+      "mean": 0.005033019078410916,
+      "std": 0.0
+    },
+    "psnr": {
+      "mean": 43.77923301359502,
+      "std": 0.0
+    },
+    "ssim": {
+      "mean": 0.9628644275932312,
+      "std": 0.0
+    }
+  },
+  "records": [
+    {
+      "case_id": "10305",
+      "patient_id": "10305",
+      "disease": "NORMAL",
+      "mae": 0.005033019078410916,
+      "psnr": 43.77923301359502,
+      "ssim": 0.9628644275932312,
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          30.25,
+          245.7740020751953
+        ],
+        "octa_minmax": [
+          0.0,
+          218.64999389648438
+        ]
+      },
+      "common_full_display_window": [
+        0.007152198348194361,
+        0.05341009423136711
+      ]
+    }
+  ],
+  "by_disease": {
+    "NORMAL": {
+      "cases": 1,
+      "metrics": {
+        "mae": {
+          "mean": 0.005033019078410916,
+          "std": 0.0
+        },
+        "psnr": {
+          "mean": 43.77923301359502,
+          "std": 0.0
+        },
+        "ssim": {
+          "mean": 0.9628644275932312,
+          "std": 0.0
+        }
+      }
+    }
+  },
+  "protocol": {
+    "projection": "FULL arithmetic mean over saved physical Z, ZYX axis=0",
+    "orientation": "XY, transposed from YX to match the supplied official BMP orientation",
+    "target": "Mean of the paired preprocessed GT volume, not the official display BMP",
+    "coverage": "center crop after resize; not restored full FOV or native axial resolution",
+    "data_range": 1.0,
+    "ssim_win_size": 7,
+    "display": "GT and prediction share GT FULL min-to-P99 window; display scaling is excluded from metrics",
+    "array_storage": "projections/*.npz contain raw float32 gt_full and pred_full before display scaling",
+    "b_scan": "one central Y plane for a visual example; other 3D voxels are not included",
+    "full_volume_metrics": "Copied from existing evaluation; not recomputed by this projection exporter",
+    "model_changed": false,
+    "used_to_select_checkpoint": false
+  }
+}

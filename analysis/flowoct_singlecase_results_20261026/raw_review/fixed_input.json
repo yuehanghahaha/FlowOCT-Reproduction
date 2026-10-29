@@ -1,0 +1,35 @@
+{
+  "case_id": "10308",
+  "source_split": "train",
+  "geometry": {
+    "stored_axis_order": "ZYX",
+    "source_shape": [
+      256,
+      304,
+      304
+    ],
+    "model_axis_order": "YXZ",
+    "resized_shape": [
+      400,
+      400,
+      256
+    ],
+    "crop_start_yxz": [
+      72,
+      72,
+      0
+    ],
+    "crop_size": 256,
+    "flipped_z": false,
+    "oct_minmax": [
+      34.31999969482422,
+      242.2552032470703
+    ],
+    "octa_minmax": [
+      0.0,
+      210.83999633789062
+    ]
+  },
+  "oct_sha256": "a301b7c759e39042270d8a3df13c202d482003caa8fff4a667ece6d3e4862935",
+  "octa_sha256": "d8b511778538e4173f7fb20e04de55855b137053fce7c640b7927397f0f8ae4a"
+}

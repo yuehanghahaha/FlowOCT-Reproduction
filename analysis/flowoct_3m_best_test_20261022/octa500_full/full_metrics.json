@@ -1,0 +1,2083 @@
+{
+  "checkpoint_epoch": 98,
+  "checkpoint_sha256": "012d442874b2d513d23b7e41edbebcc5bad187bfa54e8f2fcbba42cf198c6aba",
+  "split": "test",
+  "cases": 50,
+  "metrics": {
+    "mae": {
+      "mean": 0.007506613614179614,
+      "std": 0.0026841886965010223
+    },
+    "psnr": {
+      "mean": 40.91049531603659,
+      "std": 2.2486501313219676
+    },
+    "ssim": {
+      "mean": 0.9279052428189659,
+      "std": 0.03480516974367637
+    }
+  },
+  "records": [
+    {
+      "case_id": "10305",
+      "disease": "NORMAL",
+      "mae": 0.005033019078410916,
+      "psnr": 43.77923301359502,
+      "ssim": 0.9628644275932312,
+      "common_display_window": [
+        0.007152198348194361,
+        0.053410081192851074
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10305.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          30.25,
+          245.7740020751953
+        ],
+        "octa_minmax": [
+          0.0,
+          218.64999389648438
+        ]
+      }
+    },
+    {
+      "case_id": "10307",
+      "disease": "NORMAL",
+      "mae": 0.00774750885398845,
+      "psnr": 40.05547711391414,
+      "ssim": 0.9319430005311966,
+      "common_display_window": [
+        0.00763386394828558,
+        0.06612869948148728
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10307.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          30.040000915527344,
+          243.156005859375
+        ],
+        "octa_minmax": [
+          0.0,
+          186.26400756835938
+        ]
+      }
+    },
+    {
+      "case_id": "10317",
+      "disease": "DR",
+      "mae": 0.008674903218544472,
+      "psnr": 39.64592336275093,
+      "ssim": 0.8788421359562874,
+      "common_display_window": [
+        0.0024833660572767258,
+        0.03907724320888519
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10317.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          36.95000076293945,
+          232.24920654296875
+        ],
+        "octa_minmax": [
+          0.0,
+          197.10079956054688
+        ]
+      }
+    },
+    {
+      "case_id": "10318",
+      "disease": "NORMAL",
+      "mae": 0.005540535065101437,
+      "psnr": 42.81987874724932,
+      "ssim": 0.9528112457532882,
+      "common_display_window": [
+        0.005398434586822987,
+        0.05352803040295841
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10318.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          32.0359992980957,
+          244.78199768066406
+        ],
+        "octa_minmax": [
+          0.0,
+          237.8800048828125
+        ]
+      }
+    },
+    {
+      "case_id": "10321",
+      "disease": "NORMAL",
+      "mae": 0.010574808056290408,
+      "psnr": 38.0368974517321,
+      "ssim": 0.9131778786125183,
+      "common_display_window": [
+        0.006400604732334614,
+        0.0536814667284489
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10321.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          31.149599075317383,
+          242.51199340820312
+        ],
+        "octa_minmax": [
+          0.0,
+          186.70599365234375
+        ]
+      }
+    },
+    {
+      "case_id": "10322",
+      "disease": "NORMAL",
+      "mae": 0.006911491370843237,
+      "psnr": 41.30788153940319,
+      "ssim": 0.939991548625946,
+      "common_display_window": [
+        0.002952523995190859,
+        0.04670533407479525
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10322.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          29.350000381469727,
+          236.24639892578125
+        ],
+        "octa_minmax": [
+          0.0,
+          201.31080627441406
+        ]
+      }
+    },
+    {
+      "case_id": "10325",
+      "disease": "AMD",
+      "mae": 0.018200267718516017,
+      "psnr": 33.42788533411652,
+      "ssim": 0.8195720672836304,
+      "common_display_window": [
+        0.0035589635372161865,
+        0.05772861931473018
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10325.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          37.79999923706055,
+          239.5727996826172
+        ],
+        "octa_minmax": [
+          0.0,
+          226.3979949951172
+        ]
+      }
+    },
+    {
+      "case_id": "10326",
+      "disease": "NORMAL",
+      "mae": 0.006157482789545199,
+      "psnr": 42.31564809985074,
+      "ssim": 0.9405239748916626,
+      "common_display_window": [
+        0.00819244235754013,
+        0.052998411655426035
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10326.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          31.329999923706055,
+          235.24400329589844
+        ],
+        "octa_minmax": [
+          0.0,
+          185.36520385742188
+        ]
+      }
+    },
+    {
+      "case_id": "10327",
+      "disease": "NORMAL",
+      "mae": 0.014233699952271195,
+      "psnr": 35.817136211699186,
+      "ssim": 0.8855936463251114,
+      "common_display_window": [
+        0.01271415688097477,
+        0.07335972040891647
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10327.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          37.220001220703125,
+          246.0540008544922
+        ],
+        "octa_minmax": [
+          0.0,
+          142.1623992919922
+        ]
+      }
+    },
+    {
+      "case_id": "10328",
+      "disease": "NORMAL",
+      "mae": 0.007783105493377462,
+      "psnr": 40.37231003650719,
+      "ssim": 0.9119772689151764,
+      "common_display_window": [
+        0.007089640479534864,
+        0.056375539116561416
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10328.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          34.45000076293945,
+          241.90359497070312
+        ],
+        "octa_minmax": [
+          0.0,
+          224.1748046875
+        ]
+      }
+    },
+    {
+      "case_id": "10330",
+      "disease": "NORMAL",
+      "mae": 0.006566951507352314,
+      "psnr": 41.64538285680788,
+      "ssim": 0.9462152535018921,
+      "common_display_window": [
+        0.007617830298841,
+        0.057264091633260274
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10330.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          29.666000366210938,
+          242.21200561523438
+        ],
+        "octa_minmax": [
+          0.0,
+          189.44760131835938
+        ]
+      }
+    },
+    {
+      "case_id": "10331",
+      "disease": "NORMAL",
+      "mae": 0.006641110990106114,
+      "psnr": 41.435934287566674,
+      "ssim": 0.934206552274704,
+      "common_display_window": [
+        0.0033942931331694126,
+        0.04743166211992503
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10331.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          34.148799896240234,
+          238.35760498046875
+        ],
+        "octa_minmax": [
+          0.0,
+          215.92999267578125
+        ]
+      }
+    },
+    {
+      "case_id": "10332",
+      "disease": "NORMAL",
+      "mae": 0.006103911879158375,
+      "psnr": 42.347605105122156,
+      "ssim": 0.9311528892631531,
+      "common_display_window": [
+        0.004929691087454557,
+        0.04415459651499987
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10332.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          32.130001068115234,
+          240.4228057861328
+        ],
+        "octa_minmax": [
+          0.0,
+          149.1887969970703
+        ]
+      }
+    },
+    {
+      "case_id": "10341",
+      "disease": "NORMAL",
+      "mae": 0.007268909785377531,
+      "psnr": 40.8754045368736,
+      "ssim": 0.9349665428609848,
+      "common_display_window": [
+        0.002608527662232518,
+        0.05997202917933469
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10341.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          33.898799896240234,
+          234.7852020263672
+        ],
+        "octa_minmax": [
+          0.0,
+          191.8000030517578
+        ]
+      }
+    },
+    {
+      "case_id": "10342",
+      "disease": "NORMAL",
+      "mae": 0.005660987480148094,
+      "psnr": 42.5705343190902,
+      "ssim": 0.9502225979909897,
+      "common_display_window": [
+        0.0055807302705943584,
+        0.054521084390580656
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10342.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          37.25600051879883,
+          238.5919952392578
+        ],
+        "octa_minmax": [
+          0.0,
+          208.97999572753906
+        ]
+      }
+    },
+    {
+      "case_id": "10347",
+      "disease": "NORMAL",
+      "mae": 0.005433080562113446,
+      "psnr": 42.98514733389396,
+      "ssim": 0.9539056539611817,
+      "common_display_window": [
+        0.005414487328380346,
+        0.04818127155303956
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10347.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          34.77799987792969,
+          237.85560607910156
+        ],
+        "octa_minmax": [
+          0.0,
+          221.2899932861328
+        ]
+      }
+    },
+    {
+      "case_id": "10351",
+      "disease": "NORMAL",
+      "mae": 0.009067659118066729,
+      "psnr": 38.92358828711251,
+      "ssim": 0.8903816328144073,
+      "common_display_window": [
+        0.005112188868224621,
+        0.06059734821319581
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10351.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          29.34000015258789,
+          248.62840270996094
+        ],
+        "octa_minmax": [
+          0.0,
+          150.24600219726562
+        ]
+      }
+    },
+    {
+      "case_id": "10355",
+      "disease": "NORMAL",
+      "mae": 0.007945399276486853,
+      "psnr": 40.15299679363335,
+      "ssim": 0.925201973906517,
+      "common_display_window": [
+        0.004686637315899134,
+        0.04847141522914174
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10355.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          33.29600143432617,
+          220.9595947265625
+        ],
+        "octa_minmax": [
+          0.0,
+          119.50199890136719
+        ]
+      }
+    },
+    {
+      "case_id": "10356",
+      "disease": "NORMAL",
+      "mae": 0.007298428269407964,
+      "psnr": 40.82406776733532,
+      "ssim": 0.9301495516824723,
+      "common_display_window": [
+        0.005035083275288343,
+        0.04261214938014746
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10356.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          34.65840148925781,
+          240.0800018310547
+        ],
+        "octa_minmax": [
+          0.0,
+          173.16000366210938
+        ]
+      }
+    },
+    {
+      "case_id": "10358",
+      "disease": "NORMAL",
+      "mae": 0.006551667183025245,
+      "psnr": 41.40667659450675,
+      "ssim": 0.9404989250383378,
+      "common_display_window": [
+        0.005015369039028883,
+        0.05399525240063668
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10358.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          34.52000045776367,
+          231.52999877929688
+        ],
+        "octa_minmax": [
+          0.0,
+          206.0644073486328
+        ]
+      }
+    },
+    {
+      "case_id": "10359",
+      "disease": "NORMAL",
+      "mae": 0.005947775771119268,
+      "psnr": 42.490334698787336,
+      "ssim": 0.9531777361879349,
+      "common_display_window": [
+        0.00890445802360773,
+        0.057132746092975153
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10359.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          37.75640106201172,
+          232.54800415039062
+        ],
+        "octa_minmax": [
+          0.0,
+          190.5207977294922
+        ]
+      }
+    },
+    {
+      "case_id": "10362",
+      "disease": "NORMAL",
+      "mae": 0.005065049239615149,
+      "psnr": 43.45447588924394,
+      "ssim": 0.9558983837289811,
+      "common_display_window": [
+        0.004509720951318741,
+        0.04993298575282099
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10362.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          35.83599853515625,
+          239.9499969482422
+        ],
+        "octa_minmax": [
+          0.0,
+          219.3612060546875
+        ]
+      }
+    },
+    {
+      "case_id": "10363",
+      "disease": "NORMAL",
+      "mae": 0.005811813902973029,
+      "psnr": 42.840010337682756,
+      "ssim": 0.9394631493406296,
+      "common_display_window": [
+        0.004654054995626211,
+        0.04372411686927084
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10363.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          32.66680145263672,
+          249.56239318847656
+        ],
+        "octa_minmax": [
+          0.0,
+          174.99960327148438
+        ]
+      }
+    },
+    {
+      "case_id": "10365",
+      "disease": "DR",
+      "mae": 0.005603419014427402,
+      "psnr": 42.66225490033768,
+      "ssim": 0.9534972633390426,
+      "common_display_window": [
+        0.005045425146818161,
+        0.0494076093658805
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10365.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          36.737998962402344,
+          238.77999877929688
+        ],
+        "octa_minmax": [
+          0.0,
+          200.17359924316406
+        ]
+      }
+    },
+    {
+      "case_id": "10367",
+      "disease": "CNV",
+      "mae": 0.007667189408261166,
+      "psnr": 40.282316118446424,
+      "ssim": 0.904801087800026,
+      "common_display_window": [
+        0.003227131674066186,
+        0.05249819569289685
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10367.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          40.17879867553711,
+          246.11000061035156
+        ],
+        "octa_minmax": [
+          0.0,
+          199.518798828125
+        ]
+      }
+    },
+    {
+      "case_id": "10379",
+      "disease": "DR",
+      "mae": 0.004948871184133452,
+      "psnr": 43.42684995686681,
+      "ssim": 0.9557379893970489,
+      "common_display_window": [
+        0.004379461519420147,
+        0.04991816468536855
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10379.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          28.6200008392334,
+          245.26600646972656
+        ],
+        "octa_minmax": [
+          0.0,
+          173.37319946289062
+        ]
+      }
+    },
+    {
+      "case_id": "10394",
+      "disease": "NORMAL",
+      "mae": 0.0057821114028087095,
+      "psnr": 42.78019836917629,
+      "ssim": 0.9537577580595017,
+      "common_display_window": [
+        0.009023817256093025,
+        0.056522906199097674
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10394.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          36.45000076293945,
+          238.75
+        ],
+        "octa_minmax": [
+          0.0,
+          196.77960205078125
+        ]
+      }
+    },
+    {
+      "case_id": "10395",
+      "disease": "NORMAL",
+      "mae": 0.009730558682477408,
+      "psnr": 38.826065066802705,
+      "ssim": 0.8951446223917008,
+      "common_display_window": [
+        0.009806727059185505,
+        0.05576739739626647
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10395.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          33.83000183105469,
+          247.0800018310547
+        ],
+        "octa_minmax": [
+          0.0,
+          145.94000244140625
+        ]
+      }
+    },
+    {
+      "case_id": "10404",
+      "disease": "NORMAL",
+      "mae": 0.013679988832649315,
+      "psnr": 36.30267830358139,
+      "ssim": 0.8630346353378295,
+      "common_display_window": [
+        0.0045205289497971535,
+        0.05212011039257051
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10404.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          33.810001373291016,
+          242.5800018310547
+        ],
+        "octa_minmax": [
+          0.0,
+          201.03599548339844
+        ]
+      }
+    },
+    {
+      "case_id": "10410",
+      "disease": "NORMAL",
+      "mae": 0.007468919622127146,
+      "psnr": 40.663192431461525,
+      "ssim": 0.9331433472299576,
+      "common_display_window": [
+        0.005408409051597118,
+        0.04246015362441541
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10410.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          33.82080078125,
+          239.47959899902344
+        ],
+        "octa_minmax": [
+          0.0,
+          200.32000732421875
+        ]
+      }
+    },
+    {
+      "case_id": "10415",
+      "disease": "NORMAL",
+      "mae": 0.005600624823138389,
+      "psnr": 42.71153640422995,
+      "ssim": 0.9515744340047836,
+      "common_display_window": [
+        0.005727189593017101,
+        0.048727436549961575
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10415.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          36.619998931884766,
+          241.8887939453125
+        ],
+        "octa_minmax": [
+          0.0,
+          113.32319641113281
+        ]
+      }
+    },
+    {
+      "case_id": "10420",
+      "disease": "NORMAL",
+      "mae": 0.006350175847366302,
+      "psnr": 41.841427057911524,
+      "ssim": 0.9435133263301849,
+      "common_display_window": [
+        0.0037816427648067474,
+        0.04812744539231063
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10420.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          36.5,
+          243.89599609375
+        ],
+        "octa_minmax": [
+          0.0,
+          236.19200134277344
+        ]
+      }
+    },
+    {
+      "case_id": "10421",
+      "disease": "DR",
+      "mae": 0.006835887626884585,
+      "psnr": 41.085045518374244,
+      "ssim": 0.9387392729883194,
+      "common_display_window": [
+        0.004891504999250174,
+        0.05561947636306287
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10421.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          33.379600524902344,
+          232.7100067138672
+        ],
+        "octa_minmax": [
+          0.0,
+          209.1479949951172
+        ]
+      }
+    },
+    {
+      "case_id": "10423",
+      "disease": "NORMAL",
+      "mae": 0.007188680915447776,
+      "psnr": 40.80203002318939,
+      "ssim": 0.9347652281198502,
+      "common_display_window": [
+        0.008737299591302872,
+        0.06920927315950395
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10423.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          34.56480026245117,
+          233.87840270996094
+        ],
+        "octa_minmax": [
+          0.0,
+          157.85000610351562
+        ]
+      }
+    },
+    {
+      "case_id": "10425",
+      "disease": "NORMAL",
+      "mae": 0.006943063328336052,
+      "psnr": 41.077850793819124,
+      "ssim": 0.9362562194843292,
+      "common_display_window": [
+        0.004305566661059856,
+        0.049591180682182344
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10425.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          34.0,
+          241.1699981689453
+        ],
+        "octa_minmax": [
+          0.0,
+          220.047607421875
+        ]
+      }
+    },
+    {
+      "case_id": "10430",
+      "disease": "NORMAL",
+      "mae": 0.012494474012910928,
+      "psnr": 36.68796821518284,
+      "ssim": 0.9177184781799317,
+      "common_display_window": [
+        0.010348627343773842,
+        0.06047904901206495
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10430.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          39.76319885253906,
+          240.9040069580078
+        ],
+        "octa_minmax": [
+          0.0,
+          204.0019989013672
+        ]
+      }
+    },
+    {
+      "case_id": "10433",
+      "disease": "DR",
+      "mae": 0.007345657058380084,
+      "psnr": 40.58476767727127,
+      "ssim": 0.9267625843248367,
+      "common_display_window": [
+        0.006506707053631544,
+        0.05943020042032004
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10433.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          32.262001037597656,
+          240.17880249023438
+        ],
+        "octa_minmax": [
+          0.0,
+          187.72000122070312
+        ]
+      }
+    },
+    {
+      "case_id": "10446",
+      "disease": "NORMAL",
+      "mae": 0.0058275526636677455,
+      "psnr": 42.47820020014796,
+      "ssim": 0.9509942934131622,
+      "common_display_window": [
+        0.007459260057657957,
+        0.05230379290878773
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10446.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          35.65999984741211,
+          236.27200317382812
+        ],
+        "octa_minmax": [
+          0.0,
+          204.69000244140625
+        ]
+      }
+    },
+    {
+      "case_id": "10448",
+      "disease": "NORMAL",
+      "mae": 0.013377453246615545,
+      "psnr": 36.33016351341722,
+      "ssim": 0.7806468406186103,
+      "common_display_window": [
+        0.00628553656861186,
+        0.05594523083418609
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10448.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          32.07640075683594,
+          246.29400634765625
+        ],
+        "octa_minmax": [
+          0.0,
+          188.6699981689453
+        ]
+      }
+    },
+    {
+      "case_id": "10454",
+      "disease": "DR",
+      "mae": 0.008215098431231027,
+      "psnr": 39.19067775371576,
+      "ssim": 0.9118517909164429,
+      "common_display_window": [
+        0.003306632163003087,
+        0.04751100949943066
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10454.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          39.508399963378906,
+          234.77000427246094
+        ],
+        "octa_minmax": [
+          0.0,
+          113.68440246582031
+        ]
+      }
+    },
+    {
+      "case_id": "10460",
+      "disease": "NORMAL",
+      "mae": 0.005548246279186486,
+      "psnr": 42.90141596090617,
+      "ssim": 0.9594006541986465,
+      "common_display_window": [
+        0.0037749072071164846,
+        0.054830190539360044
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10460.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          33.18360137939453,
+          231.24960327148438
+        ],
+        "octa_minmax": [
+          0.0,
+          217.156005859375
+        ]
+      }
+    },
+    {
+      "case_id": "10467",
+      "disease": "DR",
+      "mae": 0.006794638349658655,
+      "psnr": 40.64434999758522,
+      "ssim": 0.9203997605686188,
+      "common_display_window": [
+        0.0031531783752143383,
+        0.0521500088274479
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10467.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          35.849998474121094,
+          247.64759826660156
+        ],
+        "octa_minmax": [
+          0.0,
+          198.95599365234375
+        ]
+      }
+    },
+    {
+      "case_id": "10472",
+      "disease": "NORMAL",
+      "mae": 0.006064565656213716,
+      "psnr": 42.10221020348777,
+      "ssim": 0.9416469706993102,
+      "common_display_window": [
+        0.0034878866281360388,
+        0.053703749179840096
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10472.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          31.56679916381836,
+          242.83160400390625
+        ],
+        "octa_minmax": [
+          0.0,
+          197.88800048828125
+        ]
+      }
+    },
+    {
+      "case_id": "10475",
+      "disease": "NORMAL",
+      "mae": 0.005145813679817479,
+      "psnr": 43.75364922165744,
+      "ssim": 0.958140327460289,
+      "common_display_window": [
+        0.006485816556960344,
+        0.04862202368676663
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10475.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          38.310001373291016,
+          242.18800354003906
+        ],
+        "octa_minmax": [
+          0.0,
+          166.32640075683594
+        ]
+      }
+    },
+    {
+      "case_id": "10476",
+      "disease": "NORMAL",
+      "mae": 0.00486324789953585,
+      "psnr": 43.99189756278864,
+      "ssim": 0.9635109812526703,
+      "common_display_window": [
+        0.0051976763643324375,
+        0.04594831075519325
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10476.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          30.1200008392334,
+          236.6580047607422
+        ],
+        "octa_minmax": [
+          0.0,
+          200.1300048828125
+        ]
+      }
+    },
+    {
+      "case_id": "10484",
+      "disease": "NORMAL",
+      "mae": 0.005804533377748555,
+      "psnr": 42.54185378506966,
+      "ssim": 0.9560275879669189,
+      "common_display_window": [
+        0.005915084388107061,
+        0.04804417733103037
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10484.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          40.585201263427734,
+          239.73399353027344
+        ],
+        "octa_minmax": [
+          0.0,
+          214.52040100097656
+        ]
+      }
+    },
+    {
+      "case_id": "10494",
+      "disease": "NORMAL",
+      "mae": 0.008182156101952387,
+      "psnr": 40.08863133268585,
+      "ssim": 0.9219655387649536,
+      "common_display_window": [
+        0.008749231696128845,
+        0.05700914319604636
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10494.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          35.52000045776367,
+          241.86399841308594
+        ],
+        "octa_minmax": [
+          0.0,
+          166.46800231933594
+        ]
+      }
+    },
+    {
+      "case_id": "10497",
+      "disease": "NORMAL",
+      "mae": 0.006494546141823321,
+      "psnr": 41.60691458665524,
+      "ssim": 0.9515166718883514,
+      "common_display_window": [
+        0.009684666059911251,
+        0.05882320944219828
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10497.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          38.70000076293945,
+          242.66439819335938
+        ],
+        "octa_minmax": [
+          0.0,
+          217.8000030517578
+        ]
+      }
+    },
+    {
+      "case_id": "10498",
+      "disease": "NORMAL",
+      "mae": 0.0063058777166702384,
+      "psnr": 41.65510332191622,
+      "ssim": 0.9447784857158661,
+      "common_display_window": [
+        0.008828292600810528,
+        0.06661613881587983
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10498.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          35.5,
+          236.1555938720703
+        ],
+        "octa_minmax": [
+          0.0,
+          135.7176055908203
+        ]
+      }
+    },
+    {
+      "case_id": "10499",
+      "disease": "DR",
+      "mae": 0.008847762843672058,
+      "psnr": 38.975087806670444,
+      "ssim": 0.9031979534568787,
+      "common_display_window": [
+        0.002782423049211502,
+        0.048107804171741014
+      ],
+      "official_source": "D:\\data\\code\\keyan_fuxian\\FlowOCT\\data\\OCTA500_common_v1\\official_projections\\3M\\OCTA(FULL)\\10499.bmp",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          24.25,
+          231.08079528808594
+        ],
+        "octa_minmax": [
+          0.0,
+          184.2032012939453
+        ]
+      }
+    }
+  ],
+  "protocol": {
+    "source": "https://arxiv.org/pdf/2012.07261 section 3.3 (B4)",
+    "projection": "arithmetic mean along all axial samples, ZYX axis=0",
+    "orientation": "XY, matching official BMP; transpose of old YX display",
+    "coverage": "256 center crop after lateral resize to 400; 64% lateral FOV per axis",
+    "metrics": "prediction vs GT on identical crop, raw normalized [0,1]; SSIM win_size=7",
+    "display": "common GT min-to-P99 window for GT/prediction; official BMP kept in its supplied display scale",
+    "official_crop": "official BMP linearly resized and center-cropped only for visual alignment; not a metric target",
+    "model_changed": false,
+    "used_to_select_checkpoint": false
+  }
+}

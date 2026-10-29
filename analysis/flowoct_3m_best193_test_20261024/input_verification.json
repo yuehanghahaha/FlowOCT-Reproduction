@@ -1,0 +1,32 @@
+{
+  "source_archive": "D:\\data\\FSdata\\flowoct_3m_best_after200_review.tar",
+  "source_archive_bytes": 5657425920,
+  "source_archive_sha256_local": "332063ec74f3ef94a1aec925980aba778d1ebb12aa32268811c8b3fe617cc7b6",
+  "scope": "Local archive identity and structural/readability checks; no downloaded server SHA256 sidecar was present for end-to-end checksum matching.",
+  "archive_files": 61,
+  "npz_files": 50,
+  "all_extracted_file_sizes_match_archive": true,
+  "all_non_npz_file_hashes_match_archive": true,
+  "checkpoint_sha256_matches_prediction": true,
+  "actual_checkpoint_read": {
+    "format": "flowoct-reproduction-v1",
+    "epoch": 193,
+    "global_step": 27020,
+    "best_validation_psnr": 29.741366907744993,
+    "network_chunk": 0,
+    "epochs": 200
+  },
+  "same_cases_config_manifest_sources": true,
+  "all_50_gt_arrays_equal": true,
+  "array_recalculation": {
+    "volume_mae_psnr_cases": 50,
+    "mip_metrics_cases": 50,
+    "full_metrics_cases": 50,
+    "volume_ssim_cases": [
+      "10305",
+      "10325",
+      "10330"
+    ],
+    "max_abs_error_vs_logged": 2.4868995751603507e-14
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "paper_sha256": "a0f5deac6629ffd50f627952356e8fa629ea950930f58d2a0e36c656a6cb2d7b",
+  "checkpoint_epoch": 193,
+  "checkpoint_sha256": "42676f6219106bfcf4b25dc275172d827ddeeec96c97721d2b91db0c70693832",
+  "actual_source_checks": {
+    "flowoct/__init__.py": {
+      "sha256": "c5d9125502b98e89d98e94b99a0675b085dd010e9ae7e194d5199651125b8741",
+      "matches_prediction": true
+    },
+    "flowoct/data.py": {
+      "sha256": "cf503eeac9ae0ac2441b72a07ab7b1c7de4a6382f833ca59354a1b4d93d75415",
+      "matches_prediction": true
+    },
+    "flowoct/metrics.py": {
+      "sha256": "926e86aec2f33c283ac7f667ed7b9b1ff5ef710490a86f5f53f69c4214048efe",
+      "matches_prediction": true
+    },
+    "flowoct/model.py": {
+      "sha256": "9c4e1350dd2926120f7f00e2b569313c08369e6d893a45ae1d1a4f8a860dae1e",
+      "matches_prediction": true
+    },
+    "flowoct/roi.py": {
+      "sha256": "1c729065c592c28d1a86d328dbae7ebd883d2f7153c910d0db13f5a149dd30e0",
+      "matches_prediction": true
+    },
+    "flowoct/runner.py": {
+      "sha256": "11c55c27261c48e7cd37dfca8531ad5f3394fe1cd34c9102537d2cc23ec39ee6",
+      "matches_prediction": true
+    },
+    "flowoct/wavelet_functions.py": {
+      "sha256": "33623b3e9b8d59df0227a840f88db4789095d3449e820e6454a31499ed3d156f",
+      "matches_prediction": true
+    },
+    "flowoct/wavelets.py": {
+      "sha256": "02625d63ff997de3af1633f0fa511021d74212dabbc984162218e0bf8f594768",
+      "matches_prediction": true
+    }
+  },
+  "reference_source_line_checks": [
+    {
+      "path": "models/FlowOCT_model.py",
+      "remote_sha256": "b40de23a5c1860cf9d6090c97753e82b87720d1ce0c327ca6597c04a8df0bea5",
+      "local_sha256": "5968dc3512a04f591a5108f978246ee2f6b3b1db658f617e65e4b091a1d7ff44",
+      "byte_identical": false,
+      "lines_identical": true
+    },
+    {
+      "path": "datasets/OCTA500_dataset.py",
+      "remote_sha256": "42a674a7bc3c21be1b0987b4c64de9c9228ee97fd75d56be04a383796fab06b7",
+      "local_sha256": "0f114effa7257dea7c2ee859e22958f0ae35ad2a4e36ed288648d973b9b74478",
+      "byte_identical": false,
+      "lines_identical": true
+    },
+    {
+      "path": "util/auto_crop.py",
+      "remote_sha256": "67af7ea752cabc02616ccbf712c1a328bbdf56d1d817a072e2b72456d0e9ece2",
+      "local_sha256": "1c729065c592c28d1a86d328dbae7ebd883d2f7153c910d0db13f5a149dd30e0",
+      "byte_identical": false,
+      "lines_identical": true
+    },
+    {
+      "path": "util/util.py",
+      "remote_sha256": "2b28cd9e1aadcc319f8b8482de4b01ab182c43a7d4b02d9d3414ddd4e709dd75",
+      "local_sha256": "3cb1f625dc496c1f361f53f1ce46accc999c04c44f38d6dde879ff93d980f42d",
+      "byte_identical": false,
+      "lines_identical": true
+    }
+  ],
+  "training_history": {
+    "epochs": 200,
+    "last_epoch": 200,
+    "last_global_step": 28000
+  },
+  "replay": {
+    "cases": [
+      "10301",
+      "10304",
+      "10310"
+    ],
+    "sampled_slices": 192,
+    "velocity_roi_full_image_count": 192,
+    "optimizer_step_min_max": [
+      27020.0,
+      27020.0
+    ],
+    "model_state_unchanged": true
+  },
+  "causal_effects_of_differences_not_isolated": true,
+  "author_npz_physical_axis_not_confirmed": true,
+  "no_training_or_prediction_modification": true
+}

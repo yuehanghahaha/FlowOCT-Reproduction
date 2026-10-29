@@ -1,0 +1,11 @@
+# Install the CUDA wheel explicitly first; see README.
+torch==2.5.1
+numpy==1.26.4
+monai==1.4.0
+einops==0.8.1
+torchio==0.20.4
+scikit-image==0.25.2
+PyWavelets==1.8.0
+SimpleITK==2.5.6
+tqdm==4.67.1
+matplotlib==3.10.1

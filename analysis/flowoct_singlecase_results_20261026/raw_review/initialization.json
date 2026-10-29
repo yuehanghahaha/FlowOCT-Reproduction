@@ -1,0 +1,6 @@
+{
+  "mode": "fresh random initialization",
+  "seed": 2026,
+  "initial_model_sha256": "b5e499b86e599af9f91b8c104aff263180c123bbf3dc17b2a686bcde13f4e18c",
+  "pretrained_weights_loaded": false
+}

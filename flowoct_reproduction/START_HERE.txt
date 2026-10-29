@@ -1,0 +1,20 @@
+A100新包从 A100_START.md 开始，不需要编辑代码或JSON。
+
+把 FlowOCT_A100_20261021.zip 解压到你已上传数据的 OCTA500_v1 目录中，
+进入新生成的 flowoct_reproduction_a100，安装/激活FlowOCT环境后执行：
+
+python a100.py check
+python a100.py train
+
+按顺序执行：check检查成功后，再单独启动train的200轮正式训练。
+恢复：python a100.py resume
+最终测试与评价：python a100.py test
+6M：以上命令加 --fov 6m，两套默认使用同一卡，顺序运行。
+
+自动填写实际CSV绝对路径和进程内cuda:0，保留64张整批、FP32、200轮。
+模型/小波/损失/预处理/训练循环未改，network_chunk=0，不做激活重计算。
+多个数据目录或空上传目录会明确报错；不会自动改动或复制数据。
+
+每轮latest，验证体积PSNR更优时best，每10轮历史checkpoint，规则不变。
+所有改动和理由见CHANGES.md，新增代码全文见EXTRA_CODE_REVIEW.md。
+真实硬件验证边界见VERIFICATION.md：尚未连接或测试你的A100。

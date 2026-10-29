@@ -1,0 +1,83 @@
+{
+  "metrics": {
+    "tag": "epoch300",
+    "epoch": 300,
+    "global_step": 300,
+    "case_exposures": 300,
+    "model_state_sha256": "35f19504467d095e4a6426df7647c6708ac59d77a10ab8995123f03a1fec8761",
+    "volume_mae": 0.017419358870332996,
+    "volume_psnr": 28.386659238831385,
+    "volume_ssim": 0.6112745763615334,
+    "axial_mip_mae": 0.07096031885805587,
+    "axial_mip_psnr": 20.738773256821755,
+    "axial_mip_ssim": 0.2821617423594945,
+    "full_mae": 0.007295192127116934,
+    "full_psnr_range1": 40.550693971346526,
+    "full_ssim_range1": 0.9292069414892197,
+    "full_ssim_gt_span": 0.17033477536992334,
+    "full_highpass_correlation": -0.03004541251365467,
+    "full_lowpass_correlation": 0.7023205620818076,
+    "mip_mae": 0.07096031885805587,
+    "mip_psnr_range1": 20.73877325682176,
+    "mip_ssim_range1": 0.282161734208913,
+    "mip_ssim_gt_span": 0.2687851776446526,
+    "mip_highpass_correlation": 0.07166735848742432,
+    "mip_lowpass_correlation": 0.5729386170118345
+  },
+  "teacher_probe": [
+    {
+      "t": 0.0,
+      "sampled_y_indices": [
+        0,
+        32,
+        64,
+        96,
+        128,
+        160,
+        192,
+        224
+      ],
+      "raw_velocity_mse": 0.0015596388839185238,
+      "cropped_velocity_mse": 0.0015596390003338456,
+      "endpoint_mae": 0.016929447650909424,
+      "cropped_endpoint_l1": 0.048376359045505524,
+      "uses_gt_in_input": false
+    },
+    {
+      "t": 0.5,
+      "sampled_y_indices": [
+        0,
+        32,
+        64,
+        96,
+        128,
+        160,
+        192,
+        224
+      ],
+      "raw_velocity_mse": 0.001186296809464693,
+      "cropped_velocity_mse": 0.001186296925880015,
+      "endpoint_mae": 0.007931611500680447,
+      "cropped_endpoint_l1": 0.02109614387154579,
+      "uses_gt_in_input": true
+    },
+    {
+      "t": 0.9,
+      "sampled_y_indices": [
+        0,
+        32,
+        64,
+        96,
+        128,
+        160,
+        192,
+        224
+      ],
+      "raw_velocity_mse": 0.0014879246009513736,
+      "cropped_velocity_mse": 0.0014879246009513736,
+      "endpoint_mae": 0.0018423933070152998,
+      "cropped_endpoint_l1": 0.004788577556610107,
+      "uses_gt_in_input": true
+    }
+  ]
+}

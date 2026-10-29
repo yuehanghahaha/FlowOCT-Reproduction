@@ -1,0 +1,11 @@
+{
+  "report_exists": true,
+  "report_chars": 9947,
+  "missing_local_links": [],
+  "current_sources_unchanged": true,
+  "actual_training_source_fingerprints_all_match": true,
+  "upstream_worktree_clean": true,
+  "one_step_loss_gradient_parameter_inference_all_zero": true,
+  "same_axis_oct_octa_preprocessing_both_zero": true,
+  "actual10308_velocity_roi_fallback_slices": 256
+}

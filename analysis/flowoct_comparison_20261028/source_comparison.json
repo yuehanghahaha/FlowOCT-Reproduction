@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-28",
+  "upstream_commit": "2309126956d2b80a95f2d307d85a50799cc658a6",
+  "upstream_status": "",
+  "upstream_tracked_files": 17,
+  "working_changed_tracked_files": [
+    "models/FlowOCT_model.py"
+  ],
+  "mapping": [
+    {
+      "original": "models/FlowOCT_model.py",
+      "current": "flowoct/model.py",
+      "original_lines": 288,
+      "current_lines": 303,
+      "equal_lines": false,
+      "original_sha256": "5968dc3512a04f591a5108f978246ee2f6b3b1db658f617e65e4b091a1d7ff44",
+      "current_sha256": "9c4e1350dd2926120f7f00e2b569313c08369e6d893a45ae1d1a4f8a860dae1e",
+      "insertions": 24,
+      "deletions": 9,
+      "hunks": 6
+    },
+    {
+      "original": "util/DWT_IDWT_layer.py",
+      "current": "flowoct/wavelets.py",
+      "original_lines": 652,
+      "current_lines": 644,
+      "equal_lines": false,
+      "original_sha256": "e197b28df17be2a630ea8ada1b2966dd736c7c0079936a0a7e6c233eafc15a90",
+      "current_sha256": "02625d63ff997de3af1633f0fa511021d74212dabbc984162218e0bf8f594768",
+      "insertions": 13,
+      "deletions": 21,
+      "hunks": 5
+    },
+    {
+      "original": "util/DWT_IDWT_Functions.py",
+      "current": "flowoct/wavelet_functions.py",
+      "original_lines": 212,
+      "current_lines": 212,
+      "equal_lines": true,
+      "original_sha256": "33623b3e9b8d59df0227a840f88db4789095d3449e820e6454a31499ed3d156f",
+      "current_sha256": "33623b3e9b8d59df0227a840f88db4789095d3449e820e6454a31499ed3d156f",
+      "insertions": 0,
+      "deletions": 0,
+      "hunks": 0
+    },
+    {
+      "original": "util/auto_crop.py",
+      "current": "flowoct/roi.py",
+      "original_lines": 63,
+      "current_lines": 63,
+      "equal_lines": true,
+      "original_sha256": "1c729065c592c28d1a86d328dbae7ebd883d2f7153c910d0db13f5a149dd30e0",
+      "current_sha256": "1c729065c592c28d1a86d328dbae7ebd883d2f7153c910d0db13f5a149dd30e0",
+      "insertions": 0,
+      "deletions": 0,
+      "hunks": 0
+    },
+    {
+      "original": "datasets/OCTA500_dataset.py",
+      "current": "flowoct/data.py",
+      "original_lines": 127,
+      "current_lines": 165,
+      "equal_lines": false,
+      "original_sha256": "0f114effa7257dea7c2ee859e22958f0ae35ad2a4e36ed288648d973b9b74478",
+      "current_sha256": "cf503eeac9ae0ac2441b72a07ab7b1c7de4a6382f833ca59354a1b4d93d75415",
+      "insertions": 151,
+      "deletions": 113,
+      "hunks": 1
+    },
+    {
+      "original": "util/train_utils.py",
+      "current": "flowoct/runner.py",
+      "original_lines": 79,
+      "current_lines": 417,
+      "equal_lines": false,
+      "original_sha256": "d5b05b1dbfda013e2313fce20d28c0b9f91ef0c7b681ffd3a63b2da19b90a451",
+      "current_sha256": "11c55c27261c48e7cd37dfca8531ad5f3394fe1cd34c9102537d2cc23ec39ee6",
+      "insertions": 415,
+      "deletions": 77,
+      "hunks": 1
+    },
+    {
+      "original": "util/util.py",
+      "current": "flowoct/metrics.py",
+      "original_lines": 66,
+      "current_lines": 35,
+      "equal_lines": false,
+      "original_sha256": "3cb1f625dc496c1f361f53f1ce46accc999c04c44f38d6dde879ff93d980f42d",
+      "current_sha256": "926e86aec2f33c283ac7f667ed7b9b1ff5ef710490a86f5f53f69c4214048efe",
+      "insertions": 26,
+      "deletions": 57,
+      "hunks": 1
+    },
+    {
+      "original": "requirements.txt",
+      "current": "requirements.txt",
+      "original_lines": 10,
+      "current_lines": 11,
+      "equal_lines": false,
+      "original_sha256": "a0947f553c1b3040b0416f552a56fb111079b5efb1b31ae0725fdedf361b9af7",
+      "current_sha256": "9fc5bd825019a6510f68783d8e85de08f5395cacfcf1aa226dd083920c7ef18d",
+      "insertions": 11,
+      "deletions": 10,
+      "hunks": 1
+    }
+  ],
+  "current_matches_prior_actual_training_sources": {
+    "flowoct/__init__.py": {
+      "current": "c5d9125502b98e89d98e94b99a0675b085dd010e9ae7e194d5199651125b8741",
+      "recorded": "c5d9125502b98e89d98e94b99a0675b085dd010e9ae7e194d5199651125b8741",
+      "match": true
+    },
+    "flowoct/data.py": {
+      "current": "cf503eeac9ae0ac2441b72a07ab7b1c7de4a6382f833ca59354a1b4d93d75415",
+      "recorded": "cf503eeac9ae0ac2441b72a07ab7b1c7de4a6382f833ca59354a1b4d93d75415",
+      "match": true
+    },
+    "flowoct/metrics.py": {
+      "current": "926e86aec2f33c283ac7f667ed7b9b1ff5ef710490a86f5f53f69c4214048efe",
+      "recorded": "926e86aec2f33c283ac7f667ed7b9b1ff5ef710490a86f5f53f69c4214048efe",
+      "match": true
+    },
+    "flowoct/model.py": {
+      "current": "9c4e1350dd2926120f7f00e2b569313c08369e6d893a45ae1d1a4f8a860dae1e",
+      "recorded": "9c4e1350dd2926120f7f00e2b569313c08369e6d893a45ae1d1a4f8a860dae1e",
+      "match": true
+    },
+    "flowoct/roi.py": {
+      "current": "1c729065c592c28d1a86d328dbae7ebd883d2f7153c910d0db13f5a149dd30e0",
+      "recorded": "1c729065c592c28d1a86d328dbae7ebd883d2f7153c910d0db13f5a149dd30e0",
+      "match": true
+    },
+    "flowoct/runner.py": {
+      "current": "11c55c27261c48e7cd37dfca8531ad5f3394fe1cd34c9102537d2cc23ec39ee6",
+      "recorded": "11c55c27261c48e7cd37dfca8531ad5f3394fe1cd34c9102537d2cc23ec39ee6",
+      "match": true
+    },
+    "flowoct/wavelet_functions.py": {
+      "current": "33623b3e9b8d59df0227a840f88db4789095d3449e820e6454a31499ed3d156f",
+      "recorded": "33623b3e9b8d59df0227a840f88db4789095d3449e820e6454a31499ed3d156f",
+      "match": true
+    },
+    "flowoct/wavelets.py": {
+      "current": "02625d63ff997de3af1633f0fa511021d74212dabbc984162218e0bf8f594768",
+      "recorded": "02625d63ff997de3af1633f0fa511021d74212dabbc984162218e0bf8f594768",
+      "match": true
+    }
+  },
+  "reference_line_matches": {
+    ".gitignore": true,
+    "LICENSE": true,
+    "README.md": true,
+    "datasets/OCTA500_dataset.py": true,
+    "models/FlowOCT_model.py": true,
+    "options/base_options.py": true,
+    "options/test_options.py": true,
+    "options/train_options.py": true,
+    "requirements.txt": true,
+    "test.py": true,
+    "train.py": true,
+    "util/DWT_IDWT_Functions.py": true,
+    "util/DWT_IDWT_layer.py": true,
+    "util/auto_crop.py": true,
+    "util/train_utils.py": true,
+    "util/util.py": true,
+    "visualize.py": true
+  },
+  "paper_sha256": "a0f5deac6629ffd50f627952356e8fa629ea950930f58d2a0e36c656a6cb2d7b"
+}

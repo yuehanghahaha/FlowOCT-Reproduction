@@ -1,0 +1,27 @@
+{
+  "scope": "CPU exporter verification on one selected existing epoch-98 test case; not the current server epoch-193 result.",
+  "case_id": "10305",
+  "checkpoint_epoch": 98,
+  "full_mean_arrays_match": true,
+  "full_is_not_maximum_projection": true,
+  "metrics_match_previous_verified_FULL_export": true,
+  "original_volume_unchanged": true,
+  "duplicate_output_preserved": true,
+  "zip_integrity_and_checksum_passed": true,
+  "source_npz_mib": 92.83157920837402,
+  "review_zip_mib": 1.0142688751220703,
+  "metrics": {
+    "mae": {
+      "mean": 0.005033019078410916,
+      "std": 0.0
+    },
+    "psnr": {
+      "mean": 43.77923301359502,
+      "std": 0.0
+    },
+    "ssim": {
+      "mean": 0.9628644275932312,
+      "std": 0.0
+    }
+  }
+}

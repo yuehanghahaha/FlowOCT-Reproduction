@@ -1,0 +1,2090 @@
+{
+  "checkpoint": "/workspace/flowoct_work/flowoct_reproduction_a100/runs/flowoct_3m_200e/best.pt",
+  "checkpoint_sha256": "42676f6219106bfcf4b25dc275172d827ddeeec96c97721d2b91db0c70693832",
+  "checkpoint_epoch": 193,
+  "manifest_sha256": "24e12fdb4dece29f27c565b4515ba0b31417505b3af893f99e61a416b05ad4da",
+  "split": "test",
+  "limited_diagnostic": false,
+  "config": {
+    "manifest": "/workspace/flowoct_work/data/OCTA500_v1/split_3M_z256.csv",
+    "fov": "3M",
+    "axis_order": "ZYX",
+    "load_size": 400,
+    "crop_size": 256,
+    "batch_size": 1,
+    "train_slices": 0,
+    "network_chunk": 0,
+    "inference_chunk": 32,
+    "epochs": 200,
+    "lr": 0.0002,
+    "beta": 0.5,
+    "seed": 2026,
+    "workers": 0,
+    "device": "cuda:0",
+    "threads": 4,
+    "val_every": 1,
+    "save_every": 10,
+    "log_every": 20,
+    "diagnostic_limits": null
+  },
+  "environment": {
+    "python": "3.10.22 | packaged by conda-forge | (main, Oct  6 2026, 23:02:24) [GCC 14.4.0]",
+    "platform": "Linux-3.10.0-1160.el7.x86_64-x86_64-with-glibc2.35",
+    "packages": {
+      "torch": "2.5.1+cu121",
+      "numpy": "1.26.4",
+      "monai": "1.4.0",
+      "torchio": "0.20.4",
+      "scikit-image": "0.25.2",
+      "PyWavelets": "1.8.0",
+      "SimpleITK": "2.5.6",
+      "einops": "0.8.1"
+    },
+    "source_sha256": {
+      "flowoct/__init__.py": "c5d9125502b98e89d98e94b99a0675b085dd010e9ae7e194d5199651125b8741",
+      "flowoct/data.py": "cf503eeac9ae0ac2441b72a07ab7b1c7de4a6382f833ca59354a1b4d93d75415",
+      "flowoct/metrics.py": "926e86aec2f33c283ac7f667ed7b9b1ff5ef710490a86f5f53f69c4214048efe",
+      "flowoct/model.py": "9c4e1350dd2926120f7f00e2b569313c08369e6d893a45ae1d1a4f8a860dae1e",
+      "flowoct/roi.py": "1c729065c592c28d1a86d328dbae7ebd883d2f7153c910d0db13f5a149dd30e0",
+      "flowoct/runner.py": "11c55c27261c48e7cd37dfca8531ad5f3394fe1cd34c9102537d2cc23ec39ee6",
+      "flowoct/wavelet_functions.py": "33623b3e9b8d59df0227a840f88db4789095d3449e820e6454a31499ed3d156f",
+      "flowoct/wavelets.py": "02625d63ff997de3af1633f0fa511021d74212dabbc984162218e0bf8f594768"
+    },
+    "device": "cuda:0",
+    "cuda_runtime": "12.1",
+    "gpu": "NVIDIA A100 80GB PCIe"
+  },
+  "coverage": "center crop after resize; not restored full FOV or native axial resolution",
+  "records": [
+    {
+      "case_id": "10305",
+      "patient_id": "10305",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          30.25,
+          245.7740020751953
+        ],
+        "octa_minmax": [
+          0.0,
+          218.64999389648438
+        ]
+      },
+      "volume_mae": 0.01296685384544994,
+      "volume_psnr": 29.516087166717398,
+      "volume_ssim": 0.8652949282341273,
+      "axial_mip_mae": 0.09387071730861862,
+      "axial_mip_psnr": 18.64861450510394,
+      "axial_mip_ssim": 0.37729259403868426
+    },
+    {
+      "case_id": "10307",
+      "patient_id": "10307",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          30.040000915527344,
+          243.156005859375
+        ],
+        "octa_minmax": [
+          0.0,
+          186.26400756835938
+        ]
+      },
+      "volume_mae": 0.014855334006935509,
+      "volume_psnr": 28.241915796415157,
+      "volume_ssim": 0.8547282086855282,
+      "axial_mip_mae": 0.10063697353268708,
+      "axial_mip_psnr": 18.08279281598168,
+      "axial_mip_ssim": 0.2780666681291357
+    },
+    {
+      "case_id": "10317",
+      "patient_id": "10317",
+      "disease": "DR",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          36.95000076293945,
+          232.24920654296875
+        ],
+        "octa_minmax": [
+          0.0,
+          197.10079956054688
+        ]
+      },
+      "volume_mae": 0.00924098483311116,
+      "volume_psnr": 31.58023114289548,
+      "volume_ssim": 0.8702391993864838,
+      "axial_mip_mae": 0.07929313127417004,
+      "axial_mip_psnr": 19.69355951859692,
+      "axial_mip_ssim": 0.34649698101115506
+    },
+    {
+      "case_id": "10318",
+      "patient_id": "10318",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          32.0359992980957,
+          244.78199768066406
+        ],
+        "octa_minmax": [
+          0.0,
+          237.8800048828125
+        ]
+      },
+      "volume_mae": 0.013487025285472307,
+      "volume_psnr": 29.956425616087436,
+      "volume_ssim": 0.791303187169488,
+      "axial_mip_mae": 0.07535806877262985,
+      "axial_mip_psnr": 20.359279935125038,
+      "axial_mip_ssim": 0.37610130259151636
+    },
+    {
+      "case_id": "10321",
+      "patient_id": "10321",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          31.149599075317383,
+          242.51199340820312
+        ],
+        "octa_minmax": [
+          0.0,
+          186.70599365234375
+        ]
+      },
+      "volume_mae": 0.014593695338296197,
+      "volume_psnr": 29.817406191771674,
+      "volume_ssim": 0.7567943327308007,
+      "axial_mip_mae": 0.07628906290028681,
+      "axial_mip_psnr": 20.350878799199638,
+      "axial_mip_ssim": 0.2921892996938179
+    },
+    {
+      "case_id": "10322",
+      "patient_id": "10322",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          29.350000381469727,
+          236.24639892578125
+        ],
+        "octa_minmax": [
+          0.0,
+          201.31080627441406
+        ]
+      },
+      "volume_mae": 0.013329630941380469,
+      "volume_psnr": 29.650421510348618,
+      "volume_ssim": 0.7997213882173297,
+      "axial_mip_mae": 0.07647117380457757,
+      "axial_mip_psnr": 20.120311648049984,
+      "axial_mip_ssim": 0.2519629825163819
+    },
+    {
+      "case_id": "10325",
+      "patient_id": "10325",
+      "disease": "AMD",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          37.79999923706055,
+          239.5727996826172
+        ],
+        "octa_minmax": [
+          0.0,
+          226.3979949951172
+        ]
+      },
+      "volume_mae": 0.018487340459164746,
+      "volume_psnr": 26.982201328516048,
+      "volume_ssim": 0.7374840564707921,
+      "axial_mip_mae": 0.11222417662230555,
+      "axial_mip_psnr": 16.815166712508944,
+      "axial_mip_ssim": 0.20849904032607294
+    },
+    {
+      "case_id": "10326",
+      "patient_id": "10326",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          31.329999923706055,
+          235.24400329589844
+        ],
+        "octa_minmax": [
+          0.0,
+          185.36520385742188
+        ]
+      },
+      "volume_mae": 0.012739298367806363,
+      "volume_psnr": 30.050332728449934,
+      "volume_ssim": 0.831398262480998,
+      "axial_mip_mae": 0.07501944698435636,
+      "axial_mip_psnr": 20.38212323840767,
+      "axial_mip_ssim": 0.33682557001179586
+    },
+    {
+      "case_id": "10327",
+      "patient_id": "10327",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          37.220001220703125,
+          246.0540008544922
+        ],
+        "octa_minmax": [
+          0.0,
+          142.1623992919922
+        ]
+      },
+      "volume_mae": 0.017209994432754117,
+      "volume_psnr": 26.87619435245313,
+      "volume_ssim": 0.8587764973897742,
+      "axial_mip_mae": 0.11725906730544011,
+      "axial_mip_psnr": 17.20264149620925,
+      "axial_mip_ssim": 0.2653127839189504
+    },
+    {
+      "case_id": "10328",
+      "patient_id": "10328",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          34.45000076293945,
+          241.90359497070312
+        ],
+        "octa_minmax": [
+          0.0,
+          224.1748046875
+        ]
+      },
+      "volume_mae": 0.012137470762246515,
+      "volume_psnr": 29.26458314805125,
+      "volume_ssim": 0.8767233509065313,
+      "axial_mip_mae": 0.0988719471481545,
+      "axial_mip_psnr": 18.364763782147598,
+      "axial_mip_ssim": 0.3231238148050697
+    },
+    {
+      "case_id": "10330",
+      "patient_id": "10330",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          29.666000366210938,
+          242.21200561523438
+        ],
+        "octa_minmax": [
+          0.0,
+          189.44760131835938
+        ]
+      },
+      "volume_mae": 0.017415491877959075,
+      "volume_psnr": 29.28851501593003,
+      "volume_ssim": 0.619766964660641,
+      "axial_mip_mae": 0.08796125645937991,
+      "axial_mip_psnr": 19.165631282329215,
+      "axial_mip_ssim": 0.3144385024728872
+    },
+    {
+      "case_id": "10331",
+      "patient_id": "10331",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          34.148799896240234,
+          238.35760498046875
+        ],
+        "octa_minmax": [
+          0.0,
+          215.92999267578125
+        ]
+      },
+      "volume_mae": 0.01441372251643393,
+      "volume_psnr": 29.666997035276665,
+      "volume_ssim": 0.7432843223887584,
+      "axial_mip_mae": 0.06608085397385821,
+      "axial_mip_psnr": 21.483291960159306,
+      "axial_mip_ssim": 0.34463037108172534
+    },
+    {
+      "case_id": "10332",
+      "patient_id": "10332",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          32.130001068115234,
+          240.4228057861328
+        ],
+        "octa_minmax": [
+          0.0,
+          149.1887969970703
+        ]
+      },
+      "volume_mae": 0.01119650854399612,
+      "volume_psnr": 29.94382888086742,
+      "volume_ssim": 0.8649159498696467,
+      "axial_mip_mae": 0.09602548688707202,
+      "axial_mip_psnr": 18.423893800570674,
+      "axial_mip_ssim": 0.3244516291027879
+    },
+    {
+      "case_id": "10341",
+      "patient_id": "10341",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          33.898799896240234,
+          234.7852020263672
+        ],
+        "octa_minmax": [
+          0.0,
+          191.8000030517578
+        ]
+      },
+      "volume_mae": 0.016961899269026123,
+      "volume_psnr": 28.775630875133153,
+      "volume_ssim": 0.6906310526263263,
+      "axial_mip_mae": 0.08295968826081435,
+      "axial_mip_psnr": 19.42673508400752,
+      "axial_mip_ssim": 0.33281223633013685
+    },
+    {
+      "case_id": "10342",
+      "patient_id": "10342",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          37.25600051879883,
+          238.5919952392578
+        ],
+        "octa_minmax": [
+          0.0,
+          208.97999572753906
+        ]
+      },
+      "volume_mae": 0.013385967870182352,
+      "volume_psnr": 29.102394215442988,
+      "volume_ssim": 0.8344174725976434,
+      "axial_mip_mae": 0.10061743966178938,
+      "axial_mip_psnr": 18.023027685641484,
+      "axial_mip_ssim": 0.2752504927476748
+    },
+    {
+      "case_id": "10347",
+      "patient_id": "10347",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          34.77799987792969,
+          237.85560607910156
+        ],
+        "octa_minmax": [
+          0.0,
+          221.2899932861328
+        ]
+      },
+      "volume_mae": 0.01203436512960615,
+      "volume_psnr": 29.27787119348573,
+      "volume_ssim": 0.8753236584418638,
+      "axial_mip_mae": 0.062108946603643744,
+      "axial_mip_psnr": 21.982207656321307,
+      "axial_mip_ssim": 0.32398193621425625
+    },
+    {
+      "case_id": "10351",
+      "patient_id": "10351",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          29.34000015258789,
+          248.62840270996094
+        ],
+        "octa_minmax": [
+          0.0,
+          150.24600219726562
+        ]
+      },
+      "volume_mae": 0.013441844250934242,
+      "volume_psnr": 28.51723113206639,
+      "volume_ssim": 0.8625926363922317,
+      "axial_mip_mae": 0.09962364144121238,
+      "axial_mip_psnr": 18.131813962420416,
+      "axial_mip_ssim": 0.3381090716358022
+    },
+    {
+      "case_id": "10355",
+      "patient_id": "10355",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          33.29600143432617,
+          220.9595947265625
+        ],
+        "octa_minmax": [
+          0.0,
+          119.50199890136719
+        ]
+      },
+      "volume_mae": 0.014381360955409355,
+      "volume_psnr": 30.08135087900222,
+      "volume_ssim": 0.7280811646156524,
+      "axial_mip_mae": 0.06450721464852904,
+      "axial_mip_psnr": 21.604989776530612,
+      "axial_mip_ssim": 0.3679950372255587
+    },
+    {
+      "case_id": "10356",
+      "patient_id": "10356",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          34.65840148925781,
+          240.0800018310547
+        ],
+        "octa_minmax": [
+          0.0,
+          173.16000366210938
+        ]
+      },
+      "volume_mae": 0.012890158032998427,
+      "volume_psnr": 30.19675324546082,
+      "volume_ssim": 0.8190723959378614,
+      "axial_mip_mae": 0.059893131712669856,
+      "axial_mip_psnr": 22.383588455887086,
+      "axial_mip_ssim": 0.4096625339672229
+    },
+    {
+      "case_id": "10358",
+      "patient_id": "10358",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          34.52000045776367,
+          231.52999877929688
+        ],
+        "octa_minmax": [
+          0.0,
+          206.0644073486328
+        ]
+      },
+      "volume_mae": 0.014531537194596086,
+      "volume_psnr": 29.10634424316956,
+      "volume_ssim": 0.7877594764220196,
+      "axial_mip_mae": 0.0788562285883927,
+      "axial_mip_psnr": 20.00967823060593,
+      "axial_mip_ssim": 0.35226045194705563
+    },
+    {
+      "case_id": "10359",
+      "patient_id": "10359",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          37.75640106201172,
+          232.54800415039062
+        ],
+        "octa_minmax": [
+          0.0,
+          190.5207977294922
+        ]
+      },
+      "volume_mae": 0.013245121086641894,
+      "volume_psnr": 29.26673287900455,
+      "volume_ssim": 0.8692003522442946,
+      "axial_mip_mae": 0.06891312537959493,
+      "axial_mip_psnr": 21.065800840461293,
+      "axial_mip_ssim": 0.3062222967232678
+    },
+    {
+      "case_id": "10362",
+      "patient_id": "10362",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          35.83599853515625,
+          239.9499969482422
+        ],
+        "octa_minmax": [
+          0.0,
+          219.3612060546875
+        ]
+      },
+      "volume_mae": 0.010766225672294861,
+      "volume_psnr": 30.509966043332643,
+      "volume_ssim": 0.882625526945686,
+      "axial_mip_mae": 0.060572344270099165,
+      "axial_mip_psnr": 22.143679947748044,
+      "axial_mip_ssim": 0.3702877306742492
+    },
+    {
+      "case_id": "10363",
+      "patient_id": "10363",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          32.66680145263672,
+          249.56239318847656
+        ],
+        "octa_minmax": [
+          0.0,
+          174.99960327148438
+        ]
+      },
+      "volume_mae": 0.010888445286453639,
+      "volume_psnr": 30.428873021692194,
+      "volume_ssim": 0.8742813481255033,
+      "axial_mip_mae": 0.06625687188829943,
+      "axial_mip_psnr": 21.276817138704093,
+      "axial_mip_ssim": 0.31652295365255967
+    },
+    {
+      "case_id": "10365",
+      "patient_id": "10365",
+      "disease": "DR",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          36.737998962402344,
+          238.77999877929688
+        ],
+        "octa_minmax": [
+          0.0,
+          200.17359924316406
+        ]
+      },
+      "volume_mae": 0.012507068102735308,
+      "volume_psnr": 29.83390839318199,
+      "volume_ssim": 0.859105617708198,
+      "axial_mip_mae": 0.07022315948745472,
+      "axial_mip_psnr": 20.7068396470275,
+      "axial_mip_ssim": 0.3241089278741679
+    },
+    {
+      "case_id": "10367",
+      "patient_id": "10367",
+      "disease": "CNV",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          40.17879867553711,
+          246.11000061035156
+        ],
+        "octa_minmax": [
+          0.0,
+          199.518798828125
+        ]
+      },
+      "volume_mae": 0.012295172694680103,
+      "volume_psnr": 28.656785238442573,
+      "volume_ssim": 0.8676648498110511,
+      "axial_mip_mae": 0.1069259934537854,
+      "axial_mip_psnr": 17.37058475095661,
+      "axial_mip_ssim": 0.2617852423665007
+    },
+    {
+      "case_id": "10379",
+      "patient_id": "10379",
+      "disease": "DR",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          28.6200008392334,
+          245.26600646972656
+        ],
+        "octa_minmax": [
+          0.0,
+          173.37319946289062
+        ]
+      },
+      "volume_mae": 0.011441227207100816,
+      "volume_psnr": 30.12788623342587,
+      "volume_ssim": 0.8549585051058154,
+      "axial_mip_mae": 0.08711232101524047,
+      "axial_mip_psnr": 19.063204918180908,
+      "axial_mip_ssim": 0.3424958946720827
+    },
+    {
+      "case_id": "10394",
+      "patient_id": "10394",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          36.45000076293945,
+          238.75
+        ],
+        "octa_minmax": [
+          0.0,
+          196.77960205078125
+        ]
+      },
+      "volume_mae": 0.015210778401532114,
+      "volume_psnr": 29.028415586658358,
+      "volume_ssim": 0.8004696160766601,
+      "axial_mip_mae": 0.09071352856778958,
+      "axial_mip_psnr": 18.919086476732705,
+      "axial_mip_ssim": 0.3343125932000972
+    },
+    {
+      "case_id": "10395",
+      "patient_id": "10395",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          33.83000183105469,
+          247.0800018310547
+        ],
+        "octa_minmax": [
+          0.0,
+          145.94000244140625
+        ]
+      },
+      "volume_mae": 0.012866845811385901,
+      "volume_psnr": 29.013215995371052,
+      "volume_ssim": 0.8726539476939726,
+      "axial_mip_mae": 0.09687620334921121,
+      "axial_mip_psnr": 18.627977831895087,
+      "axial_mip_ssim": 0.32711234817019325
+    },
+    {
+      "case_id": "10404",
+      "patient_id": "10404",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          33.810001373291016,
+          242.5800018310547
+        ],
+        "octa_minmax": [
+          0.0,
+          201.03599548339844
+        ]
+      },
+      "volume_mae": 0.01729853081815686,
+      "volume_psnr": 29.834759497011362,
+      "volume_ssim": 0.5819157481784224,
+      "axial_mip_mae": 0.06655267136818566,
+      "axial_mip_psnr": 21.327809571317182,
+      "axial_mip_ssim": 0.39322938442620553
+    },
+    {
+      "case_id": "10410",
+      "patient_id": "10410",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          33.82080078125,
+          239.47959899902344
+        ],
+        "octa_minmax": [
+          0.0,
+          200.32000732421875
+        ]
+      },
+      "volume_mae": 0.014741874232419263,
+      "volume_psnr": 30.640452934592087,
+      "volume_ssim": 0.6921515761757099,
+      "axial_mip_mae": 0.058139767689908695,
+      "axial_mip_psnr": 22.59434683916068,
+      "axial_mip_ssim": 0.37232705201219746
+    },
+    {
+      "case_id": "10415",
+      "patient_id": "10415",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          36.619998931884766,
+          241.8887939453125
+        ],
+        "octa_minmax": [
+          0.0,
+          113.32319641113281
+        ]
+      },
+      "volume_mae": 0.013046504390895157,
+      "volume_psnr": 29.73150233063969,
+      "volume_ssim": 0.8179215270985095,
+      "axial_mip_mae": 0.07919977519463828,
+      "axial_mip_psnr": 19.88049621505565,
+      "axial_mip_ssim": 0.3271767652923077
+    },
+    {
+      "case_id": "10420",
+      "patient_id": "10420",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          36.5,
+          243.89599609375
+        ],
+        "octa_minmax": [
+          0.0,
+          236.19200134277344
+        ]
+      },
+      "volume_mae": 0.012287634342948467,
+      "volume_psnr": 29.661635965184374,
+      "volume_ssim": 0.8657957803383631,
+      "axial_mip_mae": 0.07724709630281268,
+      "axial_mip_psnr": 19.960846941456918,
+      "axial_mip_ssim": 0.34861460389795734
+    },
+    {
+      "case_id": "10421",
+      "patient_id": "10421",
+      "disease": "DR",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          33.379600524902344,
+          232.7100067138672
+        ],
+        "octa_minmax": [
+          0.0,
+          209.1479949951172
+        ]
+      },
+      "volume_mae": 0.012634625690227254,
+      "volume_psnr": 29.41941424574623,
+      "volume_ssim": 0.8609594364491675,
+      "axial_mip_mae": 0.07976986595747348,
+      "axial_mip_psnr": 19.81715701179082,
+      "axial_mip_ssim": 0.33293653758848285
+    },
+    {
+      "case_id": "10423",
+      "patient_id": "10423",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          34.56480026245117,
+          233.87840270996094
+        ],
+        "octa_minmax": [
+          0.0,
+          157.85000610351562
+        ]
+      },
+      "volume_mae": 0.019587054485848486,
+      "volume_psnr": 27.884627937072068,
+      "volume_ssim": 0.6447016674469374,
+      "axial_mip_mae": 0.10217779568233709,
+      "axial_mip_psnr": 17.99917854319039,
+      "axial_mip_ssim": 0.35071158410360026
+    },
+    {
+      "case_id": "10425",
+      "patient_id": "10425",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          34.0,
+          241.1699981689453
+        ],
+        "octa_minmax": [
+          0.0,
+          220.047607421875
+        ]
+      },
+      "volume_mae": 0.014065219838174416,
+      "volume_psnr": 29.67163012533135,
+      "volume_ssim": 0.7882759848496764,
+      "axial_mip_mae": 0.06957340349100605,
+      "axial_mip_psnr": 20.948908923634537,
+      "axial_mip_ssim": 0.3223649060679628
+    },
+    {
+      "case_id": "10430",
+      "patient_id": "10430",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          39.76319885253906,
+          240.9040069580078
+        ],
+        "octa_minmax": [
+          0.0,
+          204.0019989013672
+        ]
+      },
+      "volume_mae": 0.020574023582718936,
+      "volume_psnr": 28.30582669111803,
+      "volume_ssim": 0.5794567085568018,
+      "axial_mip_mae": 0.07933014291882046,
+      "axial_mip_psnr": 19.86994053098767,
+      "axial_mip_ssim": 0.28645191588069757
+    },
+    {
+      "case_id": "10433",
+      "patient_id": "10433",
+      "disease": "DR",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          32.262001037597656,
+          240.17880249023438
+        ],
+        "octa_minmax": [
+          0.0,
+          187.72000122070312
+        ]
+      },
+      "volume_mae": 0.013023562207330825,
+      "volume_psnr": 28.38626962493126,
+      "volume_ssim": 0.8709080394905825,
+      "axial_mip_mae": 0.10769556271549163,
+      "axial_mip_psnr": 17.489545004869047,
+      "axial_mip_ssim": 0.2807643396487145
+    },
+    {
+      "case_id": "10446",
+      "patient_id": "10446",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          35.65999984741211,
+          236.27200317382812
+        ],
+        "octa_minmax": [
+          0.0,
+          204.69000244140625
+        ]
+      },
+      "volume_mae": 0.01316859785413955,
+      "volume_psnr": 29.817016077323657,
+      "volume_ssim": 0.8482140774985035,
+      "axial_mip_mae": 0.06272479916026441,
+      "axial_mip_psnr": 21.936574211801236,
+      "axial_mip_ssim": 0.32382979867875206
+    },
+    {
+      "case_id": "10448",
+      "patient_id": "10448",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          32.07640075683594,
+          246.29400634765625
+        ],
+        "octa_minmax": [
+          0.0,
+          188.6699981689453
+        ]
+      },
+      "volume_mae": 0.013421892587902067,
+      "volume_psnr": 27.602313371666078,
+      "volume_ssim": 0.8729584515329664,
+      "axial_mip_mae": 0.12651166194018515,
+      "axial_mip_psnr": 16.501404612927516,
+      "axial_mip_ssim": 0.2946949180900305
+    },
+    {
+      "case_id": "10454",
+      "patient_id": "10454",
+      "disease": "DR",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          39.508399963378906,
+          234.77000427246094
+        ],
+        "octa_minmax": [
+          0.0,
+          113.68440246582031
+        ]
+      },
+      "volume_mae": 0.014795618429185052,
+      "volume_psnr": 28.546844012046904,
+      "volume_ssim": 0.7851535948840082,
+      "axial_mip_mae": 0.10845970652735559,
+      "axial_mip_psnr": 17.058184930061977,
+      "axial_mip_ssim": 0.20613883467045682
+    },
+    {
+      "case_id": "10460",
+      "patient_id": "10460",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          33.18360137939453,
+          231.24960327148438
+        ],
+        "octa_minmax": [
+          0.0,
+          217.156005859375
+        ]
+      },
+      "volume_mae": 0.01516954282101073,
+      "volume_psnr": 29.686257636211145,
+      "volume_ssim": 0.7659498195252457,
+      "axial_mip_mae": 0.06182211646199676,
+      "axial_mip_psnr": 21.896169129479492,
+      "axial_mip_ssim": 0.3166977666126158
+    },
+    {
+      "case_id": "10467",
+      "patient_id": "10467",
+      "disease": "DR",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          35.849998474121094,
+          247.64759826660156
+        ],
+        "octa_minmax": [
+          0.0,
+          198.95599365234375
+        ]
+      },
+      "volume_mae": 0.012140005355296933,
+      "volume_psnr": 29.091450985827034,
+      "volume_ssim": 0.8515922106446205,
+      "axial_mip_mae": 0.08366103734931585,
+      "axial_mip_psnr": 19.20678448621029,
+      "axial_mip_ssim": 0.28790549116393854
+    },
+    {
+      "case_id": "10472",
+      "patient_id": "10472",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          31.56679916381836,
+          242.83160400390625
+        ],
+        "octa_minmax": [
+          0.0,
+          197.88800048828125
+        ]
+      },
+      "volume_mae": 0.012989715863935325,
+      "volume_psnr": 29.563316172198398,
+      "volume_ssim": 0.8225154662325825,
+      "axial_mip_mae": 0.07492358242558339,
+      "axial_mip_psnr": 20.310660623795776,
+      "axial_mip_ssim": 0.3200714620636152
+    },
+    {
+      "case_id": "10475",
+      "patient_id": "10475",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          38.310001373291016,
+          242.18800354003906
+        ],
+        "octa_minmax": [
+          0.0,
+          166.32640075683594
+        ]
+      },
+      "volume_mae": 0.012923999237044306,
+      "volume_psnr": 30.34893286322569,
+      "volume_ssim": 0.7979368580462285,
+      "axial_mip_mae": 0.07421997456958707,
+      "axial_mip_psnr": 20.475916445829597,
+      "axial_mip_ssim": 0.3734488920593935
+    },
+    {
+      "case_id": "10476",
+      "patient_id": "10476",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          30.1200008392334,
+          236.6580047607422
+        ],
+        "octa_minmax": [
+          0.0,
+          200.1300048828125
+        ]
+      },
+      "volume_mae": 0.012417082646597539,
+      "volume_psnr": 30.66840351264773,
+      "volume_ssim": 0.7978962485928477,
+      "axial_mip_mae": 0.07192805101681188,
+      "axial_mip_psnr": 20.80018411328908,
+      "axial_mip_ssim": 0.3699198357495844
+    },
+    {
+      "case_id": "10484",
+      "patient_id": "10484",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          40.585201263427734,
+          239.73399353027344
+        ],
+        "octa_minmax": [
+          0.0,
+          214.52040100097656
+        ]
+      },
+      "volume_mae": 0.014496154530852732,
+      "volume_psnr": 30.05995934480053,
+      "volume_ssim": 0.7232225183828654,
+      "axial_mip_mae": 0.07639101573079188,
+      "axial_mip_psnr": 20.143903657561367,
+      "axial_mip_ssim": 0.4164001458311656
+    },
+    {
+      "case_id": "10494",
+      "patient_id": "10494",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          35.52000045776367,
+          241.86399841308594
+        ],
+        "octa_minmax": [
+          0.0,
+          166.46800231933594
+        ]
+      },
+      "volume_mae": 0.013484046652539805,
+      "volume_psnr": 29.005556565392805,
+      "volume_ssim": 0.8584033629447662,
+      "axial_mip_mae": 0.09165718206077145,
+      "axial_mip_psnr": 18.75470832064835,
+      "axial_mip_ssim": 0.35559817994742293
+    },
+    {
+      "case_id": "10497",
+      "patient_id": "10497",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          38.70000076293945,
+          242.66439819335938
+        ],
+        "octa_minmax": [
+          0.0,
+          217.8000030517578
+        ]
+      },
+      "volume_mae": 0.016467908956046717,
+      "volume_psnr": 28.985763851798346,
+      "volume_ssim": 0.7614503006120714,
+      "axial_mip_mae": 0.07493160061812887,
+      "axial_mip_psnr": 20.414892049584815,
+      "axial_mip_ssim": 0.28589732357181963
+    },
+    {
+      "case_id": "10498",
+      "patient_id": "10498",
+      "disease": "NORMAL",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          35.5,
+          236.1555938720703
+        ],
+        "octa_minmax": [
+          0.0,
+          135.7176055908203
+        ]
+      },
+      "volume_mae": 0.016164783931074827,
+      "volume_psnr": 28.450037368989474,
+      "volume_ssim": 0.8006216612846442,
+      "axial_mip_mae": 0.09689842221553135,
+      "axial_mip_psnr": 18.535070453062794,
+      "axial_mip_ssim": 0.36332279563030295
+    },
+    {
+      "case_id": "10499",
+      "patient_id": "10499",
+      "disease": "DR",
+      "geometry": {
+        "stored_axis_order": "ZYX",
+        "source_shape": [
+          256,
+          304,
+          304
+        ],
+        "model_axis_order": "YXZ",
+        "resized_shape": [
+          400,
+          400,
+          256
+        ],
+        "crop_start_yxz": [
+          72,
+          72,
+          0
+        ],
+        "crop_size": 256,
+        "flipped_z": false,
+        "oct_minmax": [
+          24.25,
+          231.08079528808594
+        ],
+        "octa_minmax": [
+          0.0,
+          184.2032012939453
+        ]
+      },
+      "volume_mae": 0.01401883395566195,
+      "volume_psnr": 29.383833850065443,
+      "volume_ssim": 0.7689159514970794,
+      "axial_mip_mae": 0.08046122006408041,
+      "axial_mip_psnr": 19.57159359837094,
+      "axial_mip_ssim": 0.2994466350121269
+    }
+  ],
+  "summary": {
+    "cases": 50,
+    "aggregation": "equal weight per scan; population standard deviation",
+    "metrics": {
+      "volume_mae": {
+        "mean": 0.01395677161173182,
+        "std": 0.0022168745117028235
+      },
+      "volume_psnr": {
+        "mean": 29.350086081049398,
+        "std": 0.9044774136019226
+      },
+      "volume_ssim": {
+        "mean": 0.8021237051919654,
+        "std": 0.07738617736451646
+      },
+      "axial_mip_mae": {
+        "mean": 0.08311595305526281,
+        "std": 0.016421058548824783
+      },
+      "axial_mip_psnr": {
+        "mean": 19.70646516223193,
+        "std": 1.5492729924950936
+      },
+      "axial_mip_ssim": {
+        "mean": 0.32500520910200315,
+        "std": 0.04404303433008204
+      }
+    }
+  }
+}

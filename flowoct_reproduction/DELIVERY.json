@@ -1,0 +1,60 @@
+{
+  "created_date": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "upstream_commit": "2309126956d2b80a95f2d307d85a50799cc658a6",
+  "server_project": "/docsystem/niuke/lvyuehang/flowoct_reproduction",
+  "server_python": "/docsystem/niuke/lvyuehang/conda_envs/lyh_flowoct/bin/python",
+  "default_gpu": "cuda:1",
+  "formal_epochs": 200,
+  "data_cases_audited": 500,
+  "core_tests_passed": 8,
+  "real_data_smoke": [
+    "3M 32^3",
+    "6M 32^3",
+    "3M 256^3"
+  ],
+  "formal_resolution_backward": [
+    "3M 256^3 / 64 slices / network_chunk=4",
+    "6M 256^3 / 64 slices / network_chunk=4"
+  ],
+  "same_gpu_epoch_resume": "bitwise model and Adam equality confirmed",
+  "long_training_started": false,
+  "scope": "Reproduction of public implementation on the existing common split; not paper-table numerical reproduction",
+  "large_data_and_diagnostic_weights_in_zip": false,
+  "baseline_definition": "Author public 2D model, wavelets and losses; paper budget of 200 epochs",
+  "default_execution": {
+    "network_chunk": 0,
+    "activation_checkpointing": false,
+    "inference_chunk": 32,
+    "formal_sampled_slices": 64,
+    "precision": "FP32"
+  },
+  "formal_resolution_backward_execution": "Previous successful 3M/6M records used network_chunk=4; current default unchunked path failed on RTX 3090",
+  "unchunked_3090_retry": {
+    "status": "CUDA_OUT_OF_MEMORY",
+    "record": "verification/benchmark_3m_unchunked_retry.json",
+    "completed_optimizer_updates": 0
+  },
+  "a100_verified": false,
+  "updated_date": "2026-10-21",
+  "a100_package": "FlowOCT_A100_20261021.zip",
+  "a100_extracted_directory": "flowoct_reproduction_a100",
+  "a100_entrypoint": "a100.py",
+  "a100_launcher_gpu": "cuda:0",
+  "a100_data_absolute_path": null,
+  "a100_deployment_tests_passed": 7,
+  "scientific_files_identical_to_previous_package": [
+    "flowoct/__init__.py",
+    "flowoct/data.py",
+    "flowoct/metrics.py",
+    "flowoct/model.py",
+    "flowoct/roi.py",
+    "flowoct/runner.py",
+    "flowoct/wavelet_functions.py",
+    "flowoct/wavelets.py",
+    "configs/3m.json",
+    "configs/6m.json",
+    "run.py",
+    "requirements.txt"
+  ]
+}

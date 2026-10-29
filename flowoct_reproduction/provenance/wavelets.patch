@@ -1,0 +1,71 @@
+--- a/upstream/util/DWT_IDWT_layer.py
++++ b/flowoct/wavelets.py
+@@ -5,7 +5,7 @@
+ import torch
+ from torch.nn import Module
+ 
+-from .DWT_IDWT_Functions import DWTFunction_1D, IDWTFunction_1D, \
++from .wavelet_functions import DWTFunction_1D, IDWTFunction_1D, \
+     DWTFunction_2D_tiny, DWTFunction_2D, IDWTFunction_2D, \
+     DWTFunction_3D, IDWTFunction_3D
+ 
+@@ -296,16 +296,10 @@
+         matrix_g_1 = matrix_g_1[:, (self.band_length_half - 1):end]
+         matrix_g_1 = np.transpose(matrix_g_1)
+ 
+-        if torch.cuda.is_available():
+-            self.matrix_low_0 = torch.Tensor(matrix_h_0).cuda()
+-            self.matrix_low_1 = torch.Tensor(matrix_h_1).cuda()
+-            self.matrix_high_0 = torch.Tensor(matrix_g_0).cuda()
+-            self.matrix_high_1 = torch.Tensor(matrix_g_1).cuda()
+-        else:
+-            self.matrix_low_0 = torch.Tensor(matrix_h_0)
+-            self.matrix_low_1 = torch.Tensor(matrix_h_1)
+-            self.matrix_high_0 = torch.Tensor(matrix_g_0)
+-            self.matrix_high_1 = torch.Tensor(matrix_g_1)
++        self.matrix_low_0 = torch.as_tensor(matrix_h_0, device=self._matrix_device, dtype=self._matrix_dtype)
++        self.matrix_low_1 = torch.as_tensor(matrix_h_1, device=self._matrix_device, dtype=self._matrix_dtype)
++        self.matrix_high_0 = torch.as_tensor(matrix_g_0, device=self._matrix_device, dtype=self._matrix_dtype)
++        self.matrix_high_1 = torch.as_tensor(matrix_g_1, device=self._matrix_device, dtype=self._matrix_dtype)
+ 
+     def forward(self, input):
+         """
+@@ -319,6 +313,8 @@
+         assert len(input.size()) == 4
+         self.input_height = input.size()[-2]
+         self.input_width = input.size()[-1]
++        self._matrix_device = input.device
++        self._matrix_dtype = input.dtype
+         self.get_matrix()
+         return DWTFunction_2D.apply(input, self.matrix_low_0, self.matrix_low_1, self.matrix_high_0, self.matrix_high_1)
+ 
+@@ -386,16 +382,10 @@
+         matrix_g_0 = matrix_g_0[:, (self.band_length_half - 1):end]
+         matrix_g_1 = matrix_g_1[:, (self.band_length_half - 1):end]
+         matrix_g_1 = np.transpose(matrix_g_1)
+-        if torch.cuda.is_available():
+-            self.matrix_low_0 = torch.Tensor(matrix_h_0).cuda()
+-            self.matrix_low_1 = torch.Tensor(matrix_h_1).cuda()
+-            self.matrix_high_0 = torch.Tensor(matrix_g_0).cuda()
+-            self.matrix_high_1 = torch.Tensor(matrix_g_1).cuda()
+-        else:
+-            self.matrix_low_0 = torch.Tensor(matrix_h_0)
+-            self.matrix_low_1 = torch.Tensor(matrix_h_1)
+-            self.matrix_high_0 = torch.Tensor(matrix_g_0)
+-            self.matrix_high_1 = torch.Tensor(matrix_g_1)
++        self.matrix_low_0 = torch.as_tensor(matrix_h_0, device=self._matrix_device, dtype=self._matrix_dtype)
++        self.matrix_low_1 = torch.as_tensor(matrix_h_1, device=self._matrix_device, dtype=self._matrix_dtype)
++        self.matrix_high_0 = torch.as_tensor(matrix_g_0, device=self._matrix_device, dtype=self._matrix_dtype)
++        self.matrix_high_1 = torch.as_tensor(matrix_g_1, device=self._matrix_device, dtype=self._matrix_dtype)
+ 
+     def forward(self, LL, LH, HL, HH):
+         """
+@@ -414,6 +404,8 @@
+             HL.size()) == len(HH.size()) == 4
+         self.input_height = LL.size()[-2] + HH.size()[-2]
+         self.input_width = LL.size()[-1] + HH.size()[-1]
++        self._matrix_device = LL.device
++        self._matrix_dtype = LL.dtype
+         self.get_matrix()
+         return IDWTFunction_2D.apply(LL, LH, HL, HH, self.matrix_low_0, self.matrix_low_1, self.matrix_high_0, self.matrix_high_1)
+ 

@@ -1,0 +1,12 @@
+test_ambiguous_datasets_require_an_explicit_choice (test_a100.A100DeploymentTests) ... ok
+test_config_changes_only_manifest_and_device (test_a100.A100DeploymentTests) ... ok
+test_diagnostic_or_chunked_run_cannot_be_resumed_as_formal (test_a100.A100DeploymentTests) ... ok
+test_empty_upload_directory_is_rejected (test_a100.A100DeploymentTests) ... ok
+test_existing_run_is_not_overwritten (test_a100.A100DeploymentTests) ... ok
+test_extracting_inside_renamed_data_directory_needs_no_native (test_a100.A100DeploymentTests) ... ok
+test_resume_uses_saved_config_without_discovering_other_data (test_a100.A100DeploymentTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.019s
+
+OK

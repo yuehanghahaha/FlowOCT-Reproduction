@@ -1,0 +1,198 @@
+{
+  "actual_prediction_record": "D:\\data\\FSdata\\results\\flowoct_3m_best_after200\\prediction.json",
+  "source_matches": {
+    "flowoct/__init__.py": true,
+    "flowoct/data.py": true,
+    "flowoct/metrics.py": true,
+    "flowoct/model.py": true,
+    "flowoct/roi.py": true,
+    "flowoct/runner.py": true,
+    "flowoct/wavelet_functions.py": true,
+    "flowoct/wavelets.py": true
+  },
+  "checkpoint_epoch": 193,
+  "actual_config": {
+    "manifest": "/workspace/flowoct_work/data/OCTA500_v1/split_3M_z256.csv",
+    "fov": "3M",
+    "axis_order": "ZYX",
+    "load_size": 400,
+    "crop_size": 256,
+    "batch_size": 1,
+    "train_slices": 0,
+    "network_chunk": 0,
+    "inference_chunk": 32,
+    "epochs": 200,
+    "lr": 0.0002,
+    "beta": 0.5,
+    "seed": 2026,
+    "workers": 0,
+    "device": "cuda:0",
+    "threads": 4,
+    "val_every": 1,
+    "save_every": 10,
+    "log_every": 20,
+    "diagnostic_limits": null
+  },
+  "test_summary": {
+    "cases": 50,
+    "aggregation": "equal weight per scan; population standard deviation",
+    "metrics": {
+      "volume_mae": {
+        "mean": 0.01395677161173182,
+        "std": 0.0022168745117028235
+      },
+      "volume_psnr": {
+        "mean": 29.350086081049398,
+        "std": 0.9044774136019226
+      },
+      "volume_ssim": {
+        "mean": 0.8021237051919654,
+        "std": 0.07738617736451646
+      },
+      "axial_mip_mae": {
+        "mean": 0.08311595305526281,
+        "std": 0.016421058548824783
+      },
+      "axial_mip_psnr": {
+        "mean": 19.70646516223193,
+        "std": 1.5492729924950936
+      },
+      "axial_mip_ssim": {
+        "mean": 0.32500520910200315,
+        "std": 0.04404303433008204
+      }
+    },
+    "protocol": {
+      "data_range": 1,
+      "ssim_win_size": 7,
+      "ssim": "3D volume / 2D axial maximum projection; no anatomical layers",
+      "exact_match_psnr_cap_db": 156.53559774527022,
+      "coverage": "center crop after resize; not restored full FOV or native axial resolution",
+      "limited_diagnostic": false,
+      "split": "test",
+      "checkpoint_sha256": "42676f6219106bfcf4b25dc275172d827ddeeec96c97721d2b91db0c70693832"
+    },
+    "by_disease": {
+      "AMD": {
+        "cases": 1,
+        "aggregation": "equal weight per scan; population standard deviation",
+        "metrics": {
+          "volume_mae": {
+            "mean": 0.018487340459164746,
+            "std": 0.0
+          },
+          "volume_psnr": {
+            "mean": 26.982201328516048,
+            "std": 0.0
+          },
+          "volume_ssim": {
+            "mean": 0.7374840564707921,
+            "std": 0.0
+          },
+          "axial_mip_mae": {
+            "mean": 0.11222417662230555,
+            "std": 0.0
+          },
+          "axial_mip_psnr": {
+            "mean": 16.815166712508944,
+            "std": 0.0
+          },
+          "axial_mip_ssim": {
+            "mean": 0.20849904032607294,
+            "std": 0.0
+          }
+        }
+      },
+      "CNV": {
+        "cases": 1,
+        "aggregation": "equal weight per scan; population standard deviation",
+        "metrics": {
+          "volume_mae": {
+            "mean": 0.012295172694680103,
+            "std": 0.0
+          },
+          "volume_psnr": {
+            "mean": 28.656785238442573,
+            "std": 0.0
+          },
+          "volume_ssim": {
+            "mean": 0.8676648498110511,
+            "std": 0.0
+          },
+          "axial_mip_mae": {
+            "mean": 0.1069259934537854,
+            "std": 0.0
+          },
+          "axial_mip_psnr": {
+            "mean": 17.37058475095661,
+            "std": 0.0
+          },
+          "axial_mip_ssim": {
+            "mean": 0.2617852423665007,
+            "std": 0.0
+          }
+        }
+      },
+      "DR": {
+        "cases": 8,
+        "aggregation": "equal weight per scan; population standard deviation",
+        "metrics": {
+          "volume_mae": {
+            "mean": 0.012475240722581162,
+            "std": 0.001570664016882662
+          },
+          "volume_psnr": {
+            "mean": 29.546229811015024,
+            "std": 0.9455026839270496
+          },
+          "volume_ssim": {
+            "mean": 0.8402290693957444,
+            "std": 0.03723712065097798
+          },
+          "axial_mip_mae": {
+            "mean": 0.08708450054882277,
+            "std": 0.01292196855004122
+          },
+          "axial_mip_psnr": {
+            "mean": 19.07585863938855,
+            "std": 1.142455124301049
+          },
+          "axial_mip_ssim": {
+            "mean": 0.30253670520514064,
+            "std": 0.043169664660607975
+          }
+        }
+      },
+      "NORMAL": {
+        "cases": 40,
+        "aggregation": "equal weight per scan; population standard deviation",
+        "metrics": {
+          "volume_mae": {
+            "mean": 0.014181353541302422,
+            "std": 0.0021396660336973046
+          },
+          "volume_psnr": {
+            "mean": 29.38738697493478,
+            "std": 0.8261535806651101
+          },
+          "volume_ssim": {
+            "mean": 0.794480094953762,
+            "std": 0.08153390858211625
+          },
+          "axial_mip_mae": {
+            "mean": 0.0809992869574117,
+            "std": 0.016145686228882856
+          },
+          "axial_mip_psnr": {
+            "mean": 19.963265938325566,
+            "std": 1.499463106556296
+          },
+          "axial_mip_ssim": {
+            "mean": 0.3339920632691615,
+            "std": 0.037828832015442765
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+--- upstream/models/FlowOCT_model.py
++++ working/models/FlowOCT_model.py
+@@ -171,8 +171,8 @@
+         )
+         xm, ym, xM, yM = bbox['expanded_bbox']
+         self.proj_loss = self.criterionL1(
+-            fake_proj[ym:yM+1, xm:xM+1],
+-            real_proj[ym:yM+1, xm:xM+1],
++            fake_proj[:, ym:yM+1, xm:xM+1],
++            real_proj[:, ym:yM+1, xm:xM+1],
+         )
+ 
+         # Total loss

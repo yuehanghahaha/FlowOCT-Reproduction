@@ -1,0 +1,11 @@
+﻿case_id,patient_id,disease,split,path
+10302,10302,CNV,validation,z256/3M/10302.npz
+10319,10319,NORMAL,validation,z256/3M/10319.npz
+10338,10338,NORMAL,validation,z256/3M/10338.npz
+10357,10357,NORMAL,validation,z256/3M/10357.npz
+10396,10396,NORMAL,validation,z256/3M/10396.npz
+10422,10422,NORMAL,validation,z256/3M/10422.npz
+10447,10447,DR,validation,z256/3M/10447.npz
+10456,10456,AMD,validation,z256/3M/10456.npz
+10495,10495,NORMAL,validation,z256/3M/10495.npz
+10500,10500,NORMAL,validation,z256/3M/10500.npz

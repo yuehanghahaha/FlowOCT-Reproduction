@@ -1,0 +1,27 @@
+{
+  "python": "3.10.22 (main, Oct  1 2026, 20:14:04) [GCC 14.3.0]",
+  "platform": "Linux-5.15.0-198-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "torch": "2.5.1+cu121",
+    "numpy": "1.26.4",
+    "monai": "1.4.0",
+    "torchio": "0.20.4",
+    "scikit-image": "0.25.2",
+    "PyWavelets": "1.8.0",
+    "SimpleITK": "2.5.6",
+    "einops": "0.8.1"
+  },
+  "source_sha256": {
+    "flowoct/__init__.py": "c5d9125502b98e89d98e94b99a0675b085dd010e9ae7e194d5199651125b8741",
+    "flowoct/data.py": "cf503eeac9ae0ac2441b72a07ab7b1c7de4a6382f833ca59354a1b4d93d75415",
+    "flowoct/metrics.py": "926e86aec2f33c283ac7f667ed7b9b1ff5ef710490a86f5f53f69c4214048efe",
+    "flowoct/model.py": "9c4e1350dd2926120f7f00e2b569313c08369e6d893a45ae1d1a4f8a860dae1e",
+    "flowoct/roi.py": "1c729065c592c28d1a86d328dbae7ebd883d2f7153c910d0db13f5a149dd30e0",
+    "flowoct/runner.py": "2a47eb11d331031f790a470d309e11d8447efd5ec62c606a7aad0d3541d234c7",
+    "flowoct/wavelet_functions.py": "33623b3e9b8d59df0227a840f88db4789095d3449e820e6454a31499ed3d156f",
+    "flowoct/wavelets.py": "02625d63ff997de3af1633f0fa511021d74212dabbc984162218e0bf8f594768"
+  },
+  "device": "cuda:1",
+  "cuda_runtime": "12.1",
+  "gpu": "NVIDIA GeForce RTX 3090"
+}

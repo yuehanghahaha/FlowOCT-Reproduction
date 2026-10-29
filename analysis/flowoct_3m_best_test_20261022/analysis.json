@@ -1,0 +1,338 @@
+{
+  "audit": {
+    "cases": 50,
+    "unique_cases": 50,
+    "unique_patient_ids": 50,
+    "image_count": 50,
+    "missing_images": [],
+    "all_finite": true,
+    "summary_max_abs_mean_difference": 0.0,
+    "summary_max_abs_std_difference": 0.0,
+    "disease_counts": {
+      "NORMAL": 40,
+      "DR": 8,
+      "AMD": 1,
+      "CNV": 1
+    },
+    "protocol": {
+      "data_range": 1,
+      "ssim_win_size": 7,
+      "ssim": "3D volume / 2D axial maximum projection; no anatomical layers",
+      "exact_match_psnr_cap_db": 156.53559774527022,
+      "coverage": "center crop after resize; not restored full FOV or native axial resolution",
+      "limited_diagnostic": false,
+      "split": "test",
+      "checkpoint_sha256": "012d442874b2d513d23b7e41edbebcc5bad187bfa54e8f2fcbba42cf198c6aba"
+    },
+    "source_sha256": {
+      "D:\\data\\FSdata\\evaluations\\flowoct_3m_best_preview\\summary.json": "b271dbddf27fcad10cc907aa82e09daf56540acbbb46b59360d3964103a6e82c",
+      "D:\\data\\FSdata\\evaluations\\flowoct_3m_best_preview\\per_case.csv": "406352e935b56f3d6f0dc3504d52ac42e9f5d3eeec210b279ea63eaaba74421a",
+      "D:\\data\\FSdata\\results\\flowoct_3m_best_preview\\prediction.json": "3156d760da6fe081cd2a88ad84c1dbdccbf2ce21fa687a65a66c672a7e810c8c",
+      "D:\\data\\FSdata\\results\\flowoct_3m_epoch0100_test\\prediction.json": "f17f09d4786bf11d91e506947188d3fa37f1c9e19a1ae4651a6356361ea6114f"
+    },
+    "confirmed_checkpoint_epoch": 98,
+    "paired_epoch100_same_manifest_config_and_geometry": true,
+    "valid_npz_zip_containers": {
+      "epoch98": 50,
+      "epoch100": 50
+    },
+    "prediction_metadata": {
+      "epoch98": {
+        "checkpoint": "/workspace/flowoct_work/flowoct_reproduction_a100/runs/flowoct_3m_200e/best.pt",
+        "checkpoint_epoch": 98,
+        "checkpoint_sha256": "012d442874b2d513d23b7e41edbebcc5bad187bfa54e8f2fcbba42cf198c6aba",
+        "manifest_sha256": "24e12fdb4dece29f27c565b4515ba0b31417505b3af893f99e61a416b05ad4da"
+      },
+      "epoch100": {
+        "checkpoint": "/workspace/flowoct_work/flowoct_reproduction_a100/runs/flowoct_3m_200e/epoch_0100.pt",
+        "checkpoint_epoch": 100,
+        "checkpoint_sha256": "0a5768fc12fe2135c498b10b7bdfe7a77eda3fa41ed4a41a1e71b86be3c2f5cd",
+        "manifest_sha256": "24e12fdb4dece29f27c565b4515ba0b31417505b3af893f99e61a416b05ad4da"
+      }
+    }
+  },
+  "statistics": {
+    "volume_mae": {
+      "mean": 0.013565071175935748,
+      "std_population": 0.0028423518585231487,
+      "median": 0.012785560004569322,
+      "q25": 0.011780626413617816,
+      "q75": 0.014208454938618319,
+      "min": 0.01037552402785666,
+      "max": 0.02668515621158695,
+      "best_five": [
+        "10379",
+        "10362",
+        "10332",
+        "10475",
+        "10363"
+      ],
+      "worst_five": [
+        "10325",
+        "10430",
+        "10404",
+        "10327",
+        "10321"
+      ]
+    },
+    "volume_psnr": {
+      "mean": 28.889417481877345,
+      "std_population": 0.9367896958414028,
+      "median": 29.078601493236818,
+      "q25": 28.529882383501786,
+      "q75": 29.428210643803098,
+      "min": 25.586622697866517,
+      "max": 30.60351317996225,
+      "best_five": [
+        "10476",
+        "10317",
+        "10362",
+        "10475",
+        "10379"
+      ],
+      "worst_five": [
+        "10325",
+        "10327",
+        "10448",
+        "10454",
+        "10430"
+      ]
+    },
+    "volume_ssim": {
+      "mean": 0.8403702567577014,
+      "std_population": 0.07964277124646107,
+      "median": 0.8690077364039949,
+      "q25": 0.8389559348755434,
+      "q75": 0.8849989131576323,
+      "min": 0.49069347104112093,
+      "max": 0.8930585162200582,
+      "best_five": [
+        "10475",
+        "10472",
+        "10305",
+        "10379",
+        "10420"
+      ],
+      "worst_five": [
+        "10325",
+        "10404",
+        "10321",
+        "10430",
+        "10317"
+      ]
+    },
+    "axial_mip_mae": {
+      "mean": 0.08061807172280452,
+      "std_population": 0.015576603014781592,
+      "median": 0.07788609474897612,
+      "q25": 0.06979489695677898,
+      "q75": 0.08827742570805697,
+      "min": 0.06009177095791074,
+      "max": 0.13507875327570673,
+      "best_five": [
+        "10446",
+        "10476",
+        "10362",
+        "10347",
+        "10363"
+      ],
+      "worst_five": [
+        "10448",
+        "10454",
+        "10327",
+        "10325",
+        "10367"
+      ]
+    },
+    "axial_mip_psnr": {
+      "mean": 19.930040833886313,
+      "std_population": 1.489535184721702,
+      "median": 20.00931077890449,
+      "q25": 19.01642056609535,
+      "q75": 20.997892855151466,
+      "min": 16.050537421244947,
+      "max": 22.291640410890228,
+      "best_five": [
+        "10446",
+        "10476",
+        "10362",
+        "10347",
+        "10355"
+      ],
+      "worst_five": [
+        "10448",
+        "10454",
+        "10325",
+        "10367",
+        "10327"
+      ]
+    },
+    "axial_mip_ssim": {
+      "mean": 0.3251893717267737,
+      "std_population": 0.043025528602678914,
+      "median": 0.3293656687699975,
+      "q25": 0.2998549994516882,
+      "q75": 0.35098901849388975,
+      "min": 0.19165140053297489,
+      "max": 0.4101120939913569,
+      "best_five": [
+        "10484",
+        "10356",
+        "10404",
+        "10318",
+        "10305"
+      ],
+      "worst_five": [
+        "10454",
+        "10325",
+        "10322",
+        "10327",
+        "10367"
+      ]
+    }
+  },
+  "epoch98_vs_epoch100": {
+    "volume_mae": {
+      "epoch98": 0.013565071175935748,
+      "epoch100": 0.017155678083772653,
+      "difference98_minus100": -0.0035906069078369086,
+      "cases_better_epoch98": 50
+    },
+    "volume_psnr": {
+      "epoch98": 28.889417481877345,
+      "epoch100": 28.366464153072105,
+      "difference98_minus100": 0.5229533288052381,
+      "cases_better_epoch98": 49
+    },
+    "volume_ssim": {
+      "epoch98": 0.8403702567577014,
+      "epoch100": 0.6838050411453291,
+      "difference98_minus100": 0.1565652156123722,
+      "cases_better_epoch98": 50
+    },
+    "axial_mip_mae": {
+      "epoch98": 0.08061807172280452,
+      "epoch100": 0.08433045231295239,
+      "difference98_minus100": -0.003712380590147859,
+      "cases_better_epoch98": 43
+    },
+    "axial_mip_psnr": {
+      "epoch98": 19.930040833886313,
+      "epoch100": 19.50893211149509,
+      "difference98_minus100": 0.42110872239122477,
+      "cases_better_epoch98": 44
+    },
+    "axial_mip_ssim": {
+      "epoch98": 0.3251893717267737,
+      "epoch100": 0.30740225784970443,
+      "difference98_minus100": 0.017787113877069244,
+      "cases_better_epoch98": 47
+    }
+  },
+  "raw_volume_spot_checks": [
+    {
+      "case_id": "10305",
+      "epoch98": {
+        "recalculated": {
+          "volume_mae": 0.012270231363378785,
+          "volume_psnr": 29.54140380737683,
+          "axial_mip_mae": 0.07699797205896175,
+          "axial_mip_psnr": 20.026181843083833
+        },
+        "gt_exact_zero_fraction": 0.7102484107017517,
+        "prediction_mean_at_exact_zero_gt": 0.0006665547962806677,
+        "mae_at_nonzero_gt": 0.04071353640283943
+      },
+      "epoch100": {
+        "recalculated": {
+          "volume_mae": 0.01750586660541068,
+          "volume_psnr": 28.965346501281097,
+          "axial_mip_mae": 0.07856022329485768,
+          "axial_mip_psnr": 19.899503816073263
+        },
+        "gt_exact_zero_fraction": 0.7102484107017517,
+        "prediction_mean_at_exact_zero_gt": 0.007433690009672105,
+        "mae_at_nonzero_gt": 0.04219510967999198
+      },
+      "identical_gt_between_models": true
+    },
+    {
+      "case_id": "10454",
+      "epoch98": {
+        "recalculated": {
+          "volume_mae": 0.015388365577209314,
+          "volume_psnr": 27.49647667661854,
+          "axial_mip_mae": 0.11412719056249898,
+          "axial_mip_psnr": 16.59624028998313
+        },
+        "gt_exact_zero_fraction": 0.7133063673973083,
+        "prediction_mean_at_exact_zero_gt": 0.0015911922759471856,
+        "mae_at_nonzero_gt": 0.04971633958391914
+      },
+      "epoch100": {
+        "recalculated": {
+          "volume_mae": 0.019481566180062637,
+          "volume_psnr": 26.802932745058634,
+          "axial_mip_mae": 0.1315267698222442,
+          "axial_mip_psnr": 15.203288955295239
+        },
+        "gt_exact_zero_fraction": 0.7133063673973083,
+        "prediction_mean_at_exact_zero_gt": 0.006263594559740824,
+        "mae_at_nonzero_gt": 0.05236846092989723
+      },
+      "identical_gt_between_models": true
+    },
+    {
+      "case_id": "10325",
+      "epoch98": {
+        "recalculated": {
+          "volume_mae": 0.026685156211586954,
+          "volume_psnr": 25.586622697866517,
+          "axial_mip_mae": 0.10642969689973825,
+          "axial_mip_psnr": 17.205863749136864
+        },
+        "gt_exact_zero_fraction": 0.7194892764091492,
+        "prediction_mean_at_exact_zero_gt": 0.0101505677552971,
+        "mae_at_nonzero_gt": 0.06909515370420002
+      },
+      "epoch100": {
+        "recalculated": {
+          "volume_mae": 0.031343774501407386,
+          "volume_psnr": 25.264288775087785,
+          "axial_mip_mae": 0.11085158997224198,
+          "axial_mip_psnr": 16.725740606333204
+        },
+        "gt_exact_zero_fraction": 0.7194892764091492,
+        "prediction_mean_at_exact_zero_gt": 0.01761480010423171,
+        "mae_at_nonzero_gt": 0.0665575792658604
+      },
+      "identical_gt_between_models": true
+    },
+    {
+      "case_id": "10484",
+      "epoch98": {
+        "recalculated": {
+          "volume_mae": 0.013549470734885136,
+          "volume_psnr": 29.512791166628332,
+          "axial_mip_mae": 0.07024566242932906,
+          "axial_mip_psnr": 20.81642438013487
+        },
+        "gt_exact_zero_fraction": 0.7217357158660889,
+        "prediction_mean_at_exact_zero_gt": 0.002596959604130307,
+        "mae_at_nonzero_gt": 0.041957063488263974
+      },
+      "epoch100": {
+        "recalculated": {
+          "volume_mae": 0.0194197646139112,
+          "volume_psnr": 29.003971706705997,
+          "axial_mip_mae": 0.07334274696972898,
+          "axial_mip_psnr": 20.456339174055568
+        },
+        "gt_exact_zero_fraction": 0.7217357158660889,
+        "prediction_mean_at_exact_zero_gt": 0.01133018216754976,
+        "mae_at_nonzero_gt": 0.04040176234371217
+      },
+      "identical_gt_between_models": true
+    }
+  ]
+}

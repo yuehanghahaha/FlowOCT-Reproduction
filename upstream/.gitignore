@@ -1,0 +1,12 @@
+checkpoint/
+data/
+results/
+pretrain_weights/
+evaluate.py
+evaluate_mini.py
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
+pretrain_weights/
+pretrain_weights/

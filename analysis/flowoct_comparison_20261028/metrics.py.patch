@@ -1,0 +1,95 @@
+--- upstream/util/util.py
++++ flowoct_reproduction/flowoct/metrics.py
+@@ -1,66 +1,35 @@
+-"""Utility functions for FlowOCT."""
++"""Explicit [0,1] volume and axial max-projection metrics."""
+ 
+-import os
+ import numpy as np
+-from skimage.metrics import peak_signal_noise_ratio
+ from skimage.metrics import structural_similarity
+-from util.auto_crop import auto_crop_octa_images
+ 
+ 
+-# ---- Logging ----
+-
+-def get_log_path(opt):
+-    """Create log directory and return log file path."""
+-    log_dir = os.path.join(opt.checkpoints_dir, opt.name)
+-    os.makedirs(log_dir, exist_ok=True)
+-    return os.path.join(log_dir, 'loss_log.txt')
++def image_metrics(prediction, target):
++    prediction = np.asarray(prediction, dtype=np.float32)
++    target = np.asarray(target, dtype=np.float32)
++    if prediction.shape != target.shape or min(target.shape) < 7:
++        raise ValueError("Metrics require matching arrays with every axis >=7")
++    if not np.isfinite(prediction).all() or not np.isfinite(target).all():
++        raise ValueError("Non-finite metric input")
++    if min(prediction.min(), target.min()) < 0 or max(prediction.max(), target.max()) > 1:
++        raise ValueError("Metrics require normalized [0,1] arrays")
++    difference = prediction.astype(np.float64) - target
++    mse = float(np.mean(difference ** 2))
++    # Cap exact-match PSNR at the float64 epsilon floor so JSON remains finite.
++    return {"mae": float(np.mean(np.abs(difference))),
++            "psnr": float(-10 * np.log10(max(mse, np.finfo(np.float64).eps))),
++            "ssim": float(structural_similarity(target, prediction, data_range=1.0, win_size=7))}
+ 
+ 
+-def log_loss(log_path, epoch, iters, loss, step_time, phase='Train'):
+-    """Log training losses to console and file."""
+-    message = f'[{phase}] epoch: {epoch}, iters: {iters}, time: {step_time:.3f}s'
+-    for k, v in loss.items():
+-        message += f', {k}: {v:.5f}'
+-
+-    print(message)
+-    with open(log_path, 'a') as f:
+-        f.write(message + '\n')
++def volume_metrics(prediction_zyx, target_zyx):
++    result = {"volume_" + k: v for k, v in image_metrics(prediction_zyx, target_zyx).items()}
++    result.update({"axial_mip_" + k: v for k, v in image_metrics(
++        prediction_zyx.max(axis=0), target_zyx.max(axis=0)).items()})
++    return result
+ 
+ 
+-def log_metrics(log_path, epoch, mae, psnr, ssim, val_time):
+-    """Log validation metrics to console and file."""
+-    message = (
+-        f'[Val] epoch: {epoch}, time: {val_time:.2f}s, '
+-        f'mae: {mae:.5f}, psnr: {psnr:.3f}, ssim: {ssim:.4f}'
+-    )
+-    print(message)
+-    with open(log_path, 'a') as f:
+-        f.write(message + '\n')
+-
+-
+-# ---- Metrics ----
+-
+-def compute_mae(fake, real):
+-    """Mean Absolute Error."""
+-    return float(np.mean(np.abs(fake - real)))
+-
+-
+-def calculate_psnr_3d(real, fake):
+-    """Calculate PSNR for 3D volumes."""
+-
+-    data_range = real.max() - real.min()
+-    psnr_3d = peak_signal_noise_ratio(real, fake, data_range=data_range)
+-    return psnr_3d
+-
+-
+-def calculate_ssim_3d(real, fake, window_size=7):
+-    """Calculate SSIM for 3D volumes."""
+-
+-    data_range = real.max() - real.min()
+-    ssim_3d = structural_similarity(real, fake, data_range=data_range)
+-    return ssim_3d
+-
+-
+-
+-
+-
++def summarize(rows):
++    keys = [key for key in rows[0] if key.startswith(("volume_", "axial_mip_"))]
++    return {"cases": len(rows), "aggregation": "equal weight per scan; population standard deviation",
++            "metrics": {key: {"mean": float(np.mean([row[key] for row in rows])),
++                              "std": float(np.std([row[key] for row in rows]))} for key in keys}}

@@ -1,0 +1,28 @@
+{
+  "schema": "octa500-common-v1",
+  "source": "E:\\研一\\OCTA-500",
+  "seed": 2026,
+  "counts": {
+    "3M": {
+      "train": 140,
+      "validation": 10,
+      "test": 50
+    },
+    "6M": {
+      "train": 180,
+      "validation": 20,
+      "test": 100
+    }
+  },
+  "axis_order": "ZYX",
+  "intensity_scale": 255,
+  "native_dtype": "uint8",
+  "z256_dtype": "float32",
+  "resize": "NumPy memory-bounded Z-only linear 640->256, equivalent to trilinear with unchanged Y/X; align_corners=False; checked against PyTorch; no antialias filter",
+  "intensity": "No normalization, no clipping, no per-volume minmax; values remain 0..255",
+  "roi": "Full FOV, no annotation-guided crop, denoise, flattening or new registration",
+  "split": "Disease-proportional bounded quotas, validation then test then remaining train; minimum one per disease/split when feasible; seeded shuffle; own protocol, not paper ID lists",
+  "patient_id_basis": "Official dataset paper section 3.1: 500 subjects, one eye each; public ID used as subject ID, no private identity linkage available",
+  "torch": "2.5.1+cu121",
+  "numpy": "1.26.4"
+}

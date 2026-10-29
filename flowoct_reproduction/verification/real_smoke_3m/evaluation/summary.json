@@ -1,0 +1,72 @@
+{
+  "cases": 1,
+  "aggregation": "equal weight per scan; population standard deviation",
+  "metrics": {
+    "volume_mae": {
+      "mean": 0.15610723287807726,
+      "std": 0.0
+    },
+    "volume_psnr": {
+      "mean": 14.040891220924026,
+      "std": 0.0
+    },
+    "volume_ssim": {
+      "mean": 0.12138016063754875,
+      "std": 0.0
+    },
+    "axial_mip_mae": {
+      "mean": 0.31594103204406565,
+      "std": 0.0
+    },
+    "axial_mip_psnr": {
+      "mean": 9.143720744477314,
+      "std": 0.0
+    },
+    "axial_mip_ssim": {
+      "mean": 0.03886268784229357,
+      "std": 0.0
+    }
+  },
+  "protocol": {
+    "data_range": 1,
+    "ssim_win_size": 7,
+    "ssim": "3D volume / 2D axial maximum projection; no anatomical layers",
+    "exact_match_psnr_cap_db": 156.53559774527022,
+    "coverage": "center crop after resize; not restored full FOV or native axial resolution",
+    "limited_diagnostic": true,
+    "split": "validation",
+    "checkpoint_sha256": "d4c0e3a4d69f751fe96b393affd3533787f3a7ffb64d5bbfb3f81f37f455675c"
+  },
+  "by_disease": {
+    "CNV": {
+      "cases": 1,
+      "aggregation": "equal weight per scan; population standard deviation",
+      "metrics": {
+        "volume_mae": {
+          "mean": 0.15610723287807726,
+          "std": 0.0
+        },
+        "volume_psnr": {
+          "mean": 14.040891220924026,
+          "std": 0.0
+        },
+        "volume_ssim": {
+          "mean": 0.12138016063754875,
+          "std": 0.0
+        },
+        "axial_mip_mae": {
+          "mean": 0.31594103204406565,
+          "std": 0.0
+        },
+        "axial_mip_psnr": {
+          "mean": 9.143720744477314,
+          "std": 0.0
+        },
+        "axial_mip_ssim": {
+          "mean": 0.03886268784229357,
+          "std": 0.0
+        }
+      }
+    }
+  }
+}

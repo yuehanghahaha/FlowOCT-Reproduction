@@ -1,0 +1,25 @@
+{
+  "source_sha256": "05b6e2e9b1b4b2ab69724c711bd9a26add3ae97ef53e7899650aa87cd2e19a82",
+  "source_unchanged": true,
+  "core_unchanged": true,
+  "protocol_and_tool_hashes_match": true,
+  "pdf_pages": 10,
+  "pdf_sha256": "3a610005f18f2b35c42ff8035699f43df1351f78985a95210c7aeb973ef12fb4",
+  "all10_pages_rendered_and_visually_inspected": true,
+  "no_missing_glyph_nul": true,
+  "history_rows_verified": 400,
+  "projection_recalculation_max_abs_error": 1.2605472221594027e-12,
+  "original_input_checks": {
+    "all_input_hashes_match": true,
+    "geometry_matches": true,
+    "all5_gt_maps_exact": true,
+    "velocity_target_slices": 256,
+    "no_valid_row_slices": 256,
+    "velocity_roi_forced_full_if_all": true,
+    "oct_input_mean": 0.25152021646499634,
+    "gt_mean": 0.022612225264310837,
+    "gt_full_span": 0.06401219964027405
+  },
+  "weight_files_available_for_local_rerun": false,
+  "no_training_performed": true
+}

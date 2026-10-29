@@ -1,0 +1,93 @@
+{
+  "records": [
+    {
+      "case_id": "10305",
+      "view": "中心Y切片：Z×X",
+      "psnr_range1": 29.420305154049533,
+      "ssim_range1": 0.8711394786215447,
+      "ssim_gt_observed_range": 0.8458200052321142,
+      "common_display_min_p99": [
+        0.0,
+        0.35458895564079285
+      ]
+    },
+    {
+      "case_id": "10305",
+      "view": "中心Z切片：X×Y",
+      "psnr_range1": 23.19158527332394,
+      "ssim_range1": 0.5078480261643302,
+      "ssim_gt_observed_range": 0.495320205906969,
+      "common_display_min_p99": [
+        0.0,
+        0.4150247275829315
+      ]
+    },
+    {
+      "case_id": "10305",
+      "view": "中心X切片：Z×Y",
+      "psnr_range1": 29.931944057523438,
+      "ssim_range1": 0.847731671168765,
+      "ssim_gt_observed_range": 0.7934277766230425,
+      "common_display_min_p99": [
+        0.0,
+        0.3336907923221588
+      ]
+    },
+    {
+      "case_id": "10305",
+      "view": "FULL均值：X×Y",
+      "psnr_range1": 43.52372160248568,
+      "ssim_range1": 0.962061818505278,
+      "ssim_gt_observed_range": 0.4897632351951383,
+      "common_display_min_p99": [
+        0.0071521983868478856,
+        0.05341007981838858
+      ]
+    },
+    {
+      "case_id": "10331",
+      "view": "中心Y切片：Z×X",
+      "psnr_range1": 31.124101620329363,
+      "ssim_range1": 0.7848405217981171,
+      "ssim_gt_observed_range": 0.5980358099696597,
+      "common_display_min_p99": [
+        0.0,
+        0.253959596157074
+      ]
+    },
+    {
+      "case_id": "10331",
+      "view": "中心Z切片：X×Y",
+      "psnr_range1": 24.316013434914364,
+      "ssim_range1": 0.447841764696471,
+      "ssim_gt_observed_range": 0.33224977558618285,
+      "common_display_min_p99": [
+        0.0,
+        0.3340495228767395
+      ]
+    },
+    {
+      "case_id": "10331",
+      "view": "中心X切片：Z×Y",
+      "psnr_range1": 30.278044585635193,
+      "ssim_range1": 0.7362450762622565,
+      "ssim_gt_observed_range": 0.6250660917190234,
+      "common_display_min_p99": [
+        0.0,
+        0.31863507628440857
+      ]
+    },
+    {
+      "case_id": "10331",
+      "view": "FULL均值：X×Y",
+      "psnr_range1": 39.51107902075796,
+      "ssim_range1": 0.9112854029452497,
+      "ssim_gt_observed_range": 0.4086035046221759,
+      "common_display_min_p99": [
+        0.0033942930808734673,
+        0.04743166096012033
+      ]
+    }
+  ],
+  "limits": "Fixed prior-review cases; no matching paper case ID, no claim of identical paper slice/display protocol; raw images unchanged"
+}

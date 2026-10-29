@@ -1,0 +1,6 @@
+{
+  "upstream_commit": "2309126956d2b80a95f2d307d85a50799cc658a6",
+  "modification": "Projection ROI indexing preserves channel axis; two expression changes only",
+  "verification": "../artifacts/projection_roi_probe.json",
+  "limitations": "All other upstream behavior remains; not a reconstruction of paper-only components"
+}

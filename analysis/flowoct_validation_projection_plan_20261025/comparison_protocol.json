@@ -1,0 +1,66 @@
+{
+  "status": "design_only_not_executed",
+  "source_log": "D:\\data\\FSdata\\flowoct_3m_201_to_400_train.log",
+  "source_log_sha256": "08b995521b5cd9a9e8310fe0eeb61a2feeb5afb9bd5e043b7a63bfe8a64aecbb",
+  "completed_epochs_in_downloaded_history": [
+    1,
+    316
+  ],
+  "partial_epoch_in_log": 317,
+  "best_definition": "Existing validation mean 3D volume PSNR, same rule as training; freeze current best.pt before projection inference",
+  "manifest_sha256": "24e12fdb4dece29f27c565b4515ba0b31417505b3af893f99e61a416b05ad4da",
+  "case_ids": [
+    "10302",
+    "10319",
+    "10338",
+    "10357",
+    "10396",
+    "10422",
+    "10447",
+    "10456",
+    "10495",
+    "10500"
+  ],
+  "groups": [
+    {
+      "tag": "epoch70",
+      "source_checkpoint": "/workspace/flowoct_work/flowoct_reproduction_a100/runs/flowoct_3m_200e/epoch_0070.pt",
+      "epoch_in_downloaded_log": 70,
+      "required_epoch_at_execution": 70,
+      "logged_validation_volume_psnr": 28.257089156215592,
+      "logged_validation_volume_ssim": 0.7353648363516793,
+      "server_file_existence_verified": false
+    },
+    {
+      "tag": "epoch140",
+      "source_checkpoint": "/workspace/flowoct_work/flowoct_reproduction_a100/runs/flowoct_3m_200e/epoch_0140.pt",
+      "epoch_in_downloaded_log": 140,
+      "required_epoch_at_execution": 140,
+      "logged_validation_volume_psnr": 29.27722984755892,
+      "logged_validation_volume_ssim": 0.8197942869686422,
+      "server_file_existence_verified": false
+    },
+    {
+      "tag": "best_at_start",
+      "source_checkpoint": "/workspace/flowoct_work/flowoct_reproduction_a100/runs/flowoct_3m_400e_from200/best.pt",
+      "epoch_in_downloaded_log": 313,
+      "required_epoch_at_execution": null,
+      "logged_validation_volume_psnr": 29.89449357033311,
+      "logged_validation_volume_ssim": 0.8806809254091691,
+      "server_file_existence_verified": false
+    }
+  ],
+  "inference_count": 30,
+  "projection_definitions": {
+    "primary": "FULL arithmetic mean over all 256 saved physical Z samples",
+    "auxiliary": "MAX over the same physical Z axis"
+  },
+  "input_mapping": "Current unchanged baseline: stored ZYX to model YXZ; same center crop for all groups",
+  "metrics": {
+    "primary_projection_diagnostic": "SSIM(data_range=GT map max-min,win_size=7), paired per case, same GT range for all groups",
+    "other_projection_metrics": "MAE; PSNR and SSIM at data_range=1 retained for continuity; GT-range PSNR recorded as diagnostic",
+    "not_paper_foreground_or_full_volume_metrics": true
+  },
+  "no_training_or_server_execution_performed": true,
+  "case_csv_is_review_record_not_training_manifest": true
+}

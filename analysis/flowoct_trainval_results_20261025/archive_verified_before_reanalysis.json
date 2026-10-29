@@ -1,0 +1,10 @@
+{
+  "archive_filename": "flowoct_trainval_70_140_best_20261025_070855_529336_utc_review.zip",
+  "sha256": "2352a755215f55b4f4e0970ae0206118a301e433aa0c49a64531530bc8891755",
+  "matches_server_log": true,
+  "zip_integrity": "passed",
+  "extracted_files_verified": 54,
+  "npz_files": 20,
+  "case_figures": 20,
+  "scope": "Recorded from the successful read-only hash, ZIP integrity and all54 extracted-file byte-content checks earlier in this same analysis. The source ZIP subsequently became absent; the extracted files remain. No archive was deleted or moved by these analysis scripts."
+}

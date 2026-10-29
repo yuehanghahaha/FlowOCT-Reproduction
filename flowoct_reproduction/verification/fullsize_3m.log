@@ -1,0 +1,79 @@
+{"run": "/docsystem/niuke/lvyuehang/flowoct_reproduction/verification/fullsize_3m/train", "device": "cuda:1", "start_epoch": 1, "train_cases": 1, "validation_cases": 1, "sampled_slices": 64, "generator_parameters": 2330180}
+/docsystem/niuke/lvyuehang/conda_envs/lyh_flowoct/lib/python3.10/site-packages/torchio/data/image.py:248: UserWarning: Using TorchIO images without a torchio.SubjectsLoader in PyTorch >= 2.3 might have unexpected consequences, e.g., the collated batches will be instances of torchio.Subject with 5D images. Replace your PyTorch DataLoader with a torchio.SubjectsLoader so that the collated batch becomes a dictionary, as expected. See https://github.com/fepegar/torchio/issues/1179 for more context about this issue.
+  warnings.warn(message, stacklevel=1)
+Epoch 1/1 scan 1/1 loss=0.575653
+{"epoch": 1, "global_step": 1, "loss": {"total": 0.5756529569625854, "vloss": 0.048079513013362885, "L1loss": 0.10533670336008072, "contrastloss": 4.9385504722595215, "proj_loss": 0.174966961145401}, "train_seconds": 14.739858170971274, "validation": {"cases": 1, "aggregation": "equal weight per scan; population standard deviation", "metrics": {"volume_mae": {"mean": 0.2124470312485722, "std": 0.0}, "volume_psnr": {"mean": 12.762513977913146, "std": 0.0}, "volume_ssim": {"mean": 0.025097199866743598, "std": 0.0}, "axial_mip_mae": {"mean": 0.40114515589777966, "std": 0.0}, "axial_mip_psnr": {"mean": 7.65597165782697, "std": 0.0}, "axial_mip_ssim": {"mean": 0.07470360877014315, "std": 0.0}}}, "validation_seconds": 19.96150099497754, "peak_allocated_gib": 4.383449077606201, "best_validation_psnr": 12.762513977913146}
+Saved 10302 (256, 256, 256)
+{
+  "cases": 1,
+  "aggregation": "equal weight per scan; population standard deviation",
+  "metrics": {
+    "volume_mae": {
+      "mean": 0.2124470312485722,
+      "std": 0.0
+    },
+    "volume_psnr": {
+      "mean": 12.762513977913146,
+      "std": 0.0
+    },
+    "volume_ssim": {
+      "mean": 0.025097199866743598,
+      "std": 0.0
+    },
+    "axial_mip_mae": {
+      "mean": 0.40114515589777966,
+      "std": 0.0
+    },
+    "axial_mip_psnr": {
+      "mean": 7.65597165782697,
+      "std": 0.0
+    },
+    "axial_mip_ssim": {
+      "mean": 0.07470360877014315,
+      "std": 0.0
+    }
+  },
+  "protocol": {
+    "data_range": 1,
+    "ssim_win_size": 7,
+    "ssim": "3D volume / 2D axial maximum projection; no anatomical layers",
+    "exact_match_psnr_cap_db": 156.53559774527022,
+    "coverage": "center crop after resize; not restored full FOV or native axial resolution",
+    "limited_diagnostic": true,
+    "split": "validation",
+    "checkpoint_sha256": "0d35436825a499e4abcc140bb35bf5040610b89d68f9e24e5a38e80b4be47e54"
+  },
+  "by_disease": {
+    "CNV": {
+      "cases": 1,
+      "aggregation": "equal weight per scan; population standard deviation",
+      "metrics": {
+        "volume_mae": {
+          "mean": 0.2124470312485722,
+          "std": 0.0
+        },
+        "volume_psnr": {
+          "mean": 12.762513977913146,
+          "std": 0.0
+        },
+        "volume_ssim": {
+          "mean": 0.025097199866743598,
+          "std": 0.0
+        },
+        "axial_mip_mae": {
+          "mean": 0.40114515589777966,
+          "std": 0.0
+        },
+        "axial_mip_psnr": {
+          "mean": 7.65597165782697,
+          "std": 0.0
+        },
+        "axial_mip_ssim": {
+          "mean": 0.07470360877014315,
+          "std": 0.0
+        }
+      }
+    }
+  }
+}
+Real-data diagnostic completed; not a paper performance reproduction.
